@@ -1,0 +1,15 @@
+
+> coastline-foundation@0.1.0 test:production
+> playwright test --config playwright.production.config.ts
+
+
+Running 6 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (22.2s)
+  ✓  2 [webgpu] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (30.4s)
+  ✓  3 [webgl2-forced] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (16.6s)
+  ✓  4 [webgl2-forced] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (25.3s)
+  ✓  5 [webgpu-disabled] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (17.1s)
+  ✓  6 [webgpu-disabled] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (25.8s)
+
+  6 passed (2.4m)

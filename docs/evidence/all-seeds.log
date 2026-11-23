@@ -1,0 +1,128 @@
+using deprecated parameters for the initialization function; pass a single object instead
+{
+  tick: 0,
+  seconds: '0.0',
+  cp: 0,
+  nav: 1,
+  falls: 0,
+  motion: 'run',
+  position: {
+    x: 1.6097101251943968e-7,
+    y: 27.024995803833008,
+    z: 17.108333587646484
+  }
+}
+{
+  tick: 6000,
+  seconds: '100.0',
+  cp: 4,
+  nav: 39,
+  falls: 0,
+  motion: 'run',
+  position: {
+    x: 191.57440185546875,
+    y: 26.810604095458984,
+    z: 163.60025024414062
+  }
+}
+{
+  tick: 12000,
+  seconds: '200.0',
+  cp: 8,
+  nav: 77,
+  falls: 0,
+  motion: 'run',
+  position: {
+    x: 0.9221969246864319,
+    y: 30.833738327026367,
+    z: 330.90948486328125
+  }
+}
+{
+  tick: 18000,
+  seconds: '300.0',
+  cp: 12,
+  nav: 114,
+  falls: 0,
+  motion: 'run',
+  position: {
+    x: 155.51991271972656,
+    y: 23.703022003173828,
+    z: 336.77288818359375
+  }
+}
+{
+  tick: 24000,
+  seconds: '400.0',
+  cp: 16,
+  nav: 151,
+  falls: 0,
+  motion: 'run',
+  position: { x: 316.3241271972656, y: 28.82522201538086, z: 447.3633728027344 }
+}
+{
+  tick: 30000,
+  seconds: '500.0',
+  cp: 20,
+  nav: 189,
+  falls: 0,
+  motion: 'run',
+  position: { x: 448.6594543457031, y: 22.35955047607422, z: 256.61346435546875 }
+}
+{
+  tick: 36000,
+  seconds: '600.0',
+  cp: 24,
+  nav: 225,
+  falls: 0,
+  motion: 'run',
+  position: { x: 327.9163513183594, y: 31.21944808959961, z: 61.309364318847656 }
+}
+{
+  "state": "finished",
+  "simulationSeconds": 682.4333333333333,
+  "elapsed": 682.4333333330413,
+  "remaining": 503.56666666728734,
+  "falls": 0,
+  "checkpoint": 27,
+  "botNav": 253,
+  "navCount": 254,
+  "result": {
+    "seed": 84173,
+    "marker": "opening",
+    "night": false,
+    "seconds": 682.43,
+    "falls": 0,
+    "collectibles": 14,
+    "cash": 70,
+    "rank": "A",
+    "date": "2026-11-22T11:07:58.191Z"
+  },
+  "recordFrames": 6824,
+  "maximumStreamMs": 4.102362000000085,
+  "initialStreamMs": 14.171704999999974,
+  "cpuWallSeconds": 4.849922097
+}
+SEED RUN {"seed":2654435761,"state":"finished","normalPaceSeconds":665.75,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.7967779999999038}
+SEED RUN {"seed":1013904226,"state":"finished","normalPaceSeconds":670.25,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.499033000000054}
+SEED RUN {"seed":3668339987,"state":"finished","normalPaceSeconds":666.6666666666666,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.1629209999991872}
+SEED RUN {"seed":2027808452,"state":"finished","normalPaceSeconds":669.9833333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.2054150000003574}
+SEED RUN {"seed":387276917,"state":"finished","normalPaceSeconds":675.4,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.0294379999977536}
+SEED RUN {"seed":3041712678,"state":"finished","normalPaceSeconds":672.9,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.5332710000002407}
+SEED RUN {"seed":1401181143,"state":"finished","normalPaceSeconds":674.35,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.7533760000005714}
+SEED RUN {"seed":4055616904,"state":"finished","normalPaceSeconds":669.7166666666667,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.6574859999964247}
+SEED RUN {"seed":2415085369,"state":"finished","normalPaceSeconds":672.2166666666667,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.0990919999967446}
+SEED RUN {"seed":774553834,"state":"finished","normalPaceSeconds":677.4166666666666,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.5636939999967581}
+SEED RUN {"seed":3428989595,"state":"finished","normalPaceSeconds":674.5333333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.7366299999994226}
+SEED RUN {"seed":1788458060,"state":"finished","normalPaceSeconds":675.3833333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.4734080000052927}
+SEED RUN {"seed":147926525,"state":"finished","normalPaceSeconds":669.7,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.8377219999965746}
+SEED RUN {"seed":2802362286,"state":"finished","normalPaceSeconds":672.6666666666666,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.117235999998229}
+SEED RUN {"seed":1161830751,"state":"finished","normalPaceSeconds":672.75,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.6785789999994449}
+SEED RUN {"seed":3816266512,"state":"finished","normalPaceSeconds":676.4,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.7845309999975143}
+SEED RUN {"seed":2175734977,"state":"finished","normalPaceSeconds":669.7166666666667,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.6598379999923054}
+SEED RUN {"seed":535203442,"state":"finished","normalPaceSeconds":666.6333333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.6942529999942053}
+SEED RUN {"seed":3189639203,"state":"finished","normalPaceSeconds":674.4333333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.5942700000014156}
+SEED RUN {"seed":1549107668,"state":"finished","normalPaceSeconds":675.7,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.9066259999963222}
+SEED RUN {"seed":4203543429,"state":"finished","normalPaceSeconds":675.2833333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.9836379999906057}
+SEED RUN {"seed":2563011894,"state":"finished","normalPaceSeconds":669.5333333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":0.5336539999989327}
+SEED RUN {"seed":922480359,"state":"finished","normalPaceSeconds":669.4333333333333,"falls":0,"checkpoint":27,"nav":253,"maximumStreamMs":1.0037849999935133}

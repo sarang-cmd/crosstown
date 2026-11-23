@@ -1,0 +1,2779 @@
+{
+  "schema": 4,
+  "date": "2026-11-22",
+  "release": "0.9.0",
+  "pathsRelativeTo": "project root",
+  "runtimeSource": {
+    "sha256": "6269b28082f916fe1a076b75e54115ccdf1b4d90da26658eb6f5b70bc9851910",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "files": [
+      {
+        "file": "index.html",
+        "bytes": 767,
+        "sha256": "943811c13d30eb678bbe19cc5d35bdea4e5062d3bd8236e590804e7bdec42037"
+      },
+      {
+        "file": "package-lock.json",
+        "bytes": 89131,
+        "sha256": "de1be616fc7472576299c2fb04890fbb117b3bdd2c147d5c62afb9432c58dc47"
+      },
+      {
+        "file": "package.json",
+        "bytes": 2743,
+        "sha256": "8ea5ebad8fe8fb193421df1cdf65ee7b158e63db1e146f16fce2ec93de86988a"
+      },
+      {
+        "file": "public/CREDITS.md",
+        "bytes": 21025,
+        "sha256": "1577478579c780294807f5f8a1f3b47ffdbf8f03294cefffc99ea03555766076"
+      },
+      {
+        "file": "public/audio/cars/aerox/high-off.wav",
+        "bytes": 80044,
+        "sha256": "96ca0ee52cab5afc3e24211aef6e6df3651217c44f67a957ac1d1a727f4624bd"
+      },
+      {
+        "file": "public/audio/cars/aerox/high-on.wav",
+        "bytes": 80044,
+        "sha256": "3e48960f565fda34b898aedeacebc28803ec45e94500696434a478a964559130"
+      },
+      {
+        "file": "public/audio/cars/aerox/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "ad3eba41f874b7811ba631de4450b20e0709448095eae82e086efe8bf298b18c"
+      },
+      {
+        "file": "public/audio/cars/aerox/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "b1205c65ef5722f87218638ab267f347579f13b377320e27bdec70fc18ef18a9"
+      },
+      {
+        "file": "public/audio/cars/aerox/low-off.wav",
+        "bytes": 80044,
+        "sha256": "954a0820b54da783f10f53b3b50c750f159a6e47daf883af87e4f9ef83f1cdca"
+      },
+      {
+        "file": "public/audio/cars/aerox/low-on.wav",
+        "bytes": 80044,
+        "sha256": "a8bbee20b77cfe27a8bef6916f27fa9f3a233923accb1edf0b25997038d3a2ec"
+      },
+      {
+        "file": "public/audio/cars/aerox/manifest.json",
+        "bytes": 5891,
+        "sha256": "df0ec0d4b3f4eb988a05cc2295ebf58da7a102d60e54929017a955f61dea6853"
+      },
+      {
+        "file": "public/audio/cars/aerox/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "dfc3e9d4e8078e89774c229abe81022bccb31eecb0a831d655942edc8f4fa1f4"
+      },
+      {
+        "file": "public/audio/cars/aerox/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "a3695aeb18a0001ea035d2a73f4565721ebdfb7ef79903bfe581b18edd3ab0f0"
+      },
+      {
+        "file": "public/audio/cars/brim/high-off.wav",
+        "bytes": 80044,
+        "sha256": "cbdee5c26a6f0773bf1296a5d1176f78e8b4295a33b8a1373540e60faeee5a25"
+      },
+      {
+        "file": "public/audio/cars/brim/high-on.wav",
+        "bytes": 80044,
+        "sha256": "f8f7fec62968fe8c9bc986475e38269883873b0bf76884db5271de5d748c2dc8"
+      },
+      {
+        "file": "public/audio/cars/brim/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "271fabc30a4cb8dc90fb28e42f4400b03f41357e0d63f5b5ec7e57b1a82ba752"
+      },
+      {
+        "file": "public/audio/cars/brim/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "c6b2c825be519b80af29f4aba9a1f0185488561123228d79e8ff03ab2f3d989a"
+      },
+      {
+        "file": "public/audio/cars/brim/low-off.wav",
+        "bytes": 80044,
+        "sha256": "3cf5dd747b0c365cc416b9644463a540666361859782e1399330872ddae6e636"
+      },
+      {
+        "file": "public/audio/cars/brim/low-on.wav",
+        "bytes": 80044,
+        "sha256": "86e2bea577fa947fe5431b227ba16ecf77eec10d7d7247b5fb3c1e5b9f0e7bbb"
+      },
+      {
+        "file": "public/audio/cars/brim/manifest.json",
+        "bytes": 5863,
+        "sha256": "b327e70ce983bc09bb652f5474aa99dafe9ab85536efdf658cb1f2f7adce9777"
+      },
+      {
+        "file": "public/audio/cars/brim/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "1c6cff09c7e22425d31c102b3df4cb8ad1f5b951ab2f9ccd16d08ef35bf4729c"
+      },
+      {
+        "file": "public/audio/cars/brim/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "490b8cf49eae8db5c2857f10fd97c4a6cad23cff7c4035bc90fdc08372c7d3e4"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/high-off.wav",
+        "bytes": 80044,
+        "sha256": "e433e519a61b7bc4207b6fe4571b697000b86e9431125b69cc11b1a1145ce049"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/high-on.wav",
+        "bytes": 80044,
+        "sha256": "473b9153f6e71840bbf4eb2a1e0690dda68e6352129b3e77eeae53309aefbdb6"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "175c465f30ce68d61241b6b975058a7293836c3e07e653f52cb216ece5e85151"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "b2a0672ca42785e0b5b0242d0a9d75a64d1121c474d489b178e313c9acbff46f"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/low-off.wav",
+        "bytes": 80044,
+        "sha256": "462b61532e0c0589f574cc803bcde36fb88df036a2ffa350a40b81ec6b0f9494"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/low-on.wav",
+        "bytes": 80044,
+        "sha256": "0c94507ad611063b745f4c9aa0253c69be2c4f8f870d486ad23d84218baea474"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/manifest.json",
+        "bytes": 3667,
+        "sha256": "8d8b266402e2f84a2b7a2469195349821adfba73545ee221789dac1221ca0b55"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "4e5c2166a95a827c1407eca43aeeb797202346c41ac186a7e759fade65cb5ebe"
+      },
+      {
+        "file": "public/audio/cars/cabin-compact/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "24acec000ef6a02b88dce87063e05a7e7e5d75143b7bab215e72d3a1dcabde96"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/high-off.wav",
+        "bytes": 80044,
+        "sha256": "407f1834063692964fb138cfae9330a2a8aaa5ae6072a67a8ab1ea65dccc9b13"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/high-on.wav",
+        "bytes": 80044,
+        "sha256": "2acad4309d490e728674bd52d5a67284dffeebe85d28784d99a412157234c46a"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "3a98c2f63f766f3cd5c8041765a8fba9f4768ab514de2d11393ccc960612d1be"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "d2a316385deaa914e4e2130cb8796fa84991cf98dac06a86554b7d49aabf8ec6"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/low-off.wav",
+        "bytes": 80044,
+        "sha256": "3d0fe7382b1170f0ca230ff9399429ac383cbe7df572ab94927c82a27529a776"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/low-on.wav",
+        "bytes": 80044,
+        "sha256": "f25a8577cef7d93eb417f5c6e7a3102e5b61382acc8c86129e3f85e6f0868944"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/manifest.json",
+        "bytes": 3674,
+        "sha256": "b4d5a5c504ec409df7b1dd6798bf47606064c917c9925f9b97f33437b53f4bd5"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "433b292144e8ee06b5a28caf5bb3d247ada23bd41a63ea78ab7fb7c97cb38da3"
+      },
+      {
+        "file": "public/audio/cars/cabin-motorbike/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "8ca66fa09b5c7e037aa72e25826f9fa46298f1f7c92aa468a559c933e88f43d5"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/high-off.wav",
+        "bytes": 80044,
+        "sha256": "33dc27c3c84a0018d83d469dc00dfc7aa612c875f35dada858908ec12c8ad997"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/high-on.wav",
+        "bytes": 80044,
+        "sha256": "7255ed1f0355547ec06bb63e147247ba496baefcc05c293bb8caa92447d11c1f"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "600f3e5272d08867967b8218348d9d601afbe44adf095b3da781aef668b8aa80"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "5519a19d1d436fedd95260093f349c41d4c4650db6a0a0270e96ab42e15b9cac"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/low-off.wav",
+        "bytes": 80044,
+        "sha256": "84d54da6ce6cc65a11331a644949f99febb1c46970e08e8f61991ec7ad5af53a"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/low-on.wav",
+        "bytes": 80044,
+        "sha256": "8bf908129bb0fc0df4db8cfed740b1a23c37411dd45ba461103ab3eed4117438"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/manifest.json",
+        "bytes": 3666,
+        "sha256": "7a4f379642f74c2af2be64cec8af7e4eef1ecf2c51c61e062d2c8b2fea508639"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "ab3ace11601532aa45431d6fc1079e846129a0f90bde39f19684c0e62b6ce1af"
+      },
+      {
+        "file": "public/audio/cars/cabin-muscle/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "daea85deefa39d31bc3d99c10448deb844d5cc2fbc62aa8d10667db370b4583a"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/high-off.wav",
+        "bytes": 80044,
+        "sha256": "f58b8a1eac25d2da0633d850919531073aaa908684f6d08613a6b1d03ad86e08"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/high-on.wav",
+        "bytes": 80044,
+        "sha256": "6eed2511367c469af7e2d9bb58c34593e26ef565a63e56485257e72618cb68b9"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "667d754c13810eb8c40e2bb7c60fbd9bb7387331ce2e694b5c8a44802a94fa6f"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "93a72f511923803db98bc30373b28e58dae8004d3f97816b623dd9914cfd92b1"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/low-off.wav",
+        "bytes": 80044,
+        "sha256": "35189015fa9ec8c7237316d9588e631ca860132bd6de838f65b6a3ec11fecaa2"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/low-on.wav",
+        "bytes": 80044,
+        "sha256": "ce5599feea12b80c21790489ba33af840f560f3891644ddd89a81291d4e7be2b"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/manifest.json",
+        "bytes": 3665,
+        "sha256": "2ddd22f6b7602ec8a933d505924eaf564afa903452848ee2f0ab74129e1f251a"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "568782eb4af9c9ed4f57736c53a6014673f5859572d3d666f8ac3cbf8c252e87"
+      },
+      {
+        "file": "public/audio/cars/cabin-supercar/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "70d7e6f19f92776ec829742ad539a1a350a9914de793267b8283c6f177b118a9"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/high-off.wav",
+        "bytes": 80044,
+        "sha256": "6fe041bf48a091f6ec222587286fe605930e69ec45c61dabae2a2fdd37f38ef8"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/high-on.wav",
+        "bytes": 80044,
+        "sha256": "212239c5c07a49d08f4ee1c3516b29a90c109c0f79daf797ec5bbefc394cd3e2"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "0adf213ce12b302402f5ed49a2b8c8bb75f4d2bf0c43671da783451b5888f9a9"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "ea418ea04d8d16b2c1af39efb99a23b5380423cc8ca3cdc15b7f3e51b6e6818f"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/low-off.wav",
+        "bytes": 80044,
+        "sha256": "1e67aec60c3ad772879877abefbc83fd01f3acace701df2a547b1932a8773f58"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/low-on.wav",
+        "bytes": 80044,
+        "sha256": "1206b437b9b44aa5e222496e41f2730bb6ff0e94d4fc18d79cfdfe7ec8d9472e"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/manifest.json",
+        "bytes": 3665,
+        "sha256": "485e58e6886b1b5146323f91d1ef4fa9bbde68f1fdf5ec7a6ad2fc55ed2acfc4"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "392ede1d529115350ac6930f25d535b24104194904b0d86f942fa42d327503d5"
+      },
+      {
+        "file": "public/audio/cars/cabin-suv/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "cf8adea54c4e7bb3b0e296babdc77150b97432055deb928e66b4dfc4f84a140d"
+      },
+      {
+        "file": "public/audio/cars/cinder/high-off.wav",
+        "bytes": 80044,
+        "sha256": "ef0b76f539299a827a34681bb9c3af080cc3390419c8360caf8e5b1a5b91c849"
+      },
+      {
+        "file": "public/audio/cars/cinder/high-on.wav",
+        "bytes": 80044,
+        "sha256": "f75d387a719893516b6d651b662d65217b9cec8182d0b94725f6c1c6db2b1a2c"
+      },
+      {
+        "file": "public/audio/cars/cinder/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "ba06aaed0e5f847e3e007203857950abfa211f6c2b86dec47b9634a4c48e52ff"
+      },
+      {
+        "file": "public/audio/cars/cinder/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "d68a69d8ca6cfbdeb7c07a15be6887833abdf2a411ecb414106511b52cf976d1"
+      },
+      {
+        "file": "public/audio/cars/cinder/low-off.wav",
+        "bytes": 80044,
+        "sha256": "ea27da17e6c00386393ca4b10fab13cba31a72c790608eb1a6b734b1e3d626a9"
+      },
+      {
+        "file": "public/audio/cars/cinder/low-on.wav",
+        "bytes": 80044,
+        "sha256": "6510f5da4d1f467ab5fb9bf08380b31470985986efb700cda62926b2c60a6224"
+      },
+      {
+        "file": "public/audio/cars/cinder/manifest.json",
+        "bytes": 5883,
+        "sha256": "a64ec7b7414319df8d48a25d830cf7159a347dd7b036d798605ffe68293d0bb9"
+      },
+      {
+        "file": "public/audio/cars/cinder/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "6778096248b5bcd661ff7edf939c408625d02501e6fb06fc9acf65cab8a5d872"
+      },
+      {
+        "file": "public/audio/cars/cinder/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "397d99a04b8e4584fd6366e2e04fa38a75d51df46c4cc26ae730c9656721bb32"
+      },
+      {
+        "file": "public/audio/cars/harbor/high-off.wav",
+        "bytes": 80044,
+        "sha256": "75a86ab0130bdddabe488989fc2ccb0dd1277f4f08b6081d959020b8e4027cdd"
+      },
+      {
+        "file": "public/audio/cars/harbor/high-on.wav",
+        "bytes": 80044,
+        "sha256": "0a9a3f2dd8aa8222ec3d046d63ce3a6f3f6020de50f39f6da5be6e0101d317e2"
+      },
+      {
+        "file": "public/audio/cars/harbor/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "c1ed9975e4106260c6a915408dcfe27539a9e8b45b124d00b01180c7dc0afd52"
+      },
+      {
+        "file": "public/audio/cars/harbor/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "b3cd905dfa89fc476d087b58944db1480248296d6b2023a728f297eccb885c80"
+      },
+      {
+        "file": "public/audio/cars/harbor/low-off.wav",
+        "bytes": 80044,
+        "sha256": "0d5a8810adb945a2ca6f8becdbbd5017448c93dbad3eb60adbd46f0a37b90317"
+      },
+      {
+        "file": "public/audio/cars/harbor/low-on.wav",
+        "bytes": 80044,
+        "sha256": "86f9857b2378824a6dae4397c2409ae5826d15908db4ca0cbc90be47c4779966"
+      },
+      {
+        "file": "public/audio/cars/harbor/manifest.json",
+        "bytes": 3674,
+        "sha256": "000468961c1914060cba6fa74c68665b4a51c2b48864de5e944b7bd4b2a67555"
+      },
+      {
+        "file": "public/audio/cars/harbor/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "bad34abcf02d203db98b03a8b97678ad992cd2239bab5850406d43d47152aaa7"
+      },
+      {
+        "file": "public/audio/cars/harbor/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "23d5c97a201686136740f05a9dc9fdf347b813fd9e1b5cdd25101abe78767092"
+      },
+      {
+        "file": "public/audio/cars/kestrel/high-off.wav",
+        "bytes": 80044,
+        "sha256": "3dd8328ec096bd8c021dcf28b036f815c6e3d67c5cac7e20f01301222da89dfd"
+      },
+      {
+        "file": "public/audio/cars/kestrel/high-on.wav",
+        "bytes": 80044,
+        "sha256": "67ad07ded12ef2ccc536336cb6bebf099379600830514bec5c779a78fbc839f8"
+      },
+      {
+        "file": "public/audio/cars/kestrel/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "e808260d80e0ce4326cdedad8b11841632732dc7a2792e451413d1aee9215d2b"
+      },
+      {
+        "file": "public/audio/cars/kestrel/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "9f43e06e4bcd74d00cd2b7bf8dfc576ed71f3a3ee77fb210bef581eb13fde562"
+      },
+      {
+        "file": "public/audio/cars/kestrel/low-off.wav",
+        "bytes": 80044,
+        "sha256": "5053eefd045f22d9ef86d3e263b251467e75f55c0cdc01c5477e045fca00f4d5"
+      },
+      {
+        "file": "public/audio/cars/kestrel/low-on.wav",
+        "bytes": 80044,
+        "sha256": "8363d37f6cbca888f35a83ad23bfdc44dfe926434e41630e7a079b4b3c2767a4"
+      },
+      {
+        "file": "public/audio/cars/kestrel/manifest.json",
+        "bytes": 5846,
+        "sha256": "48a7acce301dab71a01c0189b7352e4b6c7a3c2c11e3d86135c781ba23db1cbd"
+      },
+      {
+        "file": "public/audio/cars/kestrel/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "09dce8eea2b4f1c9b4d2174d87ab601a31d38d1585d30bc13290fb323ce12d76"
+      },
+      {
+        "file": "public/audio/cars/kestrel/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "f4f3c5514a832d7304adae4a4f8ee357fd183b6771139e33926d803d2bc86a32"
+      },
+      {
+        "file": "public/audio/cars/meridian/high-off.wav",
+        "bytes": 80044,
+        "sha256": "9d6fda403d22996895f264b914a8d9138a604dfd9f28ab042cc393c69a55259b"
+      },
+      {
+        "file": "public/audio/cars/meridian/high-on.wav",
+        "bytes": 80044,
+        "sha256": "8dad2d88fd897bcc266e1ecfb0fdf7140198d45bee2448ec943c395245953133"
+      },
+      {
+        "file": "public/audio/cars/meridian/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "0d31811cf740c517ce9674c6b733ee303fc187bc3a7dba9976473374817806a3"
+      },
+      {
+        "file": "public/audio/cars/meridian/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "bd75859bc69a4dc474f25689165907ebdc48a03512697d9edd7bce6a33830d22"
+      },
+      {
+        "file": "public/audio/cars/meridian/low-off.wav",
+        "bytes": 80044,
+        "sha256": "ede97fba70338ec429ead9c662bc0b338e7845d2314ea1f73903094a428cfb6c"
+      },
+      {
+        "file": "public/audio/cars/meridian/low-on.wav",
+        "bytes": 80044,
+        "sha256": "b43024ac220e942af8896ecb7000ad234605825292a553acac4cecd8fe0e749f"
+      },
+      {
+        "file": "public/audio/cars/meridian/manifest.json",
+        "bytes": 5783,
+        "sha256": "c9ea6c74495861b2c93b092c443703efac760e8ee3cf0f6cad71ea96c45d267e"
+      },
+      {
+        "file": "public/audio/cars/meridian/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "3a8413a68541523d48f08d683d8904199895f4e4f71e87a942a16e5d6d06dc35"
+      },
+      {
+        "file": "public/audio/cars/meridian/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "90b8a6b52100621d53747504477fdd02a2cc1094d52564567e47637b0bf63ac3"
+      },
+      {
+        "file": "public/audio/cars/mesa/high-off.wav",
+        "bytes": 80044,
+        "sha256": "75825876674c2236281347085206117245d9c32b8a1452de05035d77db71e924"
+      },
+      {
+        "file": "public/audio/cars/mesa/high-on.wav",
+        "bytes": 80044,
+        "sha256": "d3f60704d028abdf9f6ba4d943f66bf3ef8081e4f88385080a544983f9ecf81b"
+      },
+      {
+        "file": "public/audio/cars/mesa/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "3786fe0650e74117668adbe591d404b52f5bca43812feeaebc4f5a27fde12e4e"
+      },
+      {
+        "file": "public/audio/cars/mesa/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "efece6a6a7c90bf7e1d86f655730e1c2824ea75db70713489e33692ea635e889"
+      },
+      {
+        "file": "public/audio/cars/mesa/low-off.wav",
+        "bytes": 80044,
+        "sha256": "084832114e77d066050bfd13b1839a9585f4d7be859b642d4a43b3336a67ac48"
+      },
+      {
+        "file": "public/audio/cars/mesa/low-on.wav",
+        "bytes": 80044,
+        "sha256": "948ab440daab125eb882913be9cbb541572dc69048dc7c8f45513f0dd93bc7bb"
+      },
+      {
+        "file": "public/audio/cars/mesa/manifest.json",
+        "bytes": 5839,
+        "sha256": "4b223c008c1e1372beae74709f228fa6c488c1626a81ef09d063d27c017bc905"
+      },
+      {
+        "file": "public/audio/cars/mesa/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "b4f827810469a5ed3a05f57789e7c47b0854c0eadd05e5a2368ed8c13159b35d"
+      },
+      {
+        "file": "public/audio/cars/mesa/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "835aa4c4ffba7e228704e651d5c8754339048a7483790200128029f7c4e2c869"
+      },
+      {
+        "file": "public/audio/cars/milo/high-off.wav",
+        "bytes": 80044,
+        "sha256": "34698d133561c4e2794669b9b0e4b420bd63a59ae367d583c141ae25991ed54e"
+      },
+      {
+        "file": "public/audio/cars/milo/high-on.wav",
+        "bytes": 80044,
+        "sha256": "495cb7fe74c7eebd8da871302c8581185ba80a707b73a990056762b288fa5ace"
+      },
+      {
+        "file": "public/audio/cars/milo/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "1f12cf388b84a4dc3783a52ca4f228816d99c2890f4a1caecda2fd538578ecd2"
+      },
+      {
+        "file": "public/audio/cars/milo/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "0a042ef10d994062e3f4e2531600d5f387fceaf30dfc3c84f641a50f0fd101b2"
+      },
+      {
+        "file": "public/audio/cars/milo/low-off.wav",
+        "bytes": 80044,
+        "sha256": "972351a6d8b75b8fd8da6755e6ece4c0fff0c043134989586ce9280ba0159bcf"
+      },
+      {
+        "file": "public/audio/cars/milo/low-on.wav",
+        "bytes": 80044,
+        "sha256": "7753a5ce412036691be1927a93c8bf456f0284d949857b38aac6114655122fef"
+      },
+      {
+        "file": "public/audio/cars/milo/manifest.json",
+        "bytes": 5832,
+        "sha256": "2439c7f60a415e08a2d8e3741b34436899ccc57ce94525e31402ae3738240237"
+      },
+      {
+        "file": "public/audio/cars/milo/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "9036ccc1f2d3c3bdc67577a6b4dd6c050635317b3645b1a47540b19ab3d8e622"
+      },
+      {
+        "file": "public/audio/cars/milo/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "82f72b69cd760530e31aa8bccf3ae278947ec7e8c7db9a04e8cab5ef4edb6c7d"
+      },
+      {
+        "file": "public/audio/cars/pip/high-off.wav",
+        "bytes": 80044,
+        "sha256": "61f4701d89d44714bd7f6ced897dd0c24e0a40ab2010ecc11d5e87969d58387a"
+      },
+      {
+        "file": "public/audio/cars/pip/high-on.wav",
+        "bytes": 80044,
+        "sha256": "c828b005cba3bf053ef346e91a3accac649de93eba8906be79243ca8afc4714a"
+      },
+      {
+        "file": "public/audio/cars/pip/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "42f88abd116c84efe97ca5a547a7a3eda99820386b1ddead5db220b6cb95a6b8"
+      },
+      {
+        "file": "public/audio/cars/pip/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "00e3f278fcee1ab14ede41f09a17c4ab4de90990956a202ef69ae6be73b73afe"
+      },
+      {
+        "file": "public/audio/cars/pip/low-off.wav",
+        "bytes": 80044,
+        "sha256": "d6b5039bc3d4ccbdb3b773365d5c04d557fcd87bcb508172a3db512c735cc7c6"
+      },
+      {
+        "file": "public/audio/cars/pip/low-on.wav",
+        "bytes": 80044,
+        "sha256": "752032bd80b815ecfae7b43f775bdacdc1f61da627ce857beb7a9ae2d1bbfef4"
+      },
+      {
+        "file": "public/audio/cars/pip/manifest.json",
+        "bytes": 5841,
+        "sha256": "85f1de1630b4e635b8fc1118d5b5f3fd7907612efe2b6ed0ecc0ba1438db2d41"
+      },
+      {
+        "file": "public/audio/cars/pip/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "2eeb9c7f00a88b76db23f532d30bb99b79f441396509ef497e944108406cfab5"
+      },
+      {
+        "file": "public/audio/cars/pip/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "900a815d36b065b04dcc82170e7eaf899bf35d91c47097cc4a3ff6d77c73aa3b"
+      },
+      {
+        "file": "public/audio/cars/summit/high-off.wav",
+        "bytes": 80044,
+        "sha256": "8e9bc237de54f891b77b17b1cfe95e8beb791526ec530e82a4dc00b59a702a8c"
+      },
+      {
+        "file": "public/audio/cars/summit/high-on.wav",
+        "bytes": 80044,
+        "sha256": "6b118e253b69a7c5d416a469b502676f566910e0fa2bc3deca7730065146307c"
+      },
+      {
+        "file": "public/audio/cars/summit/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "baf2799d313042cfd80665371ded004023dc4f2ada71da80c2a8461155f6f3fd"
+      },
+      {
+        "file": "public/audio/cars/summit/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "8353fbf520998bc09ad4b87d4a2385ad0361b4e58743f77775a6040485115488"
+      },
+      {
+        "file": "public/audio/cars/summit/low-off.wav",
+        "bytes": 80044,
+        "sha256": "1561a7467e7ed194d534b958c02c96e04856d88eab9e37b48738678cc26ffc90"
+      },
+      {
+        "file": "public/audio/cars/summit/low-on.wav",
+        "bytes": 80044,
+        "sha256": "db54e82afee9305f88d872a3ddc552bbb3b76ca5f914c8c1338665cff57abe05"
+      },
+      {
+        "file": "public/audio/cars/summit/manifest.json",
+        "bytes": 5823,
+        "sha256": "30eb77122e2821f26983f65191d7e4314a2ee2832a1e7453bff811922cb5eb14"
+      },
+      {
+        "file": "public/audio/cars/summit/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "a36eac42732d48be4247442bcac9043749f9f70f048220f876bd3205598b6e59"
+      },
+      {
+        "file": "public/audio/cars/summit/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "4b867047548498150a8449dc100e73eb2ee9b0894ae077e1f66ebcbb3a166960"
+      },
+      {
+        "file": "public/audio/cars/wren/high-off.wav",
+        "bytes": 80044,
+        "sha256": "7da74406196143f77c90b321bf26f96c84d4552b9180893233bccc50bc855818"
+      },
+      {
+        "file": "public/audio/cars/wren/high-on.wav",
+        "bytes": 80044,
+        "sha256": "0451fd29e2691800674509bf059e5cefcd80c69ad72902faf16912a9f7504ba2"
+      },
+      {
+        "file": "public/audio/cars/wren/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "fd6e150508825ba40a02851fd41446eb3cf50d7cb4c3100ab353ec8f7270fe1d"
+      },
+      {
+        "file": "public/audio/cars/wren/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "5dcbc3944920ccbf9575f8ef0ca7c9866a09d61b049c2a72499ed87977159b91"
+      },
+      {
+        "file": "public/audio/cars/wren/low-off.wav",
+        "bytes": 80044,
+        "sha256": "607181f2c86932ac77aee6ad8c8e36f3573bb99d5212995c46fe3f273cb96c1f"
+      },
+      {
+        "file": "public/audio/cars/wren/low-on.wav",
+        "bytes": 80044,
+        "sha256": "796350775465b5c435911522bfe3aa49d7e9c00b5c4ec53488a7ddf501099bf1"
+      },
+      {
+        "file": "public/audio/cars/wren/manifest.json",
+        "bytes": 5860,
+        "sha256": "a59b08392ce08c15f9ff525d8124ee62f6fe4863401617ed05254cf6d0267e3d"
+      },
+      {
+        "file": "public/audio/cars/wren/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "0e38dbc17d0f40df8d72759ce5a78e55ecda61f357901604ed71f80e96f82e7c"
+      },
+      {
+        "file": "public/audio/cars/wren/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "380e2ec17d34c169dffa19147221a97af5b6ea921ef5de58bee0eb84a771b2bb"
+      },
+      {
+        "file": "public/audio/cars/zenith/high-off.wav",
+        "bytes": 80044,
+        "sha256": "dcfdb7139f424334e125f37beae777dfcee2151c43ea114074a6c72c8665d247"
+      },
+      {
+        "file": "public/audio/cars/zenith/high-on.wav",
+        "bytes": 80044,
+        "sha256": "0e7e045f9b732276994bc8f96957a10292e2da427fed0535537849b9936ce4f4"
+      },
+      {
+        "file": "public/audio/cars/zenith/idle-off.wav",
+        "bytes": 80044,
+        "sha256": "e24aa303b63beaf0af961419235ee1ef87a366e47103b5e56d14e2b6ee6d66b7"
+      },
+      {
+        "file": "public/audio/cars/zenith/idle-on.wav",
+        "bytes": 80044,
+        "sha256": "80934e8aec93fbc5557b36bb79592ae497200451648eb92af01469cf382742ac"
+      },
+      {
+        "file": "public/audio/cars/zenith/low-off.wav",
+        "bytes": 80044,
+        "sha256": "51c28f243154a098a9d4f952b5a2ce2b72b6cf71f0816af9758e002c2debc1ce"
+      },
+      {
+        "file": "public/audio/cars/zenith/low-on.wav",
+        "bytes": 80044,
+        "sha256": "de8d6573c3dc4de8f4c6333656cedadaf6fa35364cfec102cfce1aa52a206dbe"
+      },
+      {
+        "file": "public/audio/cars/zenith/manifest.json",
+        "bytes": 5876,
+        "sha256": "9dfa29004e86a1a18ab3c9a793bd3c47446564cc275599136e948604c48f018a"
+      },
+      {
+        "file": "public/audio/cars/zenith/mid-off.wav",
+        "bytes": 80044,
+        "sha256": "1d470ac5341faf93c5b147405108581fea21b7c2ef25c687ec2fa845a33ee3c9"
+      },
+      {
+        "file": "public/audio/cars/zenith/mid-on.wav",
+        "bytes": 80044,
+        "sha256": "4d5880654f3c426902e109a18fca96f90b15563d742dabfe3b69ebe57d0ed88b"
+      },
+      {
+        "file": "public/favicon.svg",
+        "bytes": 332,
+        "sha256": "1e95cf6b9084af3303a11b6419cb8a3174f91813d8eb906e2123434b1369a8ea"
+      },
+      {
+        "file": "public/fonts/IBMPlexMono-OFL.txt",
+        "bytes": 4456,
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      },
+      {
+        "file": "public/fonts/IBMPlexMono-Regular.ttf",
+        "bytes": 135580,
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+      },
+      {
+        "file": "public/fonts/Manrope-OFL.txt",
+        "bytes": 4387,
+        "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+      },
+      {
+        "file": "public/fonts/Manrope-Variable.ttf",
+        "bytes": 164700,
+        "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+      },
+      {
+        "file": "public/models/aerox.glb",
+        "bytes": 72044,
+        "sha256": "05fcea75565c59dae76c440fb84a486058c251186b7d4f4e59e33aec46a67b3d"
+      },
+      {
+        "file": "public/models/brim.glb",
+        "bytes": 68664,
+        "sha256": "ddab79285b1bc333f9ddd5aa919b5146d9c15f617709459ef54d59c95ff394a3"
+      },
+      {
+        "file": "public/models/cinder.glb",
+        "bytes": 79452,
+        "sha256": "4d6b4c5651f84bbb96bdec10236ea7ce645539dd7670c740b991e3d0da24c3ff"
+      },
+      {
+        "file": "public/models/city-pedestrian.glb",
+        "bytes": 336188,
+        "sha256": "b8045c3543e7f6d1db12255d8fc81fcc5065be47826900fb4c574b09826ce6e5"
+      },
+      {
+        "file": "public/models/harbor-roster.glb",
+        "bytes": 76812,
+        "sha256": "cfcca5e821160f814d5775f2b7162b9ceb21aaa80601c38ac0e7d624071c95c6"
+      },
+      {
+        "file": "public/models/kestrel.glb",
+        "bytes": 56228,
+        "sha256": "60c36d3a9d6731740238ada9a137a33b3f665a51cc07e76043001dbce3fdb701"
+      },
+      {
+        "file": "public/models/meridian.glb",
+        "bytes": 80808,
+        "sha256": "63a9dd49dc3d3c4b43428899f59cc6b2d8821076a9054efc157725fe35853f06"
+      },
+      {
+        "file": "public/models/mesa.glb",
+        "bytes": 94300,
+        "sha256": "716bbc09ea2510a46c6a497d0211ec3703894726da817aa7e162e5ca4c9ac907"
+      },
+      {
+        "file": "public/models/milo.glb",
+        "bytes": 78768,
+        "sha256": "bb573ac639d43ccf84718ab68143abd2452cb732afcf35c17655ddd309c6ceb9"
+      },
+      {
+        "file": "public/models/parkour-runner.glb",
+        "bytes": 402984,
+        "sha256": "1f18828866e446240fd2d69116bbf233d11832f78534690efcf0459fd041950e"
+      },
+      {
+        "file": "public/models/pip.glb",
+        "bytes": 86676,
+        "sha256": "0d49db7c59d2d5012f2a56b2882b27a6d49fb3e019a2e5ab20c0919e46bc9d56"
+      },
+      {
+        "file": "public/models/summit.glb",
+        "bytes": 78568,
+        "sha256": "3e39449db8a2048c2f8e46fae7a36b64b1b30a42397bc971d8f023eab7cb136b"
+      },
+      {
+        "file": "public/models/test-car.glb",
+        "bytes": 76808,
+        "sha256": "ef8b93336643aa588aa7b1f93abd31c5c7b78bdf34771a3f38ab50f1a9954aa7"
+      },
+      {
+        "file": "public/models/test-character.glb",
+        "bytes": 377408,
+        "sha256": "1b1e70e48fec655117066aef58800e47b06540dcc2f113fcf7a4c08486dbaf10"
+      },
+      {
+        "file": "public/models/wren.glb",
+        "bytes": 48596,
+        "sha256": "339ada53b5c20e05fdf6534c542d5bf4ab0ae98c6f3a3eee07a96e6d20910209"
+      },
+      {
+        "file": "public/models/zenith.glb",
+        "bytes": 75316,
+        "sha256": "f8c6e419e74303f1b34b44f08119c0ce107e55ba232646470c13ac71b887e3db"
+      },
+      {
+        "file": "public/release.json",
+        "bytes": 1536,
+        "sha256": "a4e033e848a3f0502d7db591aa3dd096a87768eb933113f1cf8064494535a75e"
+      },
+      {
+        "file": "src/audio/engine-mix.ts",
+        "bytes": 2538,
+        "sha256": "45acc3cd72ef0d966639f4f570840c573d3c8fd6cbf7091c5c862c4f75e189aa"
+      },
+      {
+        "file": "src/audio/index.ts",
+        "bytes": 116,
+        "sha256": "83199de25dc86910af17580f059c52a0ad3115231349551921294b3af1213341"
+      },
+      {
+        "file": "src/audio/parkour-audio.ts",
+        "bytes": 6162,
+        "sha256": "6caa358a0643340ee14086ba6247d7174eb429536876b19224df9f43f6acc33b"
+      },
+      {
+        "file": "src/audio/vehicle-audio.ts",
+        "bytes": 17859,
+        "sha256": "b80d0ae155d803b90ceb4437c5aa8e06ecc9489bc566bc9226a0d63bce62441f"
+      },
+      {
+        "file": "src/config/actions.ts",
+        "bytes": 3292,
+        "sha256": "6fc2eab58c19c776e0840e951460ef5468bdd6fcbdf740d8cc83b06cd5c10748"
+      },
+      {
+        "file": "src/config/app.ts",
+        "bytes": 471,
+        "sha256": "89bde3f6d18ba2abb7415f5025e277166e55d9fb1e026c9135075aa214dc77de"
+      },
+      {
+        "file": "src/config/index.ts",
+        "bytes": 82,
+        "sha256": "105c44dd218682a3dafd2c9e2ed24b450c2df452e0856a61597e51047d6e38a5"
+      },
+      {
+        "file": "src/config/movement.ts",
+        "bytes": 1409,
+        "sha256": "8f18128638c0a08d83457d840602b503991e16c6ea26087aa405316179ff9513"
+      },
+      {
+        "file": "src/config/quality.ts",
+        "bytes": 1766,
+        "sha256": "06b16e195ff5eb3289ae682dac5a8c713772551969d974954e8b278a2f71298a"
+      },
+      {
+        "file": "src/config/session.ts",
+        "bytes": 1541,
+        "sha256": "edd4e0320eec4d4d548db7f845daf88993aef5eed0703b4a916152fbe370e134"
+      },
+      {
+        "file": "src/core/input.ts",
+        "bytes": 9405,
+        "sha256": "56cade30f51f53601a209d49caa9bbacb02645477fbf15eec2192f1388651521"
+      },
+      {
+        "file": "src/core/loop.ts",
+        "bytes": 1508,
+        "sha256": "0ae286cefe23c687e5ade2aed15b552a3d342e26e65c34a25a23f885cb2ea34d"
+      },
+      {
+        "file": "src/core/physics.ts",
+        "bytes": 3330,
+        "sha256": "db847950610a87b76062161779f8d1cb1b4016c9a9b607965ffad7d8f24cdc69"
+      },
+      {
+        "file": "src/core/quality.ts",
+        "bytes": 2165,
+        "sha256": "faad5f21ed4a86ae14c01ecdd873ce25a02bb40d626234100f6a4f097ede3d65"
+      },
+      {
+        "file": "src/foundation.ts",
+        "bytes": 7648,
+        "sha256": "7e690365e2965ce900ffd8e45b0f3a1a66f1bd6cb7db70b6b9abec3d8267736c"
+      },
+      {
+        "file": "src/game.ts",
+        "bytes": 47687,
+        "sha256": "f4eca99d5138a2789778fc8fc5a4c88712d35f93595d931a209e386cce26dfc2"
+      },
+      {
+        "file": "src/main.ts",
+        "bytes": 262,
+        "sha256": "fafbdf1602d555056c1a808b87e457a4e4f1723e1dd825986e723ed2cec60405"
+      },
+      {
+        "file": "src/npc/budget.ts",
+        "bytes": 1358,
+        "sha256": "6c58a9b2430dad4374aaa65af6b69b3dfe86b3f8d072d4a14ea27262d1f82528"
+      },
+      {
+        "file": "src/npc/index.ts",
+        "bytes": 12510,
+        "sha256": "0c3f3a744df258a16c76a6fb2b964f50719b4ea3712fea1da600fa73ea2270af"
+      },
+      {
+        "file": "src/npc/pedestrians.ts",
+        "bytes": 12620,
+        "sha256": "92e5ed1da9564bd82e0ea4e4eac7b537f897626e2c51fe5f5e2449e4c69793a0"
+      },
+      {
+        "file": "src/npc/traffic.ts",
+        "bytes": 21004,
+        "sha256": "393667fd25d72108fd387bab47d66b592191d22d2dc63e9c45cc8103c5291377"
+      },
+      {
+        "file": "src/npc/visuals.ts",
+        "bytes": 18735,
+        "sha256": "5dfd690b04df0c24cd02d382957adb3902cebc2b5e3e5de6ee2cbf8c1ac612e2"
+      },
+      {
+        "file": "src/parkour/ParkourRun.ts",
+        "bytes": 12980,
+        "sha256": "1bda1474b5b35e58414fb58a8cc9591ff2ff59763924c1666bac3b2d5b43d4d6"
+      },
+      {
+        "file": "src/parkour/bot.ts",
+        "bytes": 1281,
+        "sha256": "01e29cbd5bc60e3b074b829185308c1a42066936a3edc29a7c72f484ba97d7ae"
+      },
+      {
+        "file": "src/parkour/generator.ts",
+        "bytes": 17133,
+        "sha256": "86e6aaeb0bdfcf3a46f299a79330150c48e0ff43bf129df4b9d49fd1c1a1b493"
+      },
+      {
+        "file": "src/parkour/hazards.ts",
+        "bytes": 591,
+        "sha256": "23f637f31e6792504585e3b39f5c5b6a221291a0fe3de0b7654a672ea1b25f30"
+      },
+      {
+        "file": "src/parkour/index.ts",
+        "bytes": 238,
+        "sha256": "de12f66e4aa30480dfbeae4a8b05004bdbb7a9fa6e8e5724da6ee41df2fc158c"
+      },
+      {
+        "file": "src/parkour/physics.ts",
+        "bytes": 5818,
+        "sha256": "50a141c0ae167d954c93b1b0262fe8ab94a1ae8e2a6c04a064ca2c107961a038"
+      },
+      {
+        "file": "src/parkour/types.ts",
+        "bytes": 3230,
+        "sha256": "56ef7a3e8402e42810e479dab367780f8aa442999ba3f69ef69def0ef7205181"
+      },
+      {
+        "file": "src/player/camera.ts",
+        "bytes": 2068,
+        "sha256": "5a9a35b8e0b3b4727b27db2f77f046b35c665b8eceab9d075f4561baa8ca90fb"
+      },
+      {
+        "file": "src/player/chase-camera.ts",
+        "bytes": 5609,
+        "sha256": "7ab6802a1ec9f2010e6f5f65721934e4124380240cc4b63fa3de6dcb0a85fcc2"
+      },
+      {
+        "file": "src/player/controller.ts",
+        "bytes": 13106,
+        "sha256": "1d03121f2a393c5271950af6539cfcef84b2b5ba9ff0cf263d765925384c49ca"
+      },
+      {
+        "file": "src/player/fly-camera.ts",
+        "bytes": 1941,
+        "sha256": "ff307cf7699f4d0bbde26edd9a97bbbb5d80774a4ceb99f837a0aa57f12cf366"
+      },
+      {
+        "file": "src/player/index.ts",
+        "bytes": 111,
+        "sha256": "13d5a59a9276fdfd55358b065e5d992f35fc545547262a41f5d2ae6a44eaf6e3"
+      },
+      {
+        "file": "src/player/runner.ts",
+        "bytes": 5898,
+        "sha256": "c5424592abd56d43cbf683a0838e8a1cec4f28a4f0c7619f00ee87f6f1f2785f"
+      },
+      {
+        "file": "src/police/index.ts",
+        "bytes": 79,
+        "sha256": "86345d91f0c6dcd06d74ff6165a35508a30e3dad39cc897a515b8fb089fc27ef"
+      },
+      {
+        "file": "src/radio/index.ts",
+        "bytes": 86,
+        "sha256": "5721d9d7fa37c554be3a9eef5b6f0313812fd4e4509cef2f54bf9a694d582903"
+      },
+      {
+        "file": "src/rendering/renderer.ts",
+        "bytes": 3633,
+        "sha256": "091274f53c5c3af782685cb8e28bfd3906fe9100365b8e91a56d55ae7b60df27"
+      },
+      {
+        "file": "src/save/index.ts",
+        "bytes": 3463,
+        "sha256": "f69183261bf41b2f6d8ecc94e1cab92b273dd493a29f38246d245e00cd77d513"
+      },
+      {
+        "file": "src/save/parkour.ts",
+        "bytes": 3513,
+        "sha256": "2340a12b14ff369505446478f08685039244a622a1bf258874a81d0c186b970d"
+      },
+      {
+        "file": "src/style.css",
+        "bytes": 26552,
+        "sha256": "1358f5a3914a66eba3724b76e09162694d1dfe6f55e640912510ed047f97e133"
+      },
+      {
+        "file": "src/ui/city-hud.ts",
+        "bytes": 8830,
+        "sha256": "ea683d2fef30ff76c3ab6c3831fe2a82fef79f87b2589e2a28c84ad4dc06a849"
+      },
+      {
+        "file": "src/ui/crosstown.css",
+        "bytes": 11571,
+        "sha256": "461976f39e111c7dfc228311c9d4ec9743e2aded2297a0babcc81243c782c2af"
+      },
+      {
+        "file": "src/ui/index.ts",
+        "bytes": 22275,
+        "sha256": "66a00a03b7d4331b483082c727ad1520d90cfe6c8cbe7e3d49492467e090d914"
+      },
+      {
+        "file": "src/ui/parkour-hud.ts",
+        "bytes": 13164,
+        "sha256": "103263a2bfb2ce75b2fe040db48d596d95da5f285b2c574675fdcff7d24df22c"
+      },
+      {
+        "file": "src/ui/parkour.css",
+        "bytes": 15630,
+        "sha256": "b6f41d351a009dffbd9fb2c8d219bab28cdd1a663df990a8b2ca36ec1366490a"
+      },
+      {
+        "file": "src/ui/session-setup.ts",
+        "bytes": 6775,
+        "sha256": "00261357f43bbfdd1c069bfe6cbedb54ebd6157166ff3ce56ff9b55044decbb5"
+      },
+      {
+        "file": "src/ui/vehicle-hud.ts",
+        "bytes": 9562,
+        "sha256": "57fad36eb9e057c88d2e32e7a2ea30873d706ecd5a8c8a9f8077b3766604e073"
+      },
+      {
+        "file": "src/ui/vehicles.css",
+        "bytes": 9820,
+        "sha256": "93c5f5e79e5982c016b0e3c9194e0a3cc5f3f388833cb8dd8ef7a1dff9ad2f54"
+      },
+      {
+        "file": "src/vehicles/cameras.ts",
+        "bytes": 4316,
+        "sha256": "589f9bd61300275e27ba8b7a1899b0dc2ebad45d07bcc62fb2c31e2bdfeb0fa7"
+      },
+      {
+        "file": "src/vehicles/cars.ts",
+        "bytes": 12697,
+        "sha256": "f3b6370881a37b9633e7c35cc16cc5e2b7ebb8a49ed1dfad4bb2ff738cbe79ec"
+      },
+      {
+        "file": "src/vehicles/circuit-data.ts",
+        "bytes": 5813,
+        "sha256": "a560ced23c3338726963dfab9e118103b259051f5d97ee6c95abe818f3ea7f3c"
+      },
+      {
+        "file": "src/vehicles/circuit-physics.ts",
+        "bytes": 1079,
+        "sha256": "9d3481f98220c6151d234319ef90cebd0d60dfb798087bbd96a83213c145ab58"
+      },
+      {
+        "file": "src/vehicles/circuit.ts",
+        "bytes": 2022,
+        "sha256": "2bdf213efc290f3ff964ee1501b885ee8e5003fcb7361174a38ef928a2ace638"
+      },
+      {
+        "file": "src/vehicles/circuit.worker.ts",
+        "bytes": 346,
+        "sha256": "a0bea6fb722123113d781b8044e458b3f4a43870d3c30c3c269347dbfc380223"
+      },
+      {
+        "file": "src/vehicles/cockpit.ts",
+        "bytes": 23343,
+        "sha256": "bcedbef167e4b4fda9f76b8091a3e0a53f8864951715f741cad39e2fdd1f390e"
+      },
+      {
+        "file": "src/vehicles/damage.ts",
+        "bytes": 2102,
+        "sha256": "39c3b14439f4c4782b946eda409e2351e8186fe6fd155c2190c9a672187696e8"
+      },
+      {
+        "file": "src/vehicles/engine.ts",
+        "bytes": 6769,
+        "sha256": "4172777849ae6d7b0b037ec26bbb19651b5fdfbdc7d7f3cae93caa1fea84f9f0"
+      },
+      {
+        "file": "src/vehicles/garage.ts",
+        "bytes": 3972,
+        "sha256": "8f2de1c27d0ba7e14d205c76650e00a0f4ed7b9132b696fcf6c6829d305f0c13"
+      },
+      {
+        "file": "src/vehicles/geometry.ts",
+        "bytes": 929,
+        "sha256": "d3a1db709ab42c68231edef84835ed4e8da97b544d1ed64c7d46092e7f118831"
+      },
+      {
+        "file": "src/vehicles/index.ts",
+        "bytes": 21352,
+        "sha256": "7a385f0449b76d23dfab5bbbb0c6fec5b4e8f36cfbdae4f105e2168c8005b977"
+      },
+      {
+        "file": "src/vehicles/library.ts",
+        "bytes": 1353,
+        "sha256": "bcbd2c6260afd60b9c5569f5c5346fea599d44b43fc724c2f7350aa6c6d7ba5a"
+      },
+      {
+        "file": "src/vehicles/parking.ts",
+        "bytes": 4086,
+        "sha256": "35f765b780f70cde8c993f63b68604f704f37caed1cf480fe8e65bed793613bc"
+      },
+      {
+        "file": "src/vehicles/physics.ts",
+        "bytes": 14850,
+        "sha256": "360fbb39ed6d46ad4aaeff59008a8fa79b3f04f092b4e3e8a67070fe1268bcf9"
+      },
+      {
+        "file": "src/vehicles/services.ts",
+        "bytes": 7736,
+        "sha256": "35cc8130635f367000f1ed694479b5d81f3a38f1d79877c1366876a630fb5e8e"
+      },
+      {
+        "file": "src/vehicles/test-pilot.ts",
+        "bytes": 2501,
+        "sha256": "ca4dc817d7f63e0ed2d81bbe148aed5fdf5f8f89c0f2cf39d55f999c69d4dac2"
+      },
+      {
+        "file": "src/vehicles/visual.ts",
+        "bytes": 20768,
+        "sha256": "7a999fd0e85187d11983a1b917ce4cc8bd2adeb5e9371f60df61177a4e3c53c5"
+      },
+      {
+        "file": "src/vite-env.d.ts",
+        "bytes": 38,
+        "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+      },
+      {
+        "file": "src/weapons/index.ts",
+        "bytes": 72,
+        "sha256": "e9e48bec36df9a6172590dc1a46f46b9b9c16c2c4b88cfa7fde22d9f8aa44613"
+      },
+      {
+        "file": "src/world/bake.ts",
+        "bytes": 2282,
+        "sha256": "26e89888b0f86652c0fecafabb1a1e8d72e8f1940c7ec95327b4da72a3a06a46"
+      },
+      {
+        "file": "src/world/city/city.worker.ts",
+        "bytes": 757,
+        "sha256": "cbe32718c0d08aa4350ef979f93e596ed3fbc06195ec209e2683104e2d740ce9"
+      },
+      {
+        "file": "src/world/city/environment.ts",
+        "bytes": 8643,
+        "sha256": "9a43c84cde8bd23ce76a77ae721f75e3ceba07bc7975444e6c254270e05d9fae"
+      },
+      {
+        "file": "src/world/city/generator.ts",
+        "bytes": 23634,
+        "sha256": "36874b344e7aa0f782663a378a57f7a824b47d6ae98c961a3aec767cd7614133"
+      },
+      {
+        "file": "src/world/city/layout.ts",
+        "bytes": 13097,
+        "sha256": "6f559ec74f27612bff4d8c9ec41708cd4078baf14498dae523f8efe41df5b704"
+      },
+      {
+        "file": "src/world/city/mesh-bake.ts",
+        "bytes": 4724,
+        "sha256": "66146b815f9754a3150adfaf34e16a5e07ae33b5350ed31e6fc98c1970848197"
+      },
+      {
+        "file": "src/world/city/physics.ts",
+        "bytes": 6754,
+        "sha256": "df76de5d78903c3e06678b411543a4fa7360c66f50c95db4bff5b2ab2bf33d5d"
+      },
+      {
+        "file": "src/world/city/stream.ts",
+        "bytes": 29090,
+        "sha256": "5c62466abac82314a97542c44806a33317a1ce4ade408967ee524a9e781651a5"
+      },
+      {
+        "file": "src/world/city/types.ts",
+        "bytes": 2253,
+        "sha256": "403fa186131071296a43c0db0d7540ea6620a427eba5f3f38b1318434db7e81c"
+      },
+      {
+        "file": "src/world/city/worker.ts",
+        "bytes": 1497,
+        "sha256": "617cf2202009e6940067dfc58b35aab46036f5a3f4facf52f3286e89a5a3313f"
+      },
+      {
+        "file": "src/world/generator.worker.ts",
+        "bytes": 613,
+        "sha256": "7e698e794067176ddcfb19298d399d6af9d38e45767019ed19c7cceeb536b795"
+      },
+      {
+        "file": "src/world/index.ts",
+        "bytes": 1059,
+        "sha256": "b483d055930e47796ea22d0d035a7df1e53bb993ad2ac954d9fa24a2c022fb57"
+      },
+      {
+        "file": "src/world/rooftops.ts",
+        "bytes": 36369,
+        "sha256": "5e8e826034b747aa0fcb9153baa28ec16906c4ea02342f4bce5246f484308a85"
+      },
+      {
+        "file": "src/world/route-worker.ts",
+        "bytes": 1439,
+        "sha256": "5ec9331ad5a10795fc4819f482865988022f0b92214d70cc6ad4f8967b60c40f"
+      },
+      {
+        "file": "src/world/route.worker.ts",
+        "bytes": 701,
+        "sha256": "40e15b0abc88b199c0be1b1c5534a8d63935622ec0cc83ec89830dcfc1e7f8ce"
+      },
+      {
+        "file": "src/world/test-scene.ts",
+        "bytes": 6365,
+        "sha256": "463f5e5eca62834342c999a07a067ecf9736f798aa5d9583566766acda797baa"
+      },
+      {
+        "file": "tsconfig.json",
+        "bytes": 551,
+        "sha256": "a49a89e8c3fe62aa80b0afffcfcc9961c9f86eaf3d5feee8a201f6f4d72cf2a8"
+      },
+      {
+        "file": "vercel.json",
+        "bytes": 643,
+        "sha256": "41f83fe9ca586432dd00883d1667b4f89b9541951cd662cdbc5b58319a01743e"
+      },
+      {
+        "file": "vite.config.ts",
+        "bytes": 735,
+        "sha256": "37e9fbedebe810352f13b90e9868d165e77e7a6641d687b7b7c1bf4d81470874"
+      }
+    ]
+  },
+  "verificationSource": {
+    "sha256": "d75356e457ef55d2f893709816d11aa91a21280f25dc29708aad027cc93bcef3",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "files": [
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.yml",
+        "bytes": 1046,
+        "sha256": "6a9af0b1aaa1f2b46886b6058ede101596ec9a3ca0f9397b0493ccd7809e38f6"
+      },
+      {
+        "file": ".github/repository.json",
+        "bytes": 847,
+        "sha256": "fff1e81aa2bcbdd4e26cbbd333c0f5342c91c7d961d13bbd2c46101dbba2f036"
+      },
+      {
+        "file": ".github/workflows/checks.yml",
+        "bytes": 2244,
+        "sha256": "ab17db58043cd676254bcac248dd6028edeb963940790769184d1d7fb895b928"
+      },
+      {
+        "file": "playwright.city.config.ts",
+        "bytes": 387,
+        "sha256": "9ed13ed5135067cefb34b2b9449a9f27140b8ba80401e21305dcf59e65c8684a"
+      },
+      {
+        "file": "playwright.config.ts",
+        "bytes": 1412,
+        "sha256": "2b6859d37df25bf352defcd7f3d1069aa78e66ba4804da7e2c35b2aaf114876b"
+      },
+      {
+        "file": "playwright.deployed.config.ts",
+        "bytes": 945,
+        "sha256": "7fca34550ac1dd3972c1d70a8daf3faf3b7e58b443f1eaef1d6a0ee16fbbc9b8"
+      },
+      {
+        "file": "playwright.fleet.config.ts",
+        "bytes": 403,
+        "sha256": "de0c21e4c2809e342efaa8adf8f3d2f9e24c1e8a4d3e6a9b462a69a5556dfc12"
+      },
+      {
+        "file": "playwright.parkour.config.ts",
+        "bytes": 524,
+        "sha256": "05faf02a75c4844afd982b2bdb8f8df294af206fa43883cdfb7b18b369a0ebf0"
+      },
+      {
+        "file": "playwright.production.config.ts",
+        "bytes": 673,
+        "sha256": "a53d07694cc5698b551ac3b0b3b29d525fb3eafb497fa4476a5a8fd700a78b7f"
+      },
+      {
+        "file": "playwright.vehicles.config.ts",
+        "bytes": 454,
+        "sha256": "cbc726d84c851bbf164eaac2df2346ada4492fc136e76e7c4d5ea5b30c1c6ebb"
+      },
+      {
+        "file": "tests/browser/crosstown.spec.ts",
+        "bytes": 12202,
+        "sha256": "6645d37c9fdf2db3b41441f99705aa1da1749caf1c2e63562ffd4d4ef60c3fb2"
+      },
+      {
+        "file": "tests/browser/fleet.spec.ts",
+        "bytes": 12720,
+        "sha256": "f8aaea6bed65915bcf2600c5f2fea28ec7ea1db686a0c04c82695931d8fa5349"
+      },
+      {
+        "file": "tests/browser/foundation.spec.ts",
+        "bytes": 10460,
+        "sha256": "e2ac184cfa9f4fc048915453e0eabcfc4b0c5e7043b818fe74740b6f937c5225"
+      },
+      {
+        "file": "tests/browser/parkour-full.spec.ts",
+        "bytes": 2652,
+        "sha256": "8fd9cc30ad40c6a7b4c6587ebeb44d44a7da8d566196245c9ba9e012cbe34afc"
+      },
+      {
+        "file": "tests/browser/parkour-helpers.ts",
+        "bytes": 1559,
+        "sha256": "a5cb7576d2b90fedcb3696082308a06ffe201dba3c73958da99cd381f6192350"
+      },
+      {
+        "file": "tests/browser/parkour-training.spec.ts",
+        "bytes": 1091,
+        "sha256": "084c438c5322cc411795efd74b6b4614aec62f92fd060f0835903008622c17b6"
+      },
+      {
+        "file": "tests/browser/parkour.spec.ts",
+        "bytes": 5555,
+        "sha256": "c82f9492ccdded90baa2c44c6eddaea4cf0e17668263598ee68d19e15f5b9fa4"
+      },
+      {
+        "file": "tests/browser/vehicles.spec.ts",
+        "bytes": 19917,
+        "sha256": "a77ca9cc65e403e1427a5afb0b01d7d9a31bbee680fa4a88a726e5a21a31f86a"
+      },
+      {
+        "file": "tests/unit/assets.test.mjs",
+        "bytes": 1893,
+        "sha256": "74a8de017dd72f780a4f6490222dfe3329f23ffe8901e998d71b27e38c4048a4"
+      },
+      {
+        "file": "tests/unit/city.test.ts",
+        "bytes": 14296,
+        "sha256": "c11a0ba443b709ad8b2919fd9342625ee5cee82cfac1b3797c8ba7345093355f"
+      },
+      {
+        "file": "tests/unit/fleet-geometry.test.ts",
+        "bytes": 5456,
+        "sha256": "fe6455722b438a989955b06d505a2da810d14aa92e19614ecb4f2fd5d64d74da"
+      },
+      {
+        "file": "tests/unit/fleet.test.ts",
+        "bytes": 10640,
+        "sha256": "849712a2f9566789ff0cc8a4f7e587eb388b4914e001c4667599d65128715f90"
+      },
+      {
+        "file": "tests/unit/input.test.ts",
+        "bytes": 1320,
+        "sha256": "89caeb67f7b744b8dfd5c3da31a3fb271dc639057fb7c425481d8a449d6f2366"
+      },
+      {
+        "file": "tests/unit/loop.test.ts",
+        "bytes": 2004,
+        "sha256": "879283a2857c7f289e9ab90e7acc6320065a3e85cf45fb9b5fe2989c4011fe53"
+      },
+      {
+        "file": "tests/unit/parkour.test.ts",
+        "bytes": 18029,
+        "sha256": "c60c8a2745d477a831132c307974c64acda2eaabbec9d466af904b52239db535"
+      },
+      {
+        "file": "tests/unit/physics.test.ts",
+        "bytes": 1168,
+        "sha256": "5b97b6bddf2b7dde8f60dd8f53133e82ba8613a27c0207384f472b9c5c1f7655"
+      },
+      {
+        "file": "tests/unit/population.test.ts",
+        "bytes": 5932,
+        "sha256": "f6326f767e77a4126f7f22491774672166b82d300680237d396881af14cb2ccf"
+      },
+      {
+        "file": "tests/unit/quality.test.ts",
+        "bytes": 2173,
+        "sha256": "77ce4bb96e97617e5f48bd7e81b7a0938c8e1cee39dd6975cff985390a3c67d7"
+      },
+      {
+        "file": "tests/unit/save.test.ts",
+        "bytes": 2904,
+        "sha256": "78730d4264324ee7d404b6fe80c73bc3d52878b562afb0ed7669b840bd58c0f8"
+      },
+      {
+        "file": "tests/unit/vehicle-ownership.test.ts",
+        "bytes": 3758,
+        "sha256": "0d143ee5512fe43ac7da2e6a8b6a1076e36a4627f70cf5908471b561e406bbe4"
+      },
+      {
+        "file": "tests/unit/vehicle-systems.test.ts",
+        "bytes": 11496,
+        "sha256": "19c901f9c6cc02503680f7079bb9fc0aafcba9cf54d38afa5a72be7ec05f85cf"
+      },
+      {
+        "file": "tests/unit/vehicles.test.ts",
+        "bytes": 5264,
+        "sha256": "7bfce6e930cf7127f898904580f9d624fd79c48f47aa7a13fe4d2744099903ad"
+      },
+      {
+        "file": "tools/accept-population-reactions.mjs",
+        "bytes": 7808,
+        "sha256": "72d6bc125be542795d60e7c97754b5f7165c6c2a5bf8d48eec476c5eccd90a19"
+      },
+      {
+        "file": "tools/accept-population.mjs",
+        "bytes": 10075,
+        "sha256": "c3af01ccf29b1c8eebbfcadad8e5c17ce2543f9c7ed2d3ecc321d85f6b49b28d"
+      },
+      {
+        "file": "tools/accept-roster.ts",
+        "bytes": 3571,
+        "sha256": "67c5f26bfd98d6db0fa43670cc4769268ff6e6aa6b16302185f81114561faddf"
+      },
+      {
+        "file": "tools/accept-traffic.ts",
+        "bytes": 3700,
+        "sha256": "7dd41f6c65ff2bb6788900c2c03ea25f76198e34b1a6479bc609181c46440cad"
+      },
+      {
+        "file": "tools/archive-evidence.mjs",
+        "bytes": 2650,
+        "sha256": "805756cfdcf8e9e307708837785542da4ec17456b68548dd5a1040d0ca36c9d6"
+      },
+      {
+        "file": "tools/asset-lib.mjs",
+        "bytes": 7243,
+        "sha256": "2cee7f5e6c0f96fa563a99e243dde1331a1385150f5d78843bc2ac914849d9d1"
+      },
+      {
+        "file": "tools/check-assets.mjs",
+        "bytes": 2124,
+        "sha256": "566b9bb7e29d9270f05ce119326e9b12239b59b77d0dc7a8643b540870e15197"
+      },
+      {
+        "file": "tools/check-handoff.mjs",
+        "bytes": 6922,
+        "sha256": "e89150fc008d4b14ce988c776941dbb34ee1187ff46cebb9e0e6c0b75b355a71"
+      },
+      {
+        "file": "tools/check-versions.mjs",
+        "bytes": 1277,
+        "sha256": "d9bb383ded6a4286e07c673b15b25f6b2dc1129af0f3b4aa6f36eec9b69548fe"
+      },
+      {
+        "file": "tools/credits.mjs",
+        "bytes": 7540,
+        "sha256": "3471f0c53aded1f7bbae938d3a5f5eead8999c24fa7615b4b4e56cfb786dee4d"
+      },
+      {
+        "file": "tools/fingerprint-runtime.mjs",
+        "bytes": 1393,
+        "sha256": "32a324e6c57535d251a2881c0e1985e621d79e4b381b8621ada5061642d0c39c"
+      },
+      {
+        "file": "tools/make-progress-gallery.mjs",
+        "bytes": 20077,
+        "sha256": "37605e85b5f5f7b0cd28a3866a4f31be56cf8d45959448d04bf972754280e6e7"
+      },
+      {
+        "file": "tools/optimize-captures.mjs",
+        "bytes": 2268,
+        "sha256": "b1804e5015d7785f2691c8f56aff1c4cbd89580b27449010820deb0c9ab1f51f"
+      },
+      {
+        "file": "tools/package-project.mjs",
+        "bytes": 9430,
+        "sha256": "017e212ba72613eb240f93e9a06b43c3bcd75dd88ce0de8e508b0e14465c5b99"
+      },
+      {
+        "file": "tools/prepare-asset.mjs",
+        "bytes": 11363,
+        "sha256": "8a3fb0fb82bec3d189493300d53027c35bfcd0da5fccb8688d4b987c77bcd762"
+      },
+      {
+        "file": "tools/prepare-car-audio.py",
+        "bytes": 5705,
+        "sha256": "a58ea62eb66cbc23f2f6f4a90f0b22ac18fa0f640aa570459b7eb02d62f2e9d6"
+      },
+      {
+        "file": "tools/prepare-fixtures.mjs",
+        "bytes": 371,
+        "sha256": "c4e2e8ce7cb28d4e77247d20de14aca5d924a99929b321e0a3b4baa0eeba0765"
+      },
+      {
+        "file": "tools/prepare-parkour-character.mjs",
+        "bytes": 6521,
+        "sha256": "78f5c454d7c461aad7cd099b3bc28ac856fd0f45e32ec2c7b8cf9226db3808d9"
+      },
+      {
+        "file": "tools/prepare-public-release.mjs",
+        "bytes": 5979,
+        "sha256": "1c179940f567eed4c640915fd7fe4475004785a5c6535c5c7a7bbc56d0e8e830"
+      },
+      {
+        "file": "tools/prepare-roster-audio.py",
+        "bytes": 3172,
+        "sha256": "e627e5a57aa226d2cfb75a4442a8a965a99f65a41266c2b151f39a619d99adf9"
+      },
+      {
+        "file": "tools/prepare-roster.mjs",
+        "bytes": 9182,
+        "sha256": "5fb29f6a1ce645e0d3f5c3b58ab4ca7d92c0d64e8144bfda4d58798c26b2c7f9"
+      },
+      {
+        "file": "tools/profile-browser.mjs",
+        "bytes": 6279,
+        "sha256": "eb3c4633ab77c0458e7d262ea41f08df724700f4b9dff805d8c41baa0ca251bf"
+      },
+      {
+        "file": "tools/profile-frame-cost.mjs",
+        "bytes": 7095,
+        "sha256": "be57d0869cac58f2fb82a06fded10cc3004e6f30ded149f353658341459d2cd2"
+      },
+      {
+        "file": "tools/publish-github.sh",
+        "bytes": 2724,
+        "sha256": "557a3b8609a8690b303836919ffd79b7fe79ce3993eb5cd1f9fc8589b40439c0"
+      },
+      {
+        "file": "tools/release-evidence.mjs",
+        "bytes": 19166,
+        "sha256": "442f6f6d2eb79da1061b153b9c5713a7df81031579b192d1d4959b4e9a793be4"
+      },
+      {
+        "file": "tools/serve-release.mjs",
+        "bytes": 1798,
+        "sha256": "7600fecbc341d8065b362597fe307cf57f0239337855da1be2162b86d45452fc"
+      },
+      {
+        "file": "tools/simulate-parkour.ts",
+        "bytes": 2735,
+        "sha256": "d0ba6108feec0c481c7c8f0fef28976c1871bbf933e148b3b0cbd88309d95020"
+      },
+      {
+        "file": "tools/smoke-public-car.mjs",
+        "bytes": 4474,
+        "sha256": "152e99e5ddce4db42337547c22d4c4893b3e4be13d2ea794f0198f97c0ef813b"
+      },
+      {
+        "file": "tools/trim-civilian-roof.mjs",
+        "bytes": 2554,
+        "sha256": "c32b3fab13c3157a8c49659c024d1f069aa60c372654edf6c09ef99f7a016d42"
+      },
+      {
+        "file": "tools/verify-deployed.mjs",
+        "bytes": 2301,
+        "sha256": "69ae4ad4497770ac44f96cec8e8038a389d32dc653c3930e3606a3a70e232afa"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "file": "CREDITS.md",
+      "bytes": 21025,
+      "sha256": "1577478579c780294807f5f8a1f3b47ffdbf8f03294cefffc99ea03555766076"
+    },
+    {
+      "file": "README.md",
+      "bytes": 15499,
+      "sha256": "6ea20b14b54be60072e8a0b01fdf70da59efdb0787a7348fb06424deca3e250d"
+    },
+    {
+      "file": "docs/ASSET_PIPELINE.md",
+      "bytes": 16643,
+      "sha256": "2f93b7d3d7dc3e83cc3cd8709904059fa42f3210704fa7f5cc6527f3d8eff091"
+    },
+    {
+      "file": "docs/DEPLOYED-FILES.json",
+      "bytes": 42738,
+      "sha256": "1692e02ee8af51eaf3ccb5297f405e5929ed24e2baec097f158f0c8e346edeb5"
+    },
+    {
+      "file": "docs/DEPLOYMENT.md",
+      "bytes": 7470,
+      "sha256": "53ad05c7f1fe0d8adbafc1ef7e54108277e3d61c32d248d9c99113d4e57f7a45"
+    },
+    {
+      "file": "docs/EVIDENCE-COMPRESSION.json",
+      "bytes": 10003,
+      "sha256": "ec21c3ef1b65524dc24043d1cf9e7964b21aa16b897e691e73e270a192f6866d"
+    },
+    {
+      "file": "docs/FINDINGS.md",
+      "bytes": 22657,
+      "sha256": "ffab08fa1c7f3cec7acbfb15573f5e54e80080ce775fb1e413c6fa34915db640"
+    },
+    {
+      "file": "docs/FLEET.md",
+      "bytes": 6425,
+      "sha256": "78bf62bf89cdf3d4acc59d72b592d33bb12fcfd9865a54756fb81cfe7056243e"
+    },
+    {
+      "file": "docs/GITHUB.json",
+      "bytes": 561,
+      "sha256": "443e6ed1a2cc6f650344ebcf6a7e25a89ab0de57533b3cdfff579b6b2972ce45"
+    },
+    {
+      "file": "docs/POPULATION.md",
+      "bytes": 7526,
+      "sha256": "a5d86eb6d921f102638747f31362e44ce2c1f8606a3ea88499f07e4bffbc3610"
+    },
+    {
+      "file": "docs/PROGRESS-GALLERY.html",
+      "bytes": 1548128,
+      "sha256": "9426349300697d6074b1c414e2f8ae57bdd55b0fa7b2ad7f593fde4ea0f80b78"
+    },
+    {
+      "file": "docs/PROGRESS.md",
+      "bytes": 53858,
+      "sha256": "35d4bed0a5ce1e1ac66971e69acf7b00c54d7ec4329d8be64c7469cfde73c9ae"
+    },
+    {
+      "file": "docs/PUBLIC-BUILD.json",
+      "bytes": 31563,
+      "sha256": "44cdb390ed84de1d1d448c717ae00338b559e5ce3f8e0dac8266670c4ece0687"
+    },
+    {
+      "file": "docs/ROSTER-AUDIO-ASSETS.json",
+      "bytes": 76793,
+      "sha256": "0351bf5bcaacfa7e332304a408ff6eff519fe6946ec9dd4b86cff2ecd8560f28"
+    },
+    {
+      "file": "docs/SCREENSHOT-LOSSLESS.json",
+      "bytes": 42448,
+      "sha256": "47fa18a3104d8169c973308ecb0fa60fd0d7f750012133d3f1919c87b5efc1d8"
+    },
+    {
+      "file": "docs/SCREENSHOTS.md",
+      "bytes": 9214,
+      "sha256": "4ba651ad264253d9171b4dc54a794854eab1ac4d985327fb1883d5299be2280a"
+    },
+    {
+      "file": "docs/SOURCE-ARCHIVE.md",
+      "bytes": 2513,
+      "sha256": "9bff05558cfae56f606b6843ef7aa99890e3acb9e3ad7f775b2b4260dfd8f47c"
+    },
+    {
+      "file": "docs/TEST-RESULTS.json",
+      "bytes": 53672,
+      "sha256": "b67f181667171615ed14943bfe26b29d312e618311c9426f43f6f55b3ac57fc4"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "bytes": 13720,
+      "sha256": "fc48168fd0defe134ddc6c1350b7e50546ef5ef8247b99ae98759b39d82d5e83"
+    },
+    {
+      "file": "docs/VERCEL.json",
+      "bytes": 1917,
+      "sha256": "504315cf242b58b1295c9d999fc6fd359b9a201600ddd8196ed76ccac8411528"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/assets-after-trim.log",
+      "bytes": 1541,
+      "sha256": "acf45b58c2df6925a2168b5c20343db886ed2b1dfc9e9d29fa657f354a79e625"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/assets-check.log",
+      "bytes": 1541,
+      "sha256": "1b7e9d348e437251a4eaca3a61e99997327fb3bd1f0c1868bbf2f49829874422"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/assets-pre-route-fix.log",
+      "bytes": 1541,
+      "sha256": "dfb3b571106866eba89cd66e92b0f5f898e6f4d60464b2f8dfd721708d5db0bd"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/assets-roster.log",
+      "bytes": 2948,
+      "sha256": "05cfa7a2e11cf70635006f21d89e98def33d20599c42698efac8152dd97701a7"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/assets.log",
+      "bytes": 1541,
+      "sha256": "dfb3b571106866eba89cd66e92b0f5f898e6f4d60464b2f8dfd721708d5db0bd"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/build-pre-route-fix.log",
+      "bytes": 1082,
+      "sha256": "b314c6d2d03edfd99615d3ff04909b3654722185d60b1eaec9f78f12fc32af82"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/build.log",
+      "bytes": 1082,
+      "sha256": "5f87e5dde1bd01fb3218983495f1a1428f4b2c30e2082afd7ac4849b4736f151"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/city-regression-report.json",
+      "bytes": 6537,
+      "sha256": "4e2b7ded2b2ce8812fdb114d58c95bad75bf096cfe391c66cecb6f8738b09683"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/city-regression.log",
+      "bytes": 857,
+      "sha256": "b0bc46d1239a384ed2a92df9d1674bfa6ac399cad55f7617bb737034bdc8244a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-browser-report.json.gz",
+      "bytes": 1910155,
+      "sha256": "761153eb4b40b278f916aca755047ec6fa6bcec38c1bb1e4210ba7ddc14babff"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-browser.log",
+      "bytes": 1050,
+      "sha256": "3dadc12dddbc3da84114f353911bc980bd5e4a59564843c26db22d8a6d4aba6c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-files-after-transfer-shutdown.json",
+      "bytes": 42738,
+      "sha256": "1692e02ee8af51eaf3ccb5297f405e5929ed24e2baec097f158f0c8e346edeb5"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-files-before-transfer-shutdown.json",
+      "bytes": 42738,
+      "sha256": "c40394363c09440c6dc2606d930eabb7f69802876cc519679dd59cf8cea0065c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-integrity-after-transfer-shutdown.log",
+      "bytes": 9876,
+      "sha256": "8acf495f5f336dcc1c89c6f87dfe4e1c1e618329346deb001acefd83e07912d3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/deployed-integrity.log",
+      "bytes": 9876,
+      "sha256": "8acf495f5f336dcc1c89c6f87dfe4e1c1e618329346deb001acefd83e07912d3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/final-functional-batch.json",
+      "bytes": 1839,
+      "sha256": "fac98fb37517e889116c7b920ac15893aefd9a39b1bef9bf5d8036d75edfb56a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-first.log",
+      "bytes": 5772,
+      "sha256": "640119d899244cb6e12793b7739830db4522be50a00c84560889dcf83cc453d4"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-massfix.log",
+      "bytes": 587,
+      "sha256": "50bcd4ad14a7c9effd6620b4bf3b6a17a69fb7ff42b365547b370ef850ea13b2"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-pre-route-fix.log",
+      "bytes": 1268,
+      "sha256": "57e4f4207176ce8a2f3de7ac790f6fc63d5499e92843a4595b4bf7f60c75d2bf"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-pre-stationary-impact-report.json",
+      "bytes": 8828,
+      "sha256": "9b1d7484467e623b7dfd9126e64e2eef173b415b025ecf11186c8086dc9b6f78"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-pre-stationary-impact.log",
+      "bytes": 1268,
+      "sha256": "3fc4be6386066fd4bae0070a42b14c6f280bbcf5b94002dd64d79e5eb4628b9c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-report-pre-route-fix.json",
+      "bytes": 8827,
+      "sha256": "9885711673b6ff6e655db52a73b31b49ec5dea81b36a583a9dfa7ed0accaa909"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser-report.json",
+      "bytes": 8828,
+      "sha256": "68ba5820cd84b4022577054be5f48fa8ed1b9412ff811f7ce2a6e694f2c940eb"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-browser.log",
+      "bytes": 1268,
+      "sha256": "037ba0302a71a61c4e9f79f691f963449cf4a89541f3e41505a13e367036ee71"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-failure-webgl2-forced-garage.json",
+      "bytes": 17982,
+      "sha256": "7db38323ca6165a09e4b6d3079d8656eb17d964b7cfb362ffc4cae68e3f374ed"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-garage-webgl2-forced.json.gz",
+      "bytes": 14062,
+      "sha256": "0e454e98d7d25a937a821f751dc70433be8f38030fa1d0cdfce226cf9a568953"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-garage-webgpu.json.gz",
+      "bytes": 12695,
+      "sha256": "368314928ba7e55b38948bc85773e9f9f90bc99a605fe8c53da8fd9dd9f4c5c6"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-models-webgl2-forced.json.gz",
+      "bytes": 7720,
+      "sha256": "18bfffa42612e90b5648884bb60e92d3685eb427e5b04dd2f0929eb2d800be37"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-models-webgpu.json.gz",
+      "bytes": 7907,
+      "sha256": "4de9eb8222efffdd2d587ca50bb45e99aed972a10f3e5bdf380347d44bb2d9d9"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-population-units.log",
+      "bytes": 4534,
+      "sha256": "71a8283488ba00807bda8daffb7a302c7c1e75866e052cb4cffe2c4da4a6a646"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-reward-webgl2-forced.json",
+      "bytes": 20099,
+      "sha256": "0d5412edb2024f28fdbf85808408d973306ee8214380f42c3a6c477e461e6334"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/fleet-reward-webgpu.json",
+      "bytes": 20088,
+      "sha256": "e3b71b77864ca4d88646449e7d2455f97d3d11f44cd62670bcfdbb259a76d76b"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/gallery-check.json",
+      "bytes": 255,
+      "sha256": "ef9c503e6afed22c8f6e5c89b3dd39c6d3048bd74702b6bd0d749d4210f4c18a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-first-nan.log.gz",
+      "bytes": 4316,
+      "sha256": "0155f28f9ebc2f641fb18e158394ba97f91086b7059c25db6ad23acb0d161676"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-physics-history.log.gz",
+      "bytes": 4268,
+      "sha256": "efbdf5b0eef9d533f298f4310157993b068d0fc55db9e234b01d1fef2a489d07"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-physics-trace.log.gz",
+      "bytes": 2397,
+      "sha256": "0164c5c1f214562014f10aa4c9af78063ba99c2dfc52aec2e4edd21371f5052d"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-report.json",
+      "bytes": 4342,
+      "sha256": "5e5fbb7b0eb9ddde38b101e6b9204d73ed755806abfff05e177e9aefc168b0fd"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-second.log",
+      "bytes": 3886,
+      "sha256": "097549e3839bef602275ef373d41ac5750e962a4253abd4db9fa1bd40a31b309"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-services-fix.log",
+      "bytes": 425,
+      "sha256": "0acbc447d481e9b1719e1a44e7548449a737429b881d94dd768a8d3714755124"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-browser-third.log",
+      "bytes": 48339,
+      "sha256": "2f9bb6605bf5de776aecd866b7fe131e0888743161356478eb2c2a17a81b9c24"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/garage-mass-inertia-fix.log",
+      "bytes": 32,
+      "sha256": "9f032126e08c2eb02f74ca3f36f615b22075e9f266f56392235cf3e3634b8ac1"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/geometry-audio-units.log",
+      "bytes": 5907,
+      "sha256": "2f8392b29d0d9e1a82629436582f654dd257cbfabbdfe6eb287c0736c00e3917"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/handoff-check.log",
+      "bytes": 121,
+      "sha256": "442dad51f5bc6904cac1bd9c686f565d43f723849db5582800819c46f07afbdd"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/handoff-runtime.json",
+      "bytes": 44624,
+      "sha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/immediate-mass-regression.log",
+      "bytes": 2917,
+      "sha256": "84e11e9d695688a3facea1ed44d53ebc53414898168140e0f63d292416f638f8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/link-check.json",
+      "bytes": 494,
+      "sha256": "58d2720542d24677ac9c3e30ef3ab2d5325d3f86d393bdd32716e1e4574f1c82"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/motorcycle-source-attempts.json",
+      "bytes": 478,
+      "sha256": "ef445558ff904990d079239c57587259a4bc533fb31ffac8e7c7c2e01badc90f"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/npc-pure-120s.json.gz",
+      "bytes": 13775,
+      "sha256": "3f27f3b282187bfe4c225ec4d568f9fc0944d887c05ad1e4e22eb9b6e2168bbc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-auto-wall-120s-raw.json.gz",
+      "bytes": 22046,
+      "sha256": "6377fa8570cd2703e1f5e71f69017ae141587ea1ca11e27dd5afb1e267c008de"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-auto-wall-120s.json",
+      "bytes": 73307,
+      "sha256": "f0ef8124d38298a9c931b9b535bd565ebb0a826de9ea68bf654b308a63a003f8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-auto-wall-120s.log",
+      "bytes": 1306,
+      "sha256": "9b94604a2991c4b889e38b56433cc6cb2db1be3e5a987c3555fdcce63716364d"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-brake-fix.log",
+      "bytes": 21809,
+      "sha256": "e1a37d712f04398a2fcfecc8b49592e0fbbdd2c96e022895c6c3f94f4257e362"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-loaded-final-120s-raw.json.gz",
+      "bytes": 95006,
+      "sha256": "7b52f4c020d06574bb9de8dc227998999c6aa7cca0642100ad7699aabb7f03b8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-loaded-final-120s.json",
+      "bytes": 74002,
+      "sha256": "2174b0fb8c583751b443988e51118118d5952141aca1eee20a8543a022f663c8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-loaded-final-120s.log",
+      "bytes": 1978,
+      "sha256": "450b454e134a58eedaea1b73c917599929b62eec0d0919965a0aeae81bd47904"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-loaded-physics-120s.json.gz",
+      "bytes": 412235,
+      "sha256": "035481b2ba5dbc7b95f61c6a40d112e2d94d32ab778864b52c73b6d7862442f2"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-loaded-physics-120s.log",
+      "bytes": 2297,
+      "sha256": "3abe248ec6de5afe119b0c5e2ecdfb4ff46434ddf52d3a2ca7fae260de9e376d"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-parked-wall-120s-raw.json.gz",
+      "bytes": 40228,
+      "sha256": "c47cdd2474efcd5babab8b188613e981526c0e24e9ac2704d36714a5361e910e"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-parked-wall-120s.json",
+      "bytes": 74815,
+      "sha256": "d2db99ecf764cd46b7ffc026e149fdca886872768231f28e7cc55e507bb60554"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-parked-wall-120s.log",
+      "bytes": 1300,
+      "sha256": "301fa948a5d830a2ac6df71ce96ac26c0acf1002bb9e38c638771396fafd26f5"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-parked-wall-interrupted.log",
+      "bytes": 333,
+      "sha256": "438b3b52aa3888967fb373e618550f51b471bad333aa12a411f2fcb540620513"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-physics-brake-fix.json.gz",
+      "bytes": 14919,
+      "sha256": "53c42806f77a40fd239714f01832bf3fa3cfb6bdcee0ecc5be7d422fea8cfbe8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-physics-first.json.gz",
+      "bytes": 96432,
+      "sha256": "945c956429a278c23bda1580915a63800b0e9d36ea70cca625379f464c4472d8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-reactions.json.gz",
+      "bytes": 72231,
+      "sha256": "840af3435ec0c2f6a3106aa5a27f8a1e396262bb419468b5b5ce2200010ae494"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/population-reactions.log",
+      "bytes": 437,
+      "sha256": "be322bb935cb5e378f972a6028f104849206cc176d1ddf67ee032f3c4811e3c7"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/production-browser-report.json.gz",
+      "bytes": 1013872,
+      "sha256": "ba361968394b5726bee974cf4f493347f896c3e251e36f7beb1da316a2978d90"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/production-browser.log",
+      "bytes": 1100,
+      "sha256": "10d909cd57260eef1f8032f51dc19b50d87d44cc7d97d7ba1686c43b8f7d29ba"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.7-before-cockpit-lab.cpuprofile.gz",
+      "bytes": 17998,
+      "sha256": "9560f31e5029c592ca46728697b42cf10605884a2acc731fddb6eb5506b4db9c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.7-before-downtown-street.cpuprofile.gz",
+      "bytes": 32061,
+      "sha256": "a4985af58d12910f8a743fcac2ed5e41688d4b0efd470023cff6ea897960e5e1"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.7-before-quick-rooftop.cpuprofile.gz",
+      "bytes": 25594,
+      "sha256": "4bf097233e4499e4cf038521ece3d5ed7e81419c2a1074aefa7b06991433660e"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.7-before.json",
+      "bytes": 87386,
+      "sha256": "1c0ebbcb53a6020ddea18a8583205327af08697348a98c28996128e4e13986f3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-cockpit-lab.cpuprofile.gz",
+      "bytes": 19501,
+      "sha256": "ecd4690072e3f3116015453a716da7e50cc9bb2fc51e1170b80b487a74dd0bc9"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-downtown-street.cpuprofile.gz",
+      "bytes": 37849,
+      "sha256": "87b2226a816855ffb5cb0d3e78d153d25216039258e78ed8552f413d726f3565"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-quick-rooftop.cpuprofile.gz",
+      "bytes": 25237,
+      "sha256": "35938adc7383a9748bfc39dba6759f137f31100bd723e34b7ab90c082293fcc0"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-shared-browser-failure.json",
+      "bytes": 36904,
+      "sha256": "e5a0763dd41ee55af083e76105e8cefc4c8ef588d0d192edc0f72cf631ed7d30"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-shared-browser-quick-rooftop.cpuprofile.gz",
+      "bytes": 23255,
+      "sha256": "ae9fbe05d09978b78e853a861e167cf3b13876eaa46a1129673c7e87b1f2d2c3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-shared-browser.log",
+      "bytes": 2594,
+      "sha256": "fd219ae82f0e77b46ed1f44ee5ba45b74b4eb05ad0b343f8ead15d5a7f8768e8"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final-stalled.log",
+      "bytes": 359,
+      "sha256": "83fd72ae0dd2f5a683043a8b4724e9dcc02fb11bbad43bf43ae8ee5b4d0d7436"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final.json.gz",
+      "bytes": 18684,
+      "sha256": "507fc2c89f023dde0aff8c0a5fc0379290992d7119fab30fe5b062e6db5d47cc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-0.9-final.log",
+      "bytes": 6492,
+      "sha256": "975c9e602a7b34c8402901ef54ca906e103145a05c7f814cca3b83f5014f9c9a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-before.log",
+      "bytes": 3824,
+      "sha256": "089be4c558930bd4fcfd8873ea1c6515e5c96f6558749a0c91c5acc432cc6d92"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-render-fixes-cockpit-lab.cpuprofile.gz",
+      "bytes": 18723,
+      "sha256": "fdfde0c42e022d74ae984c023e2e636497f41e037e2941b7164129999c35e1dd"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-render-fixes-downtown-street.cpuprofile.gz",
+      "bytes": 34580,
+      "sha256": "8dfe480848157d5e941de582b857c85a2c1a192932b81ecb1f2aff34d1bdf163"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-render-fixes-quick-rooftop.cpuprofile.gz",
+      "bytes": 20409,
+      "sha256": "6430741d401d1c536783591be3c6446c84de00f6690ed9448479c8a60eb97aa4"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-render-fixes.json.gz",
+      "bytes": 11815,
+      "sha256": "a1c805511330a66a2f90c3f69c5c56d6206f7a9fea450ff74e8b5656bc9bd023"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/profile-render-fixes.log",
+      "bytes": 3890,
+      "sha256": "346a715384676fc68232332f5026f258bb59a9871ea54aa41920034bbea23b08"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/public-build-preparation.log",
+      "bytes": 433,
+      "sha256": "23819d56abe7684dc5028498a546343270c9fa10453d3560f1f921d51cfedfc2"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/public-car-smoke.json",
+      "bytes": 32607,
+      "sha256": "37936819df6a6c78ec74b88a7ab422999cfcc245b4b24bc7b47f49429b4d1b1a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/public-car-smoke.log",
+      "bytes": 106,
+      "sha256": "59763fbe70b65f1427719e931d5cb88a3df5815f2fa1e560d42fe72ee0554019"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/public-transfer-roundtrip.json",
+      "bytes": 347,
+      "sha256": "9d04563a3960dee75ca9827676219248150c6a4ce809ab5714a22695aeddd629"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/roster-loop.json",
+      "bytes": 8557,
+      "sha256": "10dcaf72e06dd604610b8c61bf3b46b2f2cd616b1aad6874aaa3de79d3017f74"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/roster-loop.log",
+      "bytes": 5565,
+      "sha256": "ca70f1131c5a8c22fd349eb581e25faca72f26c3bf104605139031741de0ab3b"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/route-recompile-change-boundary.json",
+      "bytes": 1005,
+      "sha256": "6cad236b4ab650bd79f248ace3aafa22f6df8c8576eeecde3516928203d4de6c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/route-texture-diagnostic.json",
+      "bytes": 3377,
+      "sha256": "318450738fd995c2bc29d6a89ca4b1c1765049bf311dbc79c262d7c11c0ed768"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/route-texture-diagnostic.log",
+      "bytes": 2082,
+      "sha256": "98a6bbcfe43bd2d4a581a220d31377edb6f244cc79f7668e55c06643e41b44e3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/source-safety-check.json",
+      "bytes": 199,
+      "sha256": "f98bf4c1bdf9bfdfdb576f3b478d5e2f3c365f4b5ea64e68949861340da047a2"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/stationary-impact-regression.log",
+      "bytes": 3485,
+      "sha256": "f79c10404f5383888ffc67a06070cc1ab36e6349a555319bb86be6a3849e9e60"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/takeover-regression.log",
+      "bytes": 3255,
+      "sha256": "b847d7eed85a68ea51370d204156ebcc1cfb94a43af7ab447b8cc54828b5a5af"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/tested-runtime-after.json",
+      "bytes": 44624,
+      "sha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/tested-runtime-before-pre-route-fix.json",
+      "bytes": 44624,
+      "sha256": "5cc869b9e4d568076d624f5b11bfdbbe95582669817481061660172216fdb4f6"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/tested-runtime-before.json",
+      "bytes": 44624,
+      "sha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/tested-runtime-pre-route-fix-after.json",
+      "bytes": 44624,
+      "sha256": "5cc869b9e4d568076d624f5b11bfdbbe95582669817481061660172216fdb4f6"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/traffic-pure-240s.json.gz",
+      "bytes": 15272,
+      "sha256": "b3f4da7a71b55fe3f4fc806d2f86200705c61e740ce1a1109b6938a86dff6853"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/traffic-pure-240s.log",
+      "bytes": 1473,
+      "sha256": "7577f1d1dfc3ae54f76335046336e327f1195f19bd3d91ba1a11c9f1378b93c4"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/typecheck-pre-route-fix.log",
+      "bytes": 45,
+      "sha256": "897b6cc84e8b769489e867c90b5a26995cb8922bfaac625966611e6e56bbf0a3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/typecheck.log",
+      "bytes": 45,
+      "sha256": "897b6cc84e8b769489e867c90b5a26995cb8922bfaac625966611e6e56bbf0a3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/unit-after-fleet.log",
+      "bytes": 28697,
+      "sha256": "0eb224f72454f82d46ee7210cde2bbf9b65b9f8d2ad458cdbbe4aec8f1deaba2"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/unit-initial.log",
+      "bytes": 28182,
+      "sha256": "32f1ecc495e5bb5226694a46714ea5b1d75e384c8d87ddeef31584cef7b72fbb"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/unit-pre-route-fix.log",
+      "bytes": 29539,
+      "sha256": "1442762885ffdc91bc0024b72a82bfbcef0fe4b1bc7e3d36ee83384c90ba571b"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/unit-pre-stationary-impact.log",
+      "bytes": 29320,
+      "sha256": "17f37a83ca36d5792a5b5370f70d7b97fa27264c668a86a32066dc06a2e52dcc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/unit.log",
+      "bytes": 29538,
+      "sha256": "06f1f51e31eda3dd09c2dcbc55492c44fbab43d630c9e0080baaffdfb21c2a7a"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vehicles-browser-pre-route-fix.log",
+      "bytes": 13890,
+      "sha256": "2817e4a5eea8694fb80eaf5810a4f064005f32fe8c944d2d58b137dbec5286a7"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vehicles-browser-report-pre-route-fix.json",
+      "bytes": 31182,
+      "sha256": "e362f7dc8cdf5859e32ee6e94f84133d7b9e35be91d18b93c69722373c1ba331"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vehicles-browser-report.json",
+      "bytes": 6721,
+      "sha256": "705edd49576a1a1f3f43e121bd0e66b47f55e3ab5706674bf205779d85ad21ff"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vehicles-browser.log",
+      "bytes": 983,
+      "sha256": "9fdfb656451a72e42364f23b219b9befd09eb22f4684645cb5594170bb8481f3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vehicles-initial.log",
+      "bytes": 5247,
+      "sha256": "8c3b9679845475854f315478816e7825ff232394971d49d8ffdcd14acb540fed"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/vercel-build-excerpt.log",
+      "bytes": 1050,
+      "sha256": "4d3ca6fea3a790e0f466897a3bf1dc0b7a89a276ac103001321e3497be8c4ac9"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/versions-pre-route-fix.log",
+      "bytes": 885,
+      "sha256": "565aef9e19974d9be5d7652d641fbb52a1d603e574370377fa1b71dd96c7d334"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.9.0/versions.log",
+      "bytes": 885,
+      "sha256": "565aef9e19974d9be5d7652d641fbb52a1d603e574370377fa1b71dd96c7d334"
+    },
+    {
+      "file": "docs/media/badges/performance.svg",
+      "bytes": 563,
+      "sha256": "8ce3e4008b9df56fe940d17ee30b06f248389d107bdadbe23be06c9d9b289a21"
+    },
+    {
+      "file": "docs/media/badges/renderer.svg",
+      "bytes": 555,
+      "sha256": "c1dd554898c464177c8535e59e1473673d02b7fb2ced14d6d16a7c3f69b755d6"
+    },
+    {
+      "file": "docs/media/badges/scope.svg",
+      "bytes": 541,
+      "sha256": "125427c64b38225756c34271fd933a238e7d484616e10240ca4408812beb5ad6"
+    },
+    {
+      "file": "docs/media/badges/tests.svg",
+      "bytes": 553,
+      "sha256": "ae0964f9ac72ae6c14bb57cc403de35cdcb3c8bc2aec227159a105e5ac46ce09"
+    },
+    {
+      "file": "docs/media/badges/version.svg",
+      "bytes": 529,
+      "sha256": "b788223d96340ad39b6d36a95270ee2935560b1cd30953b24dbc6e302976a139"
+    },
+    {
+      "file": "docs/media/crosstown-banner.svg",
+      "bytes": 2096,
+      "sha256": "40745298e65d02c3c0b624c48b537597e3d828a1542d118107eba8e404375de4"
+    },
+    {
+      "file": "docs/screenshots/00-before-optimization.png",
+      "bytes": 119896,
+      "sha256": "55033ff4636845410eecdb2b58b2fe8ed41c7529c854f5c6f10c318daab7c02f"
+    },
+    {
+      "file": "docs/screenshots/00a-previous-gameplay.png",
+      "bytes": 245087,
+      "sha256": "fe669753fe2367e930d1b4ee727767695f7093126a4628300a607ff3ca1f78df"
+    },
+    {
+      "file": "docs/screenshots/01-city-integration.png",
+      "bytes": 220617,
+      "sha256": "11a4812e3bea3a228c97781457d6b6db740174d23827dc67f33817af0c166c87"
+    },
+    {
+      "file": "docs/screenshots/02-canal-progress.png",
+      "bytes": 314128,
+      "sha256": "64aca4a7a843977d67afa1737791104fd627bfcc461e083dbffa338c55f5cb0f"
+    },
+    {
+      "file": "docs/screenshots/03-run-choices.png",
+      "bytes": 134520,
+      "sha256": "520a29eecf3fd6fa4f1e89eed432fb6e290f83c61e31f41af87298a60149ae6a"
+    },
+    {
+      "file": "docs/screenshots/04-daylight.png",
+      "bytes": 486293,
+      "sha256": "dcfe8a0fce668336129b78ea356a035fef9b00de7db2c42ead97540cf5725b6f"
+    },
+    {
+      "file": "docs/screenshots/05-neon-night.png",
+      "bytes": 573062,
+      "sha256": "034a49e5f3de6d039689becf70a0281c6fb7f2d2b7f310c9aa972220280edb19"
+    },
+    {
+      "file": "docs/screenshots/06-car-after-route-restart-webgl2-forced.png",
+      "bytes": 263780,
+      "sha256": "65835027e831606d6bd19614a516d5db8948f9887f460eb4569c8bc7fcc6ecc7"
+    },
+    {
+      "file": "docs/screenshots/06-car-after-route-restart-webgpu.png",
+      "bytes": 262912,
+      "sha256": "5872f450a97789520902b8120717d7613bf9b1a652e0cf35b7afb2bcffb8dc48"
+    },
+    {
+      "file": "docs/screenshots/06-city-map.png",
+      "bytes": 198854,
+      "sha256": "8c84640bd21a41203ef80a68acceced180e663daecd89071499724224ad67fb7"
+    },
+    {
+      "file": "docs/screenshots/06-first-car-smoke.png",
+      "bytes": 183863,
+      "sha256": "a4c0a0813a1a1fca9cfe176fa53edb8484eaa0ffdb1e6962380f046de86a81d3"
+    },
+    {
+      "file": "docs/screenshots/06-first-cockpit-smoke.png",
+      "bytes": 296101,
+      "sha256": "624463e2ae7a3f11fd26172efb7179cd28d40cb3fc86b2369209e5015c5e4e5b"
+    },
+    {
+      "file": "docs/screenshots/06-opening-real-car-door-webgl2-forced.png",
+      "bytes": 369942,
+      "sha256": "7cbdc630ab4a954585057ccfe0647312dc32503549ae670b03f13dc0d97e09be"
+    },
+    {
+      "file": "docs/screenshots/06-opening-real-car-door-webgpu.png",
+      "bytes": 369897,
+      "sha256": "a8dfc58c7c57fc1e2e5243b9ef61ec77a2d397ec7c1c7a5ff4526418e758746d"
+    },
+    {
+      "file": "docs/screenshots/06-reward-car-cockpit-webgl2-forced.png",
+      "bytes": 544105,
+      "sha256": "d1cc7100cb27385bd8c448d2b237547ce655164913c5236e113190636a55273c"
+    },
+    {
+      "file": "docs/screenshots/06-reward-car-cockpit-webgpu.png",
+      "bytes": 538963,
+      "sha256": "0bd97f0bd249c5ce7be566d9705f1f7775bd81047608049fb8f8e65cd602b0ca"
+    },
+    {
+      "file": "docs/screenshots/06-street-entry-webgl2-forced.png",
+      "bytes": 155739,
+      "sha256": "13354ccd17f4eeea94058a4cb9c27a94b3b674fa7091e172d37ebe39f4357bea"
+    },
+    {
+      "file": "docs/screenshots/06-street-entry-webgpu.png",
+      "bytes": 156093,
+      "sha256": "5911982b964417a7c3fdc654a682541eb515c326ab791e5fc46dffb5f3f08163"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-compact-webgl2-forced.png",
+      "bytes": 304058,
+      "sha256": "b6bb0a0ae6f14fcc3676db60331e20251e60976c956dcc96315c25f4bc614f4e"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-compact-webgpu.png",
+      "bytes": 300861,
+      "sha256": "b29c9f2879b485851d0ffced9d4c2e10ad85d79c4f738c7a77c814bcd3a928c8"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-motorbike-webgl2-forced.png",
+      "bytes": 231568,
+      "sha256": "98f857eaa5912c07f0366e48111ca1520f7ce35dc6841782af0e619bc5748226"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-motorbike-webgpu.png",
+      "bytes": 224438,
+      "sha256": "d2bc076db7c2e4aa0fc7d131ff01fc050297a3219b2a29e9ec5a088c7d81ef0d"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-muscle-webgl2-forced.png",
+      "bytes": 322458,
+      "sha256": "44ffbf8ef997ce9c28a6ee9ebfab5497f2c2c7972c3f96c4804a893ecae38ffd"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-muscle-webgpu.png",
+      "bytes": 315469,
+      "sha256": "92b97e2e56098a76e6fed7b57d5d5e6a05ebcbd3dee240b02837a57f72420bdd"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-sedan-webgl2-forced.png",
+      "bytes": 288807,
+      "sha256": "0169af8598bc86448705578e58d4314f5fe83e35ada6c78436cc12ec9b34c405"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-sedan-webgpu.png",
+      "bytes": 283722,
+      "sha256": "4b05ded0a29b4591978fb0b68aba5d28264f4fcb2c786e9b8172c047c3ddd98a"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-supercar-webgl2-forced.png",
+      "bytes": 294388,
+      "sha256": "38bf8770738612dabe09d9ea901527142af9cc40e34447716a9b8a1a0c8091a5"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-supercar-webgpu.png",
+      "bytes": 290695,
+      "sha256": "2eefcc490074d109519dc3e904172c25481f7e9be72aa4e176c1a5eb3a8ef1a2"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-suv-webgl2-forced.png",
+      "bytes": 228515,
+      "sha256": "67af62b0a98eec7e729a8039cfbe6b33fc8058a8e889702be625a22351592490"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-suv-webgpu.png",
+      "bytes": 228930,
+      "sha256": "d88d69fd695c7bcc49658bb8eb69d6d126b06a8d64ab8f793ff6443fcce09ef6"
+    },
+    {
+      "file": "docs/screenshots/07-cockpit-night-webgl2-forced.png",
+      "bytes": 172775,
+      "sha256": "11c90bc8cc72f06e3fc91f8af302e866cc04cecedfcd5c9726c464220d0279e5"
+    },
+    {
+      "file": "docs/screenshots/07-cockpit-night-webgpu.png",
+      "bytes": 172582,
+      "sha256": "c905f90c7601947ca2fa5c4845121bea2e0f8ab63ccbec790350c07bf66b252f"
+    },
+    {
+      "file": "docs/screenshots/07-live-mirrors-webgl2-forced.png",
+      "bytes": 231008,
+      "sha256": "05e01e736ae979d17a5a53fd4a7a8d4274ad8d066b79e286620faf3dc51c4a8c"
+    },
+    {
+      "file": "docs/screenshots/07-live-mirrors-webgpu.png",
+      "bytes": 230783,
+      "sha256": "c822b17ed8928ae9017b9512cfa2126d1f9994a600d1cda064c79e08f3aed149"
+    },
+    {
+      "file": "docs/screenshots/07-public-cockpit-webgpu.png",
+      "bytes": 248543,
+      "sha256": "2a60eb8f0f8d8b6d1def328da81d8fe9d832f07bc359278a8dbefe897557d14d"
+    },
+    {
+      "file": "docs/screenshots/07-street-bridge.png",
+      "bytes": 250178,
+      "sha256": "4e06ecaafced2d287d773392d75aedd0c7822abe112728c9a0cc9b1415368aaa"
+    },
+    {
+      "file": "docs/screenshots/08-brim-webgl2-forced.png",
+      "bytes": 118358,
+      "sha256": "82ab1567a218bb454e17b76ddc0bf12782fb9c80f9afd24b94ec5151c6d6acea"
+    },
+    {
+      "file": "docs/screenshots/08-brim-webgpu.png",
+      "bytes": 123525,
+      "sha256": "e67cd6dcf2cfa47440858507059841728bd54a41b194eee01d736420f99cd0e9"
+    },
+    {
+      "file": "docs/screenshots/08-burning-webgl2-forced.png",
+      "bytes": 88383,
+      "sha256": "8ff982ff36aa2c381d954c63bd55a453f52fb90b85869ba84f844f7fccd265c1"
+    },
+    {
+      "file": "docs/screenshots/08-burning-webgpu.png",
+      "bytes": 87332,
+      "sha256": "d262083c6f5c5b37a599c6661141739dac80b3bb57b1a9888974e5e44135faa2"
+    },
+    {
+      "file": "docs/screenshots/08-crosstown-rooftops.png",
+      "bytes": 343567,
+      "sha256": "12117d5ad03849f54098f76270b44319c42a07e85f43b1abee08509c15dd09ba"
+    },
+    {
+      "file": "docs/screenshots/08-impact-webgl2-forced.png",
+      "bytes": 88383,
+      "sha256": "8ff982ff36aa2c381d954c63bd55a453f52fb90b85869ba84f844f7fccd265c1"
+    },
+    {
+      "file": "docs/screenshots/08-impact-webgpu.png",
+      "bytes": 87332,
+      "sha256": "d262083c6f5c5b37a599c6661141739dac80b3bb57b1a9888974e5e44135faa2"
+    },
+    {
+      "file": "docs/screenshots/08-kestrel-webgl2-forced.png",
+      "bytes": 118402,
+      "sha256": "e6e91d51df092933b31cd87478ed8d27ac986eebba826fd4119033cb70a1926b"
+    },
+    {
+      "file": "docs/screenshots/08-kestrel-webgpu.png",
+      "bytes": 118364,
+      "sha256": "a483c6c097cbf9a4f1d29d535554ae4bd802f998fe4f99acd1398ffee2139c69"
+    },
+    {
+      "file": "docs/screenshots/08-pip-webgl2-forced.png",
+      "bytes": 114667,
+      "sha256": "9115246ee85c0b4e1459e1de0ea56d5f34f422f771a9e01cbf757b40323b771d"
+    },
+    {
+      "file": "docs/screenshots/08-pip-webgpu.png",
+      "bytes": 114556,
+      "sha256": "7284e22518c65ad9a26b9aa74a4987719ec3c6357421cb62fd9c8d3ef7a36b13"
+    },
+    {
+      "file": "docs/screenshots/08-reward-finish-webgl2-forced.png",
+      "bytes": 243739,
+      "sha256": "9967d41abec90bd1e873b11e42cfc60267eb8d9e5929854e515159c17a6d0a24"
+    },
+    {
+      "file": "docs/screenshots/08-reward-finish-webgpu.png",
+      "bytes": 237461,
+      "sha256": "8622ada7745cbac662149d9efb1c4f89d689979f01656d235933b54518f5d418"
+    },
+    {
+      "file": "docs/screenshots/08-six-car-garage-webgl2-forced.png",
+      "bytes": 109003,
+      "sha256": "0777f3a99582b42ba7fa973c626435cba6a5c4b7fff7d32c2535248d6693364b"
+    },
+    {
+      "file": "docs/screenshots/08-six-car-garage-webgpu.png",
+      "bytes": 109631,
+      "sha256": "eb01118764ccf82385a986abe720e729dd390a3c87e6cca69a2edb819f67fab6"
+    },
+    {
+      "file": "docs/screenshots/08-summit-webgl2-forced.png",
+      "bytes": 123801,
+      "sha256": "9bc18126ce6e886f7599125acb1beadedb5481b58dc68cbe194522639d158c1d"
+    },
+    {
+      "file": "docs/screenshots/08-summit-webgpu.png",
+      "bytes": 123918,
+      "sha256": "ccbe43de7e035050841bf234e53bc86b7805ce41a39cedc9a8afcf91e44f363b"
+    },
+    {
+      "file": "docs/screenshots/08-wren-webgl2-forced.png",
+      "bytes": 118010,
+      "sha256": "b3439f80cdd91ce7fa654f87eed56ea02cd08d869da9ae769132b29f1d93056b"
+    },
+    {
+      "file": "docs/screenshots/08-wren-webgpu.png",
+      "bytes": 118002,
+      "sha256": "7e30a071f347bacd7b1a1e7439ac8f9d4ba7f7be3d98236dfde310666c8d190e"
+    },
+    {
+      "file": "docs/screenshots/08-zenith-webgl2-forced.png",
+      "bytes": 117206,
+      "sha256": "a7797b3b2b9248fd3db1ff20f22d3f611eb88b91a0b5fef8e3ef8585d106612f"
+    },
+    {
+      "file": "docs/screenshots/08-zenith-webgpu.png",
+      "bytes": 122337,
+      "sha256": "bd2506ee9037f35f33b5fdf59284273f4c333de37481604aa39eb3ce25a60561"
+    },
+    {
+      "file": "docs/screenshots/09-auto-wall-120s.png",
+      "bytes": 191093,
+      "sha256": "19d1f6566165536fa33d61fe772b0b848a16d0338f3a8a7f1f3e7d4c4d263b5d"
+    },
+    {
+      "file": "docs/screenshots/09-fast-flight-partial.png",
+      "bytes": 442225,
+      "sha256": "c7b74531f8fb2dfff01a785ba42a70a7c5e8746827ea1957a0f5568ea7d33d50"
+    },
+    {
+      "file": "docs/screenshots/09-first-street-check.png",
+      "bytes": 129261,
+      "sha256": "8d205ba54cae8b77fc27c8c517b1432e988c08178c28fcf0a677c97ea408e4f1"
+    },
+    {
+      "file": "docs/screenshots/09-loaded-final-120s.png",
+      "bytes": 187954,
+      "sha256": "f7e921b50c533ccded42747db518641b2ef314cdb307fb7238bd2422cf3ddb06"
+    },
+    {
+      "file": "docs/screenshots/09-loaded-physics-120s.png",
+      "bytes": 182254,
+      "sha256": "26210cda361b44857cedda161bd86fe228f218e594b76cd48bdd77473647d164"
+    },
+    {
+      "file": "docs/screenshots/09-near-physics-first.png",
+      "bytes": 162720,
+      "sha256": "92aef0f3ff759360f6dbedabf148c267eb48a315d93817d9172fbacb018ad464"
+    },
+    {
+      "file": "docs/screenshots/09-night-population.png",
+      "bytes": 265328,
+      "sha256": "b87bdf372f297d6e1db170d5651aa153e88cecfb36517c7e73153061f02e6590"
+    },
+    {
+      "file": "docs/screenshots/09-parked-wall-120s.png",
+      "bytes": 203011,
+      "sha256": "97aaa57e6a3dd8c737a0ed9399dee3b7c95b33856e471f7b7c36b07a5e542385"
+    },
+    {
+      "file": "docs/screenshots/09-physical-npc-crash.png",
+      "bytes": 255069,
+      "sha256": "29ade9c761c4ee96cc7d6a47166172ed21422e16567240cb43140893564836a0"
+    },
+    {
+      "file": "docs/screenshots/09-public-cockpit-webgpu.png",
+      "bytes": 225902,
+      "sha256": "f4f27710dcebdc5dd12dee7e118065b85e0eadaaecfcf3d92967b41ee87d2e1b"
+    },
+    {
+      "file": "docs/screenshots/09-siren-webgl2-forced.png",
+      "bytes": 150691,
+      "sha256": "8d4c9b0b3eb91d31eba354247a1ebc4933628ada7c6cebfd67ad9d51a1587bac"
+    },
+    {
+      "file": "docs/screenshots/09-siren-webgpu.png",
+      "bytes": 153959,
+      "sha256": "ac606b05072f80e11195c1fea8185a15515f932695359deb16f3cac598c4b77d"
+    },
+    {
+      "file": "docs/screenshots/10-rain.png",
+      "bytes": 496517,
+      "sha256": "83d82c1dc92a7380608b54c71834a3d0fb796c407e90f7f651f6d935786a0d2d"
+    },
+    {
+      "file": "docs/screenshots/district-1-beach.png",
+      "bytes": 573608,
+      "sha256": "ebc834585c3fc15e0153ce39cca74a3d1834c275a9050b3bdc717e0f079154fb"
+    },
+    {
+      "file": "docs/screenshots/district-2-downtown.png",
+      "bytes": 502765,
+      "sha256": "12d95b0c8ea1a51415f8b951a9d9463b19de03a46b388909e2d345bc488c7041"
+    },
+    {
+      "file": "docs/screenshots/district-3-port.png",
+      "bytes": 629651,
+      "sha256": "6a5b6f870997623cec94ec0d0f18edeb380b7521eac321bb7aa64dbb1a272113"
+    },
+    {
+      "file": "docs/screenshots/district-4-canals.png",
+      "bytes": 681864,
+      "sha256": "26340244aef22b89975805f90edafb6832acf47d9e58bf7c4cf511852a120fd7"
+    },
+    {
+      "file": "docs/screenshots/district-5-hills.png",
+      "bytes": 694276,
+      "sha256": "694ab5cb94f917f54fec176a56aeec5458bb80ba14e615ecb47c5610a0d510ca"
+    },
+    {
+      "file": "docs/screenshots/district-6-oldtown.png",
+      "bytes": 595370,
+      "sha256": "ece8859414e5b7cd913d659843a4c40e9d4e6d9d645b727d1f9c5116cb438be3"
+    },
+    {
+      "file": "docs/screenshots/district-7-outskirts.png",
+      "bytes": 444933,
+      "sha256": "0381a4ad23fa3a27f1582e52204f9432abf83b13780839e30353bca2fe5ab27a"
+    }
+  ],
+  "exclusions": [
+    "This manifest and the source ZIP are excluded to avoid recursive hashes.",
+    "Historical reports are retained separately and not counted as current acceptance."
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "schema": 3,
+  "date": "2026-11-22",
+  "name": "Crosstown",
+  "release": "0.7.0",
+  "build": "07.001",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle",
+    "06-first-car",
+    "07-interior-and-sound"
+  ],
+  "scopeBoundary": "One playable sedan; six class-specific cockpit/engine studies, not six independent playable classes. Earlier foundation/parkour/city retained.",
+  "userOverrides": [
+    "Beginning length/control/camera/graphics choices override historical no-menu/full-default restrictions.",
+    "Quick is default; Standard and the full course remain.",
+    "A/D correction concerns keyboard screen-left/right, not controller A/B.",
+    "Original DESIGN unchanged."
+  ],
+  "environment": {
+    "node": "v20.20.2",
+    "browserTools": "Playwright 1.56.1 / Chromium",
+    "graphics": "Linux software Vulkan/SwiftShader, headed WebGPU under Xvfb, forced WebGL 2 and disabled-WebGPU fallback where listed",
+    "nativeHardwareBenchmark": false,
+    "physicalInputHardwareTested": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "handoffRuntimeFingerprint": {
+    "sha256": "ef77e287cfd70e3590d5e899012f498fa5f1b76b3a2e39a1af1acda6f843cec6",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "captured": "At final handoff. Not an independently captured per-run Git commit."
+  },
+  "unitTests": {
+    "passed": 75,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 34731.101077,
+    "retainedEarlierCases": 53,
+    "vehicleCases": 22,
+    "log": "evidence/crosstown-0.7.0/unit.log"
+  },
+  "checks": {
+    "typecheck": {
+      "passed": true,
+      "log": "evidence/crosstown-0.7.0/typecheck.log"
+    },
+    "productionBuild": {
+      "passed": true,
+      "buildSeconds": 9.24,
+      "publicFiles": 77,
+      "log": "evidence/crosstown-0.7.0/build.log"
+    },
+    "models": {
+      "passed": 3
+    },
+    "exactDirectDependencyPins": {
+      "passed": 15,
+      "publicationCutoff": "2026-11-08"
+    },
+    "referenceUnchanged": true,
+    "referenceSha256": "0f670679a820a3b687f6fb4fae6e0a14afebfc215b791b6918792ee322699dc9",
+    "gallery": {
+      "date": "2026-11-22",
+      "version": "0.7.0",
+      "passed": true,
+      "captures": 21,
+      "networkRequests": [],
+      "errors": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false,
+      "lightboxNext": "From the roofs to the street. · 2 / 21",
+      "offline": true
+    },
+    "localFileLinks": {
+      "passed": true,
+      "checked": 84,
+      "documents": [
+        "README.md",
+        "CREDITS.md",
+        "docs/PROGRESS.md",
+        "docs/TESTING.md",
+        "docs/FINDINGS.md",
+        "docs/DEPLOYMENT.md",
+        "docs/ASSET_PIPELINE.md",
+        "docs/SCREENSHOTS.md",
+        "docs/RENDERER.md",
+        "docs/PARKOUR-API.md"
+      ],
+      "broken": [],
+      "boundary": "Current local relative file links only; external reachability/anchors not asserted."
+    },
+    "allowlistedSourceScan": {
+      "passed": true,
+      "allowlistedFiles": 424,
+      "textFilesScanned": 294,
+      "findings": [],
+      "boundary": "Explicit path allowlist and known credential patterns; not an exhaustive security audit."
+    }
+  },
+  "browsers": {
+    "vehicles": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T18:40:07.170Z",
+      "durationMs": 665066.99,
+      "boundary": "Final game code; public release.json metadata was refreshed afterward. WebGPU + forced WebGL 2.",
+      "report": "evidence/crosstown-0.7.0/vehicles-browser-report.json",
+      "log": "evidence/crosstown-0.7.0/vehicles-browser.log",
+      "tests": [
+        {
+          "title": "real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 143685,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 206346,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 135771,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 174479,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "cityRegressions": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T18:51:14.161Z",
+      "durationMs": 405843.065,
+      "boundary": "Final game code; choices/A-D/yaw/saves and six-start/cache/reset/fly-landing subset only. Not a full seven-district tour.",
+      "report": "evidence/crosstown-0.7.0/city-regression-report.json",
+      "log": "evidence/crosstown-0.7.0/city-regression.log",
+      "tests": [
+        {
+          "title": "opening choices, real keyboard A/D, stable camera yaw and saved run length work",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 77818,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 89985,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "opening choices, real keyboard A/D, stable camera yaw and saved run length work",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 125130,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 109512,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "productionLocal": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T18:59:46.732Z",
+      "durationMs": 231752.083,
+      "boundary": "Final built output including metadata refresh; WebGPU, forced WebGL 2 and WebGPU-disabled fallback.",
+      "report": "evidence/crosstown-0.7.0/production-browser-report.json",
+      "log": "evidence/crosstown-0.7.0/production-browser.log",
+      "tests": [
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 25415,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 26449,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 25618,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 55089,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 45935,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 47052,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "productionPublic": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T19:06:07.936Z",
+      "durationMs": 181589.993,
+      "boundary": "Actual public 0.7.0 output; three rendering paths, full physical finish/save/ghost/night and training.",
+      "report": "evidence/crosstown-0.7.0/deployed-browser-report.json",
+      "log": "evidence/crosstown-0.7.0/deployed-browser.log",
+      "tests": [
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 46534,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 28615,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 28192,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district",
+          "project": "webgpu-full-run",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 46352,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "eight-checkpoint training route also opens immediately with the animated runner and a visible billboard course",
+          "project": "webgpu-training",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 26308,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "vehicleEvidence": {
+    "webgpu": {
+      "streetReport": "VEHICLE-STREET-webgpu.json",
+      "interiorReport": "VEHICLE-INTERIORS-webgpu.json",
+      "errors": [],
+      "ordinaryKeyboard": true,
+      "finishSimulation": {
+        "ticks": 9368,
+        "normalPaceSeconds": 156.13333333333333,
+        "wallSeconds": 1.412199999999255,
+        "state": "finished",
+        "result": {
+          "seed": 84173,
+          "marker": "opening:quick",
+          "night": false,
+          "seconds": 156.35,
+          "falls": 0,
+          "collectibles": 0,
+          "cash": 0,
+          "rank": "A",
+          "date": "2026-11-22T18:41:51.934Z"
+        },
+        "falls": 0,
+        "checkpoint": 7
+      },
+      "afterRestartResources": {
+        "cars": 2,
+        "forecourts": 2,
+        "cachedCabins": 1
+      },
+      "physicalHardware": false,
+      "cabins": [
+        "compact",
+        "sedan",
+        "muscle",
+        "supercar",
+        "suv",
+        "motorbike"
+      ],
+      "sweeps": [
+        {
+          "engine": "v6",
+          "rpm": 1977.6033576923335
+        },
+        {
+          "engine": "v8",
+          "rpm": 3791.9966422754005
+        },
+        {
+          "engine": "diesel",
+          "rpm": 5606.396642262974
+        }
+      ],
+      "missingSample": {
+        "deliberate404s": 1,
+        "physicallyWithheldFromLocalServer": true,
+        "restoredByteForByte": true,
+        "fallback": "synth-fallback, nonzero measured RMS, then samples recover"
+      },
+      "mirrorOrientation": {
+        "magentaCount": 69,
+        "cyanCount": 92,
+        "topBarY": 22,
+        "bottomBarY": 34.5,
+        "bounds": {
+          "left": 847,
+          "top": 187,
+          "width": 187,
+          "height": 60
+        }
+      },
+      "mirrorTargets": [
+        {
+          "dimensions": [
+            256,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 191
+        },
+        {
+          "dimensions": [
+            128,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 176
+        },
+        {
+          "dimensions": [
+            128,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 176
+        }
+      ],
+      "allocation": {
+        "engineEmitters": 16,
+        "separateOneShotCap": 16,
+        "controlledFirst": "budget-23",
+        "globalAudioNodeLimit": false
+      },
+      "savedVolumes": {
+        "master": 0.31,
+        "engine": 0.42,
+        "effects": 0.53,
+        "radio": 0.24
+      },
+      "afterReloadActualGains": {
+        "master": 0.015529734082520008,
+        "engine": 0.41999998688697815,
+        "effects": 0.5299999713897705,
+        "radio": 0.053264766931533813,
+        "music": 0.44999998807907104,
+        "paused": true,
+        "radioDuck": 0.22
+      }
+    },
+    "webgl2-forced": {
+      "streetReport": "VEHICLE-STREET-webgl2-forced.json",
+      "interiorReport": "VEHICLE-INTERIORS-webgl2-forced.json",
+      "errors": [],
+      "ordinaryKeyboard": true,
+      "finishSimulation": {
+        "ticks": 9362,
+        "normalPaceSeconds": 156.03333333333333,
+        "wallSeconds": 2.20929999999702,
+        "state": "finished",
+        "result": {
+          "seed": 84173,
+          "marker": "opening:quick",
+          "night": false,
+          "seconds": 156.35,
+          "falls": 0,
+          "collectibles": 0,
+          "cash": 0,
+          "rank": "A",
+          "date": "2026-11-22T18:47:27.200Z"
+        },
+        "falls": 0,
+        "checkpoint": 7
+      },
+      "afterRestartResources": {
+        "cars": 2,
+        "forecourts": 2,
+        "cachedCabins": 1
+      },
+      "physicalHardware": false,
+      "cabins": [
+        "compact",
+        "sedan",
+        "muscle",
+        "supercar",
+        "suv",
+        "motorbike"
+      ],
+      "sweeps": [
+        {
+          "engine": "v6",
+          "rpm": 1977.6033576923335
+        },
+        {
+          "engine": "v8",
+          "rpm": 3791.9966422754005
+        },
+        {
+          "engine": "diesel",
+          "rpm": 5606.396642262974
+        }
+      ],
+      "missingSample": {
+        "deliberate404s": 1,
+        "physicallyWithheldFromLocalServer": true,
+        "restoredByteForByte": true,
+        "fallback": "synth-fallback, nonzero measured RMS, then samples recover"
+      },
+      "mirrorOrientation": {
+        "magentaCount": 69,
+        "cyanCount": 92,
+        "topBarY": 22,
+        "bottomBarY": 34.5,
+        "bounds": {
+          "left": 847,
+          "top": 187,
+          "width": 187,
+          "height": 60
+        }
+      },
+      "mirrorTargets": [
+        {
+          "dimensions": [
+            256,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 191
+        },
+        {
+          "dimensions": [
+            128,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 176
+        },
+        {
+          "dimensions": [
+            128,
+            96
+          ],
+          "range": 255,
+          "markerPixels": 176
+        }
+      ],
+      "allocation": {
+        "engineEmitters": 16,
+        "separateOneShotCap": 16,
+        "controlledFirst": "budget-23",
+        "globalAudioNodeLimit": false
+      },
+      "savedVolumes": {
+        "master": 0.31,
+        "engine": 0.42,
+        "effects": 0.53,
+        "radio": 0.24
+      },
+      "afterReloadActualGains": {
+        "master": 0.01549999974668026,
+        "engine": 0.41999998688697815,
+        "effects": 0.5299999713897705,
+        "radio": 0.05315448343753815,
+        "music": 0.44999998807907104,
+        "paused": true,
+        "radioDuck": 0.22
+      }
+    }
+  },
+  "recordings": {
+    "profiles": 6,
+    "loops": 48,
+    "bytes": 3842112,
+    "rateHz": 32000,
+    "format": "mono PCM16 WAV",
+    "allNumericalSeamsWithinOneLSB": true,
+    "audit": "CAR-AUDIO-ASSETS.json",
+    "boundary": "Lossy public field-recording previews, processed into designed RPM/load anchors; no calibrated eight-load dyno set or by-ear acceptance."
+  },
+  "publicCarSmoke": {
+    "passed": true,
+    "report": "evidence/crosstown-0.7.0/public-car-smoke.json",
+    "ordinaryInputExit": true,
+    "realMotionSamplesAndMirrorPixels": true,
+    "errors": [],
+    "hardwareBenchmark": false
+  },
+  "revisionBoundaries": [
+    "Units, vehicle and city subset follow all gameplay/mirror/material/reward-arrow fixes.",
+    "The only later public runtime-file edit corrected release.json metadata from 0.5 to 0.7; final build/local production/public checks include it. Gameplay code did not change.",
+    "Documentation, release tools and repository publisher were updated afterward; the runtime fingerprint is a final handoff snapshot.",
+    "No new combined full-city tour/performance benchmark or exhaustive human risky-branch/street-feature traversal is claimed."
+  ],
+  "deployment": {
+    "date": "2026-11-22",
+    "version": "0.7.0",
+    "build": "07.001",
+    "provider": "Vercel connected app",
+    "project": "crosstown",
+    "projectId": "prj_gd5kw1GBgtWqMseb5ETMgzrXpKir",
+    "teamId": "team_59dr7VIo7kdxnmJ9zpqSL0wv",
+    "deploymentId": "dpl_4FNdWnzTuzhbpnp3ZVPYS7cCLRjm",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "aliasAssigned": true,
+    "aliasError": null,
+    "publicUrl": "https://coastline-highline.vercel.app",
+    "dashboard": "https://vercel.com/sarang-dev/crosstown/4FNdWnzTuzhbpnp3ZVPYS7cCLRjm",
+    "observedBy": "create_deployment / get_deployment / get_deployment_events / update_project connector results",
+    "publicFiles": 77,
+    "compiledArchiveBytes": 5312752,
+    "compiledArchiveSha256": "89c328bb1046b7948f6e3c46280a35f66365f88cfbf7a8e40e322d332eccaa08",
+    "independentTransferRoundtrip": true,
+    "transferStopped": true,
+    "postTransferAnonymousHashesMatch": true,
+    "deploymentKind": "One-time checksum-pinned import of locally built public compiled output, not a Vercel source build or GitHub CI run.",
+    "normalSettingsConfirmed": {
+      "framework": "vite",
+      "installCommand": "npm ci",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rootDirectory": null
+    },
+    "settingsCorrection": "Repeating the existing name returned 409; omitting rename succeeded. No new project was created.",
+    "gitSourcePushed": false,
+    "retiredImportMustNotBeRedeployed": true,
+    "anonymousFileHashMatches": 77,
+    "integrityReport": "DEPLOYED-FILES.json",
+    "publicBuild": "PUBLIC-BUILD.json"
+  },
+  "github": {
+    "date": "2026-11-22",
+    "id": 1467794178,
+    "fullName": "sarang-cmd/crosstown",
+    "htmlUrl": "https://github.com/sarang-cmd/crosstown",
+    "cloneUrl": "https://github.com/sarang-cmd/crosstown.git",
+    "private": true,
+    "created": true,
+    "pushed": false,
+    "topicsApplied": [
+      "threejs",
+      "webgpu",
+      "webgl2",
+      "typescript",
+      "rapier",
+      "parkour",
+      "open-world",
+      "procedural-generation",
+      "vite",
+      "browser-game"
+    ],
+    "authentication": "User-authorized token used transiently; never saved in repository/config/remote URL.",
+    "localCommitCreated": false,
+    "hostedCIPassClaimed": false,
+    "publisher": "../tools/publish-github.sh",
+    "pushBlocker": "No currently available securely authenticated CLI/token; connector unsupported. Existing repository must not be recreated/deleted."
+  },
+  "historicalPerformance": {
+    "release": "0.5.0",
+    "report": "PERFORMANCE-COMPARISON.json",
+    "strictTour": "CITY-BROWSER-STATES.json",
+    "maximumInstallSliceMs": 79.5,
+    "maximumChunkCpuMs": 79.7,
+    "maximumWholeUpdateMs": 80.1,
+    "maximumBudgetMs": 8,
+    "maximumBudgetAccepted": false,
+    "continuousFullMapFlightAccepted": false,
+    "new07HardwareBenchmark": false
+  },
+  "limitations": [
+    "Near60 FPS driving/cockpit and physical Radeon 840M 1080p60 unaccepted; software-only checks are not hardware performance.",
+    "Human handling feel, physical controller/wheel/rumble and by-ear three-engine/no-click review unaccepted.",
+    "Low-poly cabin/person art, sparse forecourts/distant silhouettes and city scenic blending remain prototype-level.",
+    "Six studies share one playable sedan exterior/dynamics; eleven additional cars, full traffic/NPC AI, police, weapons, interactive shops and deep radio are later scope.",
+    "Engine budget is 16 emitters, with a separate 16-one-shot effect cap; not 16 total Web Audio nodes.",
+    "Ownership/disposal units and bounded route restart pass; no long GPU-memory soak is claimed.",
+    "No complete touch-only on-foot joystick or native wheel force feedback."
+  ],
+  "historicalReleases": [
+    "TEST-RESULTS-0.5.0.json",
+    "TEST-RESULTS-0.3.0.json"
+  ],
+  "gallery": "PROGRESS-GALLERY.html",
+  "screenshots": "SCREENSHOTS.md",
+  "findings": "FINDINGS.md"
+}

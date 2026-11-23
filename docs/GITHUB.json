@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-22",
+  "id": 1467794178,
+  "fullName": "sarang-cmd/crosstown",
+  "htmlUrl": "https://github.com/sarang-cmd/crosstown",
+  "cloneUrl": "https://github.com/sarang-cmd/crosstown.git",
+  "private": true,
+  "created": true,
+  "pushed": false,
+  "topicsApplied": [
+    "threejs",
+    "webgpu",
+    "webgl2",
+    "typescript",
+    "rapier",
+    "parkour",
+    "open-world",
+    "procedural-generation",
+    "vite",
+    "browser-game"
+  ],
+  "authentication": "User-authorized token used transiently; never saved in repository/config/remote URL."
+}

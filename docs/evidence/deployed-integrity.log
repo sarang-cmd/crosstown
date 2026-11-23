@@ -1,0 +1,26 @@
+
+> coastline-highline@0.3.0 verify:deployed
+> node tools/verify-deployed.mjs
+
+200 assets/foundation-FqaAb5Eo.js 12996 bytes MATCH
+200 assets/game-5pgbDtJB.css 15516 bytes MATCH
+200 assets/game-K2QGJB45.js 143918 bytes MATCH
+200 assets/generator.worker-DBEWraih.js 273 bytes MATCH
+200 assets/index-BO6Cu7Z2.js 2253 bytes MATCH
+200 assets/index-CV9g-W69.js 31452 bytes MATCH
+200 assets/index-D8X4Kdrp.css 26286 bytes MATCH
+200 assets/physics-DD3n_w3i.js 2216108 bytes MATCH
+200 assets/rendering-DO7eZjrC.js 803540 bytes MATCH
+200 assets/route.worker-BbdFvOQV.js 7429 bytes MATCH
+200 CREDITS.md 5548 bytes MATCH
+200 favicon.svg 313 bytes MATCH
+200 fonts/IBMPlexMono-OFL.txt 4456 bytes MATCH
+200 fonts/IBMPlexMono-Regular.ttf 135580 bytes MATCH
+200 fonts/Manrope-OFL.txt 4387 bytes MATCH
+200 fonts/Manrope-Variable.ttf 164700 bytes MATCH
+200 index.html 879 bytes MATCH
+200 models/parkour-runner.glb 402984 bytes MATCH
+200 models/test-car.glb 76808 bytes MATCH
+200 models/test-character.glb 377408 bytes MATCH
+200 release.json 385 bytes MATCH
+Verified 21/21 public production files; no uploads or deployment mutations performed.

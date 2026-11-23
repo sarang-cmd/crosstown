@@ -1,0 +1,21 @@
+
+> coastline-foundation@0.1.0 test:browser
+> playwright test
+
+
+Running 12 tests using 1 worker
+
+  ✓   1 [webgpu] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (21.2s)
+  ✓   2 [webgpu] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (30.8s)
+  ✓   3 [webgpu] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (7.7s)
+  ✓   4 [webgpu] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (7.7s)
+  ✓   5 [webgl2-forced] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (18.9s)
+  ✓   6 [webgl2-forced] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (40.8s)
+  ✓   7 [webgl2-forced] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (10.6s)
+  ✓   8 [webgl2-forced] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (9.0s)
+  ✓   9 [webgpu-disabled] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (19.6s)
+  ✓  10 [webgpu-disabled] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (39.0s)
+  ✓  11 [webgpu-disabled] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (9.7s)
+  ✓  12 [webgpu-disabled] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (8.8s)
+
+  12 passed (3.8m)
