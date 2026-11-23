@@ -14,10 +14,12 @@
     "browser-game"
   ],
   "visibilityDefault": "private",
-  "note": "Existing private repository created with user-authorized transient authentication. Source push remains pending secure authentication and a reviewed local main commit. The publisher validates its exact ID and never creates/deletes a repository.",
+  "note": "Existing private repository validated by exact ID. Source published through an unmerged PR; main contains only an empty review baseline. No repository recreation/deletion, force push, visibility change or merge.",
   "homepage": "https://crosstown-sarang-dev.vercel.app",
   "fullName": "sarang-cmd/crosstown",
   "repositoryId": 1467794178,
   "created": true,
-  "pushed": false
+  "pushed": true,
+  "pullRequestUrl": "https://github.com/sarang-cmd/crosstown/pull/1",
+  "sourceBranch": "review/crosstown-steps-01-14"
 }

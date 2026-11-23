@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "allowlistedFiles": 1292,
-  "textFilesScanned": 766,
+  "allowlistedFiles": 1293,
+  "textFilesScanned": 767,
   "reviewedNonsecretFixtures": [
     {
       "file": "tests/unit/city-life.test.ts",

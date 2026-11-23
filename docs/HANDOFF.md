@@ -8,6 +8,7 @@
 - **Routes:** `/` is the lightweight landing; `/play` immediately starts saved/default Quick; `/play?setup` explicitly opens choices. Full/Standard/Quick, training, handling lab, callback and legacy root game-query URLs remain. Earlier save keys and the twelve-car roster remain.
 - **Lighting controls:** Escape → **Light & atmosphere**, saved individual switches and reduced-motion handling. [LIGHTING.md](LIGHTING.md) explains eligibility, approximation limits and what “off” does and does not mean.
 - **Public production is still 0.13.0:** [crosstown-sarang-dev.vercel.app](https://crosstown-sarang-dev.vercel.app). This Step 14 source/preview has **not** been deployed. [DEPLOYMENT.md](DEPLOYMENT.md) is the public-state record; do not interpret an old URL as the new runtime.
+- **GitHub source:** [PR #1](https://github.com/sarang-cmd/crosstown/pull/1) contains 60 grouped source-import commits plus a publication-status commit. `main` has only an empty review baseline; nothing is merged. Hosted jobs are blocked before startup by GitHub account billing/spending restrictions, not passed tests. [Publication record](GITHUB-PUBLICATION.md).
 - **Portable source:** [SOURCE-ARCHIVE.md](SOURCE-ARCHIVE.md), `crosstown.zip` and `SHA256SUMS.txt`. The clean extraction proof compares candidate output, not stale production bytes.
 
 ## Added in Step 14
@@ -30,4 +31,4 @@ Actual radio rows remain **5 core passes / 2 failed-or-unavailable** for officia
 
 ## Next handoff
 
-Run the supplied headed native benchmark on the target laptop, inspect the recorded adapter, then capture GPU/CPU traces in the populated rainy-dusk pursuit. Review all effects in motion and SSR/cone limitations, human driving/audio, physical controls, traffic fairness and long streaming/memory behavior. Preserve honest display cadence and all prior features. No Step 15 work, source push, hosted CI pass or new deployment is claimed. Do not reuse retired transfer descriptors or weaken access controls. [Detailed findings](FINDINGS.md) · [dated implementation/file map](PROGRESS.md).
+Run the supplied headed native benchmark on the target laptop, inspect the recorded adapter, then capture GPU/CPU traces in the populated rainy-dusk pursuit. Review all effects in motion and SSR/cone limitations, human driving/audio, physical controls, traffic fairness and long streaming/memory behavior. Preserve honest display cadence and all prior features. No Step 15 work, merge, hosted CI pass or new deployment is claimed. The later GitHub source import is separately recorded above; it does not change the captured game-test or deployment evidence. Do not reuse retired transfer descriptors or weaken access controls. [Detailed findings](FINDINGS.md) · [dated implementation/file map](PROGRESS.md).

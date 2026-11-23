@@ -1,5 +1,13 @@
 # Crosstown · build journal
 
+## GitHub source publication — GitHub recorded 2026-11-23T13:12:49Z
+
+Published the complete 0.14.0 / 14.002 project to the existing private `sarang-cmd/crosstown` repository as [PR #1](https://github.com/sarang-cmd/crosstown/pull/1), not as merged application content. The empty repository needed **one empty `main` baseline**; all application files are on `review/crosstown-steps-01-14` in **60 nonempty grouped source-import commits plus one publication-status commit**. This is a present-time import of the existing verified workspace, **not fabricated/recovered historical development**, and intermediate commits are not claimed individually buildable or tested.
+
+All **1,294 project files**, including complete source/prepared assets/licences/tests/tools/current and historical raw evidence/original captures, are included. The smaller ZIP-only historical exclusions do not apply to Git. Credentials, dependency/cache/build output, supplied uploads and generated ZIP/bundle handoffs are excluded. The tested runtime and immutable DESIGN hashes remain unchanged. The publisher now refuses a direct default-branch push and opens/reuses a PR; no merge, force push, repository recreation, visibility change, Step 15 or manual deployment is performed.
+
+**Hosted CI is not accepted:** [GitHub run #1](https://github.com/sarang-cmd/crosstown/actions/runs/45181702188) reports account payment failures or a spending-limit restriction. All four jobs have zero executed steps. No billing setting was changed and no local result is relabelled as hosted CI. Earlier source-push-pending flags are capture-time history; this entry and [GITHUB-PUBLICATION.md](GITHUB-PUBLICATION.md) record the later publication. Original game-test reports remain unchanged; only derived summaries/handoff integrity are refreshed for this publication metadata.
+
 <!-- STEP14-CURRENT-START -->
 ## 2026-11-22 release — Step 14 implemented; native 1080p60 and broad visual acceptance remain open
 

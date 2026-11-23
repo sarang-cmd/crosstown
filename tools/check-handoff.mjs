@@ -11,7 +11,7 @@ const evidence = `docs/evidence/crosstown-${pkg.version}`;
 const jsonWrite = (path, data) => writeFile(resolve(root, path), `${JSON.stringify(data, null, 2)}\n`);
 const release = JSON.parse(await readFile(resolve(root, 'public/release.json'), 'utf8'));
 expect(release.version).toBe(pkg.version); expect(release.build).toMatch(/^\d{2}\.\d{3}$/);expect(await readFile(resolve(root,'src/config/app.ts'),'utf8')).toContain("build: '"+release.build+"'");
-const documents = ['README.md', 'CREDITS.md', 'docs/PROGRESS.md', 'docs/TESTING.md', 'docs/FINDINGS.md', 'docs/DEPLOYMENT.md', 'docs/ASSET_PIPELINE.md', 'docs/SCREENSHOTS.md', 'docs/RENDERER.md', 'docs/PARKOUR-API.md', 'docs/FLEET.md', 'docs/POPULATION.md', 'docs/LIGHTING.md', 'docs/SOURCE-ARCHIVE.md', 'docs/RADIO.md', 'docs/HANDOFF.md'];
+const documents = ['README.md', 'CREDITS.md', 'docs/PROGRESS.md', 'docs/TESTING.md', 'docs/FINDINGS.md', 'docs/DEPLOYMENT.md', 'docs/ASSET_PIPELINE.md', 'docs/SCREENSHOTS.md', 'docs/RENDERER.md', 'docs/PARKOUR-API.md', 'docs/FLEET.md', 'docs/POPULATION.md', 'docs/LIGHTING.md', 'docs/SOURCE-ARCHIVE.md', 'docs/RADIO.md', 'docs/HANDOFF.md', 'docs/GITHUB-PUBLICATION.md'];
 let checked = 0; const broken = [];
 for (const file of documents) {
   const text = await readFile(resolve(root, file), 'utf8');

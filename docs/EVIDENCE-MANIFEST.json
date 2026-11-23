@@ -2,7 +2,7 @@
   "schema": 6,
   "date": "2026-11-22",
   "dateMeaning": "Release metadata label; generatedAt and raw ISO capture times are separate.",
-  "generatedAt": "2026-11-23T12:04:52.265Z",
+  "generatedAt": "2026-11-23T13:16:18.282Z",
   "release": "0.14.0",
   "pathsRelativeTo": "project root",
   "runtimeSource": {
@@ -1552,7 +1552,7 @@
     ]
   },
   "verificationSource": {
-    "sha256": "1e652396965d548c33712de4fdecb599470f5b057dedf3e726e00b09fccdaa44",
+    "sha256": "c2ee3b5ddd478c67e5f4c1ace4e0621f31618b847a36c90ab7e00b5989fa791e",
     "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
     "files": [
       {
@@ -1562,8 +1562,8 @@
       },
       {
         "file": ".github/repository.json",
-        "bytes": 847,
-        "sha256": "fff1e81aa2bcbdd4e26cbbd333c0f5342c91c7d961d13bbd2c46101dbba2f036"
+        "bytes": 934,
+        "sha256": "accc026bbfba5dfa2c20fbd1f531f2d1083f4450c3cb479d8b46e54a7a5a8787"
       },
       {
         "file": ".github/workflows/checks.yml",
@@ -1817,8 +1817,8 @@
       },
       {
         "file": "tools/check-handoff.mjs",
-        "bytes": 8036,
-        "sha256": "c90afa50996d6fc62c5d5c32a4b29fab584761d9326dde593358bf2cb21e5d42"
+        "bytes": 8066,
+        "sha256": "d8ca5a7ad86398178a59e94d270a84fb64e436fac2fc4b0a1dc7155bea071fb8"
       },
       {
         "file": "tools/check-release-functional.mjs",
@@ -1947,13 +1947,13 @@
       },
       {
         "file": "tools/publish-github.sh",
-        "bytes": 2724,
-        "sha256": "557a3b8609a8690b303836919ffd79b7fe79ce3993eb5cd1f9fc8589b40439c0"
+        "bytes": 2811,
+        "sha256": "3c037e58734427f88e8f5cc6460305785160cbc607988e380a1129ec7028d554"
       },
       {
         "file": "tools/release-evidence.mjs",
-        "bytes": 16627,
-        "sha256": "768cb17badb31ba0357acb347efc4755dc63500a77e76d0ab68344bca77b8b8a"
+        "bytes": 16846,
+        "sha256": "8df423096fa2d2814f196fb0a0c42a3b491e96e54a410f4edf0ce3a022f1ed6e"
       },
       {
         "file": "tools/serve-release.mjs",
@@ -2010,8 +2010,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 21366,
-      "sha256": "627f086d6793f2f90b2d8e184eda85950c048cf5bdeee40e72b5c66124e4f6c0"
+      "bytes": 21707,
+      "sha256": "2e260cd8a19bb3585fd4c124996c0e2846b14a7672fce457023c78086357243d"
     },
     {
       "file": "docs/CANDIDATE-BUILD.json",
@@ -2039,9 +2039,19 @@
       "sha256": "b22ee7bc0a89d847212e54567fea3400e76ceb32c9ebbf03f7691d4fba596b94"
     },
     {
+      "file": "docs/GITHUB-PUBLICATION.md",
+      "bytes": 3767,
+      "sha256": "2917ad2bb048dc436b7989e90c4f826101725dde103e32010eb7e12c6e9c6a87"
+    },
+    {
+      "file": "docs/GITHUB.json",
+      "bytes": 1574,
+      "sha256": "2f7db9155cbad17a288c5eb60af5fe68877c950c5af9e74f5efd073ed0cec283"
+    },
+    {
       "file": "docs/HANDOFF.md",
-      "bytes": 4981,
-      "sha256": "5084a9640dda60eb552a4cf932a70374917bf46d038e41149e1d9f9fe4a92fa6"
+      "bytes": 5467,
+      "sha256": "b1f398d0bdadce67d86e580424cddfa159fa9939d775fcd55f7385dd4f0b24eb"
     },
     {
       "file": "docs/LIGHTING.md",
@@ -2055,8 +2065,8 @@
     },
     {
       "file": "docs/PROGRESS.md",
-      "bytes": 82954,
-      "sha256": "3fe58ab5145aebd5207d23f4c41c77d60828a45cec9e97fed5ab4f6896a5e952"
+      "bytes": 84791,
+      "sha256": "51b3175cfdc5f208485cb539011d3f55145345edcc836da384d02b52ac02a1f7"
     },
     {
       "file": "docs/PUBLIC-BUILD.json",
@@ -2095,8 +2105,8 @@
     },
     {
       "file": "docs/TEST-RESULTS.json",
-      "bytes": 182299,
-      "sha256": "2f1f44846e5a6a7092375a8ea17c9344f5de2b2e0d7de4e95f585580565ef871"
+      "bytes": 183250,
+      "sha256": "420fe62580ae88ea467622b90d03e31698a8d05eb7d34d73e3197fc38e238b05"
     },
     {
       "file": "docs/TESTING.md",
@@ -2940,8 +2950,8 @@
     },
     {
       "file": "docs/evidence/crosstown-0.14.0/link-check.json",
-      "bytes": 562,
-      "sha256": "6f0b663eff949e6b900fd51e8830fd124bb197f8e877508c5fcbf76ac67b9676"
+      "bytes": 596,
+      "sha256": "f1561a44e40fb4f011055d368eec716e1e0b0dea20e73908cb4d2df5ca726e76"
     },
     {
       "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgl-0.webp",
@@ -3426,7 +3436,7 @@
     {
       "file": "docs/evidence/crosstown-0.14.0/source-safety-check.json",
       "bytes": 793,
-      "sha256": "38b36f2e5672ef5f734c6cd6394badbaa6add5d2a14d59dd5c9e6d5e06353941"
+      "sha256": "44b73ee719a5ad0f9604d007fbcead7a12444fae192777ca16fb55d6f1089283"
     },
     {
       "file": "docs/evidence/crosstown-0.14.0/static-checks.log",
