@@ -1,0 +1,23 @@
+{
+  "name": "crosstown",
+  "description": "A coastal browser city: rooftop parkour, twelve Rapier vehicles, damage and garages, road-graph traffic and animated pedestrians. Three.js WebGPU + TypeScript.",
+  "topics": [
+    "threejs",
+    "webgpu",
+    "webgl2",
+    "typescript",
+    "rapier",
+    "parkour",
+    "open-world",
+    "procedural-generation",
+    "vite",
+    "browser-game"
+  ],
+  "visibilityDefault": "private",
+  "note": "Existing private repository created with user-authorized transient authentication. Source push remains pending secure authentication and a reviewed local main commit. The publisher validates its exact ID and never creates/deletes a repository.",
+  "homepage": "https://crosstown-sarang-dev.vercel.app",
+  "fullName": "sarang-cmd/crosstown",
+  "repositoryId": 1467794178,
+  "created": true,
+  "pushed": false
+}
