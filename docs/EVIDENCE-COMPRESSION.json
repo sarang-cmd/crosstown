@@ -1,0 +1,1239 @@
+{
+  "date": "2026-11-22",
+  "purpose": "Lossless raw JSON/log archival compression to retain original source assets, capture pixels and historical release ZIPs within workspace limits. Every gzip restores exact original bytes/hash; no telemetry or embedded capture is edited. Readable current summaries remain in TEST-RESULTS.json.",
+  "restore": "gzip -dc path/report.json.gz > path/report.json (also valid for .log.gz)",
+  "files": [
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/production-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/production-browser-report.json.gz",
+      "originalBytes": 1458882,
+      "originalSha256": "14790cbdfe30bd10ba2ca94dd2d2d19bc364e037342eea53b01f14c4c85bc346",
+      "compressedBytes": 1087465,
+      "compressedSha256": "b1244679ff1624886c1c8af787e7ef10b0b562c863dd0f3e6e304a412494a6ff"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/deployed-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/deployed-browser-report.json.gz",
+      "originalBytes": 2769333,
+      "originalSha256": "9ba3b5a98d12e14576954944766269844fc17c886677058ebd85b485503f54c7",
+      "compressedBytes": 2077589,
+      "compressedSha256": "87044752a2faf818f9733e36b2ccceff252d953423b9831d0551feb56a434e66"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/parkour-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/parkour-browser-report.json.gz",
+      "originalBytes": 2432543,
+      "originalSha256": "6178b07b085f0a9264dc14a8f6cf622733592bfe6e877e386f7f3556b152b64b",
+      "compressedBytes": 1823163,
+      "compressedSha256": "ed0615e47f45bb4a348e34b69bbe551472e72f816ce761f3899e45f72fb1a0b7"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/production-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/production-browser-report.json.gz",
+      "originalBytes": 1457795,
+      "originalSha256": "7cf17045cf71d52a4074b30d06599aaa6140e6de7c2c6c82e8da3802b5b50354",
+      "compressedBytes": 1086567,
+      "compressedSha256": "0c2164fe081eee20ad951585a771ec31b5ddf93d919b80916466f8cf8c1c4ace"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/deployed-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/deployed-browser-report.json.gz",
+      "originalBytes": 2752353,
+      "originalSha256": "cfd58939184555bbdd88d567b97da164efe6c1c698ae1a2457912ab63b7c0a19",
+      "compressedBytes": 2064727,
+      "compressedSha256": "e0137dd335c601c8f4b94ba86f3243b9a1afae0ef967ec9e595838a87ab8f595"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-loaded-physics-120s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-loaded-physics-120s.json.gz",
+      "originalBytes": 4100226,
+      "originalSha256": "a96be2a69ca56cd31a96ec77c421b7d55a4fe75cb1c92a72437ede6418dbb53a",
+      "compressedBytes": 412235,
+      "compressedSha256": "035481b2ba5dbc7b95f61c6a40d112e2d94d32ab778864b52c73b6d7862442f2"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-physics-first.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-physics-first.json.gz",
+      "originalBytes": 966150,
+      "originalSha256": "dd3c2e8c626d5f214e0c007ebd72ea62af603c4f5e38c61d77881bca0301f6f7",
+      "compressedBytes": 96432,
+      "compressedSha256": "945c956429a278c23bda1580915a63800b0e9d36ea70cca625379f464c4472d8"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/deployed-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/deployed-browser-report.json.gz",
+      "originalBytes": 2559956,
+      "originalSha256": "ab62258824490e88a862725aa4b16f5c80dfc1852e053fd13bc7296e65c176f7",
+      "compressedBytes": 1910155,
+      "compressedSha256": "761153eb4b40b278f916aca755047ec6fa6bcec38c1bb1e4210ba7ddc14babff"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-garage-webgl2-forced.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-garage-webgl2-forced.json.gz",
+      "originalBytes": 117137,
+      "originalSha256": "c4b51c16dfbf72a425a591bc912189d14bd1ca33d1ec8dfa3b0b6f59d6765923",
+      "compressedBytes": 14062,
+      "compressedSha256": "0e454e98d7d25a937a821f751dc70433be8f38030fa1d0cdfce226cf9a568953"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-garage-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-garage-webgpu.json.gz",
+      "originalBytes": 105131,
+      "originalSha256": "e9e6f8e31dad03f5857b06d8355c5d3425edf9d5fb90e966b0569e2d1c57c88e",
+      "compressedBytes": 12695,
+      "compressedSha256": "368314928ba7e55b38948bc85773e9f9f90bc99a605fe8c53da8fd9dd9f4c5c6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-models-webgl2-forced.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-models-webgl2-forced.json.gz",
+      "originalBytes": 101401,
+      "originalSha256": "6665eba36dca48156919c6ce9fa941a3947c40c086721769503b395a2d9d76ed",
+      "compressedBytes": 7720,
+      "compressedSha256": "18bfffa42612e90b5648884bb60e92d3685eb427e5b04dd2f0929eb2d800be37"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-models-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-models-webgpu.json.gz",
+      "originalBytes": 103188,
+      "originalSha256": "bf0da167206ca6c168a43b01ca27bfafe2ac46b04c4b36f6f5d7820eba74d4ee",
+      "compressedBytes": 7907,
+      "compressedSha256": "4de9eb8222efffdd2d587ca50bb45e99aed972a10f3e5bdf380347d44bb2d9d9"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/garage-browser-first-nan.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/garage-browser-first-nan.log.gz",
+      "originalBytes": 520534,
+      "originalSha256": "7e4e2a6395fd40ef2812a80bbf9b8ec845c2825968e98cc39734b5e7f5cf7ca0",
+      "compressedBytes": 4316,
+      "compressedSha256": "0155f28f9ebc2f641fb18e158394ba97f91086b7059c25db6ad23acb0d161676"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/garage-browser-physics-history.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/garage-browser-physics-history.log.gz",
+      "originalBytes": 512438,
+      "originalSha256": "593be2d4c995a275694b3e04e9959ba9c2a34d2647474db6a417202f90459e29",
+      "compressedBytes": 4268,
+      "compressedSha256": "efbdf5b0eef9d533f298f4310157993b068d0fc55db9e234b01d1fef2a489d07"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/garage-browser-physics-trace.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/garage-browser-physics-trace.log.gz",
+      "originalBytes": 164522,
+      "originalSha256": "9913be2043a39d3a6689a0cdc67bcbc2ee79b2a31dbc0b71f844402f650d6326",
+      "compressedBytes": 2397,
+      "compressedSha256": "0164c5c1f214562014f10aa4c9af78063ba99c2dfc52aec2e4edd21371f5052d"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/npc-pure-120s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/npc-pure-120s.json.gz",
+      "originalBytes": 136214,
+      "originalSha256": "744e42d44f8531c6368aa7148bdf57100ee3422f2a98de4bd5a1042fde1e0c92",
+      "compressedBytes": 13775,
+      "compressedSha256": "3f27f3b282187bfe4c225ec4d568f9fc0944d887c05ad1e4e22eb9b6e2168bbc"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-physics-brake-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-physics-brake-fix.json.gz",
+      "originalBytes": 159619,
+      "originalSha256": "8f257e6104f9ee16d1a1f02b5974e5c1620cbee44ce2c1433cd84f3a703f91da",
+      "compressedBytes": 14919,
+      "compressedSha256": "53c42806f77a40fd239714f01832bf3fa3cfb6bdcee0ecc5be7d422fea8cfbe8"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-reactions.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-reactions.json.gz",
+      "originalBytes": 718230,
+      "originalSha256": "29768d663ecbcd1efe6f41d7d7bb4ee824d3e3cd939dd3c44b415306621b4738",
+      "compressedBytes": 72231,
+      "compressedSha256": "840af3435ec0c2f6a3106aa5a27f8a1e396262bb419468b5b5ce2200010ae494"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/production-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/production-browser-report.json.gz",
+      "originalBytes": 1367447,
+      "originalSha256": "dc8e1e05733dcf3445f238e0006c04dce2f75a039ffbd48affc85e588f9e9b0d",
+      "compressedBytes": 1013872,
+      "compressedSha256": "ba361968394b5726bee974cf4f493347f896c3e251e36f7beb1da316a2978d90"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final.json.gz",
+      "originalBytes": 129703,
+      "originalSha256": "0e510367795e9b822a7d45b05a285ed3b7da410fc75b0430e3a5e5053dd6ce3e",
+      "compressedBytes": 18684,
+      "compressedSha256": "507fc2c89f023dde0aff8c0a5fc0379290992d7119fab30fe5b062e6db5d47cc"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/profile-render-fixes.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/profile-render-fixes.json.gz",
+      "originalBytes": 113107,
+      "originalSha256": "72150e2ec9fe252f7403a8156a1c2ceeac8664a5191e7b5da6db197e9c6e73f0",
+      "compressedBytes": 11815,
+      "compressedSha256": "a1c805511330a66a2f90c3f69c5c56d6206f7a9fea450ff74e8b5656bc9bd023"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/traffic-pure-240s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/traffic-pure-240s.json.gz",
+      "originalBytes": 143864,
+      "originalSha256": "2af66b3228b7c89109227be72969df7bfc0e35e516f49ad80a18f17c117fc59d",
+      "compressedBytes": 15272,
+      "compressedSha256": "b3f4da7a71b55fe3f4fc806d2f86200705c61e740ce1a1109b6938a86dff6853"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-acceptance.json.gz",
+      "originalBytes": 787147,
+      "originalSha256": "b04914ac52452375beef443ad30797e283315bfe3b6f6feb0f3de1ee86a69324",
+      "compressedBytes": 58579,
+      "compressedSha256": "34319b7c035fd1dd1b708e8d8395fa54d5035b8f31f91a71a29b7cbf6c284536"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-acceptance.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-acceptance.log.gz",
+      "originalBytes": 178555,
+      "originalSha256": "f40358b36b026481aadc9c512fb41e77589043d0f665bf8f753a5aeb0ec258ae",
+      "compressedBytes": 24741,
+      "compressedSha256": "f141a74c455b240971684d35912e11e6fb352dde3f632ee012c2df012eef6bdd"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-first-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-first-attempt.json.gz",
+      "originalBytes": 256589,
+      "originalSha256": "6d70261875cbf6a0bc24f867231d83f781c8869a0fcadc74b233ef68ab52ab50",
+      "compressedBytes": 13810,
+      "compressedSha256": "67a7cad477fa652e50e0a10f3cb3e410547c82df2b958817629102721eee1667"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-fourth-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-fourth-attempt.json.gz",
+      "originalBytes": 735103,
+      "originalSha256": "3ffb6daeef6517d1456e9b4b539211aec051824876c5ed12a47716d3d80d01b0",
+      "compressedBytes": 54351,
+      "compressedSha256": "773a2df1a11d0f16e9008d7eff09762e59874abf21b49ada1f710f70dc7d0cb0"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-fourth-attempt.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-fourth-attempt.log.gz",
+      "originalBytes": 178255,
+      "originalSha256": "24d0d67e23efe57c03c6f356e0c6b77f7d5a013913cc89f995a08a474b5f54be",
+      "compressedBytes": 24646,
+      "compressedSha256": "318c9ae24f6ef1e096a61cda2715718631cc8da60b3315212da04efef7e37e91"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-second-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-second-attempt.json.gz",
+      "originalBytes": 803949,
+      "originalSha256": "6b59a2d7b2d3afc9e7a97fed87b3b43413d758c6b380496604ca9344f8dae4bd",
+      "compressedBytes": 56319,
+      "compressedSha256": "fca918f598fdc56c0a9a1f486cd9525090ef3a519960c48f1508fcc9f431a293"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-third-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-third-attempt.json.gz",
+      "originalBytes": 724660,
+      "originalSha256": "aaa0f6a39b25f2c7e9f657eb2ad4554495dc01e99affb7413ba0621331967082",
+      "compressedBytes": 54149,
+      "compressedSha256": "6a39e546bf127d1acfd2f45b1c06baf331e1dee930a21a961e8353be4573797b"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/activity-route-third-attempt.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/activity-route-third-attempt.log.gz",
+      "originalBytes": 250809,
+      "originalSha256": "c0822f28641be2719a55516ac1d408f34554f3ac2c2da96fc37603b65042b824",
+      "compressedBytes": 31147,
+      "compressedSha256": "be5dc04f909b281d99512eed9627553143f3ef20a13b2414f840d99e33c09922"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/drift-control-probe.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/drift-control-probe.json.gz",
+      "originalBytes": 1123770,
+      "originalSha256": "43cb0ebdb1af5f1340878d25e7aff3cefe7493711968a69894a6e0df42613058",
+      "compressedBytes": 81662,
+      "compressedSha256": "b83374360055299b14f638901b6a6a355b792ead2387f710f7be6ed38a653fc4"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls-grass.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls-grass.json.gz",
+      "originalBytes": 823806,
+      "originalSha256": "28f761e7c2842fbd7012313e999e38f8e8659d0bce28355ba97fd47b66b4b0a2",
+      "compressedBytes": 93479,
+      "compressedSha256": "7bafd1804dd8edbc6df0fdd424f438a48aef35ae86adbc6ec62eec1bba8f446f"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls-second.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls-second.json.gz",
+      "originalBytes": 549162,
+      "originalSha256": "24176edeab7589277d3af1e01e9a85cca0488960b2865b56a33c98170a628400",
+      "compressedBytes": 60077,
+      "compressedSha256": "bb12d77471573439b0b9ff616197b7aba0a21cff423539d9666616d1ff246d6d"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/isolated-drift-controls.json.gz",
+      "originalBytes": 411592,
+      "originalSha256": "3741152aa4f6cc3867493f21c989f2f88911adeab48e599f4143b73a7c18018f",
+      "compressedBytes": 45638,
+      "compressedSha256": "4c35e7522877a9c2e776db099268fa363eb6472e8b90cd2c4f988b5280cd3f78"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/life-integration-webgl-before-official-state-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/life-integration-webgl-before-official-state-fix.json.gz",
+      "originalBytes": 120401,
+      "originalSha256": "ceb7755936c76b4b04423c3ca06f7f90ea4f4b4335f0a31c3216c74976183a2e",
+      "compressedBytes": 10521,
+      "compressedSha256": "b351bdde90e430c22cb6dfcd02e1f997350844001aeda75ae0b1bfa49f5f288b"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/life-integration-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/life-integration-webgl.json.gz",
+      "originalBytes": 120405,
+      "originalSha256": "66569d990a83f164d1d0a3451d2c9631a16e5d3dc835aebaeee123a28b5e94ec",
+      "compressedBytes": 10528,
+      "compressedSha256": "0d30cbef90da018caf18c459d588b351ae2b2a36a54d20c0d4d4371548702330"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu-before-official-state-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu-before-official-state-fix.json.gz",
+      "originalBytes": 120396,
+      "originalSha256": "1a04ba67e752be188e109d9eae4d7c0a7ef0edbd17910e95401b0db0aeb1b0c5",
+      "compressedBytes": 10522,
+      "compressedSha256": "ec309529c6eb226ca2a57074a0afa936bd8d66e5add06c751a054cbba451e512"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu.json.gz",
+      "originalBytes": 120400,
+      "originalSha256": "5882f418bac80f1cc1abc349552d11846e7774ebbd096cacb3c32b372d6771f1",
+      "compressedBytes": 10519,
+      "compressedSha256": "fc3ffcee1c0f0d5d73b5b0e00e3e9abb75ed017f8e7970bda7346e98d2198f99"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/loaded-drift-feedback-probe.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/loaded-drift-feedback-probe.json.gz",
+      "originalBytes": 192018,
+      "originalSha256": "01f96e31a10d1b9accc4b95a47738e8ad28786ae42ab7bba523c5c1d4d20b35d",
+      "compressedBytes": 15570,
+      "compressedSha256": "477f65bdb55a242abfe663f205de74c2fb2a67e9304d81fa3fa566bd52da836d"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/populated-performance-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/populated-performance-webgl.json.gz",
+      "originalBytes": 1068808,
+      "originalSha256": "aac306a66bed3473a34632a6b9f4fffc59f6606625bd8493010811e18b816ac3",
+      "compressedBytes": 90767,
+      "compressedSha256": "b2a4b651d4306496894fc448d55998eca223f85dea84cd712ac2f4685293c0c2"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/boot-inspection.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/boot-inspection.log.gz",
+      "originalBytes": 17849,
+      "originalSha256": "e1d1aeaeaaec7d0bd21561b790380a2619bc26ed6469fc0491962ab112f89082",
+      "compressedBytes": 2411,
+      "compressedSha256": "7b5a9813f2c0ee5c442d26f8e3946772933896342a733f1c43b99a3621fae5b8"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/deployed-files-after-transfer-shutdown.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/deployed-files-after-transfer-shutdown.json.gz",
+      "originalBytes": 46146,
+      "originalSha256": "8a705c80bb9adf2e782dae8a8f9ba680e0cbdf2a1957fa14f33c88d7398f2f8b",
+      "compressedBytes": 9782,
+      "compressedSha256": "367df2dcde8af3df8f1d42f94c5ef11aab91938abc110285ea61919f7abb5fc1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/deployed-files-before-transfer-shutdown.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/deployed-files-before-transfer-shutdown.json.gz",
+      "originalBytes": 46146,
+      "originalSha256": "b6b01b701f34fe48f51684e18d92fed2d680f0ff6a6683ecee1b1c23f1c6c96f",
+      "compressedBytes": 9782,
+      "compressedSha256": "0404af9ea4e7f8bdd0bfcf6810069c1340fbba5a807c4fac2ae0b0613e456c3c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/early-runtime-before-yard-move.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/early-runtime-before-yard-move.json.gz",
+      "originalBytes": 49896,
+      "originalSha256": "cb9b4f1c61e1f9e10e9d7b06bf5aeb611f073eb497be2ec624d6edd50d86f466",
+      "compressedBytes": 14111,
+      "compressedSha256": "28928abddd3da19aa69339d11b4f056c66796744ff2f098a7fb59612e89b1e5c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/first-integrated-build.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/first-integrated-build.log.gz",
+      "originalBytes": 33967,
+      "originalSha256": "abeaad03087d320fc5f0e98a166537fae64869f37e099595922e98b2c231e03f",
+      "compressedBytes": 9257,
+      "compressedSha256": "3065709eb9aa8cda8edaa1c43452a683ff1d3e8bd446c8d0af10fbcb48c61951"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/first-integrated-smoke.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/first-integrated-smoke.json.gz",
+      "originalBytes": 66853,
+      "originalSha256": "1f62a5fbe6e5d8241eb3a01d7b35a42a0ee87a616692ebf79e3598df91a67fb0",
+      "compressedBytes": 6177,
+      "compressedSha256": "630d140af77a0fd19410f660bcc24f909697c2e99c62a18407698d1bfd5794c5"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/gpu-cost-attribute-only.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/gpu-cost-attribute-only.json.gz",
+      "originalBytes": 25356,
+      "originalSha256": "a66be2442f4184b2730f0f289e0b7925f0349e69ce91339fd8f783e5e0ef3808",
+      "compressedBytes": 3274,
+      "compressedSha256": "07e13c3685dd2fdee04fb4067de1f365e6bd7d5a2cb4fdc80ed281e05721fcb5"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/gpu-cost-basic-shadow.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/gpu-cost-basic-shadow.json.gz",
+      "originalBytes": 26710,
+      "originalSha256": "baef7365fde512140b84eea2ede8d3ab1af2f479e5d052d38d9bd371b5399169",
+      "compressedBytes": 3325,
+      "compressedSha256": "9ea883a457311633c96d43fc721cceec28e8552ace4733e390c4bbd1152acc2b"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/gpu-cost-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/gpu-cost-before.json.gz",
+      "originalBytes": 31619,
+      "originalSha256": "f320c0694b11f42d9e5a44633b9e49e4e47aa12c9882f88d9621c00e417cb5b8",
+      "compressedBytes": 3677,
+      "compressedSha256": "5714f60be8429bcaead22b60d47f55c7bbdb03b51d6acf093ff55b62bf9826a9"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu-cooldown-first-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/life-integration-webgpu-cooldown-first-attempt.json.gz",
+      "originalBytes": 54587,
+      "originalSha256": "f3b32269fce4bb00196855a63a47f0778e80d891d9e95cd5578af91d91c5113a",
+      "compressedBytes": 4909,
+      "compressedSha256": "03cfe19a075dc4e65dd8d793acc69f64f0852f940610308e540a4fa8744b33d1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/performance-before-runtime.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/performance-before-runtime.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc",
+      "compressedBytes": 12393,
+      "compressedSha256": "633388b10b72f4e3fa66d9d1308c2e5ea2be408249b9248f216b701409907ca6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/public-file-integrity-after-shutdown.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/public-file-integrity-after-shutdown.log.gz",
+      "originalBytes": 10639,
+      "originalSha256": "2a1487561f7d408b9b0983d422fb99d133931c06caa83faa27d2019b65740984",
+      "compressedBytes": 1519,
+      "compressedSha256": "86ca384ffcc6cab7d05a1209bfca654191e580a047df77b3dad283fa3668fb2f"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/public-file-integrity-before-shutdown.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/public-file-integrity-before-shutdown.log.gz",
+      "originalBytes": 10639,
+      "originalSha256": "2a1487561f7d408b9b0983d422fb99d133931c06caa83faa27d2019b65740984",
+      "compressedBytes": 1519,
+      "compressedSha256": "86ca384ffcc6cab7d05a1209bfca654191e580a047df77b3dad283fa3668fb2f"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/radio-provider-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/radio-provider-acceptance.json.gz",
+      "originalBytes": 73269,
+      "originalSha256": "f866d43b0c9c2aaba03ab2f4fa4a1419e7aabf52c1688d78ab4adaeeb5551672",
+      "compressedBytes": 6211,
+      "compressedSha256": "51dfb7367ab2bd42f8d1bd9077c76dab228296da2eb18ace91e4fb25526d1e01"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/radio-provider-first-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/radio-provider-first-attempt.json.gz",
+      "originalBytes": 35198,
+      "originalSha256": "38c20eed7560e3c192cb7475f3b20c531be14f8a2c407e4a4af49fbf72d22c1e",
+      "compressedBytes": 5044,
+      "compressedSha256": "3c344f41efecf0787dbb766b9a4fb63c23aa76f14376a5aa7324bd0fd9254501"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/radio-provider-fourth-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/radio-provider-fourth-attempt.json.gz",
+      "originalBytes": 70901,
+      "originalSha256": "9ba567b6e6c5c04c62b87866480581216604e0595ea6e6cfb992db588ce6ba48",
+      "compressedBytes": 5830,
+      "compressedSha256": "524547cb47176eee35ddc6bfdf06f5c3e22e998e64f1914675534b5e49da1f84"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/radio-provider-second-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/radio-provider-second-attempt.json.gz",
+      "originalBytes": 57587,
+      "originalSha256": "999fc29b1a811a168e49732b35e92add1756f86502f49fb9e83508e6d6af26dc",
+      "compressedBytes": 5158,
+      "compressedSha256": "365f3e5e4dbad5fbbc1a2b972fabbd3512591348cd15bc5b94e57d5206a42c32"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/radio-provider-third-attempt.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/radio-provider-third-attempt.json.gz",
+      "originalBytes": 58391,
+      "originalSha256": "ba1c29086bdfd8b22ddbf762a4b3e41e049c7412abaa642101bdfe00b78467d3",
+      "compressedBytes": 5332,
+      "compressedSha256": "f35cd23b1136985b7c8abe792725d8e645f3e0405b4ca6d03a0c7680f0bcc650"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/rules-unit-tests.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/rules-unit-tests.log.gz",
+      "originalBytes": 33603,
+      "originalSha256": "42e05a4ab9960a561b04706d4403d6b023d006b3021444b64fc17540a79ae26c",
+      "compressedBytes": 8859,
+      "compressedSha256": "1f6009c96a8c45d49b626178fbc7af5e488f6419699c478f26233549e060bf13"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/runtime-after-water.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/runtime-after-water.json.gz",
+      "originalBytes": 49739,
+      "originalSha256": "65a78bdc07b587636dbf75b220e642f142ce41293c9751a298b0d951165dec41",
+      "compressedBytes": 14059,
+      "compressedSha256": "5da0a2483bb8aa8bcb8b97fa869efd8d05ad92f3c0eb4d1b37bc71b2e1d80eb5"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/runtime-before-official-state-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/runtime-before-official-state-fix.json.gz",
+      "originalBytes": 49896,
+      "originalSha256": "5fe9ecb286fba7ba3b36f367e69e54d0c26654b70709d31d9649ef30ecfa44cd",
+      "compressedBytes": 14114,
+      "compressedSha256": "054cf49cbd066c72cf3908dfea1908b62708995ab60a08346f7aab34f5795c1a"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/runtime-before-water.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/runtime-before-water.json.gz",
+      "originalBytes": 49581,
+      "originalSha256": "859b6a29374b2903d0d9e3c43b9910fcb4e509700177e611531ea3c3775f50da",
+      "compressedBytes": 13998,
+      "compressedSha256": "1babb9cea1c112ac08412a61dc16eba70899d97010f103f8d9469866989dd5bb"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/tested-runtime-after.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/tested-runtime-after.json.gz",
+      "originalBytes": 49896,
+      "originalSha256": "1eccc4825639016cef2739f33740f4bea5b914be1da4e2b52021cda5dd4cbf77",
+      "compressedBytes": 14110,
+      "compressedSha256": "dcff2902b0b138c660fca126ac32d6ad2df8f32cbdd5b3f547834b61b286b8d1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/tested-runtime-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/tested-runtime-before.json.gz",
+      "originalBytes": 49896,
+      "originalSha256": "1eccc4825639016cef2739f33740f4bea5b914be1da4e2b52021cda5dd4cbf77",
+      "compressedBytes": 14110,
+      "compressedSha256": "dcff2902b0b138c660fca126ac32d6ad2df8f32cbdd5b3f547834b61b286b8d1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/unit-before-official-state-fix.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/unit-before-official-state-fix.log.gz",
+      "originalBytes": 35488,
+      "originalSha256": "f2d675fd32c87d67aeabf612d7ee9a72014537ab6f0bca89b3cac23139b9756e",
+      "compressedBytes": 9327,
+      "compressedSha256": "7916357c67fd453bef8b8fffd09938946f89f35259649f725bcdbdc17387ac9c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/unit.log.gz",
+      "originalBytes": 35479,
+      "originalSha256": "ad2909190ce61a6ba22d83f8d03991ca22c9495b1f5a3f1151591cc2ae7fc857",
+      "compressedBytes": 9307,
+      "compressedSha256": "7d6e372e5538f1b6615c93122e7ae42b73def395240935a706421eff432148b2"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/updated-unit-tests.log",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/updated-unit-tests.log.gz",
+      "originalBytes": 34056,
+      "originalSha256": "3d25b52cc01e5a31941d55b8daa6306ca9c5ce5583547984f04c66b01f5edbcc",
+      "compressedBytes": 8993,
+      "compressedSha256": "754c0dd020a19e8920b25beaa5f1a663fb71791ac76fc19242f16f0dcd4c8bd9"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/water-comparison-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/water-comparison-webgl.json.gz",
+      "originalBytes": 38574,
+      "originalSha256": "8c70b2f9a83cd1d86427362ac2ec218ddc0eb53bd0005ab32fee519542cbc66a",
+      "compressedBytes": 3423,
+      "compressedSha256": "0c86a200b12b043a0ac563c570cc61055d85ff59152ccb6248d6f010104f07db"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.13.0/water-comparison-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.13.0/water-comparison-webgpu.json.gz",
+      "originalBytes": 38509,
+      "originalSha256": "aa12c8ce71655332112a47275ca9c4026201d2818999ca34eaeeb2020a15fc7b",
+      "compressedBytes": 3435,
+      "compressedSha256": "31aacd9a938615bc7975d99b694c5d1e507d02c793da78a64623ea12b2ecbc07"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-activity-route-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-activity-route-acceptance.json.gz",
+      "originalBytes": 787147,
+      "originalSha256": "d4729e72bfc545abd70dcb8ac2f48d04711c1072a3a66c61e205c227c6090756",
+      "compressedBytes": 58561,
+      "compressedSha256": "ddbab97aaf7ebb89dddb6cf537192e78b17906133a6c47a28872498eee3b92c4"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-activity-route-acceptance.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-activity-route-acceptance.log.gz",
+      "originalBytes": 178555,
+      "originalSha256": "f40358b36b026481aadc9c512fb41e77589043d0f665bf8f753a5aeb0ec258ae",
+      "compressedBytes": 24741,
+      "compressedSha256": "f141a74c455b240971684d35912e11e6fb352dde3f632ee012c2df012eef6bdd"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-life-integration-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-life-integration-webgl.json.gz",
+      "originalBytes": 120428,
+      "originalSha256": "13ddd6451c7e4c59a08f3e61d3981f7ccb77705b5e1bb346ed692d33c5e4140f",
+      "compressedBytes": 10527,
+      "compressedSha256": "b395677e22225ee9492b48b0a4814e4521b9e8ca674e0226e1d149db7347b5f6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-life-integration-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-life-integration-webgpu.json.gz",
+      "originalBytes": 120407,
+      "originalSha256": "a0f9877b0314ca51d65ae4ef2bd82724fae98a1df146a33a5f3d6bdbeebcfd24",
+      "compressedBytes": 10517,
+      "compressedSha256": "b67cb11596454769020ec644051a7b120525dee631fbbca8e69537466e45111e"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-acceptance-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-acceptance-webgl.json.gz",
+      "originalBytes": 326586,
+      "originalSha256": "60a7ed384f9516b1020b5231dcb37fccb0d9f344044850ab697da8667e7b1987",
+      "compressedBytes": 14964,
+      "compressedSha256": "a9849121acae06013318b3687316a952434df7b7318525e9eb2698a823282bb1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-acceptance-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-acceptance-webgpu.json.gz",
+      "originalBytes": 326877,
+      "originalSha256": "f84a03973ed5db8947a7ce573e074b2dd423adfc7b557dcdf80b77d6457e64b6",
+      "compressedBytes": 15141,
+      "compressedSha256": "7e39a2a7b3ef7f46944ea497f82b20da8a151c847f655a4adaf500e7b193aca7"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-radio-provider-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-radio-provider-acceptance.json.gz",
+      "originalBytes": 73871,
+      "originalSha256": "fb0156d0dc7a38ab849a9133354f9c1df52324c2aabfb4e84e5d80bcfa026cc8",
+      "compressedBytes": 6366,
+      "compressedSha256": "b6cd235f8d5be3c7b365b746d2537f9c4e81b10897ccebb3e49bb787d9ee9fd7"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-tested-runtime-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-tested-runtime-before.json.gz",
+      "originalBytes": 51190,
+      "originalSha256": "0cd8c2587010cf6a52664c906be7f6321d1010c6782cec8e6a01f61335518e1f",
+      "compressedBytes": 14509,
+      "compressedSha256": "c4e6a901c60bcfcc2ccf4495fb34c9a2ee614806b4635a0e032d0962b7ad7dde"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/pre-singlepass-unit.log.gz",
+      "originalBytes": 38490,
+      "originalSha256": "a4544d763fe22372e56de5744648f0cd7b3cdff45c12819faccf8e258a83dbf5",
+      "compressedBytes": 9969,
+      "compressedSha256": "573b96c351db5324a5ab026426767c6aea6488bc3a2575ed8f039a74b0e1255e"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/oldtown-interrupted-candidate-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/oldtown-interrupted-candidate-busy-webgl.json.gz",
+      "originalBytes": 208437,
+      "originalSha256": "a99d1f9ac859bed40d43b6fc0d97d901173129945c1d20399a5e432d703b14b8",
+      "compressedBytes": 24919,
+      "compressedSha256": "5e007b61bf91045b44046bf8c57b1de199d3a074cf6033c8bedfd7532ea46d78"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/oldtown-interrupted-candidate-busy-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/oldtown-interrupted-candidate-busy-webgpu.json.gz",
+      "originalBytes": 206909,
+      "originalSha256": "0b0edef5759a9bdcbe17051414836bd8f1ea0c2b1955caa8b2f408c67a7b8e8f",
+      "compressedBytes": 24437,
+      "compressedSha256": "139010bcaabfb0bdd7b73e52db438a648f6b21f5387293c47488b01d1ec3ed7d"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/initial-lighting-acceptance-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/initial-lighting-acceptance-webgl.json.gz",
+      "originalBytes": 328094,
+      "originalSha256": "533c0cf82a9c35de116fe2305d1ad3e97249fbd7fc0d331cdedbb0dea46bb458",
+      "compressedBytes": 15017,
+      "compressedSha256": "68266387154eb0222bee65934f9dbe56cc2ab893a61c184f534e47351abb0e1e"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/initial-lighting-acceptance-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/initial-lighting-acceptance-webgpu.json.gz",
+      "originalBytes": 321121,
+      "originalSha256": "23b3c199275c83c7a32bced0856efb207d1299ae19677b4ccc21f4886f31d484",
+      "compressedBytes": 14937,
+      "compressedSha256": "e7888f3bd993723ff85f8eeefbcf5391f7ccaf9545c4e6a3bc2ade532771f103"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/first-lab-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/first-lab-webgl.json.gz",
+      "originalBytes": 133224,
+      "originalSha256": "49460100c888b0fcc824f67e011f0eda7a87bc44b79d97aee1bc6a0a97ad33a6",
+      "compressedBytes": 3098,
+      "compressedSha256": "cf592b2d7f49230672e82454b4b9519d2428429431e1146f5c284548e09c27bb"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/city-strict-tour-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/city-strict-tour-report.json.gz",
+      "originalBytes": 22123,
+      "originalSha256": "144bbf328c6e54ff538422d3e62324a109be46e977077877c8eabdcf6a68040c",
+      "compressedBytes": 4324,
+      "compressedSha256": "56c05aa65c11f646a124c3f877797ae35ed46876ea8c3a4139166fe615f0b410"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/foundation-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/foundation-browser-report.json.gz",
+      "originalBytes": 27202,
+      "originalSha256": "272eadd38221942764d9ec9844751b296c8bc41485e6a6948f1e2b317ec0de95",
+      "compressedBytes": 3405,
+      "compressedSha256": "6a904105eb473687bf762bba0ef180e06013e40042959ad9bdc240232af76ef6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.5.0/unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.5.0/unit.log.gz",
+      "originalBytes": 13974,
+      "originalSha256": "038fdd00f43bfea2851a50f8fdc0e9811b868bab7bac8c4283fa6d29de200beb",
+      "compressedBytes": 3951,
+      "compressedSha256": "909e805318226b5ca9bf12958bb510a800fd2188c85ea8c279d49d6584885ef8"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/city-regression-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/city-regression-report.json.gz",
+      "originalBytes": 6540,
+      "originalSha256": "df84a94a9011ddcb4da07f45a86cf6c1bdee90f3a37bc4885c9122f5b485aca9",
+      "compressedBytes": 1221,
+      "compressedSha256": "6c80471f739414bd430211541834dc5de0278118cfd5dec2e855133a6df6f307"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/exit-debug.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/exit-debug.json.gz",
+      "originalBytes": 27595,
+      "originalSha256": "2f3c670d59174803ca295c264c1fe1db50dc347aa2f22f3d2085ede9c89acbc4",
+      "compressedBytes": 3270,
+      "compressedSha256": "2a867e13fb5966a66a4b23da74a9807ac6118924705825b49879a480a11c65cf"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/mirror-screen-overlay-failure-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/mirror-screen-overlay-failure-report.json.gz",
+      "originalBytes": 15188,
+      "originalSha256": "0eafdf32682f2f6f2c829cb1de4b4da002f7f2922d2e050df841587ad4a5d3ce",
+      "compressedBytes": 2113,
+      "compressedSha256": "48c98b8966b1176095fe1b7d7086a6c689ea0d0b09cfe6427e57b446b84172ba"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/mirror-screen-overlay-failure.log",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/mirror-screen-overlay-failure.log.gz",
+      "originalBytes": 6265,
+      "originalSha256": "693941962fd93d727cf75a8514f8e08f95e54bf4073449d662a6c5639f2e77c4",
+      "compressedBytes": 1204,
+      "compressedSha256": "79b7e63896128895f7ea6eff1f5e12c1012128846690118a9720beb5d6e7a612"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/public-car-smoke.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/public-car-smoke.json.gz",
+      "originalBytes": 23900,
+      "originalSha256": "44846717aa83417de7d6b43eed644a5ec5cb5c8ab37ab9c042c249f03f607433",
+      "compressedBytes": 4518,
+      "compressedSha256": "48559c0ced0bcfd3761c8195d53a6f5ad1efd15b9a4e4aab25355c2799668c0d"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/unit-checkpoint.log",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/unit-checkpoint.log.gz",
+      "originalBytes": 21251,
+      "originalSha256": "a1be4fb4058260d26345e7ce558f2f64314242f69ff649e22ba02ebc72e56dcf",
+      "compressedBytes": 5901,
+      "compressedSha256": "8f3af33f07465d9eaac99698a078b9afb0b25b33aa73eaa916fbe89d3b7d3a62"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/unit.log.gz",
+      "originalBytes": 22696,
+      "originalSha256": "6955d0e8140c2714af58be46e0c0573450787de44b082124bd908df8cae50cdf",
+      "compressedBytes": 6226,
+      "compressedSha256": "5da0075e8ec38653c6c79a4ffc688417f85f08e259fe506bf9ebaf893f90f869"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/vehicles-browser-first-failures.log",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/vehicles-browser-first-failures.log.gz",
+      "originalBytes": 5523,
+      "originalSha256": "a9a495660cf168cef7684bda616f868c58d33d00b0ed8f258c1401f6d76c5b87",
+      "compressedBytes": 1483,
+      "compressedSha256": "035231f37e6e887bf293c049c5651005c7d0d6337e3d4c7d16cd2af3e3c33347"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.7.0/vehicles-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.7.0/vehicles-browser-report.json.gz",
+      "originalBytes": 6722,
+      "originalSha256": "7a1031c7e065e45f860dcec91a441dd3dd5a5018321d80b66372f6721a5d7d5e",
+      "compressedBytes": 1261,
+      "compressedSha256": "0f9d60f2af27ec6a6093ea824f0fd3424a63ca67708d053c9b542a47c56f28ef"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/city-regression-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/city-regression-report.json.gz",
+      "originalBytes": 6537,
+      "originalSha256": "4e2b7ded2b2ce8812fdb114d58c95bad75bf096cfe391c66cecb6f8738b09683",
+      "compressedBytes": 1218,
+      "compressedSha256": "763dfa7b4e7422889a772bb51cf25d7e753cbbbd960b6022b1a30d3acdd50561"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/deployed-files-after-transfer-shutdown.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/deployed-files-after-transfer-shutdown.json.gz",
+      "originalBytes": 42738,
+      "originalSha256": "1692e02ee8af51eaf3ccb5297f405e5929ed24e2baec097f158f0c8e346edeb5",
+      "compressedBytes": 8887,
+      "compressedSha256": "1b44d09c33a60be874d8369b586451fe56d0edd4a5d2ca36956b6df1cc85eff5"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/deployed-files-before-transfer-shutdown.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/deployed-files-before-transfer-shutdown.json.gz",
+      "originalBytes": 42738,
+      "originalSha256": "c40394363c09440c6dc2606d930eabb7f69802876cc519679dd59cf8cea0065c",
+      "compressedBytes": 8887,
+      "compressedSha256": "b0b9acbbc02eca28d11ccc052079897f16377c724cd5a8fa1437548ab033ed90"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/deployed-integrity-after-transfer-shutdown.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/deployed-integrity-after-transfer-shutdown.log.gz",
+      "originalBytes": 9876,
+      "originalSha256": "8acf495f5f336dcc1c89c6f87dfe4e1c1e618329346deb001acefd83e07912d3",
+      "compressedBytes": 1255,
+      "compressedSha256": "c742bd9de0a85ac058e03daaf8654323b1a3206ad4d684bf6a48f819bc831f20"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/deployed-integrity.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/deployed-integrity.log.gz",
+      "originalBytes": 9876,
+      "originalSha256": "8acf495f5f336dcc1c89c6f87dfe4e1c1e618329346deb001acefd83e07912d3",
+      "compressedBytes": 1255,
+      "compressedSha256": "c742bd9de0a85ac058e03daaf8654323b1a3206ad4d684bf6a48f819bc831f20"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-browser-first.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-browser-first.log.gz",
+      "originalBytes": 5772,
+      "originalSha256": "640119d899244cb6e12793b7739830db4522be50a00c84560889dcf83cc453d4",
+      "compressedBytes": 1728,
+      "compressedSha256": "7a22c5c21fa3c13e937a050b5b87071593410ac59a7e9c1543de1ff7a17a5719"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-browser-pre-stationary-impact-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-browser-pre-stationary-impact-report.json.gz",
+      "originalBytes": 8828,
+      "originalSha256": "9b1d7484467e623b7dfd9126e64e2eef173b415b025ecf11186c8086dc9b6f78",
+      "compressedBytes": 1373,
+      "compressedSha256": "005e20abd991b0e2e3d0268925722b1f51a55a3821d87e7b58b2913fd6fa2122"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-browser-report-pre-route-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-browser-report-pre-route-fix.json.gz",
+      "originalBytes": 8827,
+      "originalSha256": "9885711673b6ff6e655db52a73b31b49ec5dea81b36a583a9dfa7ed0accaa909",
+      "compressedBytes": 1370,
+      "compressedSha256": "5bbc7ec9225b8fba2cd94b7e630f612136189db478e1d8da38cda8d3ab527c51"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-browser-report.json.gz",
+      "originalBytes": 8828,
+      "originalSha256": "68ba5820cd84b4022577054be5f48fa8ed1b9412ff811f7ce2a6e694f2c940eb",
+      "compressedBytes": 1373,
+      "compressedSha256": "be54b0594b92b7d9b3660c322e81519fadcbf5ec561e1371524edaf22ca3eccc"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-failure-webgl2-forced-garage.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-failure-webgl2-forced-garage.json.gz",
+      "originalBytes": 17982,
+      "originalSha256": "7db38323ca6165a09e4b6d3079d8656eb17d964b7cfb362ffc4cae68e3f374ed",
+      "compressedBytes": 3292,
+      "compressedSha256": "95d7a79640cd4559eebf154cbf61d2882f20e55b485fb2c4f2f47d19cae42675"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-reward-webgl2-forced.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-reward-webgl2-forced.json.gz",
+      "originalBytes": 20099,
+      "originalSha256": "0d5412edb2024f28fdbf85808408d973306ee8214380f42c3a6c477e461e6334",
+      "compressedBytes": 3222,
+      "compressedSha256": "9b10476ca93185cb4c083b9de432397f6ad530a0bdc4c50f40bfa925ac5290d9"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/fleet-reward-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/fleet-reward-webgpu.json.gz",
+      "originalBytes": 20088,
+      "originalSha256": "e3b71b77864ca4d88646449e7d2455f97d3d11f44cd62670bcfdbb259a76d76b",
+      "compressedBytes": 3214,
+      "compressedSha256": "208761b2ed27712c2c1845ed2986c3e06c5292c407ef9772076d0edf0be16841"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/garage-browser-third.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/garage-browser-third.log.gz",
+      "originalBytes": 48339,
+      "originalSha256": "2f9bb6605bf5de776aecd866b7fe131e0888743161356478eb2c2a17a81b9c24",
+      "compressedBytes": 1689,
+      "compressedSha256": "59d5a22f1d420e581256e17c69df08acd84afbb74d839368a1bbb571fc04ae47"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/geometry-audio-units.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/geometry-audio-units.log.gz",
+      "originalBytes": 5907,
+      "originalSha256": "2f8392b29d0d9e1a82629436582f654dd257cbfabbdfe6eb287c0736c00e3917",
+      "compressedBytes": 1736,
+      "compressedSha256": "9281c05394571ffde158bac46fbb6e5c148dfc62844fe187cf71ed2879775d34"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/handoff-runtime.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/handoff-runtime.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc",
+      "compressedBytes": 12393,
+      "compressedSha256": "633388b10b72f4e3fa66d9d1308c2e5ea2be408249b9248f216b701409907ca6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-auto-wall-120s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-auto-wall-120s.json.gz",
+      "originalBytes": 73307,
+      "originalSha256": "f0ef8124d38298a9c931b9b535bd565ebb0a826de9ea68bf654b308a63a003f8",
+      "compressedBytes": 11259,
+      "compressedSha256": "a439818b26f4525a01efdd3cf225048f8106caab28989c2098e689bb1570eced"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-brake-fix.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-brake-fix.log.gz",
+      "originalBytes": 21809,
+      "originalSha256": "e1a37d712f04398a2fcfecc8b49592e0fbbdd2c96e022895c6c3f94f4257e362",
+      "compressedBytes": 1664,
+      "compressedSha256": "488ebe2748ab1ccc811fbfabf2176936489061cf4e9815a5a8d4e37bb8162c91"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-loaded-final-120s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-loaded-final-120s.json.gz",
+      "originalBytes": 74002,
+      "originalSha256": "2174b0fb8c583751b443988e51118118d5952141aca1eee20a8543a022f663c8",
+      "compressedBytes": 8562,
+      "compressedSha256": "9a7f7a3da4e21326939af40a1c0082148660e0955c9623dc5dcb1704c1beb8b0"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/population-parked-wall-120s.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/population-parked-wall-120s.json.gz",
+      "originalBytes": 74815,
+      "originalSha256": "d2db99ecf764cd46b7ffc026e149fdca886872768231f28e7cc55e507bb60554",
+      "compressedBytes": 12119,
+      "compressedSha256": "73ea2ccd625658d4204984b8dbf3985e0e2c1cb9007a8d8eca414a8d6acf9348"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/profile-0.7-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/profile-0.7-before.json.gz",
+      "originalBytes": 87386,
+      "originalSha256": "1c0ebbcb53a6020ddea18a8583205327af08697348a98c28996128e4e13986f3",
+      "compressedBytes": 8286,
+      "compressedSha256": "b87998f5f28c5074c1ddbae191a415f3abc9abe021a5327e12bb167ca6d2a22f"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final-shared-browser-failure.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final-shared-browser-failure.json.gz",
+      "originalBytes": 36904,
+      "originalSha256": "e5a0763dd41ee55af083e76105e8cefc4c8ef588d0d192edc0f72cf631ed7d30",
+      "compressedBytes": 6165,
+      "compressedSha256": "2307567733e422c21eec8be850d2c394e129adc62beaaca7b6ded298d887a2a4"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/profile-0.9-final.log.gz",
+      "originalBytes": 6492,
+      "originalSha256": "975c9e602a7b34c8402901ef54ca906e103145a05c7f814cca3b83f5014f9c9a",
+      "compressedBytes": 1492,
+      "compressedSha256": "190b39fdd3a535a6d54e49caaa8caf36f7fe30ef0156bf9aefe3f1be27b4dc52"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/public-car-smoke.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/public-car-smoke.json.gz",
+      "originalBytes": 32607,
+      "originalSha256": "37936819df6a6c78ec74b88a7ab422999cfcc245b4b24bc7b47f49429b4d1b1a",
+      "compressedBytes": 5977,
+      "compressedSha256": "2b875efcaa9714077f0f995749b59abf7878c57e7e6a8850c6ec25b1c318e4c9"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/roster-loop.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/roster-loop.json.gz",
+      "originalBytes": 8557,
+      "originalSha256": "10dcaf72e06dd604610b8c61bf3b46b2f2cd616b1aad6874aaa3de79d3017f74",
+      "compressedBytes": 1733,
+      "compressedSha256": "277983176ee36e07726825724ced2e9a34f1f6346fa65340c6ca60401aaf7bb1"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/roster-loop.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/roster-loop.log.gz",
+      "originalBytes": 5565,
+      "originalSha256": "ca70f1131c5a8c22fd349eb581e25faca72f26c3bf104605139031741de0ab3b",
+      "compressedBytes": 1561,
+      "compressedSha256": "51d0c998b0f8dd431cb30e27c45fc3685fc2e462b6db014cf0d480923f643234"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/tested-runtime-after.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/tested-runtime-after.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc",
+      "compressedBytes": 12393,
+      "compressedSha256": "633388b10b72f4e3fa66d9d1308c2e5ea2be408249b9248f216b701409907ca6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/tested-runtime-before-pre-route-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/tested-runtime-before-pre-route-fix.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "5cc869b9e4d568076d624f5b11bfdbbe95582669817481061660172216fdb4f6",
+      "compressedBytes": 12394,
+      "compressedSha256": "98528c402e45147ddab0bc7cefcdbddc88faa486989ed7a8845c19b212da8067"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/tested-runtime-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/tested-runtime-before.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "9332669a85dfd1978f8df2e71cb53a70491be7ed541935043775b571a916febc",
+      "compressedBytes": 12393,
+      "compressedSha256": "633388b10b72f4e3fa66d9d1308c2e5ea2be408249b9248f216b701409907ca6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/tested-runtime-pre-route-fix-after.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/tested-runtime-pre-route-fix-after.json.gz",
+      "originalBytes": 44624,
+      "originalSha256": "5cc869b9e4d568076d624f5b11bfdbbe95582669817481061660172216fdb4f6",
+      "compressedBytes": 12394,
+      "compressedSha256": "98528c402e45147ddab0bc7cefcdbddc88faa486989ed7a8845c19b212da8067"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/unit-after-fleet.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/unit-after-fleet.log.gz",
+      "originalBytes": 28697,
+      "originalSha256": "0eb224f72454f82d46ee7210cde2bbf9b65b9f8d2ad458cdbbe4aec8f1deaba2",
+      "compressedBytes": 7679,
+      "compressedSha256": "48c079e654d99f850f1a17334e41dbbf83a642f3453f8c46ca684b34b34a901f"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/unit-initial.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/unit-initial.log.gz",
+      "originalBytes": 28182,
+      "originalSha256": "32f1ecc495e5bb5226694a46714ea5b1d75e384c8d87ddeef31584cef7b72fbb",
+      "compressedBytes": 7711,
+      "compressedSha256": "32641f32fa424e5fe437dd945b495f9805a624c2881bcf39e311f71149ecddfe"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/unit-pre-route-fix.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/unit-pre-route-fix.log.gz",
+      "originalBytes": 29539,
+      "originalSha256": "1442762885ffdc91bc0024b72a82bfbcef0fe4b1bc7e3d36ee83384c90ba571b",
+      "compressedBytes": 7869,
+      "compressedSha256": "c46fecea091be881ba88abbaafb4eb76e53f164a0b47573da27b87d0fc4a5653"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/unit-pre-stationary-impact.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/unit-pre-stationary-impact.log.gz",
+      "originalBytes": 29320,
+      "originalSha256": "17f37a83ca36d5792a5b5370f70d7b97fa27264c668a86a32066dc06a2e52dcc",
+      "compressedBytes": 7812,
+      "compressedSha256": "1ae472276c9d02725f44c9a10cede00909ac4611d0e04c8008c2d8a30820189b"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/unit.log.gz",
+      "originalBytes": 29538,
+      "originalSha256": "06f1f51e31eda3dd09c2dcbc55492c44fbab43d630c9e0080baaffdfb21c2a7a",
+      "compressedBytes": 7864,
+      "compressedSha256": "4b1b2530f25d84705451ebb57269103e58be3ced29dbd7b2fc257064308df53a"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-pre-route-fix.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-pre-route-fix.log.gz",
+      "originalBytes": 13890,
+      "originalSha256": "2817e4a5eea8694fb80eaf5810a4f064005f32fe8c944d2d58b137dbec5286a7",
+      "compressedBytes": 2253,
+      "compressedSha256": "6415a20adfd2660b0a1a332e2d55f5548261e16a14405a12380e3d42c202c5c7"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-report-pre-route-fix.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-report-pre-route-fix.json.gz",
+      "originalBytes": 31182,
+      "originalSha256": "e362f7dc8cdf5859e32ee6e94f84133d7b9e35be91d18b93c69722373c1ba331",
+      "compressedBytes": 3355,
+      "compressedSha256": "d912d3ddd4f3106c08594085b20ef4d8d63977fda87e6ce9a802c89169be7741"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-report.json",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/vehicles-browser-report.json.gz",
+      "originalBytes": 6721,
+      "originalSha256": "705edd49576a1a1f3f43e121bd0e66b47f55e3ab5706674bf205779d85ad21ff",
+      "compressedBytes": 1258,
+      "compressedSha256": "47d961e0992ce4bdaaa151c7795c834f83d9e8491c704307294712e05dc34b17"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.9.0/vehicles-initial.log",
+      "compressedPath": "docs/evidence/crosstown-0.9.0/vehicles-initial.log.gz",
+      "originalBytes": 5247,
+      "originalSha256": "8c3b9679845475854f315478816e7825ff232394971d49d8ffdcd14acb540fed",
+      "compressedBytes": 1744,
+      "compressedSha256": "43b90e200d5ba453269c6043e9a343da5d1318e1653d66a9d1325a994d4ab388"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/activity-route-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/activity-route-acceptance.json.gz",
+      "originalBytes": 787147,
+      "originalSha256": "6168d67c30dfd953ee0026e9386cff17fa4adaac1ef701406188280eec5fdf3a",
+      "compressedBytes": 58564,
+      "compressedSha256": "7daec6a29f0e2e5a6f9cf3296f2f618b4843e9579c524256692fc5aaef5e4fc2"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/activity-route-acceptance.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/activity-route-acceptance.log.gz",
+      "originalBytes": 178555,
+      "originalSha256": "f40358b36b026481aadc9c512fb41e77589043d0f665bf8f753a5aeb0ec258ae",
+      "compressedBytes": 24741,
+      "compressedSha256": "f141a74c455b240971684d35912e11e6fb352dde3f632ee012c2df012eef6bdd"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/baseline-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/baseline-busy-webgl.json.gz",
+      "originalBytes": 34638,
+      "originalSha256": "6669bf449245d776ce2ec29ec0cdf376e7eca12d396d4f957558e30fdd3c2efa",
+      "compressedBytes": 4805,
+      "compressedSha256": "84e84f558f072802f59d9cc28f1a23a35a0aedd9758180121ac56716d698afc6"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/baseline-downtown-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/baseline-downtown-busy-webgl.json.gz",
+      "originalBytes": 38729,
+      "originalSha256": "d0a1e3122c1ec20c3534b71ea4c38a3c35e42da1f67db0e8bd03c0ddb1332098",
+      "compressedBytes": 6032,
+      "compressedSha256": "9715cc5ce2b86d41a9a4605d84c513c273a4f4a7977b6c17f00eee18171d6b1a"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/baseline-settled-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/baseline-settled-busy-webgl.json.gz",
+      "originalBytes": 34872,
+      "originalSha256": "aa762287f0ecc7a91a099e0165e0dbc0eaba8fab9c834bdd915ab975f4738219",
+      "compressedBytes": 5013,
+      "compressedSha256": "0a02c991e9929052dbc74741a87f92b07e736fe3bd3d7ebe41a2c225ea9fd3fb"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/candidate-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/candidate-busy-webgl.json.gz",
+      "originalBytes": 286683,
+      "originalSha256": "b63e6a67d4d52680cf9e3e7c463f31b50404a5a74c7d93606c7936501c276a6d",
+      "compressedBytes": 34676,
+      "compressedSha256": "df01bb02692fdd3333de20926b08b1d97807327586df002464f38ec3fcf321fa"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/candidate-busy-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/candidate-busy-webgpu.json.gz",
+      "originalBytes": 285560,
+      "originalSha256": "e7f4cef2ad2cf9d883b2d0394f002ccb5ea39c9029e436b3ef7e91a4a8b43799",
+      "compressedBytes": 34450,
+      "compressedSha256": "24bbc42bd44970e657cb973b6e43d53c770ed251fd500cf5351bc80c11220754"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/early-webgpu-smoke.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/early-webgpu-smoke.json.gz",
+      "originalBytes": 18049,
+      "originalSha256": "06af5d0c432470490019872e85309a2ffc673b1af4b4e846c5ce2ef0fb7d8e84",
+      "compressedBytes": 3524,
+      "compressedSha256": "02ec6fd579488b7cee486579ea734c9fdd3e12580a7e2297d20802aa1ee896a0"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/early-webgpu-smoke.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/early-webgpu-smoke.log.gz",
+      "originalBytes": 10232,
+      "originalSha256": "f53095c08e3adcf297956162c48be5249c5ffb5130d82c67eb0cd587dc5afb20",
+      "compressedBytes": 2838,
+      "compressedSha256": "7183f7672ea077cee32cbd23d5eb91895d9c2f530f65fab3cef1a2aafce0a7dc"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/interrupted-runtime-after.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/interrupted-runtime-after.json.gz",
+      "originalBytes": 51190,
+      "originalSha256": "0cd8c2587010cf6a52664c906be7f6321d1010c6782cec8e6a01f61335518e1f",
+      "compressedBytes": 14509,
+      "compressedSha256": "c4e6a901c60bcfcc2ccf4495fb34c9a2ee614806b4635a0e032d0962b7ad7dde"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/life-integration-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/life-integration-webgl.json.gz",
+      "originalBytes": 120386,
+      "originalSha256": "449bfb2344fc6c915b4864aff215aa2242ce4725fdfabfc83077a5879d55ac30",
+      "compressedBytes": 10512,
+      "compressedSha256": "7a0bc35ce1a95198931696ffb779383c1691a275f0e300def0e532afc8f7ac1c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/life-integration-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/life-integration-webgpu.json.gz",
+      "originalBytes": 120397,
+      "originalSha256": "4359486fc861c597c55ae342032b58b4c05f97de99ec286983aea5eeb925e086",
+      "compressedBytes": 10506,
+      "compressedSha256": "9bba2282b186053b7bcd97e1231b96727d5e5cd6209c4da2c5b581ede9d46cb5"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/lighting-acceptance-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/lighting-acceptance-webgl.json.gz",
+      "originalBytes": 326557,
+      "originalSha256": "a874cd52b28725d68406b75563d404c8ce7230080cd2070c316b3bb1ccf61303",
+      "compressedBytes": 14972,
+      "compressedSha256": "d88833451c59361ddacaac282013ff990025ab55d8f33c3fb4cc8eb56b2310f7"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/lighting-acceptance-webgpu.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/lighting-acceptance-webgpu.json.gz",
+      "originalBytes": 326888,
+      "originalSha256": "01194a1764141e5977b733a1bf661f7cb5e785bb8f8463a9e46b9e3bbc7c60aa",
+      "compressedBytes": 15132,
+      "compressedSha256": "bbeffeff85a183282854217349fd006daee3f1364cc637df62a6ae640ed0b893"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/radio-provider-acceptance.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/radio-provider-acceptance.json.gz",
+      "originalBytes": 72269,
+      "originalSha256": "55aa82fd8e8470ff861e54044c2c4990f6100a10f3ec9b7dd883a501ea92dc52",
+      "compressedBytes": 6287,
+      "compressedSha256": "da24dfb737a499a3ff2db15f8c0b1e7b0a6639fd9c906f9aad22c09e933e5c65"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/runtime-now.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/runtime-now.json.gz",
+      "originalBytes": 51190,
+      "originalSha256": "303b76ba335f93190aa71b53cafe3b2d729fb8437de539d6d91cdf54d58fdbe8",
+      "compressedBytes": 14509,
+      "compressedSha256": "551b31c02d87308026c678faae068c479463af05ff290a39785a9fa11b95582c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/setup-probe-busy-webgl.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/setup-probe-busy-webgl.json.gz",
+      "originalBytes": 71527,
+      "originalSha256": "1f6a5f772db082c4fea024f98d6cdb092de223bc04ff750a0364ce8562c09a09",
+      "compressedBytes": 8811,
+      "compressedSha256": "31d6dbe57d931dbed85ba775340cb21bafdaefc7b8fb1dfb592d2d78df856b05"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/tested-runtime-after.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/tested-runtime-after.json.gz",
+      "originalBytes": 51190,
+      "originalSha256": "303b76ba335f93190aa71b53cafe3b2d729fb8437de539d6d91cdf54d58fdbe8",
+      "compressedBytes": 14509,
+      "compressedSha256": "551b31c02d87308026c678faae068c479463af05ff290a39785a9fa11b95582c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/tested-runtime-before.json",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/tested-runtime-before.json.gz",
+      "originalBytes": 51190,
+      "originalSha256": "303b76ba335f93190aa71b53cafe3b2d729fb8437de539d6d91cdf54d58fdbe8",
+      "compressedBytes": 14509,
+      "compressedSha256": "551b31c02d87308026c678faae068c479463af05ff290a39785a9fa11b95582c"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/unit-first.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/unit-first.log.gz",
+      "originalBytes": 37042,
+      "originalSha256": "b8fb10ccad96edd117bba335c0b260e5125829c6908315e2ca5c6398556ba3fe",
+      "compressedBytes": 9628,
+      "compressedSha256": "1a88b10934f05d51ed824654e082304c21e1595b5d7e6659230c135463e27c51"
+    },
+    {
+      "originalPath": "docs/evidence/crosstown-0.14.0/unit.log",
+      "compressedPath": "docs/evidence/crosstown-0.14.0/unit.log.gz",
+      "originalBytes": 38790,
+      "originalSha256": "7917067696c0f3361bec178f7631fbafee1cc3e01917b4a933261b02a9cb24dd",
+      "compressedBytes": 10035,
+      "compressedSha256": "97a2c5e562ad6cb4e04f73a205b6d659f69437e6182a73f60e0a3186868eb6ea"
+    }
+  ]
+}

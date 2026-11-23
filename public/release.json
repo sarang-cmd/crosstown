@@ -1,0 +1,110 @@
+{
+  "name": "Crosstown",
+  "version": "0.14.0",
+  "build": "14.002",
+  "date": "2026-11-22",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle",
+    "06-first-car",
+    "07-interior-and-sound",
+    "08-roster-damage-garages",
+    "09-traffic-and-pedestrians",
+    "10-weapons-and-police",
+    "11-hud-economy-save",
+    "12-challenges",
+    "13-radio",
+    "14-lighting-effects-scaler"
+  ],
+  "status": "Steps 01\u201314 prototype with TSL lighting/effects and ordered automatic scaling. Native 1080p near-60 FPS, human visual/device acceptance and prior provider/traffic gates remain open.",
+  "defaultSeed": 84173,
+  "defaultLength": "quick",
+  "routes": {
+    "landing": "/",
+    "play": "/play",
+    "setup": "/play?setup",
+    "quick": "/play?length=quick",
+    "standard": "/play?length=standard",
+    "full": "/play?length=full",
+    "training": "/play?training",
+    "foundation": "/?sandbox",
+    "forcedWebGL": "/play?webgl",
+    "handlingLab": "/play?drive",
+    "street": "/play?explore=street",
+    "spotifyCallback": "/callback",
+    "legacyGameQueriesRetained": true
+  },
+  "vehicles": {
+    "playableChassis": 12,
+    "classes": 6,
+    "classCockpits": 6,
+    "recordingProfiles": 12,
+    "rpmLoadLoops": 96,
+    "uniqueSourceRecordings": 6,
+    "garageCapacity": 6,
+    "physicalInputHardwareTested": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "hardwarePerformance": "Not validated on Radeon 840M-class hardware. Near-60 FPS cockpit/driving and continuous-map flight are not accepted; historical software streaming outliers exceed 8 ms. See docs/FINDINGS.md.",
+  "population": {
+    "mediumMovingCars": 60,
+    "mediumPedestrians": 120,
+    "nearPhysicsMetres": 80,
+    "adaptiveDensity": true,
+    "strictNoStuckAcceptance": false
+  },
+  "weapons": {
+    "types": 7,
+    "preparedCC0Models": 6,
+    "ragdollCap": 4,
+    "projectileCap": 6,
+    "combatVoiceCap": 12,
+    "gore": false
+  },
+  "police": {
+    "groundUnitCap": 8,
+    "helicopterCap": 1,
+    "visionDegrees": 70,
+    "dayRangeMetres": 60,
+    "unseenSecondsPerStar": 20,
+    "nativeThreeStarNear60Accepted": false
+  },
+  "activities": {
+    "types": [
+      "race",
+      "trial",
+      "drift",
+      "stunt",
+      "delivery",
+      "speed"
+    ],
+    "rivals": 5,
+    "nativeFiveRivalNear60Accepted": false
+  },
+  "radio": {
+    "proceduralStations": 4,
+    "radioBrowser": true,
+    "officialVisiblePlayers": [
+      "YouTube",
+      "SoundCloud"
+    ],
+    "spotifyOptionalClientId": true,
+    "spotifyAuthenticatedTested": false,
+    "externalProviderAvailabilityGuaranteed": false
+  },
+  "lighting": {
+    "post": "Three r180 PostProcessing / TSL",
+    "heavyShedOrder": [
+      "volumetricFog",
+      "motionBlur",
+      "wetReflections",
+      "bloom"
+    ],
+    "native1080p60Accepted": false,
+    "colorGrade": "bright coastal / neon night",
+    "newAssets": "original code-built effects; no new model/sound downloads needed"
+  }
+}

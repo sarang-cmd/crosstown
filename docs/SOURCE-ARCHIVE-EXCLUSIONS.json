@@ -1,0 +1,968 @@
+{
+  "date": "2026-11-22",
+  "scope": "Source ZIP only, not workspace deletion. Every runtime/source/asset/test/document, 0.14 report/log and final candidate capture is included. The offline historical gallery embeds all 26 previews; the README Wren PNG is included. Historical 0.5/0.7/0.9/0.13 raw trees, 51 supplemental old PNGs, 25 other full-resolution gallery PNGs and 86 explicit intermediate lighting captures are inventory-only in the rolling ZIP. All originals remain unchanged in the workspace. ARCHIVE-EXCLUSIONS.json records every omitted path/size/SHA-256. This avoids duplicate history exceeding persisted snapshot limits.",
+  "keptHistoricalGalleryOriginals": [
+    "docs/screenshots/08-wren-webgpu.png"
+  ],
+  "supplementalHistoricalCaptures": [
+    {
+      "file": "docs/screenshots/00-before-optimization.png",
+      "bytes": 119896,
+      "sha256": "55033ff4636845410eecdb2b58b2fe8ed41c7529c854f5c6f10c318daab7c02f"
+    },
+    {
+      "file": "docs/screenshots/00a-previous-gameplay.png",
+      "bytes": 245087,
+      "sha256": "fe669753fe2367e930d1b4ee727767695f7093126a4628300a607ff3ca1f78df"
+    },
+    {
+      "file": "docs/screenshots/01-city-integration.png",
+      "bytes": 220617,
+      "sha256": "11a4812e3bea3a228c97781457d6b6db740174d23827dc67f33817af0c166c87"
+    },
+    {
+      "file": "docs/screenshots/02-canal-progress.png",
+      "bytes": 314128,
+      "sha256": "64aca4a7a843977d67afa1737791104fd627bfcc461e083dbffa338c55f5cb0f"
+    },
+    {
+      "file": "docs/screenshots/04-daylight.png",
+      "bytes": 486293,
+      "sha256": "dcfe8a0fce668336129b78ea356a035fef9b00de7db2c42ead97540cf5725b6f"
+    },
+    {
+      "file": "docs/screenshots/06-car-after-route-restart-webgl2-forced.png",
+      "bytes": 263780,
+      "sha256": "65835027e831606d6bd19614a516d5db8948f9887f460eb4569c8bc7fcc6ecc7"
+    },
+    {
+      "file": "docs/screenshots/06-car-after-route-restart-webgpu.png",
+      "bytes": 262912,
+      "sha256": "5872f450a97789520902b8120717d7613bf9b1a652e0cf35b7afb2bcffb8dc48"
+    },
+    {
+      "file": "docs/screenshots/06-first-car-smoke.png",
+      "bytes": 183863,
+      "sha256": "a4c0a0813a1a1fca9cfe176fa53edb8484eaa0ffdb1e6962380f046de86a81d3"
+    },
+    {
+      "file": "docs/screenshots/06-first-cockpit-smoke.png",
+      "bytes": 296101,
+      "sha256": "624463e2ae7a3f11fd26172efb7179cd28d40cb3fc86b2369209e5015c5e4e5b"
+    },
+    {
+      "file": "docs/screenshots/06-opening-real-car-door-webgl2-forced.png",
+      "bytes": 369942,
+      "sha256": "7cbdc630ab4a954585057ccfe0647312dc32503549ae670b03f13dc0d97e09be"
+    },
+    {
+      "file": "docs/screenshots/06-opening-real-car-door-webgpu.png",
+      "bytes": 369897,
+      "sha256": "a8dfc58c7c57fc1e2e5243b9ef61ec77a2d397ec7c1c7a5ff4526418e758746d"
+    },
+    {
+      "file": "docs/screenshots/06-reward-car-cockpit-webgl2-forced.png",
+      "bytes": 544105,
+      "sha256": "d1cc7100cb27385bd8c448d2b237547ce655164913c5236e113190636a55273c"
+    },
+    {
+      "file": "docs/screenshots/06-reward-car-cockpit-webgpu.png",
+      "bytes": 538963,
+      "sha256": "0bd97f0bd249c5ce7be566d9705f1f7775bd81047608049fb8f8e65cd602b0ca"
+    },
+    {
+      "file": "docs/screenshots/06-street-entry-webgl2-forced.png",
+      "bytes": 155739,
+      "sha256": "13354ccd17f4eeea94058a4cb9c27a94b3b674fa7091e172d37ebe39f4357bea"
+    },
+    {
+      "file": "docs/screenshots/06-street-entry-webgpu.png",
+      "bytes": 156093,
+      "sha256": "5911982b964417a7c3fdc654a682541eb515c326ab791e5fc46dffb5f3f08163"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-compact-webgl2-forced.png",
+      "bytes": 304058,
+      "sha256": "b6bb0a0ae6f14fcc3676db60331e20251e60976c956dcc96315c25f4bc614f4e"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-compact-webgpu.png",
+      "bytes": 300861,
+      "sha256": "b29c9f2879b485851d0ffced9d4c2e10ad85d79c4f738c7a77c814bcd3a928c8"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-motorbike-webgl2-forced.png",
+      "bytes": 231568,
+      "sha256": "98f857eaa5912c07f0366e48111ca1520f7ce35dc6841782af0e619bc5748226"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-motorbike-webgpu.png",
+      "bytes": 224438,
+      "sha256": "d2bc076db7c2e4aa0fc7d131ff01fc050297a3219b2a29e9ec5a088c7d81ef0d"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-muscle-webgl2-forced.png",
+      "bytes": 322458,
+      "sha256": "44ffbf8ef997ce9c28a6ee9ebfab5497f2c2c7972c3f96c4804a893ecae38ffd"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-muscle-webgpu.png",
+      "bytes": 315469,
+      "sha256": "92b97e2e56098a76e6fed7b57d5d5e6a05ebcbd3dee240b02837a57f72420bdd"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-sedan-webgl2-forced.png",
+      "bytes": 288807,
+      "sha256": "0169af8598bc86448705578e58d4314f5fe83e35ada6c78436cc12ec9b34c405"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-sedan-webgpu.png",
+      "bytes": 283722,
+      "sha256": "4b05ded0a29b4591978fb0b68aba5d28264f4fcb2c786e9b8172c047c3ddd98a"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-supercar-webgl2-forced.png",
+      "bytes": 294388,
+      "sha256": "38bf8770738612dabe09d9ea901527142af9cc40e34447716a9b8a1a0c8091a5"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-supercar-webgpu.png",
+      "bytes": 290695,
+      "sha256": "2eefcc490074d109519dc3e904172c25481f7e9be72aa4e176c1a5eb3a8ef1a2"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-suv-webgl2-forced.png",
+      "bytes": 228515,
+      "sha256": "67af62b0a98eec7e729a8039cfbe6b33fc8058a8e889702be625a22351592490"
+    },
+    {
+      "file": "docs/screenshots/07-cabin-suv-webgpu.png",
+      "bytes": 228930,
+      "sha256": "d88d69fd695c7bcc49658bb8eb69d6d126b06a8d64ab8f793ff6443fcce09ef6"
+    },
+    {
+      "file": "docs/screenshots/07-cockpit-night-webgl2-forced.png",
+      "bytes": 172775,
+      "sha256": "11c90bc8cc72f06e3fc91f8af302e866cc04cecedfcd5c9726c464220d0279e5"
+    },
+    {
+      "file": "docs/screenshots/07-cockpit-night-webgpu.png",
+      "bytes": 172582,
+      "sha256": "c905f90c7601947ca2fa5c4845121bea2e0f8ab63ccbec790350c07bf66b252f"
+    },
+    {
+      "file": "docs/screenshots/07-live-mirrors-webgl2-forced.png",
+      "bytes": 231008,
+      "sha256": "05e01e736ae979d17a5a53fd4a7a8d4274ad8d066b79e286620faf3dc51c4a8c"
+    },
+    {
+      "file": "docs/screenshots/07-live-mirrors-webgpu.png",
+      "bytes": 230783,
+      "sha256": "c822b17ed8928ae9017b9512cfa2126d1f9994a600d1cda064c79e08f3aed149"
+    },
+    {
+      "file": "docs/screenshots/07-public-cockpit-webgpu.png",
+      "bytes": 248543,
+      "sha256": "2a60eb8f0f8d8b6d1def328da81d8fe9d832f07bc359278a8dbefe897557d14d"
+    },
+    {
+      "file": "docs/screenshots/07-street-bridge.png",
+      "bytes": 250178,
+      "sha256": "4e06ecaafced2d287d773392d75aedd0c7822abe112728c9a0cc9b1415368aaa"
+    },
+    {
+      "file": "docs/screenshots/08-brim-webgl2-forced.png",
+      "bytes": 118358,
+      "sha256": "82ab1567a218bb454e17b76ddc0bf12782fb9c80f9afd24b94ec5151c6d6acea"
+    },
+    {
+      "file": "docs/screenshots/08-burning-webgl2-forced.png",
+      "bytes": 88383,
+      "sha256": "8ff982ff36aa2c381d954c63bd55a453f52fb90b85869ba84f844f7fccd265c1"
+    },
+    {
+      "file": "docs/screenshots/08-impact-webgl2-forced.png",
+      "bytes": 88383,
+      "sha256": "8ff982ff36aa2c381d954c63bd55a453f52fb90b85869ba84f844f7fccd265c1"
+    },
+    {
+      "file": "docs/screenshots/08-impact-webgpu.png",
+      "bytes": 87332,
+      "sha256": "d262083c6f5c5b37a599c6661141739dac80b3bb57b1a9888974e5e44135faa2"
+    },
+    {
+      "file": "docs/screenshots/08-kestrel-webgl2-forced.png",
+      "bytes": 118402,
+      "sha256": "e6e91d51df092933b31cd87478ed8d27ac986eebba826fd4119033cb70a1926b"
+    },
+    {
+      "file": "docs/screenshots/08-pip-webgl2-forced.png",
+      "bytes": 114667,
+      "sha256": "9115246ee85c0b4e1459e1de0ea56d5f34f422f771a9e01cbf757b40323b771d"
+    },
+    {
+      "file": "docs/screenshots/08-reward-finish-webgl2-forced.png",
+      "bytes": 243739,
+      "sha256": "9967d41abec90bd1e873b11e42cfc60267eb8d9e5929854e515159c17a6d0a24"
+    },
+    {
+      "file": "docs/screenshots/08-reward-finish-webgpu.png",
+      "bytes": 237461,
+      "sha256": "8622ada7745cbac662149d9efb1c4f89d689979f01656d235933b54518f5d418"
+    },
+    {
+      "file": "docs/screenshots/08-six-car-garage-webgl2-forced.png",
+      "bytes": 109003,
+      "sha256": "0777f3a99582b42ba7fa973c626435cba6a5c4b7fff7d32c2535248d6693364b"
+    },
+    {
+      "file": "docs/screenshots/08-summit-webgl2-forced.png",
+      "bytes": 123801,
+      "sha256": "9bc18126ce6e886f7599125acb1beadedb5481b58dc68cbe194522639d158c1d"
+    },
+    {
+      "file": "docs/screenshots/08-wren-webgl2-forced.png",
+      "bytes": 118010,
+      "sha256": "b3439f80cdd91ce7fa654f87eed56ea02cd08d869da9ae769132b29f1d93056b"
+    },
+    {
+      "file": "docs/screenshots/08-zenith-webgl2-forced.png",
+      "bytes": 117206,
+      "sha256": "a7797b3b2b9248fd3db1ff20f22d3f611eb88b91a0b5fef8e3ef8585d106612f"
+    },
+    {
+      "file": "docs/screenshots/09-fast-flight-partial.png",
+      "bytes": 442225,
+      "sha256": "c7b74531f8fb2dfff01a785ba42a70a7c5e8746827ea1957a0f5568ea7d33d50"
+    },
+    {
+      "file": "docs/screenshots/09-first-street-check.png",
+      "bytes": 129261,
+      "sha256": "8d205ba54cae8b77fc27c8c517b1432e988c08178c28fcf0a677c97ea408e4f1"
+    },
+    {
+      "file": "docs/screenshots/09-loaded-final-120s.png",
+      "bytes": 187954,
+      "sha256": "f7e921b50c533ccded42747db518641b2ef314cdb307fb7238bd2422cf3ddb06"
+    },
+    {
+      "file": "docs/screenshots/09-loaded-physics-120s.png",
+      "bytes": 182254,
+      "sha256": "26210cda361b44857cedda161bd86fe228f218e594b76cd48bdd77473647d164"
+    },
+    {
+      "file": "docs/screenshots/09-near-physics-first.png",
+      "bytes": 162720,
+      "sha256": "92aef0f3ff759360f6dbedabf148c267eb48a315d93817d9172fbacb018ad464"
+    },
+    {
+      "file": "docs/screenshots/09-siren-webgl2-forced.png",
+      "bytes": 150691,
+      "sha256": "8d4c9b0b3eb91d31eba354247a1ebc4933628ada7c6cebfd67ad9d51a1587bac"
+    }
+  ],
+  "inventoryOnlyHistoricalEvidenceRoots": [
+    "docs/evidence/crosstown-0.5.0",
+    "docs/evidence/crosstown-0.7.0",
+    "docs/evidence/crosstown-0.9.0",
+    "docs/evidence/crosstown-0.13.0"
+  ],
+  "inventoryOnlyLightingCaptures": [
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-downtown-dusk.webp",
+      "bytes": 118976,
+      "sha256": "9bc301325e071a3e55bd45d2629ca908aa46b9ac7ef4e893a38e996b73573016",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-bloom.webp",
+      "bytes": 9650,
+      "sha256": "1377841a92af0744de00dce0140aa991fe9cf92173431a51bf3149f5a8546675",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-heatHaze.webp",
+      "bytes": 9652,
+      "sha256": "3d86beb7f00a3e4828bc446062c8b059c0b1a02bf65edd4390714253c477b14a",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-lensFlare.webp",
+      "bytes": 9656,
+      "sha256": "f9319780baf189b61e59052d5752efe95936de16499b77652604001ec092c55c",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-lightCones.webp",
+      "bytes": 10382,
+      "sha256": "acc0818e2f1521661532ef92ef0bc62d9ce2c0a241e452abd8f9b91fd0b2b3d5",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-motionBlur.webp",
+      "bytes": 8718,
+      "sha256": "a266318e90909a2358c05fac539f729eedaec8620b699953473945fb2c3d392e",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-neonSigns.webp",
+      "bytes": 8952,
+      "sha256": "fb8d3d9cf1cbe039383c7498533ae03d6ecd2785c6327e139240e46d093575a4",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-rainSplashes.webp",
+      "bytes": 9210,
+      "sha256": "5a04768a0f5295cb5a66e429fc96aff2a99de6b46556d772186c7910d18f8fef",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-skidMarks.webp",
+      "bytes": 8808,
+      "sha256": "e7c9ae92f620555fb124653bd938299f50d4a51585da4d3bf1860a0c71020a45",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-sparks.webp",
+      "bytes": 8914,
+      "sha256": "8ba26197f83d3c764c07f54ca0b45c66f83bcc7f5a58aa2ae94b93a45b0123a7",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-streetLamps.webp",
+      "bytes": 8666,
+      "sha256": "3cdf48a35e71764936408ce3b7677c95cc00575d56f8887b9c8a097a81f76c49",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-sunShafts.webp",
+      "bytes": 10484,
+      "sha256": "943058ab956dd9d24795f206e09827db6570665fe024d5fe7946db945b039081",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-tireSmoke.webp",
+      "bytes": 9068,
+      "sha256": "eddb753db0bb047338b152a44342f510242a9c8ae107e50fc20688a56d8c2595",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-volumetricFog.webp",
+      "bytes": 10182,
+      "sha256": "ff4b74a323689b9c4551d42068b048e249b983b7a2e5a0eb0c26bebb34d8f0fa",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-lab-wetReflections.webp",
+      "bytes": 10086,
+      "sha256": "f34841da33d68ed2c2002fa9c3a0f49c43ad26f486d40aa7158813666e6b3bf5",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-mobile.webp",
+      "bytes": 37376,
+      "sha256": "e67c20a1918dac2483039ca7c06ab41a1f0367b281b70c2d481f7cc729f55a97",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-physical-collision.webp",
+      "bytes": 22562,
+      "sha256": "6507a2f3430daea3f47727aaf9b228e8dd9917f2d3fbfd59d3dcc934671bdb3a",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-rain-car.webp",
+      "bytes": 91722,
+      "sha256": "b1e5a40db660c3015a8eb2de5df8653bd5badb9ce6bb7d0c1310ceb26de26fb2",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-windows-off.webp",
+      "bytes": 70352,
+      "sha256": "f6e3be9f19362d44c3da489b52fe826097e46dfb910a9950a20e32126da897be",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgl-windows-on.webp",
+      "bytes": 126798,
+      "sha256": "acb95f4d756f04e4d444e2d6293a0deb3e3d31f0054848ca2a278fbf657a230f",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-downtown-dusk.webp",
+      "bytes": 125730,
+      "sha256": "2ff7742cd0f36edba9ba456b1f579dcc0cf9a1fb7fefaa4087dbe8cb63aaacbf",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-bloom.webp",
+      "bytes": 9646,
+      "sha256": "83368c5cdf38ff4caa059d9a6e430a888fea24823675be90a506376b52214761",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-heatHaze.webp",
+      "bytes": 9652,
+      "sha256": "41fc721284bc88ab6536c5235bbfc900c1a1acd62321d1f6faa7111829b6616d",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-lensFlare.webp",
+      "bytes": 9682,
+      "sha256": "97888118e14037eda17ecc88527b9ca1d1b533be189d18dc56655cfeba362f55",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-lightCones.webp",
+      "bytes": 10424,
+      "sha256": "dbccae98b52172636c4b7f557ef495b7c2b89ddeae632b744bf2d4c3b7c798d2",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-motionBlur.webp",
+      "bytes": 8718,
+      "sha256": "e68cdfdd779ae9231fa58ae04b50fb23bfa8b2375139d2bbf593b0a0e4fcac01",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-neonSigns.webp",
+      "bytes": 8962,
+      "sha256": "ce3100f375f282a165b823945998c5f1cdd38796cd135a0c882bdb0743e5c448",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-rainSplashes.webp",
+      "bytes": 9222,
+      "sha256": "491a763cecce902cfe347fa91a1c8fb286388c1ab6eabf11c804295e2f8f0051",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-skidMarks.webp",
+      "bytes": 8816,
+      "sha256": "bdb23f5cc912bf63f08fdf48397e50ffcd3521b2e967f89066abcb3074215cff",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-sparks.webp",
+      "bytes": 8920,
+      "sha256": "54dfd352fc7a14fbdd702eb3d44e57c6787df55f5fd7e58fe117a6cfdf67d680",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-streetLamps.webp",
+      "bytes": 8680,
+      "sha256": "2c394f3c7f3c50326992bcc8818161a7820adc5aa56e3b6ef420c9a87e0efd12",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-sunShafts.webp",
+      "bytes": 10490,
+      "sha256": "dbdb1a9ab9f663c32a3fae5a65b3e58356ebb7250124d82216371a22f9a944a3",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-tireSmoke.webp",
+      "bytes": 9086,
+      "sha256": "897c4511f683f5ab4a48d4916d7f3522684f6463143c549ecf37fb2e1ff32b03",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-volumetricFog.webp",
+      "bytes": 10176,
+      "sha256": "27d1104d6d92fca9710c96f7e0aebd6b487d88df9499748751aff0f46ba6cdd5",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-lab-wetReflections.webp",
+      "bytes": 9640,
+      "sha256": "321cb0d5c03293a1453ab488faf8bd956c4692f0753827eba2e7caee97c22504",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-mobile.webp",
+      "bytes": 37406,
+      "sha256": "9392f57671fd52388b6a96eb23e0a0383700e313e6a943b359698a79c68af41e",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-physical-collision.webp",
+      "bytes": 24734,
+      "sha256": "4ea0964697f86bb63d3c65f22c3d9bfb6bb17d44bc4de4487a28091115208e0b",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-rain-car.webp",
+      "bytes": 92220,
+      "sha256": "3c7c5057955057ff2e11e503aab9f304b41d6ee601d27fd10d3672f7a85a320d",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-windows-off.webp",
+      "bytes": 70366,
+      "sha256": "417e27bb5a87ebab89d8e0fe2f7cd15cef22652ca178fc5c11cb91b939ddcc23",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/initial-lighting-webgpu-windows-on.webp",
+      "bytes": 126626,
+      "sha256": "35193eff9291c9f3b94a2c57522428fc98d61e484dec831fce72966b975196d8",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgl-0.webp",
+      "bytes": 98078,
+      "sha256": "8cfa3a9b87bf6aa7c95a2211f13539648fe240f7f82ae9e8c11af77a08398a63",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgl-1.webp",
+      "bytes": 103934,
+      "sha256": "6d0aff1975ffedf2cc572dcbcb7a26724276894e9abe0f90cdc48693d934d112",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgl-2.webp",
+      "bytes": 130670,
+      "sha256": "ca6848e12868f684ec931107b3c18d46f938a7a7d0d27b7ef435983484865ced",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgpu-0.webp",
+      "bytes": 97830,
+      "sha256": "e2a0c0f81dcb08c8b545178ae82792bf43035973e6f877a924cb23302f41b52f",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgpu-1.webp",
+      "bytes": 102986,
+      "sha256": "cba27646f26392ca1d6d34d64e51b05276f40073e325f400803a81c27448daed",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/oldtown-initial-webgpu-2.webp",
+      "bytes": 131192,
+      "sha256": "1fbe16014aa24a265d355d5cd7a3a848ee535fed73bbab2757cb0b7ccd772cfe",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-downtown-dusk.webp",
+      "bytes": 119162,
+      "sha256": "3232f109ea55fba57dacbb40926213207fbbb4a57e750a4300e42a8bd2bb9d38",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-bloom.webp",
+      "bytes": 9650,
+      "sha256": "1377841a92af0744de00dce0140aa991fe9cf92173431a51bf3149f5a8546675",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-heatHaze.webp",
+      "bytes": 9652,
+      "sha256": "3d86beb7f00a3e4828bc446062c8b059c0b1a02bf65edd4390714253c477b14a",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-lensFlare.webp",
+      "bytes": 9656,
+      "sha256": "f9319780baf189b61e59052d5752efe95936de16499b77652604001ec092c55c",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-lightCones.webp",
+      "bytes": 10172,
+      "sha256": "513f70e3f171efe8fd5ae0379e3266e15158d3fce9c3489e8a6e10cc44a94608",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-motionBlur.webp",
+      "bytes": 8718,
+      "sha256": "a266318e90909a2358c05fac539f729eedaec8620b699953473945fb2c3d392e",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-neonSigns.webp",
+      "bytes": 8952,
+      "sha256": "fb8d3d9cf1cbe039383c7498533ae03d6ecd2785c6327e139240e46d093575a4",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-rainSplashes.webp",
+      "bytes": 9210,
+      "sha256": "5a04768a0f5295cb5a66e429fc96aff2a99de6b46556d772186c7910d18f8fef",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-skidMarks.webp",
+      "bytes": 8808,
+      "sha256": "e7c9ae92f620555fb124653bd938299f50d4a51585da4d3bf1860a0c71020a45",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-sparks.webp",
+      "bytes": 8914,
+      "sha256": "8ba26197f83d3c764c07f54ca0b45c66f83bcc7f5a58aa2ae94b93a45b0123a7",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-streetLamps.webp",
+      "bytes": 8666,
+      "sha256": "3cdf48a35e71764936408ce3b7677c95cc00575d56f8887b9c8a097a81f76c49",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-sunShafts.webp",
+      "bytes": 10484,
+      "sha256": "943058ab956dd9d24795f206e09827db6570665fe024d5fe7946db945b039081",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-tireSmoke.webp",
+      "bytes": 9068,
+      "sha256": "eddb753db0bb047338b152a44342f510242a9c8ae107e50fc20688a56d8c2595",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-volumetricFog.webp",
+      "bytes": 10182,
+      "sha256": "ff4b74a323689b9c4551d42068b048e249b983b7a2e5a0eb0c26bebb34d8f0fa",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-lab-wetReflections.webp",
+      "bytes": 10086,
+      "sha256": "f34841da33d68ed2c2002fa9c3a0f49c43ad26f486d40aa7158813666e6b3bf5",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-mobile.webp",
+      "bytes": 37400,
+      "sha256": "7597df153c3126da2630f2c617d889a83cac419dee37d362542e51773fb39290",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-physical-collision.webp",
+      "bytes": 23958,
+      "sha256": "c312ee839bffcb5654def17c8bf4c4e2104ae3acbfc03c9bf250bd9c0ed5c3b9",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-rain-car.webp",
+      "bytes": 90378,
+      "sha256": "55d4664d00d0132479a36eadfd828d8ddc32d64e738652beca99b4e2ed0c4897",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-windows-off.webp",
+      "bytes": 70968,
+      "sha256": "5988e9622825a887cbeec5203a80d71f630a93b9f5b07a389987e756d7642471",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgl-windows-on.webp",
+      "bytes": 126944,
+      "sha256": "cfabf5bf32eb03fcc6b480071cd4b281f31aa20b50a99a8ff18cd11e6f383834",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-downtown-dusk.webp",
+      "bytes": 122154,
+      "sha256": "7e9288d9e8a187547e2399fb3ea0bf2f8a7a885360759befc9609132ca6a701a",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-bloom.webp",
+      "bytes": 9646,
+      "sha256": "83368c5cdf38ff4caa059d9a6e430a888fea24823675be90a506376b52214761",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-heatHaze.webp",
+      "bytes": 9652,
+      "sha256": "41fc721284bc88ab6536c5235bbfc900c1a1acd62321d1f6faa7111829b6616d",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-lensFlare.webp",
+      "bytes": 9682,
+      "sha256": "97888118e14037eda17ecc88527b9ca1d1b533be189d18dc56655cfeba362f55",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-lightCones.webp",
+      "bytes": 10168,
+      "sha256": "195b4f84410cfa32acc385131371e92ae17d14c9960ad2913050c52069fbcc35",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-motionBlur.webp",
+      "bytes": 8718,
+      "sha256": "e68cdfdd779ae9231fa58ae04b50fb23bfa8b2375139d2bbf593b0a0e4fcac01",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-neonSigns.webp",
+      "bytes": 8962,
+      "sha256": "ce3100f375f282a165b823945998c5f1cdd38796cd135a0c882bdb0743e5c448",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-rainSplashes.webp",
+      "bytes": 9222,
+      "sha256": "491a763cecce902cfe347fa91a1c8fb286388c1ab6eabf11c804295e2f8f0051",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-skidMarks.webp",
+      "bytes": 8816,
+      "sha256": "bdb23f5cc912bf63f08fdf48397e50ffcd3521b2e967f89066abcb3074215cff",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-sparks.webp",
+      "bytes": 8920,
+      "sha256": "54dfd352fc7a14fbdd702eb3d44e57c6787df55f5fd7e58fe117a6cfdf67d680",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-streetLamps.webp",
+      "bytes": 8680,
+      "sha256": "2c394f3c7f3c50326992bcc8818161a7820adc5aa56e3b6ef420c9a87e0efd12",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-sunShafts.webp",
+      "bytes": 10490,
+      "sha256": "dbdb1a9ab9f663c32a3fae5a65b3e58356ebb7250124d82216371a22f9a944a3",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-tireSmoke.webp",
+      "bytes": 9086,
+      "sha256": "897c4511f683f5ab4a48d4916d7f3522684f6463143c549ecf37fb2e1ff32b03",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-volumetricFog.webp",
+      "bytes": 10176,
+      "sha256": "27d1104d6d92fca9710c96f7e0aebd6b487d88df9499748751aff0f46ba6cdd5",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-lab-wetReflections.webp",
+      "bytes": 9640,
+      "sha256": "321cb0d5c03293a1453ab488faf8bd956c4692f0753827eba2e7caee97c22504",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-mobile.webp",
+      "bytes": 37254,
+      "sha256": "19cc23c74ad42c9104dcb5a5ca629c80ca4fb309648eaf55ff15e8541810bbac",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-physical-collision.webp",
+      "bytes": 24748,
+      "sha256": "290359b265c4c7c526c0c3a04edc57e2d6b1313bebeb54b6d26bf0c6ba22f127",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-rain-car.webp",
+      "bytes": 90990,
+      "sha256": "d3d837d1b2f5f016d7e75d35d2c0dc57615ffe2b1f3ec29bd503ab78da162c8d",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-windows-off.webp",
+      "bytes": 71302,
+      "sha256": "a6d6771fdcb99166d8d71456291abbd100c9d538f7185a5f5d10559622c91224",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    },
+    {
+      "file": "docs/evidence/crosstown-0.14.0/pre-singlepass-lighting-webgpu-windows-on.webp",
+      "bytes": 125788,
+      "sha256": "eee16df9cb7b4033ad4621ac196d6c6ae8250688819f3ad617299befe31afa1c",
+      "reason": "Retained intermediate Step 14 pixels; final candidate captures are bundled. Original remains unchanged in the shared workspace."
+    }
+  ],
+  "historicalGalleryOriginals": [
+    "docs/screenshots/03-run-choices.png",
+    "docs/screenshots/05-neon-night.png",
+    "docs/screenshots/06-city-map.png",
+    "docs/screenshots/08-brim-webgpu.png",
+    "docs/screenshots/08-burning-webgpu.png",
+    "docs/screenshots/08-crosstown-rooftops.png",
+    "docs/screenshots/08-kestrel-webgpu.png",
+    "docs/screenshots/08-pip-webgpu.png",
+    "docs/screenshots/08-six-car-garage-webgpu.png",
+    "docs/screenshots/08-summit-webgpu.png",
+    "docs/screenshots/08-wren-webgpu.png",
+    "docs/screenshots/08-zenith-webgpu.png",
+    "docs/screenshots/09-auto-wall-120s.png",
+    "docs/screenshots/09-night-population.png",
+    "docs/screenshots/09-parked-wall-120s.png",
+    "docs/screenshots/09-physical-npc-crash.png",
+    "docs/screenshots/09-public-cockpit-webgpu.png",
+    "docs/screenshots/09-siren-webgpu.png",
+    "docs/screenshots/10-rain.png",
+    "docs/screenshots/district-1-beach.png",
+    "docs/screenshots/district-2-downtown.png",
+    "docs/screenshots/district-3-port.png",
+    "docs/screenshots/district-4-canals.png",
+    "docs/screenshots/district-5-hills.png",
+    "docs/screenshots/district-6-oldtown.png",
+    "docs/screenshots/district-7-outskirts.png"
+  ],
+  "inventoryOnlyGalleryOriginals": [
+    {
+      "file": "docs/screenshots/03-run-choices.png",
+      "bytes": 134520,
+      "sha256": "520a29eecf3fd6fa4f1e89eed432fb6e290f83c61e31f41af87298a60149ae6a",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/05-neon-night.png",
+      "bytes": 573062,
+      "sha256": "034a49e5f3de6d039689becf70a0281c6fb7f2d2b7f310c9aa972220280edb19",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/06-city-map.png",
+      "bytes": 198854,
+      "sha256": "8c84640bd21a41203ef80a68acceced180e663daecd89071499724224ad67fb7",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-brim-webgpu.png",
+      "bytes": 123525,
+      "sha256": "e67cd6dcf2cfa47440858507059841728bd54a41b194eee01d736420f99cd0e9",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-burning-webgpu.png",
+      "bytes": 87332,
+      "sha256": "d262083c6f5c5b37a599c6661141739dac80b3bb57b1a9888974e5e44135faa2",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-crosstown-rooftops.png",
+      "bytes": 343567,
+      "sha256": "12117d5ad03849f54098f76270b44319c42a07e85f43b1abee08509c15dd09ba",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-kestrel-webgpu.png",
+      "bytes": 118364,
+      "sha256": "a483c6c097cbf9a4f1d29d535554ae4bd802f998fe4f99acd1398ffee2139c69",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-pip-webgpu.png",
+      "bytes": 114556,
+      "sha256": "7284e22518c65ad9a26b9aa74a4987719ec3c6357421cb62fd9c8d3ef7a36b13",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-six-car-garage-webgpu.png",
+      "bytes": 109631,
+      "sha256": "eb01118764ccf82385a986abe720e729dd390a3c87e6cca69a2edb819f67fab6",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-summit-webgpu.png",
+      "bytes": 123918,
+      "sha256": "ccbe43de7e035050841bf234e53bc86b7805ce41a39cedc9a8afcf91e44f363b",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/08-zenith-webgpu.png",
+      "bytes": 122337,
+      "sha256": "bd2506ee9037f35f33b5fdf59284273f4c333de37481604aa39eb3ce25a60561",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-auto-wall-120s.png",
+      "bytes": 191093,
+      "sha256": "19d1f6566165536fa33d61fe772b0b848a16d0338f3a8a7f1f3e7d4c4d263b5d",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-night-population.png",
+      "bytes": 265328,
+      "sha256": "b87bdf372f297d6e1db170d5651aa153e88cecfb36517c7e73153061f02e6590",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-parked-wall-120s.png",
+      "bytes": 203011,
+      "sha256": "97aaa57e6a3dd8c737a0ed9399dee3b7c95b33856e471f7b7c36b07a5e542385",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-physical-npc-crash.png",
+      "bytes": 255069,
+      "sha256": "29ade9c761c4ee96cc7d6a47166172ed21422e16567240cb43140893564836a0",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-public-cockpit-webgpu.png",
+      "bytes": 225902,
+      "sha256": "f4f27710dcebdc5dd12dee7e118065b85e0eadaaecfcf3d92967b41ee87d2e1b",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/09-siren-webgpu.png",
+      "bytes": 153959,
+      "sha256": "ac606b05072f80e11195c1fea8185a15515f932695359deb16f3cac598c4b77d",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/10-rain.png",
+      "bytes": 496517,
+      "sha256": "83d82c1dc92a7380608b54c71834a3d0fb796c407e90f7f651f6d935786a0d2d",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-1-beach.png",
+      "bytes": 573608,
+      "sha256": "ebc834585c3fc15e0153ce39cca74a3d1834c275a9050b3bdc717e0f079154fb",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-2-downtown.png",
+      "bytes": 502765,
+      "sha256": "12d95b0c8ea1a51415f8b951a9d9463b19de03a46b388909e2d345bc488c7041",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-3-port.png",
+      "bytes": 629651,
+      "sha256": "6a5b6f870997623cec94ec0d0f18edeb380b7521eac321bb7aa64dbb1a272113",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-4-canals.png",
+      "bytes": 681864,
+      "sha256": "26340244aef22b89975805f90edafb6832acf47d9e58bf7c4cf511852a120fd7",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-5-hills.png",
+      "bytes": 694276,
+      "sha256": "694ab5cb94f917f54fec176a56aeec5458bb80ba14e615ecb47c5610a0d510ca",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-6-oldtown.png",
+      "bytes": 595370,
+      "sha256": "ece8859414e5b7cd913d659843a4c40e9d4e6d9d645b727d1f9c5116cb438be3",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    },
+    {
+      "file": "docs/screenshots/district-7-outskirts.png",
+      "bytes": 444933,
+      "sha256": "0381a4ad23fa3a27f1582e52204f9432abf83b13780839e30353bca2fe5ab27a",
+      "reason": "Historical full-resolution gallery original stays unchanged in workspace; self-contained embedded gallery preview is bundled. README Wren original remains bundled."
+    }
+  ]
+}
