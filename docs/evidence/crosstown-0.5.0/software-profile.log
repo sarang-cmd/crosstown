@@ -1,0 +1,95 @@
+0.5.0-crosstown {
+  "readyWallMs": 3864.8617809999996,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 22016.700000001118
+  },
+  "cadence": {
+    "wallMs": 16382.8,
+    "frames": 14,
+    "rafFps": 0.8545547769612032,
+    "frameP50": 1266.5999999999985,
+    "frameP95": 2266.5999999999985,
+    "frameMaximum": 2266.5999999999985
+  },
+  "draws": 82,
+  "triangles": 198256,
+  "stream": {
+    "ready": true,
+    "sizeMetres": 4000,
+    "chunkMetres": 128,
+    "loaded": 25,
+    "anchor": {
+      "x": -0.019548319280147552,
+      "y": 27.009538650512695,
+      "z": 26.011762619018555
+    },
+    "centerLoaded": true,
+    "nearbyLoaded": 9,
+    "installing": false,
+    "pending": 0,
+    "queued": 0,
+    "cached": 26,
+    "gpuCached": 1,
+    "farImpostors": 1628,
+    "maximumInstallMs": 12.199999999254942,
+    "maximumChunkCpuMs": 12.399999998509884,
+    "maximumUpdateMs": 14.300000000745058,
+    "installPhases": {
+      "terrain": {
+        "maximumMs": 12.199999999254942,
+        "slices": 22
+      },
+      "roads": {
+        "maximumMs": 0,
+        "slices": 22
+      },
+      "building-instances": {
+        "maximumMs": 0.30000000074505806,
+        "slices": 22
+      },
+      "worker-baked-decor": {
+        "maximumMs": 0,
+        "slices": 22
+      },
+      "light-instances": {
+        "maximumMs": 0.09999999962747097,
+        "slices": 22
+      },
+      "commit-or-gpu-reuse": {
+        "maximumMs": 0.2999999988824129,
+        "slices": 22
+      }
+    },
+    "streamingOutliers": [
+      {
+        "chunk": "14,13",
+        "phase": "terrain",
+        "ms": 12.199999999254942
+      }
+    ],
+    "coldPrimeWallMs": 63,
+    "installP95": 0.40000000037252903,
+    "physicsChunks": 0,
+    "physicsColliders": 65,
+    "physicsStreamMs": 0,
+    "graph": {
+      "nodes": 197,
+      "edges": 353,
+      "lanes": 944
+    },
+    "district": "downtown",
+    "hiddenCachesFound": 0,
+    "continuousFarCoverage": true
+  },
+  "flightDistance": 230.02299999999832,
+  "flightCadence": {
+    "wallMs": 21232.5,
+    "frames": 21,
+    "rafFps": 0.9890498057223596,
+    "frameP50": 750,
+    "frameP95": 2566.5999999999913,
+    "frameMaximum": 3849.800000000003
+  },
+  "errors": []
+}

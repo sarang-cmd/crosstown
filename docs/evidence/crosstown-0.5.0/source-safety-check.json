@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-22",
+  "scope": "Explicit project files, not the home directory. Known token/private-key/credential-URL patterns; not a proof against every possible secret.",
+  "filesScanned": 236,
+  "matches": [],
+  "passed": true
+}

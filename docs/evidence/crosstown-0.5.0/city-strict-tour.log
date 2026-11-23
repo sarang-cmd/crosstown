@@ -1,0 +1,6 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/crosstown.spec.ts:112:1 › seven districts render, the map covers the full city, dates change weather and dusk switches lights (3.4m)
+
+  1 passed (3.4m)

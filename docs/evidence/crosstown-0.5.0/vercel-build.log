@@ -1,0 +1,14 @@
+Observed build excerpt, 2026-11-22. Deployment dpl_9oYzAnnu38B6iihCXVsVJK2M29q7.
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Downloading 1 deployment files...
+Vercel CLI 66.2.0
+Running "install" command: `node --version`...
+v26.13.1
+VERIFIED CROSSTOWN 0.5.0 SHA256 be7cf23cef1a7485fbf5dff76bc6d89002bbc1a94d12efb6e7adab37c9be8158 1802763 bytes
+Build Completed in /vercel/output [1s]
+Deployment completed
+Observed READY/PROMOTED, aliasAssigned=true, aliasError=null.
+Source build defaults restored: Vite / npm ci / npm run build / dist.
+Temporary public-compiled-output transfer server/tunnel stopped after the 22/22 integrity check and 5/5 public browser pass.
+No source directory, upload, secret, environment value or credential was transferred.

@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/crosstown.spec.ts:31:1 › opening choices, real keyboard A/D, stable camera yaw and saved run length work (39.5s)
+  ✓  2 [webgpu] › tests/browser/crosstown.spec.ts:111:1 › seven districts render, the map covers the full city, dates change weather and dusk switches lights (1.6m)
+  ✓  3 [webgpu] › tests/browser/crosstown.spec.ts:213:1 › street mode uses the same animated runner, a real bridge and a frozen rooftop timer (12.6s)
+  ✓  4 [webgl2-forced] › tests/browser/crosstown.spec.ts:31:1 › opening choices, real keyboard A/D, stable camera yaw and saved run length work (1.1m)
+  ✓  5 [webgl2-forced] › tests/browser/crosstown.spec.ts:111:1 › seven districts render, the map covers the full city, dates change weather and dusk switches lights (3.9m)
+  ✓  6 [webgl2-forced] › tests/browser/crosstown.spec.ts:213:1 › street mode uses the same animated runner, a real bridge and a frozen rooftop timer (21.3s)
+
+  Slow test file: [webgl2-forced] › tests/browser/crosstown.spec.ts (5.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  6 passed (8.0m)
