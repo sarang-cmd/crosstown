@@ -1,0 +1,120 @@
+{
+  "id": "aerox",
+  "title": "Crosstown aerox — Kenney race derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/race.glb",
+  "sourceSha256": "e1408c4c6e135f5a39c5f34cbfbcac9ae21c5c491e793fdee74bccac8334d942",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 179643,
+  "sourceGlbBytes": 167272,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.5,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.7579687316047443,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.6500000119209289,
+        -1.1920928966180355e-8,
+        -1.2798862457275395
+      ],
+      "max": [
+        0.6500000119209289,
+        0.7325442790985107,
+        1.2798862457275386
+      ]
+    },
+    "dimensions": [
+      1.3000000238418579,
+      0.7325442910194397,
+      2.559772491455078
+    ],
+    "triangles": 1952,
+    "nodes": 5,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "race",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.5 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.1426796964997041,
+        -2.0956620327972075e-8,
+        -2.2500000000000004
+      ],
+      "max": [
+        1.1426796964997041,
+        1.2877899371711208,
+        2.2499999999999996
+      ]
+    },
+    "dimensions": [
+      2.2853593929994083,
+      1.2877899581277412,
+      4.5
+    ],
+    "triangles": 1952,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 72044,
+  "outputSha256": "05fcea75565c59dae76c440fb84a486058c251186b7d4f4e59e33aec46a67b3d",
+  "savedBytesPercent": 60
+}

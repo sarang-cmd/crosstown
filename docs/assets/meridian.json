@@ -1,0 +1,120 @@
+{
+  "id": "meridian",
+  "title": "Crosstown meridian — Kenney sedan-sports derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/sedan-sports.glb",
+  "sourceSha256": "2889c428ca1dd9c975c3ff760eb8757883490410555ab60b818f712f583826d6",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 190047,
+  "sourceGlbBytes": 177676,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.65,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.8235294458637883,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.6499999761581421,
+        -1.1920928966180355e-8,
+        -1.299999976158142
+      ],
+      "max": [
+        0.6499999761581421,
+        1.0999999284744262,
+        1.2499999761581422
+      ]
+    },
+    "dimensions": [
+      1.2999999523162842,
+      1.099999940395355,
+      2.549999952316284
+    ],
+    "triangles": 2088,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "sedan-sports",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.65 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.1852940963351324,
+        0,
+        -2.325
+      ],
+      "max": [
+        1.1852940963351324,
+        2.0058822817593422,
+        2.325
+      ]
+    },
+    "dimensions": [
+      2.3705881926702648,
+      2.0058822817593422,
+      4.65
+    ],
+    "triangles": 2088,
+    "nodes": 7,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 80808,
+  "outputSha256": "63a9dd49dc3d3c4b43428899f59cc6b2d8821076a9054efc157725fe35853f06",
+  "savedBytesPercent": 57
+}

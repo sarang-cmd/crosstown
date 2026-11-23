@@ -1,0 +1,9 @@
+Reviewed 2026-11-22
+Iridiuss
+https://freesound.org/people/Iridiuss/sounds/399773/
+CC0-1.0
+http://creativecommons.org/publicdomain/zero/1.0/
+Source SHA-256: 403913de78b9d27a0b67bf5f0b9f5887286505936128e6487b3fbc1807e1a6c1
+Publisher public HQ MP3 preview (lossy), not the login-only original WAV.
+Modifications: Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers.
+No endorsement by the original vehicle manufacturer. Source brand names occur only in provenance.

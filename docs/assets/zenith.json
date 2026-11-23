@@ -1,0 +1,120 @@
+{
+  "id": "zenith",
+  "title": "Crosstown zenith — Kenney race-future derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/race-future.glb",
+  "sourceSha256": "869e2a58d2c12de474e824aff137334491b8f234b97127cf23f1ea04e42deec6",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 185535,
+  "sourceGlbBytes": 173164,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.6,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.7294712911399122,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.6000000238418579,
+        -1.1920928966180355e-8,
+        -1.329886198043824
+      ],
+      "max": [
+        0.6000000238418579,
+        0.8325442790985107,
+        1.3298861980438226
+      ]
+    },
+    "dimensions": [
+      1.2000000476837158,
+      0.8325442910194396,
+      2.6597723960876465
+    ],
+    "triangles": 2068,
+    "nodes": 5,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "race-future",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.6 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.037682815917756,
+        -2.061690440591235e-8,
+        -2.300000000000001
+      ],
+      "max": [
+        1.037682815917756,
+        1.439861429303649,
+        2.2999999999999985
+      ]
+    },
+    "dimensions": [
+      2.075365631835512,
+      1.4398614499205533,
+      4.6
+    ],
+    "triangles": 2068,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 75316,
+  "outputSha256": "f8c6e419e74303f1b34b44f08119c0ce107e55ba232646470c13ac71b887e3db",
+  "savedBytesPercent": 59
+}

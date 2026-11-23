@@ -1,0 +1,81 @@
+{
+  "id": "weapon-smg",
+  "title": "Crosstown smg — Kenney stylized blaster",
+  "kind": "prop",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/blaster-kit",
+  "source": "https://kenney.nl/assets/blaster-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_blaster-kit_2.1.zip",
+  "archiveEntry": "Models/GLB format/blaster-e.glb",
+  "sourceSha256": "df3e35c9286d7bfe8bde2ff7231ef40ff89b1e7caa52fbf80ea685cb601de3ca",
+  "downloadSha256": "91e3093e95427d59625e7e2ce2d0399b861600160fd0b4ada7714796b67cea8c",
+  "sourceBytes": 75444,
+  "targetSize": 0.29,
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.1281999945640564,
+        -0.21500000596046448,
+        0
+      ],
+      "max": [
+        0.038200002163648605,
+        0.18999999940395357,
+        1.3900001049041748
+      ]
+    },
+    "dimensions": [
+      0.166399996727705,
+      0.40500000536441805,
+      1.3900001049041748
+    ],
+    "triangles": 802,
+    "nodes": 3,
+    "textures": 1,
+    "animations": []
+  },
+  "modifications": [
+    "Reviewed embedded CC0 License.txt",
+    "Y-up, +Z-forward, ground-centred wrapper",
+    "Uniformly scaled to 0.29 m height",
+    "Deduplicated/pruned and Meshopt FILTER geometry",
+    "Textures <=512px, WebP"
+  ],
+  "outputBytes": 27032,
+  "outputSha256": "50b4e54378e50b73bbdb7199279997f06e2baf1e7d3dd784dedcf0f9cd03badf",
+  "scale": 0.7160493732316341,
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 512
+  },
+  "missingKeyNodes": [],
+  "after": {
+    "bounds": {
+      "min": [
+        -0.05957530668130957,
+        0,
+        -0.49765435195427
+      ],
+      "max": [
+        0.05957530668130957,
+        0.29,
+        0.49765435195427
+      ]
+    },
+    "dimensions": [
+      0.11915061336261915,
+      0.29,
+      0.99530870390854
+    ],
+    "triangles": 802,
+    "nodes": 4,
+    "textures": 1,
+    "animations": []
+  }
+}

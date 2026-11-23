@@ -1,0 +1,31 @@
+[
+  {
+    "id": "test-car",
+    "title": "Sedan — Car Kit 3.1 pipeline fixture",
+    "kind": "car",
+    "size": 4.5,
+    "forward": "+Z",
+    "author": "Kenney (www.kenney.nl)",
+    "license": "CC0-1.0",
+    "source": "https://kenney.nl/assets/car-kit",
+    "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+    "archiveEntry": "Models/GLB format/sedan.glb",
+    "licenseUrl": "https://opengameart.org/content/car-kit",
+    "expectedSha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7",
+    "expectedDownloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4"
+  },
+  {
+    "id": "test-character",
+    "title": "RobotExpressive — pipeline fixture",
+    "kind": "character",
+    "size": 1.75,
+    "forward": "+Z",
+    "author": "Tomás Laulhé (Quaternius); conversion and facial morph targets by Don McCurdy",
+    "license": "CC0-1.0",
+    "source": "https://github.com/mrdoob/three.js/tree/r180/examples/models/gltf/RobotExpressive",
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/RobotExpressive.glb",
+    "licenseUrl": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/README.md",
+    "expectedSha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+    "expectedDownloadSha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319"
+  }
+]

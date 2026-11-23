@@ -1,0 +1,81 @@
+{
+  "id": "weapon-grenade",
+  "title": "Crosstown grenade — Kenney stylized blaster",
+  "kind": "prop",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/blaster-kit",
+  "source": "https://kenney.nl/assets/blaster-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_blaster-kit_2.1.zip",
+  "archiveEntry": "Models/GLB format/grenade-a.glb",
+  "sourceSha256": "8b67f9500005efee816f3fe72eb00bcded0282f7a9916f4436bf923877d8a89f",
+  "downloadSha256": "91e3093e95427d59625e7e2ce2d0399b861600160fd0b4ada7714796b67cea8c",
+  "sourceBytes": 19280,
+  "targetSize": 0.13,
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.09892172366380692,
+        0,
+        -0.08997199684381485
+      ],
+      "max": [
+        0.06997200101613998,
+        0.23770800232887268,
+        0.06997200101613998
+      ]
+    },
+    "dimensions": [
+      0.1688937246799469,
+      0.23770800232887268,
+      0.15994399785995483
+    ],
+    "triangles": 200,
+    "nodes": 1,
+    "textures": 1,
+    "animations": []
+  },
+  "modifications": [
+    "Reviewed embedded CC0 License.txt",
+    "Y-up, +Z-forward, ground-centred wrapper",
+    "Uniformly scaled to 0.13 m height",
+    "Deduplicated/pruned and Meshopt FILTER geometry",
+    "Textures <=512px, WebP"
+  ],
+  "outputBytes": 9916,
+  "outputSha256": "558c738b95cfdeda1eed3bf40ab8b53968815afd6dddcb3982c2147c2343e382",
+  "scale": 0.5468894556614169,
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 512
+  },
+  "missingKeyNodes": [],
+  "after": {
+    "bounds": {
+      "min": [
+        -0.046183098577422685,
+        0,
+        -0.04373584296297077
+      ],
+      "max": [
+        0.046183098577422685,
+        0.13,
+        0.04373584296297077
+      ]
+    },
+    "dimensions": [
+      0.09236619715484537,
+      0.13,
+      0.08747168592594154
+    ],
+    "triangles": 200,
+    "nodes": 2,
+    "textures": 1,
+    "animations": []
+  }
+}

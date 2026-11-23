@@ -1,0 +1,9 @@
+Reviewed 2026-11-22
+mharo
+https://freesound.org/people/mharo/sounds/55727/
+CC0-1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+Source SHA-256: 2387d2c74a32f3bd9ff773fe33d3dd6a04a05708ab92ad17d85e88917d43b735
+Publisher public HQ MP3 preview (lossy), not the login-only original WAV.
+Modifications: Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers.
+No endorsement by the original vehicle manufacturer. Source brand names occur only in provenance.

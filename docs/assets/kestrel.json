@@ -1,0 +1,72 @@
+{
+  "title": "Crosstown Kestrel Twin — original motorcycle",
+  "kind": "car",
+  "author": "Crosstown project (original procedural modelling)",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "tools/prepare-roster.mjs",
+  "url": "tools/prepare-roster.mjs",
+  "targetSize": 2.26,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.4300000071525574,
+        0.0048615108244121075,
+        -1.090000033378601
+      ],
+      "max": [
+        0.4300000071525574,
+        1.2778745889663696,
+        1.090000033378601
+      ]
+    },
+    "dimensions": [
+      0.8600000143051147,
+      1.2730130781419575,
+      2.180000066757202
+    ],
+    "triangles": 1232,
+    "nodes": 21,
+    "textures": 0,
+    "animations": []
+  },
+  "modifications": [
+    "Original detailed two-wheel fictional motorcycle, authored as fallback after source access failed",
+    "Ground-centred +Z-forward glTF with fork, tank, engine, two axles, exhaust, controls, lamp and class-specific fairing or luggage rack",
+    "Meshopt FILTER geometry compression"
+  ],
+  "id": "kestrel",
+  "sourceSha256": "4e35e14b4ccdc2e87416d11a6a02db21684a034c11ac647748a12f61e06d9e5d",
+  "sourceBytes": 60376,
+  "sourceGlbBytes": 60376,
+  "outputBytes": 56228,
+  "outputSha256": "60c36d3a9d6731740238ada9a137a33b3f665a51cc07e76043001dbce3fdb701",
+  "after": {
+    "bounds": {
+      "min": [
+        -0.44577981027787467,
+        0,
+        -1.13
+      ],
+      "max": [
+        0.44577981027787467,
+        1.3197291139905507,
+        1.13
+      ]
+    },
+    "dimensions": [
+      0.8915596205557493,
+      1.3197291139905507,
+      2.26
+    ],
+    "triangles": 1232,
+    "nodes": 22,
+    "textures": 0,
+    "animations": []
+  }
+}

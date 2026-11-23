@@ -1,0 +1,120 @@
+{
+  "id": "summit",
+  "title": "Crosstown summit — Kenney suv-luxury derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/suv-luxury.glb",
+  "sourceSha256": "9e2a79dc050189d4555a88d2e9da0f30ff946ba74f1d43b5b3bda3c193d1f7d7",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 188279,
+  "sourceGlbBytes": 175908,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 5.15,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.8070174531593264,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.75,
+        -1.1920928966180355e-8,
+        -1.4000000715255738
+      ],
+      "max": [
+        0.75,
+        1.2999999523162842,
+        1.4500000715255736
+      ]
+    },
+    "dimensions": [
+      1.5,
+      1.299999964237213,
+      2.8500001430511475
+    ],
+    "triangles": 2086,
+    "nodes": 5,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "suv-luxury",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 5.15 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.3552630898694948,
+        0,
+        -2.575
+      ],
+      "max": [
+        1.3552630898694948,
+        2.3491226244831442,
+        2.575
+      ]
+    },
+    "dimensions": [
+      2.7105261797389897,
+      2.3491226244831442,
+      5.15
+    ],
+    "triangles": 2086,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 78568,
+  "outputSha256": "3e39449db8a2048c2f8e46fae7a36b64b1b30a42397bc971d8f023eab7cb136b",
+  "savedBytesPercent": 58
+}
