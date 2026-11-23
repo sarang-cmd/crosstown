@@ -1,0 +1,6 @@
+START three-star-pursuit
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at file:///home/user/tools/accept-populated-life-performance.mjs:31:85

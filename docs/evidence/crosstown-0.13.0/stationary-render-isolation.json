@@ -1,0 +1,469 @@
+{
+  "date": "2026-11-22",
+  "environment": "WebGL2 SwiftShader; stationary render-only isolation; not game or native cadence",
+  "viewport": [
+    1280,
+    800
+  ],
+  "quality": "Balanced fixed, shadow override explicitly recorded",
+  "objects": [
+    [
+      "unnamed",
+      {
+        "objects": 260,
+        "triangles": 172973
+      }
+    ],
+    [
+      "Living streets · glTF batches & animated pedestrians",
+      {
+        "objects": 7,
+        "triangles": 156757.33333333334
+      }
+    ],
+    [
+      "Crosstown streamed city",
+      {
+        "objects": 6,
+        "triangles": 40342.66666666667
+      }
+    ],
+    [
+      "Continuous full-map terrain coverage",
+      {
+        "objects": 1,
+        "triangles": 18432
+      }
+    ],
+    [
+      "Six activities · drive into a glowing marker",
+      {
+        "objects": 15,
+        "triangles": 2628
+      }
+    ],
+    [
+      "Torso_3",
+      {
+        "objects": 3,
+        "triangles": 1710
+      }
+    ],
+    [
+      "Head_3",
+      {
+        "objects": 3,
+        "triangles": 1380
+      }
+    ],
+    [
+      "Working garage and paint-shop markers",
+      {
+        "objects": 8,
+        "triangles": 1288
+      }
+    ],
+    [
+      "rack",
+      {
+        "objects": 6,
+        "triangles": 912
+      }
+    ],
+    [
+      "Torso_2",
+      {
+        "objects": 3,
+        "triangles": 900
+      }
+    ],
+    [
+      "Stylized arcade combat · no gore",
+      {
+        "objects": 10,
+        "triangles": 736
+      }
+    ],
+    [
+      "Merged static cabin detail",
+      {
+        "objects": 11,
+        "triangles": 708
+      }
+    ],
+    [
+      "body",
+      {
+        "objects": 1,
+        "triangles": 704
+      }
+    ],
+    [
+      "County Line public shooting range",
+      {
+        "objects": 17,
+        "triangles": 670
+      }
+    ],
+    [
+      "Head_4",
+      {
+        "objects": 3,
+        "triangles": 588
+      }
+    ],
+    [
+      "city:15,15",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:14,15",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:15,16",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:16,15",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:16,16",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:15,14",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:14,16",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "city:16,14",
+      {
+        "objects": 2,
+        "triangles": 512
+      }
+    ],
+    [
+      "blaster-j_1",
+      {
+        "objects": 1,
+        "triangles": 488
+      }
+    ],
+    [
+      "blaster-r_1",
+      {
+        "objects": 1,
+        "triangles": 464
+      }
+    ],
+    [
+      "Head_2",
+      {
+        "objects": 3,
+        "triangles": 462
+      }
+    ],
+    [
+      "HandR_2",
+      {
+        "objects": 3,
+        "triangles": 444
+      }
+    ],
+    [
+      "HandL_2",
+      {
+        "objects": 3,
+        "triangles": 444
+      }
+    ],
+    [
+      "blaster-e_1",
+      {
+        "objects": 1,
+        "triangles": 442
+      }
+    ],
+    [
+      "LowerLegL_1",
+      {
+        "objects": 3,
+        "triangles": 438
+      }
+    ],
+    [
+      "LowerLegR_1",
+      {
+        "objects": 3,
+        "triangles": 438
+      }
+    ],
+    [
+      "blaster-a_1",
+      {
+        "objects": 1,
+        "triangles": 410
+      }
+    ],
+    [
+      "blaster-c_1",
+      {
+        "objects": 1,
+        "triangles": 388
+      }
+    ],
+    [
+      "HandR_1",
+      {
+        "objects": 3,
+        "triangles": 372
+      }
+    ],
+    [
+      "HandL_1",
+      {
+        "objects": 3,
+        "triangles": 372
+      }
+    ],
+    [
+      "ShoulderL_1",
+      {
+        "objects": 3,
+        "triangles": 366
+      }
+    ],
+    [
+      "ShoulderR_1",
+      {
+        "objects": 3,
+        "triangles": 366
+      }
+    ],
+    [
+      "wheel_fr",
+      {
+        "objects": 1,
+        "triangles": 332
+      }
+    ],
+    [
+      "wheel_rl",
+      {
+        "objects": 1,
+        "triangles": 332
+      }
+    ],
+    [
+      "wheel_rr",
+      {
+        "objects": 1,
+        "triangles": 332
+      }
+    ],
+    [
+      "wheel_fl",
+      {
+        "objects": 1,
+        "triangles": 332
+      }
+    ],
+    [
+      "ArmL",
+      {
+        "objects": 3,
+        "triangles": 324
+      }
+    ],
+    [
+      "ArmR",
+      {
+        "objects": 3,
+        "triangles": 318
+      }
+    ],
+    [
+      "scope",
+      {
+        "objects": 1,
+        "triangles": 300
+      }
+    ],
+    [
+      "LegL",
+      {
+        "objects": 3,
+        "triangles": 294
+      }
+    ],
+    [
+      "LegR",
+      {
+        "objects": 3,
+        "triangles": 294
+      }
+    ],
+    [
+      "magazine",
+      {
+        "objects": 4,
+        "triangles": 240
+      }
+    ],
+    [
+      "grenade-a_1",
+      {
+        "objects": 1,
+        "triangles": 200
+      }
+    ],
+    [
+      "sedan · hand-built cabin",
+      {
+        "objects": 19,
+        "triangles": 118
+      }
+    ],
+    [
+      "FootR_1",
+      {
+        "objects": 3,
+        "triangles": 102
+      }
+    ],
+    [
+      "FootL_1",
+      {
+        "objects": 3,
+        "triangles": 99
+      }
+    ],
+    [
+      "Clear rooftop-street parking forecourt",
+      {
+        "objects": 8,
+        "triangles": 96
+      }
+    ],
+    [
+      "Sight-based police · pooled patrol / block / armored / heavy / helicopter",
+      {
+        "objects": 8,
+        "triangles": 8
+      }
+    ]
+  ],
+  "rows": [
+    {
+      "group": "all",
+      "shadows": true,
+      "frames": 19,
+      "wallMs": 6049.699999999999,
+      "fps": 3.140651602558805,
+      "p50": 66.69999999999891,
+      "p95": 1066.5999999999985,
+      "meanSubmitMs": 5.940000000223518,
+      "render": {
+        "draws": 92,
+        "triangles": 121393
+      }
+    },
+    {
+      "group": "all",
+      "shadows": false,
+      "frames": 12,
+      "wallMs": 7966.399999999998,
+      "fps": 1.5063265716007235,
+      "p50": 733.2000000000007,
+      "p95": 1350,
+      "meanSubmitMs": 4.176923078413193,
+      "render": {
+        "draws": 92,
+        "triangles": 121393
+      }
+    },
+    {
+      "group": "city",
+      "shadows": false,
+      "frames": 14,
+      "wallMs": 5366.399999999998,
+      "fps": 2.6088252832438887,
+      "p50": 633.2999999999956,
+      "p95": 900,
+      "meanSubmitMs": 1.6600000003973643,
+      "render": {
+        "draws": 17,
+        "triangles": 76689
+      }
+    },
+    {
+      "group": "roofs",
+      "shadows": false,
+      "frames": 12,
+      "wallMs": 6516.399999999994,
+      "fps": 1.8415075808728762,
+      "p50": 666.5999999999985,
+      "p95": 883.3000000000029,
+      "meanSubmitMs": 1.946153845351476,
+      "render": {
+        "draws": 36,
+        "triangles": 58136
+      }
+    },
+    {
+      "group": "life",
+      "shadows": false,
+      "frames": 15,
+      "wallMs": 5016.5,
+      "fps": 2.990132562543606,
+      "p50": 350,
+      "p95": 666.5999999999985,
+      "meanSubmitMs": 1.3937500012107193,
+      "render": {
+        "draws": 13,
+        "triangles": 20341
+      }
+    },
+    {
+      "group": "none",
+      "shadows": false,
+      "frames": 23,
+      "wallMs": 5099.799999999996,
+      "fps": 4.5099807835601435,
+      "p50": 200,
+      "p95": 350,
+      "meanSubmitMs": 1.283333333209157,
+      "render": {
+        "draws": 7,
+        "triangles": 19605
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.13.0",
+  "build": "13.001",
+  "anonymous": true,
+  "https": true,
+  "status": 200,
+  "archiveBytes": 12850153,
+  "archiveSha256": "b0b3249355ea2d747729928aa0227aef8d6ea1c38e142c3eacb361b227905947",
+  "publicFiles": 204,
+  "allFileHashesMatch": true,
+  "transferHost": "https://realm-charms-eng-filter.trycloudflare.com",
+  "temporary": true,
+  "mustRetireAfterDeployment": true
+}

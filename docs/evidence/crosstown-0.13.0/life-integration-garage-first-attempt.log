@@ -1,0 +1,26 @@
+START immediate /play startup, six GLBs, no source configured for Spotify
+page.waitForFunction: Timeout 180000ms exceeded.
+    at /home/user/tools/accept-city-life.mjs:11:204
+    at async phase (/home/user/tools/accept-city-life.mjs:6:99)
+    at async file:///home/user/tools/accept-city-life.mjs:11:1
+les and practice does not unlock them
+START real gun shop UI charges gun and ammo and real reload is finite
+PASS real gun shop UI charges gun and ammo and real reload is finite
+START sight-based escalation 1 through 5, bounded physical units, helicopter at 3
+PASS sight-based escalation 1 through 5, bounded physical units, helicopter at 3
+START stars fall only after 20 unseen seconds in the real shared city world
+PASS stars fall only after 20 unseen seconds in the real shared city world
+START waypoint produces a connected road route
+PASS waypoint produces a connected road route
+START car-window shooting, in-car procedural stations, now-playing, exit silence and favourites
+PASS car-window shooting, in-car procedural stations, now-playing, exit silence and favourites
+START paint and garage UI debit cash, preserve one VIN and survive reload
+PASS paint and garage UI debit cash, preserve one VIN and survive reload
+START garage walls/roof occlude real sight rays, the open door does not
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+true !== false
+
+    at file:///home/user/tools/accept-city-life.mjs:19:699
+    at async phase (file:///home/user/tools/accept-city-life.mjs:6:99)
+    at async file:///home/user/tools/accept-city-life.mjs:19:1

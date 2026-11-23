@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checked": 148,
+  "documents": [
+    "README.md",
+    "CREDITS.md",
+    "docs/PROGRESS.md",
+    "docs/TESTING.md",
+    "docs/FINDINGS.md",
+    "docs/DEPLOYMENT.md",
+    "docs/ASSET_PIPELINE.md",
+    "docs/SCREENSHOTS.md",
+    "docs/RENDERER.md",
+    "docs/PARKOUR-API.md",
+    "docs/FLEET.md",
+    "docs/POPULATION.md",
+    "docs/SOURCE-ARCHIVE.md",
+    "docs/RADIO.md",
+    "docs/HANDOFF.md"
+  ],
+  "broken": [],
+  "boundary": "Current local relative file links only; external reachability/anchors not asserted."
+}

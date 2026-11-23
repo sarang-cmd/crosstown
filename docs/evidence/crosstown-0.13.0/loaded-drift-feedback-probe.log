@@ -1,0 +1,1 @@
+{"params":{"steer":0.8,"release":0.2,"counter":-0.7,"threshold":10,"duty":30,"offset":18},"run":{"activity":"activity-drift","type":"drift","name":"County Line Slide","state":"finished","elapsed":35.01666666666596,"remaining":0,"score":143.5185558836302,"gate":1,"total":12,"jumps":0,"reason":"COUNTY LINE SLIDE · COMPLETE +$400"}}

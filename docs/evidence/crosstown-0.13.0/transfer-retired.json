@@ -1,0 +1,16 @@
+{
+  "version": "0.13.0",
+  "deploymentId": "dpl_4jMtSU8oRbRUoB3MpUiMxTQVnnkR",
+  "tunnelStopped": true,
+  "archiveServerStopped": true,
+  "postShutdownAnonymousHashesMatch": 204,
+  "descriptorMustNotBeRedeployed": true,
+  "normalProjectSettings": {
+    "framework": "vite",
+    "installCommand": "npm ci",
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist",
+    "rootDirectory": null
+  },
+  "accessControlsUnchanged": true
+}

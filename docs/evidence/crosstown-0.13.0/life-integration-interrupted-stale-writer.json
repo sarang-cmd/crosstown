@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-22",
+  "backend": "webgl",
+  "environment": "software renderer, Low for functional checks; NOT performance acceptance",
+  "debugPositioning": true,
+  "checks": [
+    {
+      "name": "immediate /play startup, six GLBs, no source configured for Spotify",
+      "pass": false,
+      "error": "page.waitForFunction: Timeout 180000ms exceeded.\n    at /home/user/tools/accept-city-life.mjs:11:204\n    at async phase (/home/user/tools/accept-city-life.mjs:6:99)\n    at async file:///home/user/tools/accept-city-life.mjs:11:1"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "using deprecated parameters for the initialization function; pass a single object instead"
+  ]
+}

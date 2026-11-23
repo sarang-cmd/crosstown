@@ -1,0 +1,26 @@
+
+> crosstown@0.13.0 assets:check
+> node tools/check-assets.mjs
+
+PASS aerox: 4.5 m length, ground-centred, +Z forward, 1952 triangles, 0 clips; 70.4 KiB.
+PASS brim: 4.9 m length, ground-centred, +Z forward, 2062 triangles, 0 clips; 67.1 KiB.
+PASS cinder: 4.95 m length, ground-centred, +Z forward, 2282 triangles, 0 clips; 77.6 KiB.
+PASS city-pedestrian: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 6 clips; 328.3 KiB.
+PASS harbor-roster: 4.3 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS kestrel: 2.26 m length, ground-centred, +Z forward, 1232 triangles, 0 clips; 54.9 KiB.
+PASS meridian: 4.65 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 78.9 KiB.
+PASS mesa: 4.9 m length, ground-centred, +Z forward, 2474 triangles, 0 clips; 92.1 KiB.
+PASS milo: 3.85 m length, ground-centred, +Z forward, 2082 triangles, 0 clips; 76.9 KiB.
+PASS parkour-runner: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 27 clips; 393.5 KiB.
+PASS pip: 3.6 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 84.6 KiB.
+PASS summit: 5.15 m length, ground-centred, +Z forward, 2086 triangles, 0 clips; 76.7 KiB.
+PASS test-car: 4.5 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS test-character: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 14 clips; 368.6 KiB.
+PASS weapon-grenade: 0.13 m undefined, ground-centred, +Z forward, 200 triangles, 0 clips; 9.7 KiB.
+PASS weapon-pistol: 0.24 m undefined, ground-centred, +Z forward, 470 triangles, 0 clips; 17.3 KiB.
+PASS weapon-rifle: 0.3 m undefined, ground-centred, +Z forward, 548 triangles, 0 clips; 18.2 KiB.
+PASS weapon-rocket: 0.36 m undefined, ground-centred, +Z forward, 524 triangles, 0 clips; 17.6 KiB.
+PASS weapon-shotgun: 0.27 m undefined, ground-centred, +Z forward, 388 triangles, 0 clips; 13.6 KiB.
+PASS weapon-smg: 0.29 m undefined, ground-centred, +Z forward, 802 triangles, 0 clips; 26.4 KiB.
+PASS wren: 2.16 m length, ground-centred, +Z forward, 988 triangles, 0 clips; 47.5 KiB.
+PASS zenith: 4.6 m length, ground-centred, +Z forward, 2068 triangles, 0 clips; 73.6 KiB.

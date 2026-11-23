@@ -1,0 +1,70 @@
+READY basic-shadow {"bufferData":3338,"createProgram":59,"linkProgram":59,"getProgramParameter":59,"getUniformBlockIndex":250,"bufferSubData":336,"drawElements":181,"drawElementsInstanced":12,"drawArrays":10}
+RESULT {
+  "label": "basic-shadow",
+  "frames": {
+    "intervals": 41,
+    "wallMs": 30357.800000001487,
+    "fps": 1.350558999663941,
+    "p50": 783.3000000000029,
+    "p95": 1699.8999999999996,
+    "firstIntervals": [
+      192.30000000148993,
+      16.699999999999818,
+      2333.2000000000007,
+      783.2999999999993,
+      116.70000000000073,
+      66.69999999999891,
+      16.600000000000364,
+      33.30000000000109
+    ],
+    "lastIntervals": [
+      3233.199999999997,
+      916.6000000000022,
+      950,
+      950,
+      833.2999999999993,
+      999.9000000000015,
+      916.6999999999971,
+      816.5999999999985
+    ]
+  },
+  "delta": {
+    "bufferData": {
+      "calls": 4355,
+      "ms": 21.799999997019768
+    },
+    "createProgram": {
+      "calls": 0,
+      "ms": 0
+    },
+    "linkProgram": {
+      "calls": 0,
+      "ms": 0
+    },
+    "getProgramParameter": {
+      "calls": 0,
+      "ms": 0
+    },
+    "getUniformBlockIndex": {
+      "calls": 0,
+      "ms": 0
+    },
+    "bufferSubData": {
+      "calls": 145,
+      "ms": 6.799999982118607
+    },
+    "drawElements": {
+      "calls": 3451,
+      "ms": 27.200000002980232
+    },
+    "drawElementsInstanced": {
+      "calls": 246,
+      "ms": 0.6000000089406967
+    },
+    "drawArrays": {
+      "calls": 164,
+      "ms": 0.6000000014901161
+    }
+  },
+  "errors": []
+}

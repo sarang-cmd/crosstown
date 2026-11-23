@@ -1,0 +1,13 @@
+START immediate /play startup, six GLBs, no source configured for Spotify
+Navigation committed; waiting for actual game hooks
+PASS immediate /play startup, six GLBs, no source configured for Spotify
+START all seven range weapons use actual colliders/projectiles and practice does not unlock them
+PASS all seven range weapons use actual colliders/projectiles and practice does not unlock them
+START real gun shop UI charges gun and ammo and real reload is finite
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+false !== true
+
+    at file:///home/user/tools/accept-city-life.mjs:13:747
+    at async phase (file:///home/user/tools/accept-city-life.mjs:6:99)
+    at async file:///home/user/tools/accept-city-life.mjs:13:1

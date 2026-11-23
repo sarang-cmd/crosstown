@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-22",
+  "reviewer": "assistant image inspection, not a human device/usability study",
+  "images": [
+    "landing-1440.webp",
+    "landing-390.webp"
+  ],
+  "observations": [
+    "Desktop two-column hero, gallery and lower controls align without visible clipping.",
+    "Mobile hero, stats, three vertically stacked cards and control list remain within the content width.",
+    "Generated concept-art hero is distinguished from actual game captures by the page disclosure."
+  ],
+  "relatedAutomatedWidths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "humanDeviceAcceptance": false
+}

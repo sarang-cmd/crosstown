@@ -1,0 +1,17 @@
+START activities 2026-11-23T09:42:28.236Z
+RESULT activities 0 37818ms
+START city-life-webgl 2026-11-23T09:43:06.059Z
+RESULT city-life-webgl 0 89473ms
+START city-life-webgpu 2026-11-23T09:44:35.534Z
+RESULT city-life-webgpu 0 64450ms
+START landing 2026-11-23T09:45:39.987Z
+RESULT landing 0 4551ms
+START real-radio-providers 2026-11-23T09:45:44.541Z
+RESULT real-radio-providers 1 40280ms
+START populated-display-cadence 2026-11-23T09:46:24.824Z
+RESULT populated-display-cadence 1 14731ms
+fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66
+RETRY populated display cadence only; five prior collector hashes verified, raw failed attempt preserved
+START populated-display-cadence 2026-11-23T09:48:30.448Z
+RESULT populated-display-cadence 0 57233ms
+fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66
