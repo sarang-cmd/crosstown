@@ -1,0 +1,13 @@
+
+> crosstown@0.7.0 test:city
+> playwright test --config playwright.city.config.ts --grep opening choices|six worker-generated marker
+
+
+Running 4 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/crosstown.spec.ts:31:1 › opening choices, real keyboard A/D, stable camera yaw and saved run length work (1.3m)
+  ✓  2 [webgpu] › tests/browser/crosstown.spec.ts:269:1 › six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely (1.5m)
+  ✓  3 [webgl2-forced] › tests/browser/crosstown.spec.ts:31:1 › opening choices, real keyboard A/D, stable camera yaw and saved run length work (2.1m)
+  ✓  4 [webgl2-forced] › tests/browser/crosstown.spec.ts:269:1 › six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely (1.8m)
+
+  4 passed (6.8m)
