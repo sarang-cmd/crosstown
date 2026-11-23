@@ -1,0 +1,66 @@
+START npm ci --no-audit --no-fund
+RESULT 0 2515
+START npm run build
+RESULT 0 11017
+START npm run assets:check
+RESULT 0 379
+START npm run check:versions
+RESULT 0 3078
+{
+  "date": "2026-11-22",
+  "capturedAt": "2026-11-23T12:02:40.717Z",
+  "version": "0.14.0",
+  "passed": true,
+  "exitCode": 0,
+  "runtimeFingerprint": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+  "sourceArchiveSha256": "73a898defb2d431324fd4dbd84e1a01de40ac71b350355cb1ceb3b2fedc4e6d5",
+  "sourceArchiveEntries": 821,
+  "sourceArchiveBoundary": "Clean provisional allowlisted ZIP, all runtime/public/config files hash-identical to the final tested runtime. Final source ZIP adds proof/docs/manifests; packager rechecks every runtime byte.",
+  "node": "v20.20.2",
+  "runs": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "wallMs": 2514.7267349999997
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "wallMs": 11017.283277999999
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assets:check"
+      ],
+      "exitCode": 0,
+      "wallMs": 378.76618000000053
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "check:versions"
+      ],
+      "exitCode": 0,
+      "wallMs": 3078.0539419999986
+    }
+  ],
+  "productionOutputFiles": 204,
+  "expectedLocalCandidateFiles": 204,
+  "allProductionBytesMatchCandidate": true,
+  "publicDeploymentCompared": false,
+  "publishedVersion": "0.13.0",
+  "mismatches": [],
+  "log": "source-archive-build.log"
+}

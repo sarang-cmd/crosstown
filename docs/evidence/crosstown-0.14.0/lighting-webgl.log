@@ -1,0 +1,32 @@
+START webgl real production TSL modules initialize the explicit pixel laboratory
+PASS webgl real production TSL modules initialize the explicit pixel laboratory
+START webgl fourteen effects change real pixels; every disabled optional branch/family releases resources and stops updates
+PIXELS bloom {"meanAbsoluteRGB":0.8021233333333333,"changedPixels":10518,"maximum":125}
+PIXELS volumetricFog {"meanAbsoluteRGB":27.673985833333333,"changedPixels":397326,"maximum":142}
+PIXELS wetReflections {"meanAbsoluteRGB":0.681585,"changedPixels":14060,"maximum":212}
+PIXELS motionBlur {"meanAbsoluteRGB":0.21046666666666666,"changedPixels":3540,"maximum":175}
+PIXELS heatHaze {"meanAbsoluteRGB":0.10105583333333333,"changedPixels":1256,"maximum":217}
+PIXELS sunShafts {"meanAbsoluteRGB":9.854660833333334,"changedPixels":253780,"maximum":80}
+PIXELS lensFlare {"meanAbsoluteRGB":0.3251525,"changedPixels":11446,"maximum":174}
+PIXELS lightCones {"meanAbsoluteRGB":1.3297141666666668,"changedPixels":14741,"maximum":189}
+PIXELS tireSmoke {"meanAbsoluteRGB":0.2873325,"changedPixels":1852,"maximum":160}
+PIXELS skidMarks {"meanAbsoluteRGB":0.005841666666666667,"changedPixels":184,"maximum":26}
+PIXELS sparks {"meanAbsoluteRGB":0.025758333333333334,"changedPixels":106,"maximum":240}
+PIXELS rainSplashes {"meanAbsoluteRGB":0.12485833333333334,"changedPixels":425,"maximum":193}
+PIXELS neonSigns {"meanAbsoluteRGB":0.1210075,"changedPixels":322,"maximum":243}
+PIXELS streetLamps {"meanAbsoluteRGB":0.03618416666666667,"changedPixels":80,"maximum":241}
+PASS webgl fourteen effects change real pixels; every disabled optional branch/family releases resources and stops updates
+START webgl bounded pools and resize/repeated toggles do not accumulate GPU resources
+PASS webgl bounded pools and resize/repeated toggles do not accumulate GPU resources
+START webgl built /play starts immediately, preserving the saved route and renderer
+PASS webgl built /play starts immediately, preserving the saved route and renderer
+START webgl actual car has physical head/brake cones, rain splashes and cockpit mirror budget
+PASS webgl actual car has physical head/brake cones, rain splashes and cockpit mirror budget
+START webgl clear/dry weather and reduced-motion preferences really remove ineligible passes; effect choices survive reload
+PASS webgl clear/dry weather and reduced-motion preferences really remove ineligible passes; effect choices survive reload
+START webgl physical wall collision feeds the real spark emitter without injected damage or rewards
+PASS webgl physical wall collision feeds the real spark emitter without injected damage or rewards
+START webgl lit dusk windows and neon render in the actual downtown; all-off retains only the documented shared grade
+PASS webgl lit dusk windows and neon render in the actual downtown; all-off retains only the documented shared grade
+START webgl mobile resize and WebGPU garbage collection retain finite colored pixels, with no renderer exceptions
+PASS webgl mobile resize and WebGPU garbage collection retain finite colored pixels, with no renderer exceptions
