@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "id": "aerox",
+  "engine": "flat6",
+  "source": "https://freesound.org/people/mharo/sounds/55727/",
+  "author": "mharo",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "notes": "Processed field-recording timbre plus firing-model synthesis. These are designed RPM/load anchors, not independent calibrated on/off-throttle dyno captures. Per-car EQ/saturation/harmonic design. V10 and twin timbres are designed transformations of the reviewed flat-six/single recordings, not independently recorded cylinder counts.",
+  "loops": [
+    {
+      "band": "idle",
+      "load": "off",
+      "file": "idle-off.wav",
+      "anchorRpm": 1050,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 0.2,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.5458092855174066,
+      "sha256": "ad3eba41f874b7811ba631de4450b20e0709448095eae82e086efe8bf298b18c",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "667d754c13810eb8c40e2bb7c60fbd9bb7387331ce2e694b5c8a44802a94fa6f",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "idle",
+      "load": "on",
+      "file": "idle-on.wav",
+      "anchorRpm": 1050,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 0.2,
+      "duration": 1.25,
+      "rms": 0.12000000000000001,
+      "seamDelta": 0.0,
+      "peak": 0.5640048416146579,
+      "sha256": "b1205c65ef5722f87218638ab267f347579f13b377320e27bdec70fc18ef18a9",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "93a72f511923803db98bc30373b28e58dae8004d3f97816b623dd9914cfd92b1",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "low",
+      "load": "off",
+      "file": "low-off.wav",
+      "anchorRpm": 2600,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 2.0,
+      "duration": 1.25,
+      "rms": 0.11999999999999998,
+      "seamDelta": 0.0,
+      "peak": 0.4220910255433997,
+      "sha256": "954a0820b54da783f10f53b3b50c750f159a6e47daf883af87e4f9ef83f1cdca",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "35189015fa9ec8c7237316d9588e631ca860132bd6de838f65b6a3ec11fecaa2",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "low",
+      "load": "on",
+      "file": "low-on.wav",
+      "anchorRpm": 2600,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 2.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.46066233280220964,
+      "sha256": "a8bbee20b77cfe27a8bef6916f27fa9f3a233923accb1edf0b25997038d3a2ec",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "ce5599feea12b80c21790489ba33af840f560f3891644ddd89a81291d4e7be2b",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "mid",
+      "load": "off",
+      "file": "mid-off.wav",
+      "anchorRpm": 5000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 3.8,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.41641183520115693,
+      "sha256": "dfc3e9d4e8078e89774c229abe81022bccb31eecb0a831d655942edc8f4fa1f4",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "568782eb4af9c9ed4f57736c53a6014673f5859572d3d666f8ac3cbf8c252e87",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "mid",
+      "load": "on",
+      "file": "mid-on.wav",
+      "anchorRpm": 5000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 3.8,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.43683220434639025,
+      "sha256": "a3695aeb18a0001ea035d2a73f4565721ebdfb7ef79903bfe581b18edd3ab0f0",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "70d7e6f19f92776ec829742ad539a1a350a9914de793267b8283c6f177b118a9",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "high",
+      "load": "off",
+      "file": "high-off.wav",
+      "anchorRpm": 7500,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 6.5,
+      "duration": 1.25,
+      "rms": 0.12000000000000002,
+      "seamDelta": 0.0,
+      "peak": 0.4712073332217315,
+      "sha256": "96ca0ee52cab5afc3e24211aef6e6df3651217c44f67a957ac1d1a727f4624bd",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "f58b8a1eac25d2da0633d850919531073aaa908684f6d08613a6b1d03ad86e08",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "high",
+      "load": "on",
+      "file": "high-on.wav",
+      "anchorRpm": 7500,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 6.5,
+      "duration": 1.25,
+      "rms": 0.11999999999999998,
+      "seamDelta": 0.0,
+      "peak": 0.4819150658334747,
+      "sha256": "3e48960f565fda34b898aedeacebc28803ec45e94500696434a478a964559130",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-supercar",
+        "baseFileSha256": "6eed2511367c469af7e2d9bb58c34593e26ef565a63e56485257e72618cb68b9",
+        "lowpassHz": 7200,
+        "saturation": 1.3,
+        "designedHarmonicBlend": 0.05
+      }
+    }
+  ],
+  "baseProfile": "cabin-supercar"
+}
