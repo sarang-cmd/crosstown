@@ -1,0 +1,870 @@
+{
+  "schema": 2,
+  "date": "2026-11-22",
+  "name": "Crosstown",
+  "release": "0.5.0",
+  "build": "05.001",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle"
+  ],
+  "userOverrides": [
+    "Beginning length/control/camera/graphics choices supersede historical no-menu/full-default restrictions.",
+    "Quick is default; Standard and full 28-checkpoint course remain available.",
+    "Correct keyboard A/D, not gamepad A/B."
+  ],
+  "environment": {
+    "node": "v20.20.2",
+    "browser": "Chromium 141 / Playwright 1.56.1",
+    "platform": "Linux, headed software SwiftShader/Vulkan under Xvfb",
+    "cpuCount": 2,
+    "approximateRamGiB": 2,
+    "nativeHardwareBenchmark": false,
+    "physicalInputHardwareTested": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "handoffRuntimeFingerprint": {
+    "sha256": "8d4e98e700aea6039fb8071324bf18b3f7f6bdc56c01cad868d64025c796a4d7",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "captured": "At source handoff after completed tests; not an independently captured per-run Git commit."
+  },
+  "unitTests": {
+    "passed": 53,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 26392.804047,
+    "retainedFoundationTests": 20,
+    "parkourTests": 20,
+    "cityAndSessionTests": 13,
+    "log": "evidence/crosstown-0.5.0/unit.log"
+  },
+  "checks": {
+    "typecheck": {
+      "passed": true,
+      "log": "evidence/crosstown-0.5.0/typecheck.log"
+    },
+    "productionBuild": {
+      "passed": true,
+      "buildSeconds": 8.72,
+      "log": "evidence/crosstown-0.5.0/build.log"
+    },
+    "assets": {
+      "passed": 3,
+      "log": "evidence/crosstown-0.5.0/assets.log"
+    },
+    "exactDependencyPins": {
+      "passed": 15,
+      "publicationCutoff": "2026-11-08",
+      "log": "evidence/crosstown-0.5.0/versions.log"
+    },
+    "referenceUnchanged": true,
+    "referenceSha256": "0f670679a820a3b687f6fb4fae6e0a14afebfc215b791b6918792ee322699dc9",
+    "gallery": {
+      "date": "2026-11-22",
+      "passed": true,
+      "captures": 12,
+      "networkRequests": [],
+      "errors": [],
+      "desktopOverflow": false,
+      "lightboxNext": "Same runner. More city. · 2 / 12",
+      "mobileOverflow": false
+    }
+  },
+  "cityEarlierSixCaseRun": {
+    "passed": 6,
+    "failed": 0,
+    "backends": [
+      "WebGPU",
+      "forced WebGL 2"
+    ],
+    "finalAllocationBuild": false,
+    "log": "evidence/crosstown-0.5.0/city-six-cases.log",
+    "note": "Precedes facade-height/diagnostic corrections and the final minimum-capacity edit. Marker checks and final strict WebGPU tour are separate runs; no combined final 8/8 run is claimed."
+  },
+  "browsers": {
+    "foundationDevelopment": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T13:45:27.995Z",
+      "durationMs": 191998.807,
+      "finalAllocationBuild": false,
+      "report": "evidence/crosstown-0.5.0/foundation-browser-report.json",
+      "log": "evidence/crosstown-0.5.0/foundation-browser.log",
+      "tests": [
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 19685,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 24603,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "prepared models load in the browser with real dimensions, wheels, skins and animation",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 6238,
+              "retry": 0,
+              "attachments": [
+                "asset-browser-measurements"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "mobile layout remains usable and credits are available",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 7343,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 15941,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 34046,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "prepared models load in the browser with real dimensions, wheels, skins and animation",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 8035,
+              "retry": 0,
+              "attachments": [
+                "asset-browser-measurements"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "mobile layout remains usable and credits are available",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 7249,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 15840,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 33245,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "prepared models load in the browser with real dimensions, wheels, skins and animation",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 8112,
+              "retry": 0,
+              "attachments": [
+                "asset-browser-measurements"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "mobile layout remains usable and credits are available",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 7442,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        }
+      ]
+    },
+    "parkourDevelopment": {
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T13:41:09.741Z",
+      "durationMs": 195174.147,
+      "finalAllocationBuild": false,
+      "report": "evidence/crosstown-0.5.0/parkour-browser-report.json",
+      "log": "evidence/crosstown-0.5.0/parkour-browser.log",
+      "tests": [
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 33551,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 21485,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 24962,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 21411,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 24961,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 23056,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district",
+          "project": "webgpu-full-run",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 40316,
+              "retry": 0,
+              "attachments": [
+                "finished-result-and-city-flight",
+                "unlocked-night-route",
+                "normal-pace-browser-simulation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cityMarkers": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T13:39:33.393Z",
+      "durationMs": 94974.708,
+      "finalAllocationBuild": false,
+      "report": "evidence/crosstown-0.5.0/city-markers-report.json",
+      "log": "evidence/crosstown-0.5.0/city-markers.log",
+      "tests": [
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 33325,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 58288,
+              "retry": 0,
+              "attachments": []
+            }
+          ]
+        }
+      ]
+    },
+    "cityStrictTour": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T13:58:43.919Z",
+      "durationMs": 205227.34600000002,
+      "finalAllocationBuild": true,
+      "report": "evidence/crosstown-0.5.0/city-strict-tour-report.json",
+      "log": "evidence/crosstown-0.5.0/city-strict-tour.log",
+      "tests": [
+        {
+          "title": "seven districts render, the map covers the full city, dates change weather and dusk switches lights",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 203111,
+              "retry": 0,
+              "attachments": [
+                "city-states-not-a-native-hardware-benchmark"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "productionLocal": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T14:02:11.595Z",
+      "durationMs": 157058.33,
+      "finalAllocationBuild": true,
+      "report": "evidence/crosstown-0.5.0/production-browser-report.json",
+      "log": "evidence/crosstown-0.5.0/production-browser.log",
+      "tests": [
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 19499,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 18243,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 17807,
+              "retry": 0,
+              "attachments": [
+                "measured-state"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 35676,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 30837,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 29197,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "productionPublic": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-22T14:07:56.529Z",
+      "durationMs": 209495.076,
+      "finalAllocationBuild": true,
+      "report": "evidence/crosstown-0.5.0/deployed-browser-report.json",
+      "log": "evidence/crosstown-0.5.0/deployed-browser.log",
+      "tests": [
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 49154,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 31507,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 35048,
+              "retry": 0,
+              "attachments": [
+                "desktop-game",
+                "mobile-game",
+                "measured-software-renderer-not-hardware-benchmark"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district",
+          "project": "webgpu-full-run",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 55932,
+              "retry": 0,
+              "attachments": [
+                "finished-result-and-city-flight",
+                "unlocked-night-route",
+                "normal-pace-browser-simulation"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "eight-checkpoint training route also opens immediately with the animated runner and a visible billboard course",
+          "project": "webgpu-training",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 29625,
+              "retry": 0,
+              "attachments": [
+                "training-eight-checkpoints"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "revisionBoundaries": [
+    "Foundation 12/12, gameplay 7/7 and marker/cache/landing 2/2 ran before the final source-only building/light minimum-capacity change.",
+    "After that allocation change: typecheck, 53 units, build, strict WebGPU city tour 1/1, local built-output 6/6 and real public-site 5/5 passed.",
+    "The strict forced-WebGL seven-district tour and one combined fresh eight-case city suite were not rerun."
+  ],
+  "simulation": {
+    "source": "evidence/crosstown-0.5.0/unit.log",
+    "physicsHz": 60,
+    "ordinaryMovementMetresPerSecond": 6.5,
+    "lengthPilots": {
+      "quick": {
+        "finished": true,
+        "falls": 0,
+        "seconds": 156.30000000001652
+      },
+      "standard": {
+        "finished": true,
+        "falls": 0,
+        "seconds": 331.2500000000274
+      },
+      "full": {
+        "finished": true,
+        "falls": 0,
+        "seconds": 682.4333333330413
+      }
+    },
+    "cityStartPilots": {
+      "count": 6,
+      "length": "quick",
+      "allFinished": true,
+      "zeroFalls": true,
+      "actualRouteSpawnMatchesMarker": true
+    },
+    "streetToBeach": {
+      "simulatedSeconds": 247.36666666666667,
+      "maximumPhysicsStreamMs": 1.677799999999479,
+      "noTeleport": true
+    },
+    "publicFullRunPilot": {
+      "ticks": 40949,
+      "normalPaceSeconds": 682.4833333333333,
+      "wallSeconds": 8.7195,
+      "state": "finished",
+      "result": {
+        "seed": 84173,
+        "marker": "opening",
+        "night": false,
+        "seconds": 682.6,
+        "falls": 0,
+        "collectibles": 15,
+        "cash": 75,
+        "rank": "A",
+        "date": "2026-11-22T14:10:15.790Z"
+      },
+      "falls": 0,
+      "checkpoint": 27,
+      "note": "Every 60 Hz KCC step at 6.5 m/s. Rendering suspended only during the accelerated acceptance pilot, not a wall-clock or target-GPU measurement."
+    },
+    "renderingBenchmark": false,
+    "note": "Actual KCC input at 60 Hz; full browser pilot accelerates simulation with rendering temporarily suspended. Not real-time FPS evidence or exhaustive risky-branch human playthrough."
+  },
+  "cityStrictTour": {
+    "snapshots": "CITY-BROWSER-STATES.json",
+    "backend": "WebGPU",
+    "districts": [
+      {
+        "district": "beach",
+        "nearbyChunks": 9,
+        "loadedChunks": 11
+      },
+      {
+        "district": "downtown",
+        "nearbyChunks": 9,
+        "loadedChunks": 17
+      },
+      {
+        "district": "port",
+        "nearbyChunks": 9,
+        "loadedChunks": 16
+      },
+      {
+        "district": "canals",
+        "nearbyChunks": 9,
+        "loadedChunks": 20
+      },
+      {
+        "district": "hills",
+        "nearbyChunks": 9,
+        "loadedChunks": 18
+      },
+      {
+        "district": "oldtown",
+        "nearbyChunks": 9,
+        "loadedChunks": 14
+      },
+      {
+        "district": "outskirts",
+        "nearbyChunks": 9,
+        "loadedChunks": 18
+      }
+    ],
+    "maximumInstallSliceMs": 79.5,
+    "maximumAccumulatedChunkCpuMs": 79.70000000111759,
+    "maximumWholeUpdateMs": 80.09999999962747,
+    "finalInstallP95Ms": 0.3999999985098839,
+    "maximumBudgetMs": 8,
+    "maximumBudgetAccepted": false,
+    "fullMapContinuousFlightAccepted": false
+  },
+  "softwareProfile": {
+    "report": "PERFORMANCE-COMPARISON.json",
+    "warning": "The city scene differs from the old release. Same viewport, full course and fixed Balanced tier; no hardware-performance or controlled CPU-attribution claim. First-pass inadequately warmed measurements are preserved separately and are not the steady-state comparison. Baseline is retained from the preceding warmed run; current release was remeasured after fixed-capacity UBO instances. Software variability precludes a controlled speedup claim.",
+    "viewport": "1280x800",
+    "quality": "Balanced",
+    "backend": "forced WebGL 2 / SwiftShader",
+    "before": {
+      "release": "0.3.0-before",
+      "cadence": {
+        "wallMs": 16232.700000000004,
+        "frames": 14,
+        "rafFps": 0.862456646152519,
+        "frameP50": 1100,
+        "frameP95": 2016.6000000000058,
+        "frameMaximum": 2016.6000000000058
+      },
+      "readyWallMs": 3336.835293,
+      "draws": 163,
+      "triangles": 229460
+    },
+    "current": {
+      "release": "0.5.0-crosstown",
+      "cadence": {
+        "wallMs": 16382.8,
+        "frames": 14,
+        "rafFps": 0.8545547769612032,
+        "frameP50": 1266.5999999999985,
+        "frameP95": 2266.5999999999985,
+        "frameMaximum": 2266.5999999999985
+      },
+      "readyWallMs": 3864.8617809999996,
+      "appReadyMs": 2908.7999999988824,
+      "firstRenderMs": 3021.9000000003725,
+      "draws": 82,
+      "triangles": 198256,
+      "programParameterSampledMs": 5250.996,
+      "partialFlightMetres": 230.02299999999832,
+      "partialFlightCadence": {
+        "wallMs": 21232.5,
+        "frames": 21,
+        "rafFps": 0.9890498057223596,
+        "frameP50": 750,
+        "frameP95": 2566.5999999999913,
+        "frameMaximum": 3849.800000000003
+      },
+      "errors": []
+    },
+    "targetHardwareAccepted": false,
+    "controlledSpeedupClaim": false
+  },
+  "deployment": {
+    "provider": "Vercel connected app",
+    "project": "crosstown",
+    "projectId": "prj_gd5kw1GBgtWqMseb5ETMgzrXpKir",
+    "teamId": "team_59dr7VIo7kdxnmJ9zpqSL0wv",
+    "id": "dpl_9oYzAnnu38B6iihCXVsVJK2M29q7",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "aliasAssigned": true,
+    "publicUrl": "https://coastline-highline.vercel.app",
+    "anonymousPrimaryAlias": true,
+    "anonymousFileHashMatches": 22,
+    "integrityReport": "DEPLOYED-FILES.json",
+    "compiledArchiveBytes": 1802763,
+    "compiledArchiveSha256": "be7cf23cef1a7485fbf5dff76bc6d89002bbc1a94d12efb6e7adab37c9be8158",
+    "temporaryTransferStopped": true,
+    "postTransferRecheckPassed": true,
+    "normalFutureBuild": {
+      "install": "npm ci",
+      "build": "npm run build",
+      "output": "dist"
+    }
+  },
+  "github": {
+    "chosenRepository": "crosstown",
+    "created": false,
+    "pushed": false,
+    "serverSideTopicsApplied": false,
+    "reason": "Connector unsupported; no securely authenticated CLI/session. Exposed credential neither saved nor used.",
+    "metadata": "../.github/repository.json",
+    "publisher": "../tools/publish-github.sh"
+  },
+  "screenshots": "SCREENSHOTS.md",
+  "gallery": "PROGRESS-GALLERY.html",
+  "findings": "FINDINGS.md",
+  "limitations": [
+    "No physical Radeon 840M 1080p60 validation; software-only FPS is not target-hardware performance.",
+    "Streaming maximum exceeds 8 ms; shader/program waits and full-map no-popping flight remain open.",
+    "City visual polish and every relocated long-route footprint/seed remain open.",
+    "Not all tunnels, garages, underpasses, hidden access paths and risky branches are physically human-tested.",
+    "Analytical sky/Fresnel water is not scene reflection; production heavy post effects are not shipped.",
+    "No physical controllers/wheels/rumble or audible mix review; no complete touch-only movement joystick.",
+    "Drivable fleet/interiors/full traffic AI/NPCs/police/weapons/interactive shops/radio are later scope."
+  ],
+  "historicalRelease": {
+    "report": "TEST-RESULTS-0.3.0.json",
+    "evidenceManifest": "EVIDENCE-MANIFEST-0.3.0.json",
+    "note": "Historical evidence is preserved, not counted as current source validation."
+  }
+}

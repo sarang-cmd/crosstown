@@ -1,0 +1,74 @@
+
+added 70 packages in 3s
+
+> crosstown@0.13.0 build
+> tsc --noEmit && vite build
+
+vite v7.1.7 building for production...
+transforming...
+✓ 108 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/generator.worker-DBEWraih.js      0.27 kB
+dist/assets/circuit.worker-_Tn4pD1c.js        5.31 kB
+dist/index.html                               6.86 kB │ gzip:   2.91 kB
+dist/assets/route.worker-BI2KZK_q.js         11.91 kB
+dist/assets/city.worker-BBI-xd7i.js          19.17 kB
+dist/assets/landing-BSSGW4C6.css             12.31 kB │ gzip:   3.37 kB
+dist/assets/style-D8X4Kdrp.css               26.29 kB │ gzip:   6.61 kB
+dist/assets/game-BAtHsKez.css                49.73 kB │ gzip:  11.10 kB
+dist/assets/callback-l7lXUDbY.js              0.82 kB │ gzip:   0.50 kB
+dist/assets/index-BqIfskRn.js                 3.07 kB │ gzip:   1.55 kB
+dist/assets/spotify-CvEWtuvf.js               6.08 kB │ gzip:   2.50 kB
+dist/assets/embeds-D2pPXsIQ.js                6.14 kB │ gzip:   2.76 kB
+dist/assets/foundation-DUbBiBOr.js           12.99 kB │ gzip:   5.22 kB
+dist/assets/index-yn8afoXS.js                33.29 kB │ gzip:  11.46 kB
+dist/assets/game-iHZiGV_4.js                453.74 kB │ gzip: 150.97 kB
+dist/assets/rendering-D3_kk2Xu.js           829.28 kB │ gzip: 228.13 kB
+dist/assets/physics-BwwXYMtK.js           2,218.03 kB │ gzip: 826.18 kB
+✓ built in 6.22s
+
+> crosstown@0.13.0 assets:check
+> node tools/check-assets.mjs
+
+PASS aerox: 4.5 m length, ground-centred, +Z forward, 1952 triangles, 0 clips; 70.4 KiB.
+PASS brim: 4.9 m length, ground-centred, +Z forward, 2062 triangles, 0 clips; 67.1 KiB.
+PASS cinder: 4.95 m length, ground-centred, +Z forward, 2282 triangles, 0 clips; 77.6 KiB.
+PASS city-pedestrian: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 6 clips; 328.3 KiB.
+PASS harbor-roster: 4.3 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS kestrel: 2.26 m length, ground-centred, +Z forward, 1232 triangles, 0 clips; 54.9 KiB.
+PASS meridian: 4.65 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 78.9 KiB.
+PASS mesa: 4.9 m length, ground-centred, +Z forward, 2474 triangles, 0 clips; 92.1 KiB.
+PASS milo: 3.85 m length, ground-centred, +Z forward, 2082 triangles, 0 clips; 76.9 KiB.
+PASS parkour-runner: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 27 clips; 393.5 KiB.
+PASS pip: 3.6 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 84.6 KiB.
+PASS summit: 5.15 m length, ground-centred, +Z forward, 2086 triangles, 0 clips; 76.7 KiB.
+PASS test-car: 4.5 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS test-character: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 14 clips; 368.6 KiB.
+PASS weapon-grenade: 0.13 m undefined, ground-centred, +Z forward, 200 triangles, 0 clips; 9.7 KiB.
+PASS weapon-pistol: 0.24 m undefined, ground-centred, +Z forward, 470 triangles, 0 clips; 17.3 KiB.
+PASS weapon-rifle: 0.3 m undefined, ground-centred, +Z forward, 548 triangles, 0 clips; 18.2 KiB.
+PASS weapon-rocket: 0.36 m undefined, ground-centred, +Z forward, 524 triangles, 0 clips; 17.6 KiB.
+PASS weapon-shotgun: 0.27 m undefined, ground-centred, +Z forward, 388 triangles, 0 clips; 13.6 KiB.
+PASS weapon-smg: 0.29 m undefined, ground-centred, +Z forward, 802 triangles, 0 clips; 26.4 KiB.
+PASS wren: 2.16 m length, ground-centred, +Z forward, 988 triangles, 0 clips; 47.5 KiB.
+PASS zenith: 4.6 m length, ground-centred, +Z forward, 2068 triangles, 0 clips; 73.6 KiB.
+
+> crosstown@0.13.0 check:versions
+> node tools/check-versions.mjs
+
+@dimforge/rapier3d-compat@0.19.0 · 2025-09-05T21:58:24.284Z · OK
+three@0.180.0 · 2025-09-03T11:48:29.425Z · OK
+@gltf-transform/core@4.2.1 · 2025-07-29T00:10:06.248Z · OK
+@gltf-transform/extensions@4.2.1 · 2025-07-29T00:10:08.596Z · OK
+@gltf-transform/functions@4.2.1 · 2025-07-29T00:10:12.453Z · OK
+@playwright/test@1.56.1 · 2025-10-17T00:51:44.311Z · OK
+@types/node@22.18.6 · 2025-09-18T00:04:25.740Z · OK
+@types/three@0.180.0 · 2025-09-03T18:38:36.977Z · OK
+draco3dgltf@1.5.7 · 2024-01-17T21:58:08.609Z · OK
+fflate@0.8.2 · 2024-02-07T00:36:56.045Z · OK
+meshoptimizer@0.24.0 · 2025-06-12T16:03:09.316Z · OK
+sharp@0.34.3 · 2025-07-10T07:59:00.726Z · OK
+tsx@4.20.5 · 2025-08-24T03:16:51.878Z · OK
+typescript@5.9.3 · 2025-09-30T21:19:38.784Z · OK
+vite@7.1.7 · 2025-09-22T05:54:41.227Z · OK

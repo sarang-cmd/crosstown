@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "allowlistedFiles": 775,
+  "textFilesScanned": 480,
+  "findings": [],
+  "boundary": "Explicit path allowlist and known credential patterns; not an exhaustive security audit."
+}

@@ -1,0 +1,14 @@
+{
+  "engine": "v6",
+  "author": "SkyernAklea",
+  "source": "https://freesound.org/people/SkyernAklea/sounds/623436/",
+  "preview": "https://cdn.freesound.org/previews/623/623436_6998976-hq.mp3",
+  "licenses": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "bytes": 1475472,
+  "sha256": "e7f8c7493c444e8fb54675eca140b893d68fdb062832792dc518816263d31f95",
+  "license": "CC-BY-4.0",
+  "sourceFormat": "Publisher public HQ MP3 preview (lossy), not the login-only original WAV.",
+  "modifications": "Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers."
+}

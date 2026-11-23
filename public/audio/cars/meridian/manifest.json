@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "id": "meridian",
+  "engine": "v6",
+  "source": "https://freesound.org/people/SkyernAklea/sounds/623436/",
+  "author": "SkyernAklea",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "notes": "Processed field-recording timbre plus firing-model synthesis. These are designed RPM/load anchors, not independent calibrated on/off-throttle dyno captures. Per-car EQ/saturation/harmonic design. V10 and twin timbres are designed transformations of the reviewed flat-six/single recordings, not independently recorded cylinder counts.",
+  "loops": [
+    {
+      "band": "idle",
+      "load": "off",
+      "file": "idle-off.wav",
+      "anchorRpm": 820,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 10.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.5331675889441589,
+      "sha256": "0d31811cf740c517ce9674c6b733ee303fc187bc3a7dba9976473374817806a3",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "c1ed9975e4106260c6a915408dcfe27539a9e8b45b124d00b01180c7dc0afd52",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "idle",
+      "load": "on",
+      "file": "idle-on.wav",
+      "anchorRpm": 820,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 10.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.5469360754322886,
+      "sha256": "bd75859bc69a4dc474f25689165907ebdc48a03512697d9edd7bce6a33830d22",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "b3cd905dfa89fc476d087b58944db1480248296d6b2023a728f297eccb885c80",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "low",
+      "load": "off",
+      "file": "low-off.wav",
+      "anchorRpm": 2000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 25.0,
+      "duration": 1.25,
+      "rms": 0.12000000000000002,
+      "seamDelta": 0.0,
+      "peak": 0.5566195726781366,
+      "sha256": "ede97fba70338ec429ead9c662bc0b338e7845d2314ea1f73903094a428cfb6c",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "0d5a8810adb945a2ca6f8becdbbd5017448c93dbad3eb60adbd46f0a37b90317",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "low",
+      "load": "on",
+      "file": "low-on.wav",
+      "anchorRpm": 2000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 25.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.5848425623025537,
+      "sha256": "b43024ac220e942af8896ecb7000ad234605825292a553acac4cecd8fe0e749f",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "86f9857b2378824a6dae4397c2409ae5826d15908db4ca0cbc90be47c4779966",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "mid",
+      "load": "off",
+      "file": "mid-off.wav",
+      "anchorRpm": 3800,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 42.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.4150468793012102,
+      "sha256": "3a8413a68541523d48f08d683d8904199895f4e4f71e87a942a16e5d6d06dc35",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "bad34abcf02d203db98b03a8b97678ad992cd2239bab5850406d43d47152aaa7",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "mid",
+      "load": "on",
+      "file": "mid-on.wav",
+      "anchorRpm": 3800,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 42.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.4226015849616509,
+      "sha256": "90b8a6b52100621d53747504477fdd02a2cc1094d52564567e47637b0bf63ac3",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "23d5c97a201686136740f05a9dc9fdf347b813fd9e1b5cdd25101abe78767092",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "high",
+      "load": "off",
+      "file": "high-off.wav",
+      "anchorRpm": 5800,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 55.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.402822120483084,
+      "sha256": "9d6fda403d22996895f264b914a8d9138a604dfd9f28ab042cc393c69a55259b",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "75a86ab0130bdddabe488989fc2ccb0dd1277f4f08b6081d959020b8e4027cdd",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    },
+    {
+      "band": "high",
+      "load": "on",
+      "file": "high-on.wav",
+      "anchorRpm": 5800,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 55.0,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.41154790470417,
+      "sha256": "8dad2d88fd897bcc266e1ecfb0fdf7140198d45bee2448ec943c395245953133",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "harbor",
+        "baseFileSha256": "0a9a3f2dd8aa8222ec3d046d63ce3a6f3f6020de50f39f6da5be6e0101d317e2",
+        "lowpassHz": 6200,
+        "saturation": 1.2,
+        "designedHarmonicBlend": 0.08
+      }
+    }
+  ],
+  "baseProfile": "harbor"
+}

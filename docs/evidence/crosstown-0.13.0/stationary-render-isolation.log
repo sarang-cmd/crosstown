@@ -1,0 +1,6 @@
+{"group":"all","shadows":true,"frames":19,"wallMs":6049.699999999999,"fps":3.140651602558805,"p50":66.69999999999891,"p95":1066.5999999999985,"meanSubmitMs":5.940000000223518,"render":{"draws":92,"triangles":121393}}
+{"group":"all","shadows":false,"frames":12,"wallMs":7966.399999999998,"fps":1.5063265716007235,"p50":733.2000000000007,"p95":1350,"meanSubmitMs":4.176923078413193,"render":{"draws":92,"triangles":121393}}
+{"group":"city","shadows":false,"frames":14,"wallMs":5366.399999999998,"fps":2.6088252832438887,"p50":633.2999999999956,"p95":900,"meanSubmitMs":1.6600000003973643,"render":{"draws":17,"triangles":76689}}
+{"group":"roofs","shadows":false,"frames":12,"wallMs":6516.399999999994,"fps":1.8415075808728762,"p50":666.5999999999985,"p95":883.3000000000029,"meanSubmitMs":1.946153845351476,"render":{"draws":36,"triangles":58136}}
+{"group":"life","shadows":false,"frames":15,"wallMs":5016.5,"fps":2.990132562543606,"p50":350,"p95":666.5999999999985,"meanSubmitMs":1.3937500012107193,"render":{"draws":13,"triangles":20341}}
+{"group":"none","shadows":false,"frames":23,"wallMs":5099.799999999996,"fps":4.5099807835601435,"p50":200,"p95":350,"meanSubmitMs":1.283333333209157,"render":{"draws":7,"triangles":19605}}

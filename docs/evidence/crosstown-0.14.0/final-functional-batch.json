@@ -1,0 +1,205 @@
+{
+  "release": "0.14.0",
+  "runtimeBefore": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+  "startedAt": "2026-11-23T11:40:30.017Z",
+  "sequentialBrowsers": true,
+  "runs": [
+    {
+      "id": "static-and-units",
+      "tool": "package.json",
+      "command": [
+        "bash",
+        "-lc",
+        "set -e; npm run typecheck > docs/evidence/crosstown-0.14.0/typecheck.log 2>&1; npm test > docs/evidence/crosstown-0.14.0/unit.log 2>&1; npm run assets:check > docs/evidence/crosstown-0.14.0/assets.log 2>&1; npm run check:versions > docs/evidence/crosstown-0.14.0/versions.log 2>&1"
+      ],
+      "seconds": 300,
+      "log": "static-checks.log",
+      "collectorSha256": "1b319e5bea639c657eb09e0d5c6a96ad63da02483ed0969e42d7ddbdc99f7ec7",
+      "startedAt": "2026-11-23T11:40:30.019Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 39543.058591,
+      "finishedAt": "2026-11-23T11:41:09.565Z"
+    },
+    {
+      "id": "retained-production-pixels",
+      "tool": "playwright.production.config.ts",
+      "command": [
+        "bash",
+        "-lc",
+        "xvfb-run -a npm run test:production; s=$?; node --input-type=module -e \"import fs from'node:fs';import{gzipSync}from'node:zlib';if(fs.existsSync('.arena/production-results.json'))fs.writeFileSync('docs/evidence/crosstown-0.14.0/production-browser.json.gz',gzipSync(fs.readFileSync('.arena/production-results.json')));\"; exit $s"
+      ],
+      "seconds": 600,
+      "log": "production-browser.log",
+      "collectorSha256": "a53d07694cc5698b551ac3b0b3b29d525fb3eafb497fa4476a5a8fd700a78b7f",
+      "startedAt": "2026-11-23T11:41:09.566Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 89777.920636,
+      "finishedAt": "2026-11-23T11:42:39.345Z"
+    },
+    {
+      "id": "lighting-webgl",
+      "tool": "tools/accept-lighting.mjs",
+      "command": [
+        "node",
+        "tools/accept-lighting.mjs"
+      ],
+      "seconds": 360,
+      "log": "lighting-webgl.log",
+      "collectorSha256": "043ba885a9c6282008bab48559d9a4f88408b8f15b366f13f1c9b82c8b734965",
+      "startedAt": "2026-11-23T11:42:39.346Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 83820.47624300001,
+      "finishedAt": "2026-11-23T11:44:03.167Z"
+    },
+    {
+      "id": "lighting-webgpu",
+      "tool": "tools/accept-lighting.mjs",
+      "command": [
+        "xvfb-run",
+        "-a",
+        "env",
+        "BACKEND=webgpu",
+        "node",
+        "tools/accept-lighting.mjs"
+      ],
+      "seconds": 360,
+      "log": "lighting-webgpu.log",
+      "collectorSha256": "043ba885a9c6282008bab48559d9a4f88408b8f15b366f13f1c9b82c8b734965",
+      "startedAt": "2026-11-23T11:44:03.168Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 84996.35582000003,
+      "finishedAt": "2026-11-23T11:45:28.165Z"
+    },
+    {
+      "id": "city-life-webgl",
+      "tool": "tools/accept-city-life.mjs",
+      "command": [
+        "node",
+        "tools/accept-city-life.mjs"
+      ],
+      "seconds": 360,
+      "log": "life-integration-webgl.log",
+      "collectorSha256": "d7f79d66edf885d2fdd1b33575e8059861bb245423662557af672396a691d0ec",
+      "startedAt": "2026-11-23T11:45:28.166Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 49413.15858399996,
+      "finishedAt": "2026-11-23T11:46:17.580Z"
+    },
+    {
+      "id": "city-life-webgpu",
+      "tool": "tools/accept-city-life.mjs",
+      "command": [
+        "xvfb-run",
+        "-a",
+        "env",
+        "BACKEND=webgpu",
+        "node",
+        "tools/accept-city-life.mjs"
+      ],
+      "seconds": 360,
+      "log": "life-integration-webgpu.log",
+      "collectorSha256": "d7f79d66edf885d2fdd1b33575e8059861bb245423662557af672396a691d0ec",
+      "startedAt": "2026-11-23T11:46:17.582Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 49327.93935399997,
+      "finishedAt": "2026-11-23T11:47:06.910Z"
+    },
+    {
+      "id": "activities",
+      "tool": "tools/accept-activities.mjs",
+      "command": [
+        "node",
+        "tools/accept-activities.mjs"
+      ],
+      "seconds": 300,
+      "log": "activity-route-acceptance.log",
+      "collectorSha256": "5169c9cc29e22eea59238ccaca647d1a8266267b282766c2fd13312a9939f7a5",
+      "startedAt": "2026-11-23T11:47:06.912Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 18598.649282000028,
+      "finishedAt": "2026-11-23T11:47:25.511Z"
+    },
+    {
+      "id": "landing",
+      "tool": "tools/accept-landing.mjs",
+      "command": [
+        "node",
+        "tools/accept-landing.mjs"
+      ],
+      "seconds": 90,
+      "log": "landing-acceptance.log",
+      "collectorSha256": "ed60bf3d5a83a447296b28014b78b8da5c281e3bf3240d66ab305f94ef02e609",
+      "startedAt": "2026-11-23T11:47:25.512Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 2636.524609999964,
+      "finishedAt": "2026-11-23T11:47:28.149Z"
+    },
+    {
+      "id": "real-radio-providers",
+      "tool": "tools/accept-radio-providers.mjs",
+      "command": [
+        "node",
+        "tools/accept-radio-providers.mjs"
+      ],
+      "seconds": 240,
+      "log": "radio-provider-acceptance.log",
+      "unavailableIsNotAcceptance": true,
+      "collectorSha256": "f7603a5eee091a9ef2dec363f9779fb505a43f4efa42c8d45d6777a19e88cdd6",
+      "startedAt": "2026-11-23T11:47:28.151Z",
+      "status": "failed-or-unavailable",
+      "exitCode": 1,
+      "wallMs": 38972.007905000006,
+      "finishedAt": "2026-11-23T11:48:07.123Z"
+    },
+    {
+      "id": "busiest-four-tiers-webgl",
+      "tool": "tools/profile-lighting.mjs",
+      "command": [
+        "node",
+        "tools/profile-lighting.mjs"
+      ],
+      "seconds": 900,
+      "log": "candidate-busy-webgl.log",
+      "softwareIsNotNativeAcceptance": true,
+      "collectorSha256": "c502de69ad60b589b8274ec8044f35d83e2a00c8b5242b4140df09696dffd358",
+      "startedAt": "2026-11-23T11:48:07.124Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 244616.54895199998,
+      "finishedAt": "2026-11-23T11:52:11.741Z"
+    },
+    {
+      "id": "busiest-four-tiers-webgpu",
+      "tool": "tools/profile-lighting.mjs",
+      "command": [
+        "xvfb-run",
+        "-a",
+        "env",
+        "BACKEND=webgpu",
+        "node",
+        "tools/profile-lighting.mjs"
+      ],
+      "seconds": 900,
+      "log": "candidate-busy-webgpu.log",
+      "softwareIsNotNativeAcceptance": true,
+      "collectorSha256": "c502de69ad60b589b8274ec8044f35d83e2a00c8b5242b4140df09696dffd358",
+      "startedAt": "2026-11-23T11:52:11.742Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 291669.7437,
+      "finishedAt": "2026-11-23T11:57:03.412Z"
+    }
+  ],
+  "nativeHardwareAcceptance": false,
+  "runtimeAfter": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+  "finishedAt": "2026-11-23T11:57:03.556Z",
+  "runtimeUnchanged": true
+}

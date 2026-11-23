@@ -1,0 +1,1703 @@
+{
+  "schema": 4,
+  "date": "2026-11-22",
+  "name": "Crosstown",
+  "release": "0.9.0",
+  "build": "09.001",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle",
+    "06-first-car",
+    "07-interior-and-sound",
+    "08-roster-damage-garages",
+    "09-traffic-and-pedestrians"
+  ],
+  "scopeBoundary": "Twelve independent vehicles, damage/garages and living-street traffic/pedestrians; earlier parkour/city/cabins/inputs retained. Police, weapons and deep radio remain future.",
+  "userOverrides": [
+    "Quick/Standard/Full and controls/camera/quality choices supersede historical no-menu/full-default restrictions.",
+    "A/D means keyboard screen-left/right.",
+    "Original DESIGN byte-identical."
+  ],
+  "environment": {
+    "node": "v20.20.2",
+    "browser": "Playwright 1.56.1 / Chromium",
+    "graphics": "Software Vulkan/SwiftShader; headed WebGPU under Xvfb, forced WebGL 2 and disabled-WebGPU fallback as listed",
+    "nativeHardwareBenchmark": false,
+    "physicalInputHardwareTested": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "handoffRuntimeFingerprint": {
+    "sha256": "6269b28082f916fe1a076b75e54115ccdf1b4d90da26658eb6f5b70bc9851910",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "captured": "Identical before/after final regression batch and at final handoff; not a fabricated Git commit.",
+    "before": "evidence/crosstown-0.9.0/tested-runtime-before.json",
+    "after": "evidence/crosstown-0.9.0/tested-runtime-after.json",
+    "unchangedAcrossFinalBatch": true
+  },
+  "finalFunctionalBatch": {
+    "report": "evidence/crosstown-0.9.0/final-functional-batch.json",
+    "startTime": "2026-11-23T06:48:02.275Z",
+    "endTime": "2026-11-23T07:08:57.932Z",
+    "changeBoundary": "evidence/crosstown-0.9.0/route-recompile-change-boundary.json"
+  },
+  "unitTests": {
+    "passed": 99,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 46786.159699,
+    "retained07Cases": 75,
+    "log": "evidence/crosstown-0.9.0/unit.log"
+  },
+  "checks": {
+    "typecheck": {
+      "passed": true
+    },
+    "productionBuild": {
+      "passed": true,
+      "buildSeconds": 7.8,
+      "publicFiles": 189
+    },
+    "models": {
+      "passed": 16
+    },
+    "exactDirectDependencyPins": {
+      "passed": 15,
+      "publicationCutoff": "2026-11-08"
+    },
+    "referenceUnchanged": true,
+    "referenceSha256": "0f670679a820a3b687f6fb4fae6e0a14afebfc215b791b6918792ee322699dc9",
+    "gallery": {
+      "date": "2026-11-22",
+      "version": "0.9.0",
+      "passed": true,
+      "captures": 26,
+      "networkRequests": [],
+      "errors": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false,
+      "lightboxNext": "Keep the ones you like. · 2 / 26",
+      "offline": true
+    },
+    "localFileLinks": {
+      "passed": true,
+      "checked": 125,
+      "documents": [
+        "README.md",
+        "CREDITS.md",
+        "docs/PROGRESS.md",
+        "docs/TESTING.md",
+        "docs/FINDINGS.md",
+        "docs/DEPLOYMENT.md",
+        "docs/ASSET_PIPELINE.md",
+        "docs/SCREENSHOTS.md",
+        "docs/RENDERER.md",
+        "docs/PARKOUR-API.md",
+        "docs/FLEET.md",
+        "docs/POPULATION.md",
+        "docs/SOURCE-ARCHIVE.md"
+      ],
+      "broken": [],
+      "boundary": "Current local relative file links only; external reachability/anchors not asserted."
+    },
+    "allowlistedSourceScan": {
+      "passed": true,
+      "allowlistedFiles": 775,
+      "textFilesScanned": 480,
+      "findings": [],
+      "boundary": "Explicit path allowlist and known credential patterns; not an exhaustive security audit."
+    }
+  },
+  "browsers": {
+    "fleet": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-23T06:56:55.513Z",
+      "durationMs": 373623.135,
+      "boundary": "All twelve actual models/sample profiles/class cabins; six takeovers/store/reload/retrieve/paint/physical wreck/recovery/siren; physical parkour reward and single live VIN. WebGPU and forced WebGL 2.",
+      "report": "evidence/crosstown-0.9.0/fleet-browser-report.json",
+      "log": "evidence/crosstown-0.9.0/fleet-browser.log",
+      "tests": [
+        {
+          "title": "twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 41266,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 106388,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "physical parkour finish grants one garage reward and its street car; storing/retrieving/reloading keeps a single live VIN",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 38088,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 36444,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 107100,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "physical parkour finish grants one garage reward and its street car; storing/retrieving/reloading keeps a single live VIN",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 40383,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "vehicles": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-23T06:48:02.275Z",
+      "durationMs": 449951.51,
+      "boundary": "Retained start/input/physics/cabins/mirrors/sample-failure/buses/lifecycle cases, both renderers. Not human handling or listening.",
+      "report": "evidence/crosstown-0.9.0/vehicles-browser-report.json",
+      "log": "evidence/crosstown-0.9.0/vehicles-browser.log",
+      "tests": [
+        {
+          "title": "real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 108480,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 159288,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 70209,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 107959,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "cityRegressions": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-23T07:03:10.961Z",
+      "durationMs": 198753.47,
+      "boundary": "Choices, actual keyboard A/D/yaw/save plus six rooftop starts/cache/reset/fly landing, both renderers. Not a full new seven-district tour.",
+      "report": "evidence/crosstown-0.9.0/city-regression-report.json",
+      "log": "evidence/crosstown-0.9.0/city-regression.log",
+      "tests": [
+        {
+          "title": "opening choices, real keyboard A/D, stable camera yaw and saved run length work",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 43293,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 40039,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "opening choices, real keyboard A/D, stable camera yaw and saved run length work",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 51645,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "six worker-generated marker starts relocate the course; caches persist/reset and fly-to-walk lands safely",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 60978,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "productionLocal": {
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-23T07:06:31.250Z",
+      "durationMs": 146682.47400000002,
+      "boundary": "Built 0.9 output: foundation and parkour pixels on WebGPU, forced WebGL 2 and WebGPU-disabled fallback.",
+      "report": "evidence/crosstown-0.9.0/production-browser-report.json.gz",
+      "log": "evidence/crosstown-0.9.0/production-browser.log",
+      "tests": [
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 17739,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 14938,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "boots directly, renders real geometry, and the body falls and rests",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 14357,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 37435,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 27806,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 28775,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    },
+    "productionPublic": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-23T07:13:56.587Z",
+      "durationMs": 199557.31,
+      "boundary": "Actual renamed public 0.9 site: all three paths, full physical finish/save/ghost/night and training.",
+      "report": "evidence/crosstown-0.9.0/deployed-browser-report.json.gz",
+      "log": "evidence/crosstown-0.9.0/deployed-browser.log",
+      "tests": [
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 40051,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgl2-forced",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 31720,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize",
+          "project": "webgpu-disabled",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 29717,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district",
+          "project": "webgpu-full-run",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 56912,
+              "retry": 0
+            }
+          ]
+        },
+        {
+          "title": "eight-checkpoint training route also opens immediately with the animated runner and a visible billboard course",
+          "project": "webgpu-training",
+          "results": [
+            {
+              "status": "passed",
+              "durationMs": 32042,
+              "retry": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "fleet": {
+    "webgpu": {
+      "models": "evidence/crosstown-0.9.0/fleet-models-webgpu.json.gz",
+      "garage": "evidence/crosstown-0.9.0/fleet-garage-webgpu.json.gz",
+      "reward": "evidence/crosstown-0.9.0/fleet-reward-webgpu.json",
+      "takenCars": [
+        {
+          "id": "parked-edge-209",
+          "definition": "cinder"
+        },
+        {
+          "id": "parked-edge-208",
+          "definition": "brim"
+        },
+        {
+          "id": "parked-edge-207",
+          "definition": "aerox"
+        },
+        {
+          "id": "parked-edge-181",
+          "definition": "zenith"
+        },
+        {
+          "id": "parked-edge-183",
+          "definition": "pip"
+        },
+        {
+          "id": "parked-edge-236",
+          "definition": "mesa"
+        }
+      ],
+      "damageStages": [
+        {
+          "damage": 0.32357376267943994,
+          "stage": "dented",
+          "visual": {
+            "amount": 0.32357376267943994,
+            "health": 68,
+            "stage": "dented",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              }
+            ],
+            "powerMultiplier": 0.9514639355980841,
+            "gripMultiplier": 0.9741140989856448,
+            "deformedVertices": 1782,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          }
+        },
+        {
+          "damage": 0.6462628868285032,
+          "stage": "broken-glass",
+          "visual": {
+            "amount": 0.6462628868285032,
+            "health": 35,
+            "stage": "broken-glass",
+            "frontLightsBroken": true,
+            "rearLightsBroken": false,
+            "windowsBroken": true,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              }
+            ],
+            "powerMultiplier": 0.9030605669757246,
+            "gripMultiplier": 0.9482989690537198,
+            "deformedVertices": 1782,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": false,
+            "fire": false
+          }
+        },
+        {
+          "damage": 0.9682263822898778,
+          "stage": "smoking",
+          "visual": {
+            "amount": 0.9682263822898778,
+            "health": 3,
+            "stage": "smoking",
+            "frontLightsBroken": true,
+            "rearLightsBroken": true,
+            "windowsBroken": true,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              },
+              {
+                "point": {
+                  "x": 0.0051236229818835115,
+                  "y": 0.12,
+                  "z": 2.474750527529607
+                },
+                "depth": 0.21461736718605223,
+                "radius": 1.222158207809315
+              }
+            ],
+            "powerMultiplier": 0.8547660426565183,
+            "gripMultiplier": 0.9225418894168098,
+            "deformedVertices": 1805,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": true,
+            "fire": false
+          }
+        },
+        {
+          "damage": 1,
+          "stage": "burning",
+          "visual": {
+            "amount": 1,
+            "health": 0,
+            "stage": "burning",
+            "frontLightsBroken": true,
+            "rearLightsBroken": true,
+            "windowsBroken": true,
+            "fireSeconds": 1.6999999999999988,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              },
+              {
+                "point": {
+                  "x": 0.0051236229818835115,
+                  "y": 0.12,
+                  "z": 2.474750527529607
+                },
+                "depth": 0.21461736718605223,
+                "radius": 1.222158207809315
+              },
+              {
+                "point": {
+                  "x": -0.04235139074553344,
+                  "y": 0.12,
+                  "z": 2.472527725583298
+                },
+                "depth": 0.2087662985052627,
+                "radius": 1.209285856711578
+              }
+            ],
+            "powerMultiplier": 0.85,
+            "gripMultiplier": 0.92,
+            "deformedVertices": 1824,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": true,
+            "fire": true
+          }
+        }
+      ],
+      "physicalRewardFinish": {
+        "ticks": 9371,
+        "normalPaceSeconds": 156.18333333333334,
+        "wallSeconds": 1.3115,
+        "state": "finished",
+        "result": {
+          "seed": 84173,
+          "marker": "opening:quick",
+          "night": false,
+          "seconds": 156.3,
+          "falls": 0,
+          "collectibles": 0,
+          "cash": 0,
+          "rank": "A",
+          "date": "2026-11-23T06:59:34.162Z"
+        },
+        "falls": 0,
+        "checkpoint": 7
+      },
+      "errors": []
+    },
+    "webgl2-forced": {
+      "models": "evidence/crosstown-0.9.0/fleet-models-webgl2-forced.json.gz",
+      "garage": "evidence/crosstown-0.9.0/fleet-garage-webgl2-forced.json.gz",
+      "reward": "evidence/crosstown-0.9.0/fleet-reward-webgl2-forced.json",
+      "takenCars": [
+        {
+          "id": "parked-edge-209",
+          "definition": "cinder"
+        },
+        {
+          "id": "parked-edge-208",
+          "definition": "brim"
+        },
+        {
+          "id": "parked-edge-207",
+          "definition": "aerox"
+        },
+        {
+          "id": "parked-edge-181",
+          "definition": "zenith"
+        },
+        {
+          "id": "parked-edge-183",
+          "definition": "pip"
+        },
+        {
+          "id": "parked-edge-236",
+          "definition": "mesa"
+        }
+      ],
+      "damageStages": [
+        {
+          "damage": 0.32357376267943994,
+          "stage": "dented",
+          "visual": {
+            "amount": 0.32357376267943994,
+            "health": 68,
+            "stage": "dented",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              }
+            ],
+            "powerMultiplier": 0.9514639355980841,
+            "gripMultiplier": 0.9741140989856448,
+            "deformedVertices": 1782,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          }
+        },
+        {
+          "damage": 0.6462628868285032,
+          "stage": "broken-glass",
+          "visual": {
+            "amount": 0.6462628868285032,
+            "health": 35,
+            "stage": "broken-glass",
+            "frontLightsBroken": true,
+            "rearLightsBroken": false,
+            "windowsBroken": true,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              }
+            ],
+            "powerMultiplier": 0.9030605669757246,
+            "gripMultiplier": 0.9482989690537198,
+            "deformedVertices": 1782,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": false,
+            "fire": false
+          }
+        },
+        {
+          "damage": 0.9682263822898778,
+          "stage": "smoking",
+          "visual": {
+            "amount": 0.9682263822898778,
+            "health": 3,
+            "stage": "smoking",
+            "frontLightsBroken": true,
+            "rearLightsBroken": true,
+            "windowsBroken": true,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              },
+              {
+                "point": {
+                  "x": 0.0051236229818835115,
+                  "y": 0.12,
+                  "z": 2.474750527529607
+                },
+                "depth": 0.21461736718605223,
+                "radius": 1.222158207809315
+              }
+            ],
+            "powerMultiplier": 0.8547660426565183,
+            "gripMultiplier": 0.9225418894168098,
+            "deformedVertices": 1805,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": true,
+            "fire": false
+          }
+        },
+        {
+          "damage": 1,
+          "stage": "burning",
+          "visual": {
+            "amount": 1,
+            "health": 0,
+            "stage": "burning",
+            "frontLightsBroken": true,
+            "rearLightsBroken": true,
+            "windowsBroken": true,
+            "fireSeconds": 1.6999999999999988,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.02275649903297942,
+                  "y": 0.12,
+                  "z": 2.4740927266008157
+                },
+                "depth": 0.21561573286125277,
+                "radius": 1.2243546122947562
+              },
+              {
+                "point": {
+                  "x": 0.0137980394987256,
+                  "y": 0.12,
+                  "z": 2.474527068039455
+                },
+                "depth": 0.21506725697241924,
+                "radius": 1.2231479653393222
+              },
+              {
+                "point": {
+                  "x": 0.0051236229818835115,
+                  "y": 0.12,
+                  "z": 2.474750527529607
+                },
+                "depth": 0.21461736718605223,
+                "radius": 1.222158207809315
+              },
+              {
+                "point": {
+                  "x": -0.04235139074553344,
+                  "y": 0.12,
+                  "z": 2.472527725583298
+                },
+                "depth": 0.2087662985052627,
+                "radius": 1.209285856711578
+              }
+            ],
+            "powerMultiplier": 0.85,
+            "gripMultiplier": 0.92,
+            "deformedVertices": 1824,
+            "glassMeshes": 1,
+            "glassVisible": false,
+            "smoke": true,
+            "fire": true
+          }
+        }
+      ],
+      "physicalRewardFinish": {
+        "ticks": 9371,
+        "normalPaceSeconds": 156.18333333333334,
+        "wallSeconds": 1.354599999997765,
+        "state": "finished",
+        "result": {
+          "seed": 84173,
+          "marker": "opening:quick",
+          "night": false,
+          "seconds": 156.3,
+          "falls": 0,
+          "collectibles": 0,
+          "cash": 0,
+          "rank": "A",
+          "date": "2026-11-23T07:02:37.944Z"
+        },
+        "falls": 0,
+        "checkpoint": 7
+      },
+      "errors": []
+    }
+  },
+  "roster": {
+    "report": "evidence/crosstown-0.9.0/roster-loop.json",
+    "cars": [
+      {
+        "id": "pip",
+        "class": "compact",
+        "engine": "i4",
+        "loop": {
+          "ticks": 4419,
+          "simulatedSeconds": 73.65,
+          "wallMs": 274.8200609999999,
+          "distance": 850.1573953424813,
+          "maxSpeed": 11.802428338157974,
+          "maxLean": 0,
+          "minimumUpright": 0.999197474520116,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6724853497414467,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 13.37011863133131,
+          "brakeTicks": 51,
+          "brakeDistance": 5.37353515625
+        },
+        "passed": true
+      },
+      {
+        "id": "milo",
+        "class": "compact",
+        "engine": "i4",
+        "loop": {
+          "ticks": 4465,
+          "simulatedSeconds": 74.41666666666667,
+          "wallMs": 163.92113399999994,
+          "distance": 850.0055308028822,
+          "maxSpeed": 11.715923560339906,
+          "maxLean": 0,
+          "minimumUpright": 0.9993147188239604,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6568965295593425,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 11.921553699612726,
+          "brakeTicks": 57,
+          "brakeDistance": 6.0234375
+        },
+        "passed": true
+      },
+      {
+        "id": "harbor",
+        "class": "sedan",
+        "engine": "v6",
+        "loop": {
+          "ticks": 4333,
+          "simulatedSeconds": 72.21666666666667,
+          "wallMs": 157.4155810000002,
+          "distance": 850.1006739330664,
+          "maxSpeed": 12.083705099283948,
+          "maxLean": 0,
+          "minimumUpright": 0.9994244119036256,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6826209747013658,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 13.75872293458346,
+          "brakeTicks": 57,
+          "brakeDistance": 5.95654296875
+        },
+        "passed": true
+      },
+      {
+        "id": "meridian",
+        "class": "sedan",
+        "engine": "v6",
+        "loop": {
+          "ticks": 4285,
+          "simulatedSeconds": 71.41666666666667,
+          "wallMs": 171.3361420000001,
+          "distance": 850.1882477365785,
+          "maxSpeed": 12.22866006599983,
+          "maxLean": 0,
+          "minimumUpright": 0.999510952743898,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6884589677620884,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 15.116095853384016,
+          "brakeTicks": 55,
+          "brakeDistance": 5.61865234375
+        },
+        "passed": true
+      },
+      {
+        "id": "brim",
+        "class": "muscle",
+        "engine": "v8",
+        "loop": {
+          "ticks": 4298,
+          "simulatedSeconds": 71.63333333333334,
+          "wallMs": 159.27324799999997,
+          "distance": 850.1025482154521,
+          "maxSpeed": 12.184324435319548,
+          "maxLean": 0,
+          "minimumUpright": 0.9995381963833943,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6751444660681296,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 15.120523340280487,
+          "brakeTicks": 64,
+          "brakeDistance": 6.61279296875
+        },
+        "passed": true
+      },
+      {
+        "id": "cinder",
+        "class": "muscle",
+        "engine": "v8",
+        "loop": {
+          "ticks": 4198,
+          "simulatedSeconds": 69.96666666666667,
+          "wallMs": 138.0966249999999,
+          "distance": 850.2007551397428,
+          "maxSpeed": 12.413019905688033,
+          "maxLean": 0,
+          "minimumUpright": 0.9995208567070206,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.714130267923219,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 16.83270490577673,
+          "brakeTicks": 50,
+          "brakeDistance": 5.01025390625
+        },
+        "passed": true
+      },
+      {
+        "id": "aerox",
+        "class": "supercar",
+        "engine": "flat6",
+        "loop": {
+          "ticks": 4164,
+          "simulatedSeconds": 69.4,
+          "wallMs": 169.14568500000019,
+          "distance": 850.1682330022046,
+          "maxSpeed": 12.451425512647427,
+          "maxLean": 0,
+          "minimumUpright": 0.9994409671515959,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.7285891669595123,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 22.11797662804736,
+          "brakeTicks": 36,
+          "brakeDistance": 3.47314453125
+        },
+        "passed": true
+      },
+      {
+        "id": "zenith",
+        "class": "supercar",
+        "engine": "v10",
+        "loop": {
+          "ticks": 4162,
+          "simulatedSeconds": 69.36666666666666,
+          "wallMs": 170.95278699999972,
+          "distance": 850.152467542342,
+          "maxSpeed": 12.497955113329812,
+          "maxLean": 0,
+          "minimumUpright": 0.9995210528006422,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.7324976646253694,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 24.662346366234825,
+          "brakeTicks": 37,
+          "brakeDistance": 3.4873046875
+        },
+        "passed": true
+      },
+      {
+        "id": "mesa",
+        "class": "suv",
+        "engine": "diesel",
+        "loop": {
+          "ticks": 4327,
+          "simulatedSeconds": 72.11666666666666,
+          "wallMs": 133.29818999999998,
+          "distance": 850.1746050555851,
+          "maxSpeed": 12.022255943303444,
+          "maxLean": 0,
+          "minimumUpright": 0.9992026843425966,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6637682771634104,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 14.248430024057765,
+          "brakeTicks": 66,
+          "brakeDistance": 6.6044921875
+        },
+        "passed": true
+      },
+      {
+        "id": "summit",
+        "class": "suv",
+        "engine": "diesel",
+        "loop": {
+          "ticks": 4299,
+          "simulatedSeconds": 71.65,
+          "wallMs": 120.35868700000037,
+          "distance": 850.1063829690695,
+          "maxSpeed": 12.087776376098114,
+          "maxLean": 0,
+          "minimumUpright": 0.9994763099227468,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.6652884678725804,
+          "damage": 0,
+          "contacts": 4
+        },
+        "straight": {
+          "speed3s": 15.060421696523099,
+          "brakeTicks": 66,
+          "brakeDistance": 6.4560546875
+        },
+        "passed": true
+      },
+      {
+        "id": "wren",
+        "class": "motorbike",
+        "engine": "single",
+        "loop": {
+          "ticks": 4570,
+          "simulatedSeconds": 76.16666666666667,
+          "wallMs": 226.54254300000002,
+          "distance": 850.0072748851514,
+          "maxSpeed": 11.54217330693724,
+          "maxLean": 0.4438716288736851,
+          "minimumUpright": 0.9030931580668273,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.672297918124795,
+          "damage": 0,
+          "contacts": 2
+        },
+        "straight": {
+          "speed3s": 10.567605389944625,
+          "brakeTicks": 39,
+          "brakeDistance": 4.36865234375
+        },
+        "passed": true
+      },
+      {
+        "id": "kestrel",
+        "class": "motorbike",
+        "engine": "twin",
+        "loop": {
+          "ticks": 4358,
+          "simulatedSeconds": 72.63333333333334,
+          "wallMs": 131.97174199999972,
+          "distance": 850.0993689318631,
+          "maxSpeed": 11.947254553222685,
+          "maxLean": 0.46298723001523734,
+          "minimumUpright": 0.8947212141052421,
+          "segments": 44,
+          "total": 44,
+          "maximumError": 0.7069124437527383,
+          "damage": 0,
+          "contacts": 2
+        },
+        "straight": {
+          "speed3s": 21.190785653328884,
+          "brakeTicks": 37,
+          "brakeDistance": 4.0771484375
+        },
+        "passed": true
+      }
+    ],
+    "humanFeelAccepted": false
+  },
+  "recordings": {
+    "profiles": 12,
+    "loops": 96,
+    "uniqueSourceRecordings": 6,
+    "audit": "ROSTER-AUDIO-ASSETS.json",
+    "designedNotIndependentDyno": [
+      "V10",
+      "twin"
+    ],
+    "actualBrowserDecode": true,
+    "byEarAccepted": false,
+    "emitterCap": 16,
+    "separateOneShotCap": 16,
+    "globalAudioNodeLimit": false
+  },
+  "population": {
+    "loaded-final-120s": {
+      "report": "evidence/crosstown-0.9.0/population-loaded-final-120s.json",
+      "rawEvidence": "evidence/crosstown-0.9.0/population-loaded-final-120s-raw.json.gz",
+      "mode": "Manually stepped loaded city / real shared Rapier world / NOT real-time FPS",
+      "forcedBudget": true,
+      "adaptiveAuto": false,
+      "requestedSeconds": 120,
+      "measuredWallMs": 20280.508749,
+      "simulationEndSeconds": 120.01666666666114,
+      "ticks": 7200,
+      "audit": {
+        "ticks": 7200,
+        "overlapSamples": 0,
+        "overlapExamples": [],
+        "redEntries": 0,
+        "illegalCrossingSamples": 0,
+        "maximumWaitSeconds": 78.18333333333018,
+        "waiter": {
+          "id": "traffic-71",
+          "state": "yielding",
+          "position": {
+            "x": 530.9963989257812,
+            "y": 0.46537917852401733,
+            "z": 761.25
+          },
+          "progress": 220.00360107421875,
+          "stopAt": 221,
+          "time": 95.5833333333292,
+          "desired": 2.8895648393724445
+        },
+        "maximumGreenStationarySeconds": 18.00000000000026,
+        "entries": 102,
+        "maxFullPhysicsCars": 12,
+        "nonfiniteStates": 0,
+        "time": 120.01666666666114,
+        "minimumObservedAgentAgeSeconds": 30,
+        "eligibleAgents": 67,
+        "starved": [],
+        "neverEnteredInitialCohort": [
+          "traffic-0",
+          "traffic-4",
+          "traffic-5",
+          "traffic-8",
+          "traffic-22",
+          "traffic-23",
+          "traffic-24",
+          "traffic-26",
+          "traffic-39"
+        ]
+      },
+      "initialBudget": {
+        "factor": 1,
+        "cars": 60,
+        "pedestrians": 120,
+        "frameMs": 16.67,
+        "changes": 0,
+        "locked": true,
+        "tier": "Balanced"
+      },
+      "strictNoStuckAccepted": false,
+      "nativeNear60FpsAccepted": false
+    },
+    "parked-wall-120s": {
+      "report": "evidence/crosstown-0.9.0/population-parked-wall-120s.json",
+      "rawEvidence": "evidence/crosstown-0.9.0/population-parked-wall-120s-raw.json.gz",
+      "mode": "Actual unpaused wall-time observation in a parked, occupied street car",
+      "forcedBudget": true,
+      "adaptiveAuto": false,
+      "requestedSeconds": 120,
+      "measuredWallMs": 120228.344617,
+      "simulationEndSeconds": 26.849999999999756,
+      "ticks": 1253,
+      "audit": {
+        "ticks": 1253,
+        "overlapSamples": 0,
+        "overlapExamples": [],
+        "redEntries": 0,
+        "illegalCrossingSamples": 0,
+        "maximumWaitSeconds": 20.88333333333343,
+        "waiter": {
+          "id": "traffic-99",
+          "state": "yielding",
+          "position": {
+            "x": 774.75,
+            "y": 0.7690495899104334,
+            "z": 274.34930967222897
+          },
+          "progress": 220.650690327771,
+          "stopAt": 221,
+          "time": 26.849999999999756,
+          "desired": 0
+        },
+        "maximumGreenStationarySeconds": 6.583333333333315,
+        "entries": 24,
+        "maxFullPhysicsCars": 3,
+        "nonfiniteStates": 0,
+        "time": 26.849999999999756,
+        "minimumObservedAgentAgeSeconds": 30,
+        "eligibleAgents": 0,
+        "starved": [],
+        "neverEnteredInitialCohort": []
+      },
+      "cadence": {
+        "frames": 216,
+        "wallMs": 116162,
+        "fps": 1.8594721165269192,
+        "p50": 500,
+        "p95": 1083.2999999999993,
+        "max": 2299.7999999999993
+      },
+      "initialBudget": {
+        "factor": 1,
+        "cars": 60,
+        "pedestrians": 120,
+        "frameMs": 16.67,
+        "changes": 0,
+        "locked": true,
+        "tier": "Balanced"
+      },
+      "finalBudget": {
+        "factor": 1,
+        "cars": 60,
+        "pedestrians": 120,
+        "frameMs": 16.67,
+        "changes": 0,
+        "locked": true,
+        "tier": "Balanced"
+      },
+      "quality": "Balanced",
+      "strictNoStuckAccepted": false,
+      "nativeNear60FpsAccepted": false
+    },
+    "auto-wall-120s": {
+      "report": "evidence/crosstown-0.9.0/population-auto-wall-120s.json",
+      "rawEvidence": "evidence/crosstown-0.9.0/population-auto-wall-120s-raw.json.gz",
+      "mode": "Actual unpaused wall-time observation in a parked, occupied street car",
+      "forcedBudget": false,
+      "adaptiveAuto": true,
+      "requestedSeconds": 120,
+      "measuredWallMs": 120116.414634,
+      "simulationEndSeconds": 33.1999999999994,
+      "ticks": 1640,
+      "audit": {
+        "ticks": 1640,
+        "overlapSamples": 0,
+        "overlapExamples": [],
+        "redEntries": 0,
+        "illegalCrossingSamples": 0,
+        "maximumWaitSeconds": 15.150000000000333,
+        "waiter": {
+          "id": "traffic-98",
+          "state": "red-light",
+          "position": {
+            "x": 493.8215234661527,
+            "y": 0.735,
+            "z": 770.25
+          },
+          "progress": 220.82152346615274,
+          "stopAt": 221,
+          "time": 33.1999999999994,
+          "desired": 0
+        },
+        "maximumGreenStationarySeconds": 5.633333333333319,
+        "entries": 7,
+        "maxFullPhysicsCars": 3,
+        "nonfiniteStates": 0,
+        "time": 33.1999999999994,
+        "minimumObservedAgentAgeSeconds": 30,
+        "eligibleAgents": 0,
+        "starved": [],
+        "neverEnteredInitialCohort": []
+      },
+      "cadence": {
+        "frames": 291,
+        "wallMs": 118228.5,
+        "fps": 2.4613354647990966,
+        "p50": 366.59999999999127,
+        "p95": 883.3000000000029,
+        "max": 2549.899999999998
+      },
+      "initialBudget": {
+        "factor": 0.78,
+        "cars": 47,
+        "pedestrians": 94,
+        "frameMs": 438.4708250002682,
+        "changes": 1,
+        "locked": false,
+        "tier": "Balanced"
+      },
+      "finalBudget": {
+        "factor": 0.25,
+        "cars": 8,
+        "pedestrians": 16,
+        "frameMs": 360.71577091853214,
+        "changes": 6,
+        "locked": false,
+        "tier": "Low"
+      },
+      "quality": "Low",
+      "strictNoStuckAccepted": false,
+      "nativeNear60FpsAccepted": false
+    },
+    "purePlanner": {
+      "report": "evidence/crosstown-0.9.0/traffic-pure-240s.json.gz",
+      "simulatedSeconds": 240,
+      "wallMs": 25882.662814,
+      "audit": {
+        "sampledRectangleOverlaps": 0,
+        "redEntries": 0,
+        "illegalCrossings": 0,
+        "maximumStationarySeconds": 118.64999999999455,
+        "maximumGreenStationarySeconds": 18.00000000000026,
+        "slowest": {
+          "id": "traffic-35",
+          "time": 156.95000000001704,
+          "state": "cruise",
+          "position": {
+            "x": 749.7535010907284,
+            "y": 0.735,
+            "z": 770.25
+          },
+          "lane": "210:1",
+          "progress": 220.7535010907284
+        },
+        "starved": [],
+        "neverEntered": [
+          "traffic-67",
+          "traffic-69",
+          "traffic-77",
+          "traffic-79",
+          "traffic-81",
+          "traffic-82",
+          "traffic-83",
+          "traffic-84",
+          "traffic-86",
+          "traffic-87",
+          "traffic-88",
+          "traffic-89",
+          "traffic-90"
+        ]
+      },
+      "notRealPhysicsOrRendering": true
+    },
+    "actualCrashReactions": {
+      "passed": true,
+      "report": "evidence/crosstown-0.9.0/population-reactions.json.gz",
+      "physicalContact": {
+        "ticks": 150,
+        "chassisContacts": 80,
+        "maximumPlayerImpulse": 14.912703517290232,
+        "maximumNpcImpulse": 8.835318204565429,
+        "npcCrashStates": 149,
+        "maximumPlayerDamage": 0.21633392769822957,
+        "maximumNpcDamage": 0.11831158394460368
+      },
+      "swerves": 1,
+      "pullOvers": 12,
+      "peopleDay": 85,
+      "peopleNight": 58,
+      "gunfireHookOnly": true
+    },
+    "cohortCaveat": {
+      "pureLaterObservedIdsWithoutRecordedIntersectionEntry": 13,
+      "loadedInitialCohortIdsWithoutRecordedIntersectionEntry": 9,
+      "retirementCanLimitObservationCoverage": true,
+      "wallWatchesHaveNoThirtySecondQualifiedCohort": true,
+      "exhaustiveSweptOverlapOrFairnessProof": false,
+      "details": "POPULATION.md"
+    },
+    "strictNoStuckAccepted": false
+  },
+  "softwarePerformance": {
+    "report": "evidence/crosstown-0.9.0/profile-0.9-final.json.gz",
+    "environment": "Forced WebGL 2 / software SwiftShader, unpaused actual display frames; not native GPU timing or target 60 FPS acceptance",
+    "population": "off; separate populated stress checks required",
+    "isolation": "Fresh Chromium process for each scene, with an awaited explicit lab opening. Historical shared-process profiles are not a strict matched A/B comparison.",
+    "historicalMatchedComparison": false,
+    "priorSharedProcessFailure": "evidence/crosstown-0.9.0/profile-0.9-final-shared-browser-failure.json",
+    "results": [
+      {
+        "scene": "quick-rooftop",
+        "cadence": {
+          "frames": 15,
+          "wallMs": 13382.799999999996,
+          "fps": 1.1208416773769319,
+          "p50": 883.2999999999993,
+          "p95": 1966.5999999999985,
+          "maximum": 1966.5999999999985
+        },
+        "metrics": {
+          "TaskDuration": 2.518943,
+          "ScriptDuration": 1.899083,
+          "LayoutDuration": 0.007581,
+          "RecalcStyleDuration": 0.003576,
+          "JSHeapUsedSize": 21880420
+        },
+        "draws": 91,
+        "triangles": 123217,
+        "errors": []
+      },
+      {
+        "scene": "downtown-street",
+        "cadence": {
+          "frames": 14,
+          "wallMs": 12899.5,
+          "fps": 1.0853133842396991,
+          "p50": 983.3000000000029,
+          "p95": 1766.7000000000007,
+          "maximum": 1766.7000000000007
+        },
+        "metrics": {
+          "TaskDuration": 3.697493,
+          "ScriptDuration": 3.2399839999999998,
+          "LayoutDuration": 0.004772,
+          "RecalcStyleDuration": 0.001726,
+          "JSHeapUsedSize": 23408792
+        },
+        "draws": 54,
+        "triangles": 108275,
+        "errors": []
+      },
+      {
+        "scene": "cockpit-lab",
+        "cadence": {
+          "frames": 22,
+          "wallMs": 12066.100000000002,
+          "fps": 1.8232900440075912,
+          "p50": 549.9000000000015,
+          "p95": 799.8999999999978,
+          "maximum": 933.4000000000015
+        },
+        "metrics": {
+          "TaskDuration": 0.745418,
+          "ScriptDuration": 0.206432,
+          "LayoutDuration": 0.004029,
+          "RecalcStyleDuration": 0.006324,
+          "JSHeapUsedSize": 22046668
+        },
+        "draws": 64,
+        "triangles": 7723,
+        "errors": []
+      }
+    ],
+    "nativeNear60FpsAccepted": false,
+    "reportedLagSolved": false
+  },
+  "publicCarSmoke": {
+    "passed": true,
+    "report": "evidence/crosstown-0.9.0/public-car-smoke.json",
+    "realDriveSamplesMirrorsAndExit": true,
+    "errors": []
+  },
+  "deployment": {
+    "date": "2026-11-22",
+    "version": "0.9.0",
+    "build": "09.001",
+    "provider": "Vercel connected app",
+    "project": "crosstown",
+    "projectId": "prj_gd5kw1GBgtWqMseb5ETMgzrXpKir",
+    "teamId": "team_59dr7VIo7kdxnmJ9zpqSL0wv",
+    "deploymentId": "dpl_CGHF6xxuyPmeXv6cZjVVi7Yq2Mmt",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "aliasAssigned": true,
+    "aliasError": null,
+    "aliases": [
+      "crosstown-sarang-dev.vercel.app",
+      "coastline-highline.vercel.app"
+    ],
+    "publicUrl": "https://crosstown-sarang-dev.vercel.app",
+    "dashboard": "https://vercel.com/sarang-dev/crosstown/CGHF6xxuyPmeXv6cZjVVi7Yq2Mmt",
+    "observedBy": "create_deployment / get_deployment / get_deployment_events / update_project connector results",
+    "createdAtEpochMs": 1795417764473,
+    "readyAtEpochMs": 1795417773169,
+    "preparedPublicFiles": 189,
+    "compiledArchiveBytes": 12548166,
+    "compiledArchiveSha256": "a4ac64d518dcc0d5a87c5107a95bd8198e4994d97446ff1ecabb601e96c1a787",
+    "independentTransferRoundtrip": true,
+    "builderChecksumVerified": true,
+    "transferStopped": true,
+    "postTransferAnonymousHashesMatch": true,
+    "publicChecksPending": false,
+    "deploymentKind": "One-time checksum-pinned import of locally built public compiled output, not a Vercel source build or GitHub CI run.",
+    "normalSettingsConfirmed": {
+      "framework": "vite",
+      "installCommand": "npm ci",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rootDirectory": null
+    },
+    "accessControls": "Existing all_except_custom_domains SSO policy unchanged. No project or domain recreated; legacy alias retained. Anonymous public bytes and browser checks are separate verification.",
+    "gitSourcePushed": false,
+    "retiredImportMustNotBeRedeployed": true,
+    "publicFiles": 189,
+    "anonymousFileHashesMatch": true,
+    "publicBrowserPassed": 5,
+    "publicCarSmokePassed": true,
+    "postTransferCheckedAt": "2026-11-23T07:18:54.802Z",
+    "anonymousFileHashMatches": 189,
+    "integrityReport": "DEPLOYED-FILES.json",
+    "publicBuild": "PUBLIC-BUILD.json"
+  },
+  "github": {
+    "date": "2026-11-22",
+    "id": 1467794178,
+    "fullName": "sarang-cmd/crosstown",
+    "htmlUrl": "https://github.com/sarang-cmd/crosstown",
+    "cloneUrl": "https://github.com/sarang-cmd/crosstown.git",
+    "private": true,
+    "created": true,
+    "pushed": false,
+    "topicsApplied": [
+      "threejs",
+      "webgpu",
+      "webgl2",
+      "typescript",
+      "rapier",
+      "parkour",
+      "open-world",
+      "procedural-generation",
+      "vite",
+      "browser-game"
+    ],
+    "authentication": "User-authorized token used transiently; never saved in repository/config/remote URL.",
+    "localCommitCreated": false,
+    "hostedCIPassClaimed": false,
+    "pushBlocker": "Securely authenticated source push unavailable; existing private repository is not recreated/deleted."
+  },
+  "revisionBoundaries": [
+    "Final game includes immediate mass/inertia recomputation before wheel-controller creation, current-proxy takeover disposal and physical damage for a stationary struck chassis.",
+    "Final full units and browser regressions are rerun after the direct finish-billboard texture-node and async lab-pause corrections; the 99-unit/6-fleet pass and 3-failed/1-passed retained-vehicle pre-route-fix attempt stay separate.",
+    "Population timed/reaction reports precede only the final billboard/lab-pause edits, at c2397cc537a4473bda7a7649d45e3725b8e52ec799c5ee24d5cf8eed54a55304. NPC/vehicle/physics modules are byte-identical; these are explicitly not fresh final-revision FPS or fairness acceptance.",
+    "Timed observation is actual wall time; its limited simulation advance under severe software FPS is explicitly recorded. Accelerated loaded/pure soaks are separate.",
+    "The handoff fingerprint captures final sources; it is not an independently captured commit for every run.",
+    "No fresh exhaustive full-map/risky-branch/hardware/listening/long-memory-soak acceptance is claimed."
+  ],
+  "limitations": [
+    "Near60 FPS with ten near cars, busy Medium and Radeon840M 1080p60 not accepted; reported lag is not considered solved.",
+    "Long queues up to the recorded raw waits span signal cycles; strict no-stuck/fairness acceptance is open even when sampled overlap/red/crossing/finite checks are clean.",
+    "SAT is sampled and slightly inset; not exhaustive swept collision auditing across every graph/seed.",
+    "Human handling/listening, physical controller/wheel/rumble and pedestrian seating/social alignment remain unaccepted.",
+    "Two motorcycles are original CC0 fallbacks; six recordings are processed into twelve designs, not twelve calibrated dyno sets.",
+    "Low-poly art, far-city/terrain/road blending, long GPU-memory soak and historical <=8ms streaming/full-map flight gates remain open.",
+    "No complete touch-only on-foot controller, native wheel force feedback, police, weapons or deep radio."
+  ],
+  "historicalReleases": [
+    "TEST-RESULTS-0.7.0.json",
+    "TEST-RESULTS-0.5.0.json",
+    "TEST-RESULTS-0.3.0.json"
+  ],
+  "historicalEvidenceCompression": "EVIDENCE-COMPRESSION.json",
+  "gallery": "PROGRESS-GALLERY.html",
+  "screenshots": "SCREENSHOTS.md",
+  "findings": "FINDINGS.md"
+}

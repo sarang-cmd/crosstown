@@ -1,0 +1,10 @@
+One-time connector descriptors: /home/user/.arena/releases/crosstown-0.13.0/connector-files.json
+Retire them and stop tunnel/server after hashes. Do not package/redeploy descriptors.
+{
+  "archive": "/home/user/.arena/releases/crosstown-0.13.0/crosstown-0.13.0.tar.gz",
+  "bytes": 12850153,
+  "sha256": "b0b3249355ea2d747729928aa0227aef8d6ea1c38e142c3eacb361b227905947",
+  "publicFiles": 204,
+  "version": "0.13.0",
+  "build": "13.001"
+}

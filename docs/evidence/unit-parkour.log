@@ -1,0 +1,216 @@
+
+> coastline-highline@0.3.0 test
+> tsx --test tests/unit/*.test.*
+
+TAP version 13
+# Subtest: X-forward source is rotated into +Z, scaled by length and placed on the ground
+ok 1 - X-forward source is rotated into +Z, scaled by length and placed on the ground
+  ---
+  duration_ms: 4.93178
+  ...
+# Subtest: invalid dimensions and unverified forward axes are rejected
+ok 2 - invalid dimensions and unverified forward axes are rejected
+  ---
+  duration_ms: 1.164893
+  ...
+# Subtest: missing hardware nodes are reported, never fabricated
+ok 3 - missing hardware nodes are reported, never fabricated
+  ---
+  duration_ms: 0.80044
+  ...
+# Subtest: stick dead zone rescales outside the dead band and clamps noisy axes
+ok 4 - stick dead zone rescales outside the dead band and clamps noisy axes
+  ---
+  duration_ms: 1.080168
+  ...
+# Subtest: separate wheel pedals accept signed-rest and positive ranges
+ok 5 - separate wheel pedals accept signed-rest and positive ranges
+  ---
+  duration_ms: 0.270461
+  ...
+# Subtest: bindings are centralized and have legible HUD labels
+ok 6 - bindings are centralized and have legible HUD labels
+  ---
+  duration_ms: 0.868196
+  ...
+# Subtest: fixed 60 Hz simulation is independent of render refresh rate
+ok 7 - fixed 60 Hz simulation is independent of render refresh rate
+  ---
+  duration_ms: 3.937094
+  ...
+# Subtest: long frame is capped to six catch-up steps; no spiral of death
+ok 8 - long frame is capped to six catch-up steps; no spiral of death
+  ---
+  duration_ms: 0.393141
+  ...
+# Subtest: pause freezes physics, keeps rendering, and clock reset discards hidden-tab debt
+ok 9 - pause freezes physics, keeps rendering, and clock reset discards hidden-tab debt
+  ---
+  duration_ms: 0.42372
+  ...
+# Subtest: fixed snapshots interpolate between previous and current state
+ok 10 - fixed snapshots interpolate between previous and current state
+  ---
+  duration_ms: 0.429127
+  ...
+# using deprecated parameters for the initialization function; pass a single object instead
+# Subtest: 24 seeds: real ballistic safety margin, 28 checkpoints, all 17 encounter families, winding and rejoining branches
+ok 11 - 24 seeds: real ballistic safety margin, 28 checkpoints, all 17 encounter families, winding and rejoining branches
+  ---
+  duration_ms: 194.496058
+  ...
+# Subtest: a physically impossible jump is rejected instead of waved through; training is an eight-checkpoint fixed route
+ok 12 - a physically impossible jump is rejected instead of waved through; training is an eight-checkpoint fixed route
+  ---
+  duration_ms: 0.79621
+  ...
+# Subtest: first tick is already running; normal and sprint movement reach their real configured speeds
+ok 13 - first tick is already running; normal and sprint movement reach their real configured speeds
+  ---
+  duration_ms: 91.141528
+  ...
+# Subtest: jump, power-gated double jump, fall, land and high-fall roll all run through the KCC
+ok 14 - jump, power-gated double jump, fall, land and high-fall roll all run through the KCC
+  ---
+  duration_ms: 52.143744
+  ...
+# Subtest: coyote time accepts a late edge jump, and jump buffering survives until landing
+ok 15 - coyote time accepts a late edge jump, and jump buffering survives until landing
+  ---
+  duration_ms: 10.973726
+  ...
+# Subtest: slide changes the actual capsule and cannot stand into a low ceiling
+ok 16 - slide changes the actual capsule and cannot stand into a low ceiling
+  ---
+  duration_ms: 12.579145
+  ...
+# Subtest: vault, ledge grab and pull-up are collision-swept assisted trajectories
+ok 17 - vault, ledge grab and pull-up are collision-swept assisted trajectories
+  ---
+  duration_ms: 10.354547
+  ...
+# Subtest: wall run reduces gravity and a wall jump kicks away from the wall
+ok 18 - wall run reduces gravity and a wall jump kicks away from the wall
+  ---
+  duration_ms: 17.020005
+  ...
+# Subtest: ziplines and clothesline swings carry the capsule between real endpoints
+ok 19 - ziplines and clothesline swings carry the capsule between real endpoints
+  ---
+  duration_ms: 14.583575
+  ...
+# Subtest: camera sphere sweep includes its near-plane clearance and keeps the camera outside a wall after smoothing
+ok 20 - camera sphere sweep includes its near-plane clearance and keeps the camera outside a wall after smoothing
+  ---
+  duration_ms: 9.609076
+  ...
+# Subtest: every pickup activates on capsule contact; power bars last ten real seconds and time pickups add twenty
+ok 21 - every pickup activates on capsule contact; power bars last ten real seconds and time pickups add twenty
+  ---
+  duration_ms: 585.945556
+  ...
+# Subtest: speed boost really increases motor speed and slow motion slows only the world, not countdown/power duration
+ok 22 - speed boost really increases motor speed and slow motion slows only the world, not countdown/power duration
+  ---
+  duration_ms: 22.675621
+  ...
+# Subtest: rolling balls, sweeping lasers, gusts and patrol drones apply non-lethal knockback/push
+ok 23 - rolling balls, sweeping lasers, gusts and patrol drones apply non-lethal knockback/push
+  ---
+  duration_ms: 93.943129
+  ...
+# Subtest: moving/tilting/crane colliders animate; crumbling is triggered by standing on the platform, falls, then recovers
+ok 24 - moving/tilting/crane colliders animate; crumbling is triggered by standing on the platform, falls, then recovers
+  ---
+  duration_ms: 122.319194
+  ...
+# Subtest: fall has exactly five seconds penalty; timeout restarts the same seed and reset clears powers
+ok 25 - fall has exactly five seconds penalty; timeout restarts the same seed and reset clears powers
+  ---
+  duration_ms: 4.717221
+  ...
+# Subtest: full normal-pace physics pilot: 8–12 simulated minutes, finish, persisted per-seed/per-marker best, next-run ghost and night unlock
+ok 26 - full normal-pace physics pilot: 8–12 simulated minutes, finish, persisted per-seed/per-marker best, next-run ghost and night unlock
+  ---
+  duration_ms: 5807.757907
+  ...
+# Subtest: ParkourRun exposes lifecycle/events, is safely disposable, and locked night mode does not change an unfinished run
+ok 27 - ParkourRun exposes lifecycle/events, is safely disposable, and locked night mode does not change an unfinished run
+  ---
+  duration_ms: 9.988008
+  ...
+# Subtest: the eight-checkpoint hand-authored training route can also be completed by normal movement input
+ok 28 - the eight-checkpoint hand-authored training route can also be completed by normal movement input
+  ---
+  duration_ms: 206.724128
+  ...
+# Subtest: moving platforms carry a grounded rider, and resetting crumble geometry never launches a player skyward
+ok 29 - moving platforms carry a grounded rider, and resetting crumble geometry never launches a player skyward
+  ---
+  duration_ms: 91.812437
+  ...
+# Subtest: blocked storage keeps parkour unlocks/results in memory without breaking gameplay or unrelated saves
+ok 30 - blocked storage keeps parkour unlocks/results in memory without breaking gameplay or unrelated saves
+  ---
+  duration_ms: 0.777107
+  ...
+# using deprecated parameters for the initialization function; pass a single object instead
+# Subtest: test body falls to the fixed ground and snapshots remain stable at rest
+ok 31 - test body falls to the fixed ground and snapshots remain stable at rest
+  ---
+  duration_ms: 129.818295
+  ...
+# Subtest: four tiers have ordered budgets and disable expensive effects first
+ok 32 - four tiers have ordered budgets and disable expensive effects first
+  ---
+  duration_ms: 2.262998
+  ...
+# Subtest: fps and frame-time are measured, not hardcoded to 60
+ok 33 - fps and frame-time are measured, not hardcoded to 60
+  ---
+  duration_ms: 0.750757
+  ...
+# Subtest: warm-up prevents a startup quality drop; sustained slow frames lower quality
+ok 34 - warm-up prevents a startup quality drop; sustained slow frames lower quality
+  ---
+  duration_ms: 0.696197
+  ...
+# Subtest: sustained fast frames raise quality and manual selection never auto-downgrades
+ok 35 - sustained fast frames raise quality and manual selection never auto-downgrades
+  ---
+  duration_ms: 3.065163
+  ...
+# Subtest: invalid samples are ignored; real long frames are not falsely reported as 60fps
+ok 36 - invalid samples are ignored; real long frames are not falsely reported as 60fps
+  ---
+  duration_ms: 0.368497
+  ...
+# Subtest: versioned round-trip and reset do not touch other apps
+ok 37 - versioned round-trip and reset do not touch other apps
+  ---
+  duration_ms: 1.588638
+  ...
+# Subtest: a blocked localStorage getter never escapes read, write or clear
+ok 38 - a blocked localStorage getter never escapes read, write or clear
+  ---
+  duration_ms: 0.375477
+  ...
+# Subtest: quota, corrupted JSON and old schema fail safely
+ok 39 - quota, corrupted JSON and old schema fail safely
+  ---
+  duration_ms: 1.072283
+  ...
+# Subtest: settings validate quality, keys, wheel axes and retain an Escape escape hatch
+ok 40 - settings validate quality, keys, wheel axes and retain an Escape escape hatch
+  ---
+  duration_ms: 0.271314
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11280.608826

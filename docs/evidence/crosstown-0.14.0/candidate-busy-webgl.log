@@ -1,0 +1,44 @@
+START candidate webgl 0
+STAGE candidate webgl 0 cold-start-saved-tier
+STAGE candidate webgl 0 enter-and-position-in-downtown
+STAGE candidate webgl 0 set-fixed-stress-and-weather-before-warmup
+STAGE candidate webgl 0 flush-nearby-real-collision-chunks
+STAGE candidate webgl 0 one-hundred-setup-physics-steps
+STAGE candidate webgl 0 prime-requested-density-and-start-pursuit
+STAGE candidate webgl 0 settle-nine-chunks-and-physical-police
+STAGE candidate webgl 0 actual-display-intervals-no-manual-steps
+STAGE candidate webgl 0 capture-real-scene
+RESULT candidate webgl 0 {"cadence":{"frames":20,"wallMs":12482.9,"fps":1.602191798380184,"p50Ms":616.6000000000022,"p95Ms":1183.2000000000007,"maximumMs":1183.2000000000007,"intervals":[650,516.6000000000004,600.0999999999985,216.60000000000218,633.2999999999993,750,399.8999999999978,750.1000000000022,1183.2000000000007,616.5999999999985,766.7000000000007,550,1016.5999999999985,616.6000000000022,150,600,549.8999999999978,600.1000000000022,649.8999999999978,666.7000000000007]},"police":4,"draws":140,"triangles":123545,"district":"downtown","errors":[]}
+START candidate webgl 1
+STAGE candidate webgl 1 cold-start-saved-tier
+STAGE candidate webgl 1 enter-and-position-in-downtown
+STAGE candidate webgl 1 set-fixed-stress-and-weather-before-warmup
+STAGE candidate webgl 1 flush-nearby-real-collision-chunks
+STAGE candidate webgl 1 one-hundred-setup-physics-steps
+STAGE candidate webgl 1 prime-requested-density-and-start-pursuit
+STAGE candidate webgl 1 settle-nine-chunks-and-physical-police
+STAGE candidate webgl 1 actual-display-intervals-no-manual-steps
+STAGE candidate webgl 1 capture-real-scene
+RESULT candidate webgl 1 {"cadence":{"frames":13,"wallMs":12899.5,"fps":1.0077909996511494,"p50Ms":1083.4000000000015,"p95Ms":2233.199999999997,"maximumMs":2233.199999999997,"intervals":[116.59999999999854,1400,1166.5999999999985,899.9000000000015,566.7000000000007,883.2999999999993,33.29999999999927,1083.4000000000015,1149.8999999999978,1949.9000000000015,300,2233.199999999997,1116.7000000000044]},"police":4,"draws":218,"triangles":139852,"district":"downtown","errors":[]}
+START candidate webgl 2
+STAGE candidate webgl 2 cold-start-saved-tier
+STAGE candidate webgl 2 enter-and-position-in-downtown
+STAGE candidate webgl 2 set-fixed-stress-and-weather-before-warmup
+STAGE candidate webgl 2 flush-nearby-real-collision-chunks
+STAGE candidate webgl 2 one-hundred-setup-physics-steps
+STAGE candidate webgl 2 prime-requested-density-and-start-pursuit
+STAGE candidate webgl 2 settle-nine-chunks-and-physical-police
+STAGE candidate webgl 2 actual-display-intervals-no-manual-steps
+STAGE candidate webgl 2 capture-real-scene
+RESULT candidate webgl 2 {"cadence":{"frames":8,"wallMs":12116.2,"fps":0.660273022894967,"p50Ms":1766.5999999999985,"p95Ms":2333.300000000003,"maximumMs":2333.300000000003,"intervals":[2050.0000000000036,1066.5,33.39999999999418,1699.9000000000015,1799.9000000000015,2333.300000000003,1366.5999999999985,1766.5999999999985]},"police":4,"draws":277,"triangles":147275,"district":"downtown","errors":[]}
+START candidate webgl 3
+STAGE candidate webgl 3 cold-start-saved-tier
+STAGE candidate webgl 3 enter-and-position-in-downtown
+STAGE candidate webgl 3 set-fixed-stress-and-weather-before-warmup
+STAGE candidate webgl 3 flush-nearby-real-collision-chunks
+STAGE candidate webgl 3 one-hundred-setup-physics-steps
+STAGE candidate webgl 3 prime-requested-density-and-start-pursuit
+STAGE candidate webgl 3 settle-nine-chunks-and-physical-police
+STAGE candidate webgl 3 actual-display-intervals-no-manual-steps
+STAGE candidate webgl 3 capture-real-scene
+RESULT candidate webgl 3 {"cadence":{"frames":8,"wallMs":16199.399999999998,"fps":0.49384545106608896,"p50Ms":2149.800000000003,"p95Ms":3066.5999999999985,"maximumMs":3066.5999999999985,"intervals":[2633.2999999999993,1299.9000000000015,1899.9000000000015,2449.899999999994,1350,1350,2149.800000000003,3066.5999999999985]},"police":4,"draws":316,"triangles":153311,"district":"downtown","errors":[]}

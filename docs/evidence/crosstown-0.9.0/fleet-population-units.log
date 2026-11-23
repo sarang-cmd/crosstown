@@ -1,0 +1,96 @@
+TAP version 13
+# using deprecated parameters for the initialization function; pass a single object instead
+# Subtest: twelve fictional models, two per class, unique tuning/paint/profile with no mutable nested sharing
+ok 1 - twelve fictional models, two per class, unique tuning/paint/profile with no mutable nested sharing
+  ---
+  duration_ms: 1.632972
+  ...
+# Subtest: six-car persistent garage survives reconstruction, rejects a seventh and updates without duplicating VINs
+ok 2 - six-car persistent garage survives reconstruction, rejects a seventh and updates without duplicating VINs
+  ---
+  duration_ms: 1.432533
+  ...
+# Subtest: finish reward queues safely when full, fills a released space and is granted only once
+ok 3 - finish reward queues safely when full, fills a released space and is granted only once
+  ---
+  duration_ms: 0.821712
+  ...
+# Subtest: corrupted garage saves cannot inject names/HTML, nonfinite damage, duplicates or invalid model IDs
+ok 4 - corrupted garage saves cannot inject names/HTML, nonfinite damage, duplicates or invalid model IDs
+  ---
+  duration_ms: 0.51734
+  ...
+# Subtest: blocked browser storage degrades to a usable in-memory garage
+ok 5 - blocked browser storage degrades to a usable in-memory garage
+  ---
+  duration_ms: 0.339905
+  ...
+# Subtest: normalized Meshopt attributes are decoded before transform, without mutating cached source geometry
+ok 6 - normalized Meshopt attributes are decoded before transform, without mutating cached source geometry
+  ---
+  duration_ms: 1.837417
+  ...
+# Subtest: merely showing an NPC enter prompt never removes/materializes a traffic car
+ok 7 - merely showing an NPC enter prompt never removes/materializes a traffic car
+  ---
+  duration_ms: 1.418962
+  ...
+# Subtest: all damage stages, light/window flags, 7-second fire-to-wreck, small degradation and repair are deterministic
+ok 8 - all damage stages, light/window flags, 7-second fire-to-wreck, small degradation and repair are deterministic
+  ---
+  duration_ms: 0.583058
+  ...
+# Subtest: AWD service brakes cannot be bypassed by nonzero engine drag; NPC braking cannot select reverse
+ok 9 - AWD service brakes cannot be bypassed by nonzero engine drag; NPC braking cannot select reverse
+  ---
+  duration_ms: 177.568512
+  ...
+# Subtest: both actual two-wheel bikes settle, lean through a turn, jump/land and recover without hidden support wheels
+ok 10 - both actual two-wheel bikes settle, lean through a turn, jump/land and recover without hidden support wheels
+  ---
+  duration_ms: 169.523718
+  ...
+# Subtest: medium budgets target 60 cars / 120 people, adapt downward under load, then cautiously recover
+ok 11 - medium budgets target 60 cars / 120 people, adapt downward under load, then cautiously recover
+  ---
+  duration_ms: 4.182121
+  ...
+# Subtest: multi-second GPU stalls lower Auto quality/density and report actual cadence instead of being discarded
+ok 12 - multi-second GPU stalls lower Auto quality/density and report actual cadence instead of being discarded
+  ---
+  duration_ms: 0.451319
+  ...
+# Subtest: signal phases exclude vehicles during crossings, and a pedestrian cannot start without clearance time
+ok 13 - signal phases exclude vehicles during crossings, and a pedestrian cannot start without clearance time
+  ---
+  duration_ms: 7.791898
+  ...
+# Subtest: 120 seconds / 7200 ticks independently audit 60 cars and 120 people: no SAT overlap, red entry or illegal crossing
+ok 14 - 120 seconds / 7200 ticks independently audit 60 cars and 120 people: no SAT overlap, red entry or illegal crossing
+  ---
+  duration_ms: 9976.602208
+  ...
+# Subtest: crash braking/swerving, lane-change overtaking, impatience honk, siren pull-over and future gunfire hook work
+ok 15 - crash braking/swerving, lane-change overtaking, impatience honk, siren pull-over and future gunfire hook work
+  ---
+  duration_ms: 36.618358
+  ...
+# Subtest: night reduces pedestrian population and turns on headlights; fear uses animated flee state without weapons
+ok 16 - night reduces pedestrian population and turns on headlights; fear uses animated flee state without weapons
+  ---
+  duration_ms: 166.901493
+  ...
+# Subtest: pedestrian graph uses real connected footways, four painted crossings, actual bench corners and spaced chat groups
+ok 17 - pedestrian graph uses real connected footways, four painted crossings, actual bench corners and spaced chat groups
+  ---
+  duration_ms: 5.043334
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11555.30988

@@ -1,0 +1,7 @@
+
+> crosstown@0.7.0 assets:check
+> node tools/check-assets.mjs
+
+PASS parkour-runner: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 27 clips; 393.5 KiB.
+PASS test-car: 4.5 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS test-character: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 14 clips; 368.6 KiB.

@@ -1,0 +1,122 @@
+{
+  "id": "cinder",
+  "title": "Crosstown cinder — Kenney police derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/police.glb",
+  "sourceSha256": "a617b880594f56239b7ac4cf6fd4d74ebdae3ba6c5d842e77c76a5906eff352a",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 207707,
+  "sourceGlbBytes": 195336,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.95,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.5967743563507808,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.75,
+        -1.1920928966180355e-8,
+        -1.549999976158142
+      ],
+      "max": [
+        0.75,
+        1.3000000238418579,
+        1.5499997077750207
+      ]
+    },
+    "dimensions": [
+      1.5,
+      1.3000000357627868,
+      3.099999683933163
+    ],
+    "triangles": 2304,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "police",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.95 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression",
+    "Surveyed civilian roof cleanup: removed 22 taxi-sign / patrol-light triangles offline; no police/taxi markings or siren gameplay."
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.1975807672630856,
+        -1.9035033660408374e-8,
+        -2.475000214273643
+      ],
+      "max": [
+        1.1975807672630856,
+        1.916129227620937,
+        2.474999785726357
+      ]
+    },
+    "dimensions": [
+      2.395161534526171,
+      1.9161292466559705,
+      4.949999999999999
+    ],
+    "triangles": 2282,
+    "nodes": 7,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 79452,
+  "outputSha256": "4d6b4c5651f84bbb96bdec10236ea7ce645539dd7670c740b991e3d0da24c3ff",
+  "savedBytesPercent": 57,
+  "civilianRoofTrianglesRemoved": 22
+}

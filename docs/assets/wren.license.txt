@@ -1,0 +1,7 @@
+Crosstown project (original procedural modelling)
+CC0-1.0
+https://creativecommons.org/publicdomain/zero/1.0/
+tools/prepare-roster.mjs
+Original detailed two-wheel fictional motorcycle, authored as fallback after source access failed
+Ground-centred +Z-forward glTF with fork, tank, engine, two axles, exhaust, controls, lamp and class-specific fairing or luggage rack
+Meshopt FILTER geometry compression

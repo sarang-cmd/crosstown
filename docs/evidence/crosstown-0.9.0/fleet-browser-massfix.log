@@ -1,0 +1,6 @@
+
+Running 4 tests using 1 worker
+
+  ✘  1 [webgpu] › tests/browser/fleet.spec.ts:11:1 › twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load (17ms)
+  ✘  2 [webgpu] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work (8ms)
+  ✓  3 [webgl2-forced] › tests/browser/fleet.spec.ts:11:1 › twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load (52.5s)

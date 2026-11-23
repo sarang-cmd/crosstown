@@ -1,0 +1,124 @@
+{
+  "id": "mesa",
+  "title": "Crosstown mesa — Kenney suv derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/suv.glb",
+  "sourceSha256": "9df31f6e89e927a8176fc792aa125f0b19dc1ba29d2025bfef7c4f4d6ab1778a",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 219943,
+  "sourceGlbBytes": 207572,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.9,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.8148148454791073,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.75,
+        -1.1920928966180355e-8,
+        -1.3499999305371886
+      ],
+      "max": [
+        0.75,
+        1.3000000238418579,
+        1.350000023841855
+      ]
+    },
+    "dimensions": [
+      1.5,
+      1.3000000357627868,
+      2.6999999543790434
+    ],
+    "triangles": 2474,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-back",
+      "canonical": "wheels_combined"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "suv",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.9 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.3611111341093305,
+        -2.163427881285429e-8,
+        -2.4499999153346534
+      ],
+      "max": [
+        1.3611111341093305,
+        2.3592593423913972,
+        2.4500000846653474
+      ]
+    },
+    "dimensions": [
+      2.722222268218661,
+      2.359259364025676,
+      4.9
+    ],
+    "triangles": 2474,
+    "nodes": 7,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 94300,
+  "outputSha256": "716bbc09ea2510a46c6a497d0211ec3703894726da817aa7e162e5ca4c9ac907",
+  "savedBytesPercent": 57
+}

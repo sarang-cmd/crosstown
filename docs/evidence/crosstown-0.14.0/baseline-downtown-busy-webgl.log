@@ -1,0 +1,11 @@
+START baseline-downtown webgl 1
+STAGE baseline-downtown webgl 1 cold-start-saved-tier
+STAGE baseline-downtown webgl 1 enter-and-position-in-downtown
+STAGE baseline-downtown webgl 1 set-fixed-stress-and-weather-before-warmup
+STAGE baseline-downtown webgl 1 flush-nearby-real-collision-chunks
+STAGE baseline-downtown webgl 1 one-hundred-setup-physics-steps
+STAGE baseline-downtown webgl 1 prime-requested-density-and-start-pursuit
+STAGE baseline-downtown webgl 1 settle-nine-chunks-and-physical-police
+STAGE baseline-downtown webgl 1 actual-display-intervals-no-manual-steps
+STAGE baseline-downtown webgl 1 capture-real-scene
+RESULT baseline-downtown webgl 1 {"cadence":{"frames":10,"wallMs":12549.5,"fps":0.7968444957966453,"p50Ms":1350,"p95Ms":2483.2000000000007,"maximumMs":2483.2000000000007,"intervals":[1400,1383.2000000000007,1350,150,1233.2999999999993,2483.2000000000007,1349.9000000000015,1283.2999999999993,1350,566.5999999999985]},"police":4,"draws":182,"triangles":134041,"district":"downtown","errors":[]}

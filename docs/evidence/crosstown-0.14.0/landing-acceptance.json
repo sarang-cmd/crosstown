@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-22",
+  "base": "http://127.0.0.1:4193",
+  "rows": [
+    {
+      "viewport": 320,
+      "scrollWidth": 320,
+      "canvas": 0,
+      "title": "Crosstown — Take the long way home",
+      "links": [
+        "/play",
+        "/play",
+        "/play?length=quick",
+        "/play?drive",
+        "/play?explore=street",
+        "/play",
+        "/play",
+        "/play"
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4193/images/coast-road-small.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/rooftops.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/cockpit.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/city.webp",
+          "loaded": true
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/assets/index-lO8STZDT.js",
+          "bytes": 1848
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/coast-road-small.webp",
+          "bytes": 35026
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/cockpit.webp",
+          "bytes": 15636
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/rooftops.webp",
+          "bytes": 30144
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/city.webp",
+          "bytes": 30100
+        },
+        {
+          "url": "http://127.0.0.1:4193/assets/landing-BSSGW4C6.css",
+          "bytes": 3668
+        },
+        {
+          "url": "http://127.0.0.1:4193/fonts/Manrope-Variable.ttf",
+          "bytes": 165000
+        }
+      ],
+      "navigation": [
+        {
+          "domContentLoadedMs": 28,
+          "loadMs": 81.20000000298023
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "canvas": 0,
+      "title": "Crosstown — Take the long way home",
+      "links": [
+        "/play",
+        "/play",
+        "/play?length=quick",
+        "/play?drive",
+        "/play?explore=street",
+        "/play",
+        "/play",
+        "/play"
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4193/images/coast-road-small.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/rooftops.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/cockpit.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/city.webp",
+          "loaded": true
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/assets/index-lO8STZDT.js",
+          "bytes": 1848
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/coast-road-small.webp",
+          "bytes": 35026
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/rooftops.webp",
+          "bytes": 30144
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/cockpit.webp",
+          "bytes": 15636
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/city.webp",
+          "bytes": 30100
+        },
+        {
+          "url": "http://127.0.0.1:4193/assets/landing-BSSGW4C6.css",
+          "bytes": 3668
+        },
+        {
+          "url": "http://127.0.0.1:4193/fonts/Manrope-Variable.ttf",
+          "bytes": 165000
+        }
+      ],
+      "navigation": [
+        {
+          "domContentLoadedMs": 28.5,
+          "loadMs": 33.19999999552965
+        }
+      ]
+    },
+    {
+      "viewport": 768,
+      "scrollWidth": 768,
+      "canvas": 0,
+      "title": "Crosstown — Take the long way home",
+      "links": [
+        "/play",
+        "/play",
+        "/play?length=quick",
+        "/play?drive",
+        "/play?explore=street",
+        "/play",
+        "/play",
+        "/play"
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4193/images/coast-road.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/rooftops.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/cockpit.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/city.webp",
+          "loaded": true
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/assets/index-lO8STZDT.js",
+          "bytes": 1848
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/coast-road.webp",
+          "bytes": 96442
+        },
+        {
+          "url": "http://127.0.0.1:4193/assets/landing-BSSGW4C6.css",
+          "bytes": 3668
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/rooftops.webp",
+          "bytes": 30144
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/cockpit.webp",
+          "bytes": 15636
+        },
+        {
+          "url": "http://127.0.0.1:4193/fonts/Manrope-Variable.ttf",
+          "bytes": 165000
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/city.webp",
+          "bytes": 30100
+        }
+      ],
+      "navigation": [
+        {
+          "domContentLoadedMs": 14.800000004470348,
+          "loadMs": 33.70000000298023
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "canvas": 0,
+      "title": "Crosstown — Take the long way home",
+      "links": [
+        "/play",
+        "/play",
+        "/play?length=quick",
+        "/play?drive",
+        "/play?explore=street",
+        "/play",
+        "/play",
+        "/play"
+      ],
+      "images": [
+        {
+          "src": "http://127.0.0.1:4193/images/coast-road.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/rooftops.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/cockpit.webp",
+          "loaded": true
+        },
+        {
+          "src": "http://127.0.0.1:4193/images/city.webp",
+          "loaded": true
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/assets/index-lO8STZDT.js",
+          "bytes": 1848
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/coast-road.webp",
+          "bytes": 96442
+        },
+        {
+          "url": "http://127.0.0.1:4193/assets/landing-BSSGW4C6.css",
+          "bytes": 3668
+        },
+        {
+          "url": "http://127.0.0.1:4193/fonts/Manrope-Variable.ttf",
+          "bytes": 165000
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/rooftops.webp",
+          "bytes": 30144
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/cockpit.webp",
+          "bytes": 15636
+        },
+        {
+          "url": "http://127.0.0.1:4193/images/city.webp",
+          "bytes": 30100
+        }
+      ],
+      "navigation": [
+        {
+          "domContentLoadedMs": 27.80000000447035,
+          "loadMs": 29.80000000447035
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

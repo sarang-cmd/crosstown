@@ -1,0 +1,25 @@
+START immediate /play startup, six GLBs, no source configured for Spotify
+Navigation committed; waiting for actual game hooks
+PASS immediate /play startup, six GLBs, no source configured for Spotify
+START all seven range weapons use actual colliders/projectiles and practice does not unlock them
+PASS all seven range weapons use actual colliders/projectiles and practice does not unlock them
+START real gun shop UI charges gun and ammo and real reload is finite
+PASS real gun shop UI charges gun and ammo and real reload is finite
+START sight-based escalation 1 through 5, bounded physical units, helicopter at 3
+PASS sight-based escalation 1 through 5, bounded physical units, helicopter at 3
+START stars fall only after 20 unseen seconds in the real shared city world
+PASS stars fall only after 20 unseen seconds in the real shared city world
+START waypoint produces a connected road route
+PASS waypoint produces a connected road route
+START car-window shooting, in-car procedural stations, now-playing, exit silence and favourites
+PASS car-window shooting, in-car procedural stations, now-playing, exit silence and favourites
+START paint and garage UI debit cash, preserve one VIN and survive reload
+PASS paint and garage UI debit cash, preserve one VIN and survive reload
+START garage walls/roof occlude real sight rays, the open door does not
+GARAGE SIGHT {"backWall":false,"door":true,"roof":false}
+PASS garage walls/roof occlude real sight rays, the open door does not
+START hospital is nearest, charges up to $100, loses half ammo, reload persists bank/unlocks/radio
+PASS hospital is nearest, charges up to $100, loses half ammo, reload persists bank/unlocks/radio
+START two different rooftop starts remain in the same city and keep marker-specific seeds/bests
+PASS two different rooftop starts remain in the same city and keep marker-specific seeds/bests
+ALL INTEGRATION CHECKS PASS

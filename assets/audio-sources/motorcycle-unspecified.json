@@ -1,0 +1,14 @@
+{
+  "engine": "single",
+  "author": "poderarcano",
+  "source": "https://freesound.org/people/poderarcano/sounds/408624/",
+  "preview": "https://cdn.freesound.org/previews/408/408624_7676852-hq.mp3",
+  "licenses": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "bytes": 124723,
+  "sha256": "3f5634634ea012a11722dbc198470d8119457a2f88eb1be64a7d7293a4ebcb5f",
+  "license": "CC0-1.0",
+  "sourceFormat": "Publisher public HQ MP3 preview (lossy), not the login-only original WAV.",
+  "modifications": "Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers."
+}

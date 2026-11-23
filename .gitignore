@@ -1,0 +1,54 @@
+# Dependencies and generated output
+node_modules/
+dist/
+dist-ssr/
+.arena/
+.cache/
+.npm/
+.pki/
+coverage/
+playwright-report/
+test-results/
+coastline-foundation.zip
+coastline-highline.zip
+SHA256SUMS.txt
+
+# Local configuration; keep the documented public template
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs and editor / OS state
+logs/
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.sudo_as_admin_successful
+
+# Retain deliberate non-secret acceptance evidence
+!docs/evidence/*.log
+
+# Portable handoffs and supplied prompt files are not repository sources
+crosstown.zip
+*.bundle
+uploads/
+.git-credentials
+.netrc
+
+# Deliberate release evidence and local machine state
+!docs/evidence/**/*.log
+/.config/
+/.local/
+/.bash_history
+/.python_history
+
+# Preserve versioned source handoffs outside repository history
+crosstown-*.zip

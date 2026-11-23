@@ -1,0 +1,167 @@
+[
+  {
+    "file": "all-seeds.log",
+    "bytes": 5453,
+    "sha256": "e89783903a2ffc9a807c68c4e53ba67be4364a87683136ebf6a73de1cc9716f9"
+  },
+  {
+    "file": "deployed-browser.log",
+    "bytes": 959,
+    "sha256": "6af91c9f77ba8978dd54858c2f8a3027f508622947be9521cbf25db5f7535e1a"
+  },
+  {
+    "file": "deployed-integrity.log",
+    "bytes": 1124,
+    "sha256": "c33386ffb443686cdef46311090475d8defeebeb416cfe5dfdb68bf2a4a2ef48"
+  },
+  {
+    "file": "development-webgl2-forced-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1958,
+    "sha256": "d2c271bd7917015a29969b821387260d4591c2953c11507a70f7717ac44fd854"
+  },
+  {
+    "file": "development-webgl2-forced-mobile-game.png",
+    "bytes": 97637,
+    "sha256": "2df032a9b4639f3f97fd94a4e24fe76e20b1169a6337d62729fd0e99ee7a80f3"
+  },
+  {
+    "file": "development-webgpu-disabled-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1976,
+    "sha256": "3415b2a711fcd74511b3fe63186576e2b00566eec44b9368cce179be28c4cc21"
+  },
+  {
+    "file": "development-webgpu-disabled-mobile-game.png",
+    "bytes": 94505,
+    "sha256": "6b6a974c7f3a8c867f004100336692d8ceeb63629421346d43700d1cd2564a4e"
+  },
+  {
+    "file": "development-webgpu-full-run-finished-result-and-city-flight.png",
+    "bytes": 228305,
+    "sha256": "51dc2f6abca0949f9bb514089e147d47503b2047211a901ba9080c33d4735611"
+  },
+  {
+    "file": "development-webgpu-full-run-normal-pace-browser-simulation.json",
+    "bytes": 528,
+    "sha256": "8f0f9fc5c30dfb69be804d7db4c814b386132ea30505dbdcdb43faf7655757e3"
+  },
+  {
+    "file": "development-webgpu-full-run-unlocked-night-route.png",
+    "bytes": 225365,
+    "sha256": "be4baaf262dfd0ef8f17aec4853aa66ead08f26a3b6fdde890c4ea09b7f86972"
+  },
+  {
+    "file": "development-webgpu-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1973,
+    "sha256": "960ece4d3a6f055ebfb935ff07057a1892b823ae6abaf0cc41a6d272f906deef"
+  },
+  {
+    "file": "development-webgpu-mobile-game.png",
+    "bytes": 94431,
+    "sha256": "3894cb678085b44402e7f94c554fc3ad8e134a38c0f5f7b6dac85b6c23712557"
+  },
+  {
+    "file": "final-assets.log",
+    "bytes": 366,
+    "sha256": "bf916de2cac26a1760880ef51a00e3fc19795548aea6d0dbe01f1ec3704ec1f2"
+  },
+  {
+    "file": "final-build.log",
+    "bytes": 983,
+    "sha256": "c973adfebd7d0a3b1480b01833d3725c7621261cea1b54ff97d9fa280c0e8ba8"
+  },
+  {
+    "file": "final-versions.log",
+    "bytes": 894,
+    "sha256": "6fcf56d2392799533ec151dc37bb5f1afffb0ab922c878473e61975231b00c32"
+  },
+  {
+    "file": "foundation-01-results.json",
+    "bytes": 17130,
+    "sha256": "dafce72674ac2001d5a4efde28acdcb1fd064284e679b43e2486c57d58e6ae8d"
+  },
+  {
+    "file": "foundation-regression.log",
+    "bytes": 1915,
+    "sha256": "278b5647192d3d4e103c720064dd4556d4b0be5e5508f22677fa44cb129f2e0e"
+  },
+  {
+    "file": "parkour-browser.log",
+    "bytes": 1300,
+    "sha256": "72838e10bb01121ef12b6fd77fabb3bf623b62516e6d97b57912f3f19e44e8f6"
+  },
+  {
+    "file": "production-public-webgl2-forced-desktop-game.png",
+    "bytes": 239364,
+    "sha256": "baec610166c7bf144dcbe5ddcae0fe40b19515c791d94103ac32d0a550ae8ec9"
+  },
+  {
+    "file": "production-public-webgl2-forced-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1977,
+    "sha256": "8a3d40d7b7ae1feb210811eb091a8d71781e04e15d972d2cbdc7538ec765db2b"
+  },
+  {
+    "file": "production-public-webgl2-forced-mobile-game.png",
+    "bytes": 97258,
+    "sha256": "02ef87e684ff881851ce403c76966584557e5fab3388af3401b40993b8494003"
+  },
+  {
+    "file": "production-public-webgpu-desktop-game.png",
+    "bytes": 236061,
+    "sha256": "a500190cbf7345e85c2dd119de3e075a56ae94704fe03b0807928c9ca7fabcf6"
+  },
+  {
+    "file": "production-public-webgpu-disabled-desktop-game.png",
+    "bytes": 236347,
+    "sha256": "569065335cb6410ed835e795774ca304104c38e87c5b6dc155dc1918174097b1"
+  },
+  {
+    "file": "production-public-webgpu-disabled-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1959,
+    "sha256": "b43335fc3b05aa75516bb86d6886b7e669ba9185f4e4e353d1b18b6434f08b69"
+  },
+  {
+    "file": "production-public-webgpu-disabled-mobile-game.png",
+    "bytes": 96149,
+    "sha256": "e9d779c6a62dab672809e751e4794d04ebe62cc8d2298f593268799b3ac9ce93"
+  },
+  {
+    "file": "production-public-webgpu-full-run-finished-result-and-city-flight.png",
+    "bytes": 247892,
+    "sha256": "afcb1cc9c3e0efa7135a9b51b023079579cdc9d652b9da5934ec8ae1705f327f"
+  },
+  {
+    "file": "production-public-webgpu-full-run-normal-pace-browser-simulation.json",
+    "bytes": 528,
+    "sha256": "488aa3ef98e2ca7616301d00592c8dcfe6735b0b87fce777fc248bcb9a5987a3"
+  },
+  {
+    "file": "production-public-webgpu-full-run-unlocked-night-route.png",
+    "bytes": 266717,
+    "sha256": "827203ae0ab00bdb36ff24dbf3bdd8fa1b4b582c4b65c6e7664765963f9b02d3"
+  },
+  {
+    "file": "production-public-webgpu-measured-software-renderer-not-hardware-benchmark.json",
+    "bytes": 1980,
+    "sha256": "8b6338e78d81423f1e1797c38773dce4b428bdae8819ba4792e470c017ec2fdf"
+  },
+  {
+    "file": "production-public-webgpu-mobile-game.png",
+    "bytes": 98502,
+    "sha256": "d57383cc61758054150e9f4b14d8b5f42a089076e07c58104c8816b12b283298"
+  },
+  {
+    "file": "production-public-webgpu-training-training-eight-checkpoints.png",
+    "bytes": 231069,
+    "sha256": "574bc61ce10a99b68faa08fca550c3a6a795ae6e362ecae683f9570d712fc8e9"
+  },
+  {
+    "file": "production-regression.log",
+    "bytes": 1111,
+    "sha256": "afda59d6b5d4af53463c9e9475374f8de7886e34e3a6c71f9702bb637a59f104"
+  },
+  {
+    "file": "unit-parkour.log",
+    "bytes": 9079,
+    "sha256": "5acdd75a2868509f9c471036458ea79f7d8237dcef821ba1dd3bc898b366c70c"
+  }
+]

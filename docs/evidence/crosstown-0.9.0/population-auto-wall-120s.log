@@ -1,0 +1,53 @@
+City ready {"anchor":{"x":518.143798828125,"y":0.5964301824569702,"z":849.3800048828125},"parkedCar":true,"densityLocked":false}
+{
+  "errors": [],
+  "audit": {
+    "ticks": 1640,
+    "overlapSamples": 0,
+    "overlapExamples": [],
+    "redEntries": 0,
+    "illegalCrossingSamples": 0,
+    "maximumWaitSeconds": 15.150000000000333,
+    "waiter": {
+      "id": "traffic-98",
+      "state": "red-light",
+      "position": {
+        "x": 493.8215234661527,
+        "y": 0.735,
+        "z": 770.25
+      },
+      "progress": 220.82152346615274,
+      "stopAt": 221,
+      "time": 33.1999999999994,
+      "desired": 0
+    },
+    "maximumGreenStationarySeconds": 5.633333333333319,
+    "entries": 7,
+    "maxFullPhysicsCars": 3,
+    "nonfiniteStates": 0,
+    "time": 33.1999999999994,
+    "minimumObservedAgentAgeSeconds": 30,
+    "eligibleAgents": 0,
+    "starved": [],
+    "neverEnteredInitialCohort": []
+  },
+  "cadence": {
+    "frames": 291,
+    "wallMs": 118228.5,
+    "fps": 2.4613354647990966,
+    "p50": 366.59999999999127,
+    "p95": 883.3000000000029,
+    "max": 2549.899999999998
+  },
+  "wallMs": 120116.414634,
+  "quality": "Low",
+  "budget": {
+    "factor": 0.25,
+    "cars": 8,
+    "pedestrians": 16,
+    "frameMs": 360.71577091853214,
+    "changes": 6,
+    "locked": false,
+    "tier": "Low"
+  }
+}

@@ -1,0 +1,36 @@
+TAP version 13
+# using deprecated parameters for the initialization function; pass a single object instead
+# Subtest: all six real city activities have separate starts; the speed camera measures at the road endpoint, not its first 23 m sample
+ok 1 - all six real city activities have separate starts; the speed camera measures at the road endpoint, not its first 23 m sample
+  ---
+  duration_ms: 46.454199
+  ...
+# Subtest: the generated garage has actual solid rear/side/roof sight breaks and an unobstructed open doorway
+ok 2 - the generated garage has actual solid rear/side/roof sight breaks and an unobstructed open doorway
+  ---
+  duration_ms: 192.74714
+  ...
+# Subtest: the ordinary road-graph driver brakes before a ninety-degree corner, but not on the same straight road
+ok 3 - the ordinary road-graph driver brakes before a ninety-degree corner, but not on the same straight road
+  ---
+  duration_ms: 0.926825
+  ...
+# Subtest: stunt approach and drift practice lots do not collide with the earlier fuel shop, landmark or raised underpass
+ok 4 - stunt approach and drift practice lots do not collide with the earlier fuel shop, landmark or raised underpass
+  ---
+  duration_ms: 212.119189
+  ...
+# Subtest: an old car cumulative-airtime counter cannot count a short hop as a new stunt jump
+ok 5 - an old car cumulative-airtime counter cannot count a short hop as a new stunt jump
+  ---
+  duration_ms: 22.504309
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1341.729975

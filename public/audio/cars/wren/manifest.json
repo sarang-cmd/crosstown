@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "id": "wren",
+  "engine": "single",
+  "source": "https://freesound.org/people/dycmaster/sounds/353980/",
+  "author": "dycmaster",
+  "license": "CC-BY-3.0",
+  "licenseUrl": "http://creativecommons.org/licenses/by/3.0/",
+  "notes": "Processed field-recording timbre plus firing-model synthesis. These are designed RPM/load anchors, not independent calibrated on/off-throttle dyno captures. Per-car EQ/saturation/harmonic design. V10 and twin timbres are designed transformations of the reviewed flat-six/single recordings, not independently recorded cylinder counts.",
+  "loops": [
+    {
+      "band": "idle",
+      "load": "off",
+      "file": "idle-off.wav",
+      "anchorRpm": 1300,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 0.1,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.45586696007714256,
+      "sha256": "fd6e150508825ba40a02851fd41446eb3cf50d7cb4c3100ab353ec8f7270fe1d",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "3a98c2f63f766f3cd5c8041765a8fba9f4768ab514de2d11393ccc960612d1be",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "idle",
+      "load": "on",
+      "file": "idle-on.wav",
+      "anchorRpm": 1300,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 0.1,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.45895386495980345,
+      "sha256": "5dcbc3944920ccbf9575f8ef0ca7c9866a09d61b049c2a72499ed87977159b91",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "d2a316385deaa914e4e2130cb8796fa84991cf98dac06a86554b7d49aabf8ec6",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "low",
+      "load": "off",
+      "file": "low-off.wav",
+      "anchorRpm": 3000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 1.1,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.43723206938925935,
+      "sha256": "607181f2c86932ac77aee6ad8c8e36f3573bb99d5212995c46fe3f273cb96c1f",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "3d0fe7382b1170f0ca230ff9399429ac383cbe7df572ab94927c82a27529a776",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "low",
+      "load": "on",
+      "file": "low-on.wav",
+      "anchorRpm": 3000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 1.1,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.43597712721931475,
+      "sha256": "796350775465b5c435911522bfe3aa49d7e9c00b5c4ec53488a7ddf501099bf1",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "f25a8577cef7d93eb417f5c6e7a3102e5b61382acc8c86129e3f85e6f0868944",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "mid",
+      "load": "off",
+      "file": "mid-off.wav",
+      "anchorRpm": 5500,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 2.3,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.361832727319063,
+      "sha256": "0e38dbc17d0f40df8d72759ce5a78e55ecda61f357901604ed71f80e96f82e7c",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "433b292144e8ee06b5a28caf5bb3d247ada23bd41a63ea78ab7fb7c97cb38da3",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "mid",
+      "load": "on",
+      "file": "mid-on.wav",
+      "anchorRpm": 5500,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 2.3,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.3554389136323087,
+      "sha256": "380e2ec17d34c169dffa19147221a97af5b6ea921ef5de58bee0eb84a771b2bb",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "8ca66fa09b5c7e037aa72e25826f9fa46298f1f7c92aa468a559c933e88f43d5",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "high",
+      "load": "off",
+      "file": "high-off.wav",
+      "anchorRpm": 8000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 3.7,
+      "duration": 1.25,
+      "rms": 0.12,
+      "seamDelta": 0.0,
+      "peak": 0.42055891126176265,
+      "sha256": "7da74406196143f77c90b321bf26f96c84d4552b9180893233bccc50bc855818",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "407f1834063692964fb138cfae9330a2a8aaa5ae6072a67a8ab1ea65dccc9b13",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    },
+    {
+      "band": "high",
+      "load": "on",
+      "file": "high-on.wav",
+      "anchorRpm": 8000,
+      "anchorIsDesignedNotMeasured": true,
+      "sourceStartSeconds": 3.7,
+      "duration": 1.25,
+      "rms": 0.11999999999999998,
+      "seamDelta": 0.0,
+      "peak": 0.4093628294364253,
+      "sha256": "0451fd29e2691800674509bf059e5cefcd80c69ad72902faf16912a9f7504ba2",
+      "bytes": 80044,
+      "derivation": {
+        "baseProfile": "cabin-motorbike",
+        "baseFileSha256": "2acad4309d490e728674bd52d5a67284dffeebe85d28784d99a412157234c46a",
+        "lowpassHz": 5100,
+        "saturation": 2.7,
+        "designedHarmonicBlend": 0.05
+      }
+    }
+  ],
+  "baseProfile": "cabin-motorbike"
+}

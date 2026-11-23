@@ -1,0 +1,9 @@
+Reviewed 2026-11-22
+Ndheger
+https://freesound.org/people/Ndheger/sounds/118100/
+CC-BY-3.0
+http://creativecommons.org/licenses/by/3.0/
+Source SHA-256: 8d0bc4dc6c104c8044f3cbcfbb1796ccc8590efeff186728e0f6a0fdcc990392
+Publisher public HQ MP3 preview (lossy), not the login-only original WAV.
+Modifications: Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers.
+No endorsement by the original vehicle manufacturer. Source brand names occur only in provenance.

@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-23T11:34:53.078Z",
+  "runtimeFingerprint": "b53ea34c1acc999732bfdeb438860bb64f9d7633751f2398939809ef04e935b2",
+  "reason": "Inspection found actual district oldtown despite intended downtown. WebGL Ultra setup timed out at 900 seconds before measurement. GPU collection interrupted deliberately after usable Low/Balanced rows; no successful final-batch or all-tier acceptance claimed. Raw copies retained before corrected collector/rerun.",
+  "runtimeUnchanged": true,
+  "files": [
+    "oldtown-interrupted-final-functional-batch.json",
+    "oldtown-interrupted-candidate-busy-webgl.json",
+    "oldtown-interrupted-candidate-busy-webgpu.json"
+  ]
+}

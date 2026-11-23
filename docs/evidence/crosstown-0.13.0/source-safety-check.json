@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "allowlistedFiles": 995,
+  "textFilesScanned": 647,
+  "reviewedNonsecretFixtures": [
+    {
+      "file": "tests/unit/city-life.test.ts",
+      "fixtureWithoutUserinfo": "https://example.com/live",
+      "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+    },
+    {
+      "file": "tests/unit/city-life.test.ts",
+      "fixtureWithoutUserinfo": "https://youtube.com/watch?v=M7lc1UVf-VE",
+      "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+    }
+  ],
+  "findings": [],
+  "boundary": "Explicit path allowlist and known credential patterns; two exact negative-test URL literals are reviewed above. Not an exhaustive security audit."
+}

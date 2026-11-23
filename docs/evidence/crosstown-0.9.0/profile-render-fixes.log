@@ -1,0 +1,189 @@
+render-fixes quick-rooftop {
+  "readyWallMs": 4807.403433,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 10249.599999999999,
+    "fps": 1.9512956603184517,
+    "p50": 66.70000000000073,
+    "p95": 2483.2000000000007,
+    "maximum": 2483.2000000000007
+  },
+  "cadence": {
+    "frames": 15,
+    "wallMs": 12249.499999999998,
+    "fps": 1.2245397771337607,
+    "p50": 883.2000000000007,
+    "p95": 1733.199999999999,
+    "maximum": 1733.199999999999
+  },
+  "metrics": {
+    "TaskDuration": 2.160942,
+    "ScriptDuration": 1.847353,
+    "LayoutDuration": 0.001925,
+    "RecalcStyleDuration": 0.002737,
+    "JSHeapUsedSize": 20305524
+  },
+  "draws": 87,
+  "triangles": 122589,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 10983.33
+    },
+    {
+      "name": "getProgramParameter @ ",
+      "ms": 853.824
+    },
+    {
+      "name": "getUniformBlockIndex @ ",
+      "ms": 801.47
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 270.53
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 38.182
+    },
+    {
+      "name": "getAttributes @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 12.324
+    },
+    {
+      "name": "update @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 11.401
+    },
+    {
+      "name": "painterSortStable @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 9.818
+    }
+  ],
+  "errors": []
+}
+render-fixes downtown-street {
+  "readyWallMs": 3921.1719870000015,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 7333.1,
+    "fps": 2.727359506893401,
+    "p50": 50,
+    "p95": 2233.2999999999993,
+    "maximum": 2233.2999999999993
+  },
+  "cadence": {
+    "frames": 24,
+    "wallMs": 12232.800000000001,
+    "fps": 1.9619383951343925,
+    "p50": 500,
+    "p95": 966.6000000000004,
+    "maximum": 1216.7000000000007
+  },
+  "metrics": {
+    "TaskDuration": 2.355013,
+    "ScriptDuration": 2.103277,
+    "LayoutDuration": 0.002696,
+    "RecalcStyleDuration": 0.00177,
+    "JSHeapUsedSize": 21417008
+  },
+  "draws": 53,
+  "triangles": 108965,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 10587.484
+    },
+    {
+      "name": "getProgramParameter @ ",
+      "ms": 1661.284
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 249.91
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 76.582
+    },
+    {
+      "name": "getUniformBlockIndex @ ",
+      "ms": 73.663
+    },
+    {
+      "name": "build @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 27.988
+    },
+    {
+      "name": "invert @ chunk-D6MJZFXW.js?v=794bc295",
+      "ms": 20.096
+    },
+    {
+      "name": "getNodeChildren @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 18.81
+    }
+  ],
+  "errors": []
+}
+render-fixes cockpit-lab {
+  "readyWallMs": 3529.276711999999,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 4816.500000000001,
+    "fps": 4.152392816360427,
+    "p50": 200,
+    "p95": 650,
+    "maximum": 650
+  },
+  "cadence": {
+    "frames": 32,
+    "wallMs": 12066.3,
+    "fps": 2.6520142877269754,
+    "p50": 383.2999999999993,
+    "p95": 616.7000000000007,
+    "maximum": 766.6999999999989
+  },
+  "metrics": {
+    "TaskDuration": 0.496658,
+    "ScriptDuration": 0.17551,
+    "LayoutDuration": 0.004011,
+    "RecalcStyleDuration": 0.001488,
+    "JSHeapUsedSize": 19879372
+  },
+  "draws": 64,
+  "triangles": 7723,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 12139.967
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 321.631
+    },
+    {
+      "name": "get @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 16.067
+    },
+    {
+      "name": "update @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 10.501
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 8.911
+    },
+    {
+      "name": "get needsGeometryUpdate @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 7.123
+    },
+    {
+      "name": "equals @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 6.333
+    },
+    {
+      "name": "render @ game.ts?t=1795382376696",
+      "ms": 6.154
+    }
+  ],
+  "errors": []
+}

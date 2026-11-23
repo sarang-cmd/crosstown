@@ -1,0 +1,30 @@
+name: Bug report
+description: A reproducible gameplay, rendering, input or performance problem.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Please check docs/FINDINGS.md first. Never attach tokens, private saves, or credentials."
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: What happened and how to reproduce it
+      description: Include the seed, run length, start marker, mode, and approximate position/checkpoint.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser and hardware
+      description: Browser/OS, GPU, actual backend, quality, resolution, and whether hardware acceleration is enabled.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshot, console error, profiler capture, or measured frame/stream timings. Paused test steps are not FPS evidence.

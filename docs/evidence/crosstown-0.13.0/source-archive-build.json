@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-22",
+  "checkedAt": "2026-11-23T10:07:52.704528+00:00",
+  "release": "0.13.0",
+  "build": "13.001",
+  "passed": true,
+  "archiveAtExtractionSha256": "02a0c51386c851cdac6b597eb026e9eb6eacd4af5ef67b99a6cd16e376c0d57a",
+  "extractedTo": ".arena/source-archive-smoke/crosstown",
+  "cleanInstall": true,
+  "commands": [
+    "npm ci --no-audit --no-fund",
+    "npm run build",
+    "npm run assets:check",
+    "npm run check:versions"
+  ],
+  "exitCode": 0,
+  "buildSeconds": 6.22,
+  "modelPasses": 22,
+  "exactPins": 15,
+  "runtimeFingerprint": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+  "runtimeInputFilesMatch": 300,
+  "productionOutputFiles": 204,
+  "allProductionBytesMatchPublished": true,
+  "log": "source-archive-build.log",
+  "boundary": "This tests a clean extraction of the source ZIP. The final package adds this evidence and updated notes/manifests only; runtime source/public/lockfile/config fingerprints must remain identical. It is not a hosted CI/Vercel source-build claim or native FPS acceptance."
+}

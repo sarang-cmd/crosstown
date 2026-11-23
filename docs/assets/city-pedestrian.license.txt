@@ -1,0 +1,11 @@
+Tomás Laulhé (Quaternius); conversion and facial morph targets by Don McCurdy
+CC0-1.0
+https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/README.md
+https://github.com/mrdoob/three.js/tree/r180/examples/models/gltf/RobotExpressive
+Y-up / +Z-forward normalization
+uniform scale to 1.75 m height
+ground-centred root wrapper preserving skins and animations
+key-node names normalized where source geometry permits
+textures resized to at most 1024 px and WebP-compressed where present
+Meshopt FILTER geometry / animation compression
+Six retained/renamed idle/walk/run/sit/chat/flee skeletal clips; flee is an explicitly retimed running derivative, not a newly recorded motion

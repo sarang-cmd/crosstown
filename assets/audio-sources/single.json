@@ -1,0 +1,16 @@
+{
+  "engine": "single",
+  "author": "dycmaster",
+  "source": "https://freesound.org/people/dycmaster/sounds/353980/",
+  "preview": "https://cdn.freesound.org/previews/353/353980_6304447-hq.mp3",
+  "licenses": [
+    "http://creativecommons.org/licenses/by/3.0/"
+  ],
+  "license": "CC-BY-3.0",
+  "bytes": 217632,
+  "sha256": "9468e100450b7a9a7edc10682e545d1cf973924e35533db010f6f7244c96ec74",
+  "engineEvidence": "Publisher identifies 2006 MT-03; the same publisher explicitly describes their MT-03 as single cylinder in sound 368210. Saved corroborating publisher page.",
+  "notes": "Public lossy preview; compressed/EQ field rev recording, processed into designed load/RPM layers, not calibrated dyno samples.",
+  "sourceFormat": "Publisher public HQ MP3 preview (lossy), not the login-only original WAV.",
+  "modifications": "Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers."
+}

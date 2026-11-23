@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-11-23T06:57:38.547Z",
+  "version": "0.9.0",
+  "publicFiles": 189,
+  "bytes": 12548166,
+  "sha256": "a4ac64d518dcc0d5a87c5107a95bd8198e4994d97446ff1ecabb601e96c1a787",
+  "httpStatus": 200,
+  "independentHttpsRoundtrip": true,
+  "archiveByteIdentical": true,
+  "publicCompiledOutputOnly": true,
+  "notDeploymentProof": true
+}

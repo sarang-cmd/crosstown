@@ -1,0 +1,114 @@
+{
+  "release": "0.13.0",
+  "runtimeBefore": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+  "startedAt": "2026-11-23T09:42:28.232Z",
+  "sequentialBrowsers": true,
+  "runs": [
+    {
+      "id": "activities",
+      "tool": "tools/accept-activities.mjs",
+      "command": [
+        "node",
+        "tools/accept-activities.mjs"
+      ],
+      "seconds": 240,
+      "log": "activity-route-acceptance.log",
+      "collectorSha256": "7aaaf530e8aa0feba1293e087060f09e23295552b2da92a717cfc508ccf0b312",
+      "startedAt": "2026-11-23T09:42:28.236Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 37817.568801,
+      "finishedAt": "2026-11-23T09:43:06.057Z"
+    },
+    {
+      "id": "city-life-webgl",
+      "tool": "tools/accept-city-life.mjs",
+      "command": [
+        "node",
+        "tools/accept-city-life.mjs"
+      ],
+      "seconds": 360,
+      "log": "life-integration-webgl.log",
+      "collectorSha256": "a5aaface002289510c667975fedd813005e06724f8ffab1a3d82595b28417d00",
+      "startedAt": "2026-11-23T09:43:06.059Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 89473.304135,
+      "finishedAt": "2026-11-23T09:44:35.533Z"
+    },
+    {
+      "id": "city-life-webgpu",
+      "tool": "tools/accept-city-life.mjs",
+      "command": [
+        "xvfb-run",
+        "-a",
+        "env",
+        "BACKEND=webgpu",
+        "node",
+        "tools/accept-city-life.mjs"
+      ],
+      "seconds": 360,
+      "log": "life-integration-webgpu.log",
+      "collectorSha256": "a5aaface002289510c667975fedd813005e06724f8ffab1a3d82595b28417d00",
+      "startedAt": "2026-11-23T09:44:35.534Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 64450.01155899999,
+      "finishedAt": "2026-11-23T09:45:39.985Z"
+    },
+    {
+      "id": "landing",
+      "tool": "tools/accept-landing.mjs",
+      "command": [
+        "node",
+        "tools/accept-landing.mjs"
+      ],
+      "seconds": 60,
+      "log": "landing-acceptance.log",
+      "collectorSha256": "7ce4186dba7c9314125f55ee3e5f336501b4aee42c806c9f00253f2ff34514ca",
+      "startedAt": "2026-11-23T09:45:39.987Z",
+      "status": "completed",
+      "exitCode": 0,
+      "wallMs": 4550.924407000013,
+      "finishedAt": "2026-11-23T09:45:44.539Z"
+    },
+    {
+      "id": "real-radio-providers",
+      "tool": "tools/accept-radio-providers.mjs",
+      "command": [
+        "node",
+        "tools/accept-radio-providers.mjs"
+      ],
+      "seconds": 180,
+      "log": "radio-provider-acceptance.log",
+      "unavailableIsNotAcceptance": true,
+      "collectorSha256": "7ea567bb4fc4ca121511effbdc51ccbaffb20c7c36a273eae020d731cfd4b9b0",
+      "startedAt": "2026-11-23T09:45:44.541Z",
+      "status": "failed-or-unavailable",
+      "exitCode": 1,
+      "wallMs": 40280.021507999976,
+      "finishedAt": "2026-11-23T09:46:24.822Z"
+    },
+    {
+      "id": "populated-display-cadence",
+      "tool": "tools/accept-populated-life-performance.mjs",
+      "command": [
+        "node",
+        "tools/accept-populated-life-performance.mjs"
+      ],
+      "seconds": 240,
+      "log": "populated-performance-webgl.log",
+      "softwareIsNotNativeAcceptance": true,
+      "collectorSha256": "c743dc50b3ba8c154770eeb6c63315dd94c8e54f20332d59af48e1e6fc7d10bb",
+      "startedAt": "2026-11-23T09:46:24.824Z",
+      "status": "failed-or-unavailable",
+      "exitCode": 1,
+      "wallMs": 14730.892445999983,
+      "finishedAt": "2026-11-23T09:46:39.556Z"
+    }
+  ],
+  "nativeHardwareAcceptance": false,
+  "runtimeAfter": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+  "finishedAt": "2026-11-23T09:46:39.840Z",
+  "runtimeUnchanged": true
+}

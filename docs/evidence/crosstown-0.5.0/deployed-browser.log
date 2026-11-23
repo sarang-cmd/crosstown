@@ -1,0 +1,14 @@
+
+> crosstown@0.5.0 test:deployed
+> playwright test --config playwright.deployed.config.ts
+
+
+Running 5 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (49.2s)
+  ✓  2 [webgl2-forced] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (31.5s)
+  ✓  3 [webgpu-disabled] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (35.0s)
+  ✓  4 [webgpu-full-run] › tests/browser/parkour-full.spec.ts:3:1 › full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district (55.9s)
+  ✓  5 [webgpu-training] › tests/browser/parkour-training.spec.ts:3:1 › eight-checkpoint training route also opens immediately with the animated runner and a visible billboard course (29.6s)
+
+  5 passed (3.5m)

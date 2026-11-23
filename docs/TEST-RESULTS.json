@@ -1,0 +1,5383 @@
+{
+  "schema": 6,
+  "date": "2026-11-22",
+  "dateMeaning": "Release metadata label, not the final verification date; use finalFunctionalBatch startedAt/finishedAt and report capturedAt ISO timestamps.",
+  "generatedAt": "2026-11-23T13:16:18.282Z",
+  "name": "Crosstown",
+  "release": "0.14.0",
+  "build": "14.002",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle",
+    "06-first-car",
+    "07-interior-and-sound",
+    "08-roster-damage-garages",
+    "09-traffic-and-pedestrians",
+    "10-weapons-and-police",
+    "11-hud-economy-save",
+    "12-challenges",
+    "13-radio",
+    "14-lighting-effects-scaler"
+  ],
+  "scopeBoundary": "Steps 01–14 prototype. Lighting/effects are implemented; native 1080p60, broad human art-direction/device/provider/fairness acceptance is not implied. Production is separately still 0.13.0.",
+  "environment": {
+    "node": "v20.20.2",
+    "browser": "Playwright 1.56.1 / Chromium",
+    "graphics": "Software SwiftShader / Vulkan, actual WebGPU and forced WebGL 2; retained disabled-WebGPU fallback pixels",
+    "nativeHardwareBenchmark": false,
+    "physicalInputHardwareTested": false,
+    "humanArtDirectionAcceptance": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "handoffRuntimeFingerprint": {
+    "sha256": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+    "unchangedAcrossFinalBatch": true,
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records"
+  },
+  "finalFunctionalBatch": {
+    "report": "evidence/crosstown-0.14.0/final-functional-batch.json",
+    "release": "0.14.0",
+    "runtimeBefore": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+    "startedAt": "2026-11-23T11:40:30.017Z",
+    "sequentialBrowsers": true,
+    "runs": [
+      {
+        "id": "static-and-units",
+        "tool": "package.json",
+        "command": [
+          "bash",
+          "-lc",
+          "set -e; npm run typecheck > docs/evidence/crosstown-0.14.0/typecheck.log 2>&1; npm test > docs/evidence/crosstown-0.14.0/unit.log 2>&1; npm run assets:check > docs/evidence/crosstown-0.14.0/assets.log 2>&1; npm run check:versions > docs/evidence/crosstown-0.14.0/versions.log 2>&1"
+        ],
+        "seconds": 300,
+        "log": "static-checks.log",
+        "collectorSha256": "1b319e5bea639c657eb09e0d5c6a96ad63da02483ed0969e42d7ddbdc99f7ec7",
+        "startedAt": "2026-11-23T11:40:30.019Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 39543.058591,
+        "finishedAt": "2026-11-23T11:41:09.565Z"
+      },
+      {
+        "id": "retained-production-pixels",
+        "tool": "playwright.production.config.ts",
+        "command": [
+          "bash",
+          "-lc",
+          "xvfb-run -a npm run test:production; s=$?; node --input-type=module -e \"import fs from'node:fs';import{gzipSync}from'node:zlib';if(fs.existsSync('.arena/production-results.json'))fs.writeFileSync('docs/evidence/crosstown-0.14.0/production-browser.json.gz',gzipSync(fs.readFileSync('.arena/production-results.json')));\"; exit $s"
+        ],
+        "seconds": 600,
+        "log": "production-browser.log",
+        "collectorSha256": "a53d07694cc5698b551ac3b0b3b29d525fb3eafb497fa4476a5a8fd700a78b7f",
+        "startedAt": "2026-11-23T11:41:09.566Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 89777.920636,
+        "finishedAt": "2026-11-23T11:42:39.345Z"
+      },
+      {
+        "id": "lighting-webgl",
+        "tool": "tools/accept-lighting.mjs",
+        "command": [
+          "node",
+          "tools/accept-lighting.mjs"
+        ],
+        "seconds": 360,
+        "log": "lighting-webgl.log",
+        "collectorSha256": "043ba885a9c6282008bab48559d9a4f88408b8f15b366f13f1c9b82c8b734965",
+        "startedAt": "2026-11-23T11:42:39.346Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 83820.47624300001,
+        "finishedAt": "2026-11-23T11:44:03.167Z"
+      },
+      {
+        "id": "lighting-webgpu",
+        "tool": "tools/accept-lighting.mjs",
+        "command": [
+          "xvfb-run",
+          "-a",
+          "env",
+          "BACKEND=webgpu",
+          "node",
+          "tools/accept-lighting.mjs"
+        ],
+        "seconds": 360,
+        "log": "lighting-webgpu.log",
+        "collectorSha256": "043ba885a9c6282008bab48559d9a4f88408b8f15b366f13f1c9b82c8b734965",
+        "startedAt": "2026-11-23T11:44:03.168Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 84996.35582000003,
+        "finishedAt": "2026-11-23T11:45:28.165Z"
+      },
+      {
+        "id": "city-life-webgl",
+        "tool": "tools/accept-city-life.mjs",
+        "command": [
+          "node",
+          "tools/accept-city-life.mjs"
+        ],
+        "seconds": 360,
+        "log": "life-integration-webgl.log",
+        "collectorSha256": "d7f79d66edf885d2fdd1b33575e8059861bb245423662557af672396a691d0ec",
+        "startedAt": "2026-11-23T11:45:28.166Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 49413.15858399996,
+        "finishedAt": "2026-11-23T11:46:17.580Z"
+      },
+      {
+        "id": "city-life-webgpu",
+        "tool": "tools/accept-city-life.mjs",
+        "command": [
+          "xvfb-run",
+          "-a",
+          "env",
+          "BACKEND=webgpu",
+          "node",
+          "tools/accept-city-life.mjs"
+        ],
+        "seconds": 360,
+        "log": "life-integration-webgpu.log",
+        "collectorSha256": "d7f79d66edf885d2fdd1b33575e8059861bb245423662557af672396a691d0ec",
+        "startedAt": "2026-11-23T11:46:17.582Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 49327.93935399997,
+        "finishedAt": "2026-11-23T11:47:06.910Z"
+      },
+      {
+        "id": "activities",
+        "tool": "tools/accept-activities.mjs",
+        "command": [
+          "node",
+          "tools/accept-activities.mjs"
+        ],
+        "seconds": 300,
+        "log": "activity-route-acceptance.log",
+        "collectorSha256": "5169c9cc29e22eea59238ccaca647d1a8266267b282766c2fd13312a9939f7a5",
+        "startedAt": "2026-11-23T11:47:06.912Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 18598.649282000028,
+        "finishedAt": "2026-11-23T11:47:25.511Z"
+      },
+      {
+        "id": "landing",
+        "tool": "tools/accept-landing.mjs",
+        "command": [
+          "node",
+          "tools/accept-landing.mjs"
+        ],
+        "seconds": 90,
+        "log": "landing-acceptance.log",
+        "collectorSha256": "ed60bf3d5a83a447296b28014b78b8da5c281e3bf3240d66ab305f94ef02e609",
+        "startedAt": "2026-11-23T11:47:25.512Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 2636.524609999964,
+        "finishedAt": "2026-11-23T11:47:28.149Z"
+      },
+      {
+        "id": "real-radio-providers",
+        "tool": "tools/accept-radio-providers.mjs",
+        "command": [
+          "node",
+          "tools/accept-radio-providers.mjs"
+        ],
+        "seconds": 240,
+        "log": "radio-provider-acceptance.log",
+        "unavailableIsNotAcceptance": true,
+        "collectorSha256": "f7603a5eee091a9ef2dec363f9779fb505a43f4efa42c8d45d6777a19e88cdd6",
+        "startedAt": "2026-11-23T11:47:28.151Z",
+        "status": "failed-or-unavailable",
+        "exitCode": 1,
+        "wallMs": 38972.007905000006,
+        "finishedAt": "2026-11-23T11:48:07.123Z"
+      },
+      {
+        "id": "busiest-four-tiers-webgl",
+        "tool": "tools/profile-lighting.mjs",
+        "command": [
+          "node",
+          "tools/profile-lighting.mjs"
+        ],
+        "seconds": 900,
+        "log": "candidate-busy-webgl.log",
+        "softwareIsNotNativeAcceptance": true,
+        "collectorSha256": "c502de69ad60b589b8274ec8044f35d83e2a00c8b5242b4140df09696dffd358",
+        "startedAt": "2026-11-23T11:48:07.124Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 244616.54895199998,
+        "finishedAt": "2026-11-23T11:52:11.741Z"
+      },
+      {
+        "id": "busiest-four-tiers-webgpu",
+        "tool": "tools/profile-lighting.mjs",
+        "command": [
+          "xvfb-run",
+          "-a",
+          "env",
+          "BACKEND=webgpu",
+          "node",
+          "tools/profile-lighting.mjs"
+        ],
+        "seconds": 900,
+        "log": "candidate-busy-webgpu.log",
+        "softwareIsNotNativeAcceptance": true,
+        "collectorSha256": "c502de69ad60b589b8274ec8044f35d83e2a00c8b5242b4140df09696dffd358",
+        "startedAt": "2026-11-23T11:52:11.742Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 291669.7437,
+        "finishedAt": "2026-11-23T11:57:03.412Z"
+      }
+    ],
+    "nativeHardwareAcceptance": false,
+    "runtimeAfter": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+    "finishedAt": "2026-11-23T11:57:03.556Z",
+    "runtimeUnchanged": true
+  },
+  "unitTests": {
+    "passed": 139,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 29891.207196,
+    "retained013Cases": 125,
+    "step14Cases": 14,
+    "log": "evidence/crosstown-0.14.0/unit.log.gz"
+  },
+  "checks": {
+    "portableSourceBuild": {
+      "report": "evidence/crosstown-0.14.0/source-archive-build.json",
+      "date": "2026-11-22",
+      "capturedAt": "2026-11-23T12:02:40.717Z",
+      "version": "0.14.0",
+      "passed": true,
+      "exitCode": 0,
+      "runtimeFingerprint": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+      "sourceArchiveSha256": "73a898defb2d431324fd4dbd84e1a01de40ac71b350355cb1ceb3b2fedc4e6d5",
+      "sourceArchiveEntries": 821,
+      "sourceArchiveBoundary": "Clean provisional allowlisted ZIP, all runtime/public/config files hash-identical to the final tested runtime. Final source ZIP adds proof/docs/manifests; packager rechecks every runtime byte.",
+      "node": "v20.20.2",
+      "runs": [
+        {
+          "command": [
+            "npm",
+            "ci",
+            "--no-audit",
+            "--no-fund"
+          ],
+          "exitCode": 0,
+          "wallMs": 2514.7267349999997
+        },
+        {
+          "command": [
+            "npm",
+            "run",
+            "build"
+          ],
+          "exitCode": 0,
+          "wallMs": 11017.283277999999
+        },
+        {
+          "command": [
+            "npm",
+            "run",
+            "assets:check"
+          ],
+          "exitCode": 0,
+          "wallMs": 378.76618000000053
+        },
+        {
+          "command": [
+            "npm",
+            "run",
+            "check:versions"
+          ],
+          "exitCode": 0,
+          "wallMs": 3078.0539419999986
+        }
+      ],
+      "productionOutputFiles": 204,
+      "expectedLocalCandidateFiles": 204,
+      "allProductionBytesMatchCandidate": true,
+      "publicDeploymentCompared": false,
+      "publishedVersion": "0.13.0",
+      "mismatches": [],
+      "log": "source-archive-build.log"
+    },
+    "typecheck": {
+      "passed": true
+    },
+    "productionBuild": {
+      "passed": true,
+      "buildSeconds": 4.79,
+      "publicFiles": 204,
+      "publiclyDeployed": false
+    },
+    "models": {
+      "passed": 22
+    },
+    "exactDirectDependencyPins": {
+      "passed": 15
+    },
+    "referenceUnchanged": true,
+    "referenceSha256": "0f670679a820a3b687f6fb4fae6e0a14afebfc215b791b6918792ee322699dc9",
+    "gallery": {
+      "date": "2026-11-22",
+      "version": "0.14.0",
+      "passed": true,
+      "captures": 26,
+      "networkRequests": [],
+      "errors": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false,
+      "lightboxNext": "Keep the ones you like. · 2 / 26",
+      "offline": true
+    },
+    "localFileLinks": {
+      "passed": true,
+      "checked": 184,
+      "documents": [
+        "README.md",
+        "CREDITS.md",
+        "docs/PROGRESS.md",
+        "docs/TESTING.md",
+        "docs/FINDINGS.md",
+        "docs/DEPLOYMENT.md",
+        "docs/ASSET_PIPELINE.md",
+        "docs/SCREENSHOTS.md",
+        "docs/RENDERER.md",
+        "docs/PARKOUR-API.md",
+        "docs/FLEET.md",
+        "docs/POPULATION.md",
+        "docs/LIGHTING.md",
+        "docs/SOURCE-ARCHIVE.md",
+        "docs/RADIO.md",
+        "docs/HANDOFF.md",
+        "docs/GITHUB-PUBLICATION.md"
+      ],
+      "broken": [],
+      "boundary": "Current local relative file links only; external reachability/anchors not asserted."
+    },
+    "allowlistedSourceScan": {
+      "passed": true,
+      "allowlistedFiles": 1293,
+      "textFilesScanned": 767,
+      "reviewedNonsecretFixtures": [
+        {
+          "file": "tests/unit/city-life.test.ts",
+          "fixtureWithoutUserinfo": "https://example.com/live",
+          "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+        },
+        {
+          "file": "tests/unit/city-life.test.ts",
+          "fixtureWithoutUserinfo": "https://youtube.com/watch?v=M7lc1UVf-VE",
+          "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+        }
+      ],
+      "findings": [],
+      "boundary": "Explicit path allowlist and known credential patterns; two exact negative-test URL literals are reviewed above. Not an exhaustive security audit."
+    },
+    "retainedProductionPixels": {
+      "startTime": "2026-11-23T11:41:10.429Z",
+      "duration": 88808.855,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "report": "evidence/crosstown-0.14.0/production-browser.json.gz"
+    }
+  },
+  "browsers": {
+    "cityLife-webgl": {
+      "passed": 11,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.14.0/life-integration-webgl.json.gz",
+      "boundary": "software renderer, Low for functional checks; NOT performance acceptance",
+      "debugPositioning": true
+    },
+    "lighting-webgl": {
+      "passed": 9,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.14.0/lighting-acceptance-webgl.json.gz"
+    },
+    "cityLife-webgpu": {
+      "passed": 11,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.14.0/life-integration-webgpu.json.gz",
+      "boundary": "software renderer, Low for functional checks; NOT performance acceptance",
+      "debugPositioning": true
+    },
+    "lighting-webgpu": {
+      "passed": 9,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.14.0/lighting-acceptance-webgpu.json.gz"
+    }
+  },
+  "lighting": {
+    "backends": {
+      "webgl": {
+        "passed": 9,
+        "failed": 0,
+        "report": "evidence/crosstown-0.14.0/lighting-acceptance-webgl.json.gz",
+        "pixelEffects": [
+          {
+            "effect": "bloom",
+            "meanAbsoluteRGB": 0.8021233333333333,
+            "changedPixels": 10518,
+            "maximum": 125,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "volumetricFog",
+            "meanAbsoluteRGB": 27.673985833333333,
+            "changedPixels": 397326,
+            "maximum": 142,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "wetReflections",
+            "meanAbsoluteRGB": 0.681585,
+            "changedPixels": 14060,
+            "maximum": 212,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "motionBlur",
+            "meanAbsoluteRGB": 0.21046666666666666,
+            "changedPixels": 3540,
+            "maximum": 175,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "heatHaze",
+            "meanAbsoluteRGB": 0.10105583333333333,
+            "changedPixels": 1256,
+            "maximum": 217,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "sunShafts",
+            "meanAbsoluteRGB": 9.854660833333334,
+            "changedPixels": 253780,
+            "maximum": 80,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "lensFlare",
+            "meanAbsoluteRGB": 0.3251525,
+            "changedPixels": 11446,
+            "maximum": 174,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "lightCones",
+            "meanAbsoluteRGB": 1.3297141666666668,
+            "changedPixels": 14741,
+            "maximum": 189,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "tireSmoke",
+            "meanAbsoluteRGB": 0.2873325,
+            "changedPixels": 1852,
+            "maximum": 160,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "skidMarks",
+            "meanAbsoluteRGB": 0.005841666666666667,
+            "changedPixels": 184,
+            "maximum": 26,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "sparks",
+            "meanAbsoluteRGB": 0.025758333333333334,
+            "changedPixels": 106,
+            "maximum": 240,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "rainSplashes",
+            "meanAbsoluteRGB": 0.12485833333333334,
+            "changedPixels": 425,
+            "maximum": 193,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "neonSigns",
+            "meanAbsoluteRGB": 0.1210075,
+            "changedPixels": 322,
+            "maximum": 243,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "streetLamps",
+            "meanAbsoluteRGB": 0.03618416666666667,
+            "changedPixels": 80,
+            "maximum": 241,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          }
+        ],
+        "errors": [],
+        "warnings": [
+          "using deprecated parameters for the initialization function; pass a single object instead"
+        ],
+        "offBoundary": "No optional targets, draws, particle resources, branch samples or effect-specific updates. Shared beauty/color-grade/depth buffer, original world geometry and policy dispatch remain; literal zero total frame cost is not claimed.",
+        "fixtureBoundary": "The explicit lab uses synthetic static geometry/car to isolate pixels and allocation/disposal. Game wall damage uses the existing physical circuit. None of these are FPS or human-visual acceptance."
+      },
+      "webgpu": {
+        "passed": 9,
+        "failed": 0,
+        "report": "evidence/crosstown-0.14.0/lighting-acceptance-webgpu.json.gz",
+        "pixelEffects": [
+          {
+            "effect": "bloom",
+            "meanAbsoluteRGB": 0.8021216666666666,
+            "changedPixels": 10518,
+            "maximum": 125,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "volumetricFog",
+            "meanAbsoluteRGB": 27.674278333333334,
+            "changedPixels": 397326,
+            "maximum": 142,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "wetReflections",
+            "meanAbsoluteRGB": 0.44799,
+            "changedPixels": 10669,
+            "maximum": 205,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "motionBlur",
+            "meanAbsoluteRGB": 0.210485,
+            "changedPixels": 3542,
+            "maximum": 175,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "heatHaze",
+            "meanAbsoluteRGB": 0.101045,
+            "changedPixels": 1253,
+            "maximum": 217,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "sunShafts",
+            "meanAbsoluteRGB": 9.854714166666668,
+            "changedPixels": 253793,
+            "maximum": 80,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "lensFlare",
+            "meanAbsoluteRGB": 0.32515083333333333,
+            "changedPixels": 11446,
+            "maximum": 174,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "lightCones",
+            "meanAbsoluteRGB": 1.3297291666666666,
+            "changedPixels": 14741,
+            "maximum": 189,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "tireSmoke",
+            "meanAbsoluteRGB": 0.28733333333333333,
+            "changedPixels": 1852,
+            "maximum": 160,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "skidMarks",
+            "meanAbsoluteRGB": 0.005840833333333333,
+            "changedPixels": 184,
+            "maximum": 26,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "sparks",
+            "meanAbsoluteRGB": 0.025760833333333334,
+            "changedPixels": 106,
+            "maximum": 240,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "rainSplashes",
+            "meanAbsoluteRGB": 0.12486833333333333,
+            "changedPixels": 425,
+            "maximum": 193,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "neonSigns",
+            "meanAbsoluteRGB": 0.121025,
+            "changedPixels": 322,
+            "maximum": 243,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          },
+          {
+            "effect": "streetLamps",
+            "meanAbsoluteRGB": 0.03618416666666667,
+            "changedPixels": 80,
+            "maximum": 241,
+            "disabledExtraTargets": 0,
+            "disabledWorldBatches": 0,
+            "disabledFixedSceneDraws": 25
+          }
+        ],
+        "errors": [],
+        "warnings": [
+          "using deprecated parameters for the initialization function; pass a single object instead"
+        ],
+        "offBoundary": "No optional targets, draws, particle resources, branch samples or effect-specific updates. Shared beauty/color-grade/depth buffer, original world geometry and policy dispatch remain; literal zero total frame cost is not claimed.",
+        "fixtureBoundary": "The explicit lab uses synthetic static geometry/car to isolate pixels and allocation/disposal. Game wall damage uses the existing physical circuit. None of these are FPS or human-visual acceptance."
+      }
+    },
+    "post": "Three r180 PostProcessing / TSL",
+    "colorGrade": "bright coastal / neon night",
+    "heavyShedOrder": [
+      "volumetricFog",
+      "motionBlur",
+      "wetReflections",
+      "bloom"
+    ],
+    "offContract": "Zero optional branch/target/draw/update/particle resources, not zero common beauty/grade/depth buffer, original geometry, cached city data or policy-dispatch cost.",
+    "native60Accepted": false,
+    "humanVisualAccepted": false,
+    "newDownloadedAssets": 0
+  },
+  "landing": {
+    "passed": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "engineFetched": false,
+    "report": "evidence/crosstown-0.14.0/landing-acceptance.json"
+  },
+  "activities": {
+    "report": "evidence/crosstown-0.14.0/activity-route-acceptance.json.gz",
+    "realPhysics": true,
+    "debugSetup": true,
+    "ordinaryHumanAcceptance": false,
+    "results": [
+      {
+        "type": "trial",
+        "passed": true,
+        "reward": 350,
+        "final": {
+          "activity": "activity-trial",
+          "type": "trial",
+          "name": "Old Town Clock",
+          "state": "finished",
+          "elapsed": 57.04999999999804,
+          "remaining": 72.95000000000195,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "OLD TOWN CLOCK · COMPLETE +$350"
+        }
+      },
+      {
+        "type": "delivery",
+        "passed": true,
+        "reward": 450,
+        "final": {
+          "activity": "activity-delivery",
+          "type": "delivery",
+          "name": "Special Delivery",
+          "state": "finished",
+          "elapsed": 53.39999999999825,
+          "remaining": 86.60000000000176,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "SPECIAL DELIVERY · COMPLETE +$450"
+        }
+      },
+      {
+        "type": "speed",
+        "passed": true,
+        "reward": 250,
+        "final": {
+          "activity": "activity-speed",
+          "type": "speed",
+          "name": "Coastline Camera",
+          "state": "finished",
+          "elapsed": 14.800000000000315,
+          "remaining": 30.199999999999683,
+          "score": 75.30845884828949,
+          "gate": 1,
+          "total": 2,
+          "jumps": 0,
+          "reason": "COASTLINE CAMERA · COMPLETE +$250"
+        }
+      },
+      {
+        "type": "race",
+        "passed": true,
+        "reward": 500,
+        "final": {
+          "activity": "activity-race",
+          "type": "race",
+          "name": "Harbor Sprint",
+          "state": "finished",
+          "elapsed": 57.09999999999804,
+          "remaining": 92.90000000000197,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "HARBOR SPRINT · COMPLETE +$500"
+        }
+      },
+      {
+        "type": "drift",
+        "passed": true,
+        "reward": 400,
+        "final": {
+          "activity": "activity-drift",
+          "type": "drift",
+          "name": "County Line Slide",
+          "state": "finished",
+          "elapsed": 35.01666666666596,
+          "remaining": 0,
+          "score": 142.12930899356218,
+          "gate": 1,
+          "total": 12,
+          "jumps": 0,
+          "reason": "COUNTY LINE SLIDE · COMPLETE +$400"
+        }
+      },
+      {
+        "type": "stunt",
+        "passed": true,
+        "reward": 550,
+        "final": {
+          "activity": "activity-stunt",
+          "type": "stunt",
+          "name": "Air Mail",
+          "state": "finished",
+          "elapsed": 11.950000000000173,
+          "remaining": 168.04999999999984,
+          "score": 1319,
+          "gate": 1,
+          "total": 12,
+          "jumps": 2,
+          "reason": "AIR MAIL · COMPLETE +$550"
+        }
+      }
+    ],
+    "damageFailure": {
+      "passed": true,
+      "debugPositioning": true,
+      "ordinaryPedalsAndCollision": true,
+      "before": {
+        "car": {
+          "id": "parked",
+          "definition": "harbor",
+          "position": {
+            "x": 544,
+            "y": 0.5599081516265869,
+            "z": 618
+          },
+          "rotation": [
+            0,
+            1,
+            0,
+            6.123234262925839e-17
+          ],
+          "velocity": {
+            "x": 0,
+            "y": -0.06781433522701263,
+            "z": 0
+          },
+          "speed": 0,
+          "kmh": 0,
+          "roadSteer": 0,
+          "steeringWheelRadians": 0,
+          "steeringRatio": 14.818833271649966,
+          "assist": false,
+          "slip": 0,
+          "surface": "grass",
+          "contacts": 4,
+          "odometer": 3712.297682532764,
+          "damage": 0,
+          "damageState": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1
+          },
+          "bike": false,
+          "lean": 0,
+          "targetLean": 0,
+          "physicsWheels": 4,
+          "airborneSeconds": 3.7833333333333248,
+          "maxHeight": 3.6819543838500977,
+          "carjacked": true,
+          "input": {
+            "throttle": 0,
+            "brake": 0,
+            "steering": 0,
+            "handbrake": false,
+            "clutch": false,
+            "directSteer": false
+          },
+          "engine": {
+            "phase": "running",
+            "occupied": true,
+            "manual": false,
+            "gear": 1,
+            "rpm": 821.2764451367817,
+            "temperature": 87.56586191689269,
+            "cold": false,
+            "fastIdleSeconds": 0,
+            "door": 0,
+            "keyAngle": 0.5,
+            "gaugeSweep": 0,
+            "history": [
+              {
+                "phase": "off",
+                "time": 0
+              },
+              {
+                "phase": "door-open",
+                "time": 0
+              },
+              {
+                "phase": "door-close",
+                "time": 0.6000000000000002
+              },
+              {
+                "phase": "key",
+                "time": 1.0666666666666678
+              },
+              {
+                "phase": "ignition",
+                "time": 1.3333333333333335
+              },
+              {
+                "phase": "cranking",
+                "time": 2.1333333333333306
+              },
+              {
+                "phase": "catch",
+                "time": 3.7999999999999914
+              },
+              {
+                "phase": "running",
+                "time": 4.4499999999999895
+              }
+            ],
+            "startingWithDoor": true
+          },
+          "wheels": [
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 11056.1845703125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 10829.5703125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 11058.8486328125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 10832.185546875,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            }
+          ]
+        },
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T11:47:13.147Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T11:47:13.493Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T11:47:13.578Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T11:47:14.246Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T11:47:14.535Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T11:47:14.686Z"
+            }
+          ]
+        }
+      },
+      "after": {
+        "trace": [
+          {
+            "tick": 0,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 0.016666666666666666,
+              "remaining": 139.98333333333332,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5598076581954956,
+                "z": 617.9990844726562
+              },
+              "rotation": [
+                -1.0676671390021249e-20,
+                1,
+                0.0001743632892612368,
+                6.123234262925839e-17
+              ],
+              "velocity": {
+                "x": 6.553649422861682e-18,
+                "y": -0.06731440126895905,
+                "z": -0.05351460725069046
+              },
+              "speed": 0.053491132929850645,
+              "kmh": 0.19256807854746233,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 0,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3712.2985740516465,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 846.1712107541866,
+                "temperature": 87.5669487445093,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 11056.1865234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 10829.572265625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 11058.8505859375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 10832.1875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 60,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 1.016666666666668,
+              "remaining": 138.98333333333332,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.559390664100647,
+                "z": 616.0037841796875
+              },
+              "rotation": [
+                3.1024815080842643e-19,
+                0.99998539686203,
+                0.005411119200289249,
+                6.123520798290028e-17
+              ],
+              "velocity": {
+                "x": 5.078846080032635e-16,
+                "y": -0.06132766976952553,
+                "z": -4.160063743591309
+              },
+              "speed": 4.159157052455687,
+              "kmh": 14.972965388840475,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 3.6625923774081393e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3714.293710693183,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 2304.986995967171,
+                "temperature": 87.63176218266888,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2938092052936554,
+                  "rotation": 11062.056640625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 2689.896728515625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2938092052936554,
+                  "rotation": 10835.4423828125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 2689.896728515625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26503822207450867,
+                  "rotation": 11064.720703125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 3784.66015625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26503822207450867,
+                  "rotation": 10838.0576171875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 3784.66015625,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 120,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 2.0166666666666644,
+              "remaining": 137.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5593311786651611,
+                "z": 609.2020874023438
+              },
+              "rotation": [
+                3.751039446692884e-19,
+                0.9999791383743286,
+                0.006468939129263163,
+                6.123633294853335e-17
+              ],
+              "velocity": {
+                "x": 1.1569193157325757e-15,
+                "y": -0.06141369044780731,
+                "z": -9.462967872619629
+              },
+              "speed": 9.461383683007792,
+              "kmh": 34.06098125882805,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 1.9925008264888967e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3721.091182096521,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 4194.002948748663,
+                "temperature": 87.69580243066919,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.29662421345710754,
+                  "rotation": 11082.0673828125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 2594.867431640625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.29662421345710754,
+                  "rotation": 10855.453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 2594.867431640625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2621341049671173,
+                  "rotation": 11084.7314453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 3883.91552734375,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2621341049671173,
+                  "rotation": 10858.068359375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 3883.91552734375,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 180,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 3.016666666666661,
+              "remaining": 136.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5591139793395996,
+                "z": 597.1491088867188
+              },
+              "rotation": [
+                9.329113554374385e-20,
+                0.9999982714653015,
+                0.001860650023445487,
+                6.12370741023622e-17
+              ],
+              "velocity": {
+                "x": 1.6815402889219593e-15,
+                "y": -0.0630660355091095,
+                "z": -13.750702857971191
+              },
+              "speed": 13.750373096550055,
+              "kmh": 49.5013431475802,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 2.0460334347657569e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3733.1352550806037,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4822.709853324655,
+                "temperature": 87.75907871226126,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.28516504168510437,
+                  "rotation": 11117.5224609375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3329.268798828125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.28516504168510437,
+                  "rotation": 10890.908203125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3329.268798828125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2731291353702545,
+                  "rotation": 11120.1865234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3173.55029296875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2731291353702545,
+                  "rotation": 10893.5234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3173.55029296875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 240,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 4.016666666666658,
+              "remaining": 135.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5592254400253296,
+                "z": 582.3466186523438
+              },
+              "rotation": [
+                2.2109788141112304e-19,
+                0.9999921917915344,
+                0.003967856056988239,
+                6.123817259821567e-17
+              ],
+              "velocity": {
+                "x": 1.9882914708250913e-15,
+                "y": -0.06150594726204872,
+                "z": -16.244443893432617
+              },
+              "speed": 16.243448445716464,
+              "kmh": 58.47641440457927,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 7.204711071678498e-20,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3747.930232010938,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4040.1221178634337,
+                "temperature": 87.8216001411616,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.28983286023139954,
+                  "rotation": 11161.064453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 2851.805908203125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.28983286023139954,
+                  "rotation": 10934.4501953125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 2851.805908203125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26865556836128235,
+                  "rotation": 11163.728515625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 3637.447265625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26865556836128235,
+                  "rotation": 10937.0654296875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 3637.447265625,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 300,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 5.016666666666654,
+              "remaining": 134.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.559148907661438,
+                "z": 564.5731811523438
+              },
+              "rotation": [
+                2.1667625207020618e-19,
+                0.9999924302101135,
+                0.0038955274503678083,
+                6.123822553777487e-17
+              ],
+              "velocity": {
+                "x": 2.3498313907345915e-15,
+                "y": -0.061574533581733704,
+                "z": -19.19645118713379
+              },
+              "speed": 19.195390209985394,
+              "kmh": 69.10340475594742,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 6.145461152333805e-20,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3765.6937473264343,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4702.273612167503,
+                "temperature": 87.88337572236517,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2895801365375519,
+                  "rotation": 11213.3447265625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 2865.814453125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2895801365375519,
+                  "rotation": 10986.73046875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 2865.814453125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2687542736530304,
+                  "rotation": 11216.0087890625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 3629.731201171875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2687542736530304,
+                  "rotation": 10989.345703125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 3629.731201171875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 330,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "failed",
+              "elapsed": 5.516666666666652,
+              "remaining": 134.48333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": "DELIVERY FAILED · cargo damage limit exceeded"
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544.0210571289062,
+                "y": 0.4838337302207947,
+                "z": 555.33837890625
+              },
+              "rotation": [
+                0.00047314210678450763,
+                0.9997400045394897,
+                0.022374363616108894,
+                -0.004377717152237892
+              ],
+              "velocity": {
+                "x": 0.1985197216272354,
+                "y": -2.0814692974090576,
+                "z": 0.8916346430778503
+              },
+              "speed": -0.9855688579780344,
+              "kmh": 3.548047888720924,
+              "roadSteer": 0.000424881024461407,
+              "steeringWheelRadians": 0.006296241061781421,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 0.4456631321830947,
+              "surface": "asphalt",
+              "contacts": 4,
+              "odometer": 3774.9952978070414,
+              "damage": 0.32153397631013325,
+              "damageState": {
+                "amount": 0.32153397631013325,
+                "health": 68,
+                "stage": "dented",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [
+                  {
+                    "point": {
+                      "x": 0.03378398505173647,
+                      "y": 0.12,
+                      "z": 2.077818960529588
+                    },
+                    "depth": 0.21435106531228262,
+                    "radius": 1.2215723436870216
+                  }
+                ],
+                "powerMultiplier": 0.95176990355348,
+                "gripMultiplier": 0.9742772818951894
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4417.745792288613,
+                "temperature": 87.91398660473237,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2342345416545868,
+                  "rotation": 11241.5712890625,
+                  "steer": 0.00042488102917559445,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 2.3693706296049895,
+                  "force": 8554.3876953125,
+                  "surface": "asphalt"
+                },
+                {
+                  "suspension": 0.23441031575202942,
+                  "rotation": 11014.9599609375,
+                  "steer": 0.00042488102917559445,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 2.3693706296049895,
+                  "force": 8479.3642578125,
+                  "surface": "asphalt"
+                },
+                {
+                  "suspension": 0.2011605203151703,
+                  "rotation": 11244.2392578125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 1.0899104896182952,
+                  "force": 22641.396484375,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.20133623480796814,
+                  "rotation": 11017.578125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 1.0899104896182952,
+                  "force": 22566.669921875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          }
+        ],
+        "run": {
+          "activity": "activity-delivery",
+          "type": "delivery",
+          "name": "Special Delivery",
+          "state": "failed",
+          "elapsed": 5.516666666666652,
+          "remaining": 134.48333333333335,
+          "score": 0,
+          "gate": 1,
+          "total": 45,
+          "jumps": 0,
+          "reason": "DELIVERY FAILED · cargo damage limit exceeded"
+        },
+        "car": {
+          "id": "parked",
+          "definition": "harbor",
+          "position": {
+            "x": 544.0210571289062,
+            "y": 0.4838337302207947,
+            "z": 555.33837890625
+          },
+          "rotation": [
+            0.00047314210678450763,
+            0.9997400045394897,
+            0.022374363616108894,
+            -0.004377717152237892
+          ],
+          "velocity": {
+            "x": 0.1985197216272354,
+            "y": -2.0814692974090576,
+            "z": 0.8916346430778503
+          },
+          "speed": -0.9855688579780344,
+          "kmh": 3.548047888720924,
+          "roadSteer": 0.000424881024461407,
+          "steeringWheelRadians": 0.006296241061781421,
+          "steeringRatio": 14.818833271649966,
+          "assist": false,
+          "slip": 0.4456631321830947,
+          "surface": "asphalt",
+          "contacts": 4,
+          "odometer": 3774.9952978070414,
+          "damage": 0.32153397631013325,
+          "damageState": {
+            "amount": 0.32153397631013325,
+            "health": 68,
+            "stage": "dented",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.03378398505173647,
+                  "y": 0.12,
+                  "z": 2.077818960529588
+                },
+                "depth": 0.21435106531228262,
+                "radius": 1.2215723436870216
+              }
+            ],
+            "powerMultiplier": 0.95176990355348,
+            "gripMultiplier": 0.9742772818951894
+          },
+          "bike": false,
+          "lean": 0,
+          "targetLean": 0,
+          "physicsWheels": 4,
+          "airborneSeconds": 3.7833333333333248,
+          "maxHeight": 3.6819543838500977,
+          "carjacked": true,
+          "input": {
+            "throttle": 1,
+            "brake": 0,
+            "steering": 0,
+            "handbrake": false,
+            "clutch": false,
+            "directSteer": false
+          },
+          "engine": {
+            "phase": "running",
+            "occupied": true,
+            "manual": false,
+            "gear": 2,
+            "rpm": 4417.745792288613,
+            "temperature": 87.91398660473237,
+            "cold": false,
+            "fastIdleSeconds": 0,
+            "door": 0,
+            "keyAngle": 0.5,
+            "gaugeSweep": 0,
+            "history": [
+              {
+                "phase": "off",
+                "time": 0
+              },
+              {
+                "phase": "door-open",
+                "time": 0
+              },
+              {
+                "phase": "door-close",
+                "time": 0.6000000000000002
+              },
+              {
+                "phase": "key",
+                "time": 1.0666666666666678
+              },
+              {
+                "phase": "ignition",
+                "time": 1.3333333333333335
+              },
+              {
+                "phase": "cranking",
+                "time": 2.1333333333333306
+              },
+              {
+                "phase": "catch",
+                "time": 3.7999999999999914
+              },
+              {
+                "phase": "running",
+                "time": 4.4499999999999895
+              }
+            ],
+            "startingWithDoor": true
+          },
+          "wheels": [
+            {
+              "suspension": 0.2342345416545868,
+              "rotation": 11241.5712890625,
+              "steer": 0.00042488102917559445,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 2.3693706296049895,
+              "force": 8554.3876953125,
+              "surface": "asphalt"
+            },
+            {
+              "suspension": 0.23441031575202942,
+              "rotation": 11014.9599609375,
+              "steer": 0.00042488102917559445,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 2.3693706296049895,
+              "force": 8479.3642578125,
+              "surface": "asphalt"
+            },
+            {
+              "suspension": 0.2011605203151703,
+              "rotation": 11244.2392578125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 1.0899104896182952,
+              "force": 22641.396484375,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.20133623480796814,
+              "rotation": 11017.578125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 1.0899104896182952,
+              "force": 22566.669921875,
+              "surface": "grass"
+            }
+          ]
+        },
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T11:47:13.147Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T11:47:13.493Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T11:47:13.578Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T11:47:14.246Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T11:47:14.535Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T11:47:14.686Z"
+            }
+          ]
+        }
+      },
+      "hudDetail": "DELIVERY FAILED · cargo damage limit exceeded · TOP 3 53.4s"
+    },
+    "reload": {
+      "passed": true,
+      "loaded": {
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T11:47:13.147Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T11:47:13.493Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T11:47:13.578Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T11:47:14.246Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T11:47:14.535Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T11:47:14.686Z"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "radio": {
+    "report": "evidence/crosstown-0.14.0/radio-provider-acceptance.json.gz",
+    "mockedProviders": false,
+    "humanListening": false,
+    "spotifyAuthentication": "UNTESTED — no client ID / account supplied",
+    "passed": 5,
+    "failedOrUnavailable": 2,
+    "rows": [
+      {
+        "name": "no Spotify ID means hidden and no SDK request",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "four procedural stations, bounded notes, per-station volume, crossfade and static",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "actual Radio Browser country DE, https-only data and real stream playback",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "station change makes new static and remains an HTTPS stream",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "official visible YouTube playlist plays and receives skip",
+        "status": "failed-or-unavailable",
+        "error": "page.waitForFunction: Timeout 12000ms exceeded.\n    at /home/user/tools/accept-radio-providers.mjs:13:283\n    at async run (/home/user/tools/accept-radio-providers.mjs:7:44)\n    at async file:///home/user/tools/accept-radio-providers.mjs:13:1",
+        "lastFailure": "YouTube official error 2"
+      },
+      {
+        "name": "official visible SoundCloud public link plays and receives skip",
+        "status": "failed-or-unavailable",
+        "error": "page.waitForFunction: Timeout 12000ms exceeded.\n    at /home/user/tools/accept-radio-providers.mjs:14:630\n    at async run (/home/user/tools/accept-radio-providers.mjs:7:44)\n    at async file:///home/user/tools/accept-radio-providers.mjs:14:1",
+        "lastFailure": null
+      },
+      {
+        "name": "favourites and custom links persist; exiting always stops providers",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      }
+    ],
+    "authenticatedSpotifyAccepted": false
+  },
+  "softwarePerformance": {
+    "nativeNear60FpsAccepted": false,
+    "reportedLagSolved": false,
+    "baseline": {
+      "report": "evidence/crosstown-0.14.0/baseline-downtown-busy-webgl.json",
+      "build": "0.13.0",
+      "tier": "Balanced",
+      "protocol": "busy-v3: verified Downtown, fixed requested 60 cars/120 people before setup stepping, at least nine nearby chunks/two physical police, rain 18:15, normal rAF/simulation only",
+      "actualDistrict": "downtown",
+      "cadence": {
+        "frames": 10,
+        "wallMs": 12549.5,
+        "fps": 0.7968444957966453,
+        "p50Ms": 1350,
+        "p95Ms": 2483.2000000000007,
+        "maximumMs": 2483.2000000000007,
+        "intervals": [
+          1400,
+          1383.2000000000007,
+          1350,
+          150,
+          1233.2999999999993,
+          2483.2000000000007,
+          1349.9000000000015,
+          1283.2999999999993,
+          1350,
+          566.5999999999985
+        ]
+      },
+      "physicalPolice": 4
+    },
+    "fourTiers": {
+      "webgl": {
+        "report": "evidence/crosstown-0.14.0/candidate-busy-webgl.json.gz",
+        "protocol": "busy-v3: verified Downtown, fixed requested 60 cars/120 people before setup stepping, at least nine nearby chunks/two physical police, rain 18:15, normal rAF/simulation only",
+        "environment": "SwiftShader software renderer / virtual CPUs, NOT native 840M GPU or target-device acceptance",
+        "nativeHardwareAcceptance": false,
+        "rows": [
+          {
+            "tier": 0,
+            "name": "Low",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1344,
+              756
+            ],
+            "cadence": {
+              "frames": 20,
+              "wallMs": 12482.9,
+              "fps": 1.602191798380184,
+              "p50Ms": 616.6000000000022,
+              "p95Ms": 1183.2000000000007,
+              "maximumMs": 1183.2000000000007,
+              "intervals": [
+                650,
+                516.6000000000004,
+                600.0999999999985,
+                216.60000000000218,
+                633.2999999999993,
+                750,
+                399.8999999999978,
+                750.1000000000022,
+                1183.2000000000007,
+                616.5999999999985,
+                766.7000000000007,
+                550,
+                1016.5999999999985,
+                616.6000000000022,
+                150,
+                600,
+                549.8999999999978,
+                600.1000000000022,
+                649.8999999999978,
+                666.7000000000007
+              ]
+            },
+            "draws": 140,
+            "triangles": 123545,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {},
+              "sampledDepth": false,
+              "sunUV": [
+                0.5,
+                0.2
+              ],
+              "sunVisible": 0,
+              "active": [],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "bloom",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 1,
+              "glowResolution": null,
+              "shaftsResolution": null,
+              "reflectionResolution": null,
+              "beautyResolution": [
+                1344,
+                756
+              ],
+              "estimatedTargetBytes": 12192768,
+              "auxiliaryDraws": 1,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 0,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 38,
+              "rebuilds": 1,
+              "disposedTargets": 0,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 391,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 18883500,
+              "instancePayloadBytes": 3035072,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 478,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 12192768,
+              "shadow": {
+                "enabled": false,
+                "size": [
+                  512,
+                  512
+                ],
+                "estimatedDepthBytes": 0,
+                "refresh": "every fourth frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 21,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.06666666659570876,
+                  "maximumMs": 0.19999999552965164,
+                  "recentP95": 0.10000000149011612,
+                  "recentSamples": 21
+                },
+                "fixedUpdate": {
+                  "meanMs": 13.98095238102334,
+                  "maximumMs": 63.599999994039536,
+                  "recentP95": 23.200000002980232,
+                  "recentSamples": 21
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.4238095240933554,
+                  "maximumMs": 5.200000002980232,
+                  "recentP95": 1.1000000014901161,
+                  "recentSamples": 21
+                },
+                "cityStreaming": {
+                  "meanMs": 0.05238095138754163,
+                  "maximumMs": 0.19999999552965164,
+                  "recentP95": 0.19999999552965164,
+                  "recentSamples": 21
+                },
+                "populationRender": {
+                  "meanMs": 1.023809524519103,
+                  "maximumMs": 4.5,
+                  "recentP95": 3.2999999970197678,
+                  "recentSamples": 21
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 2.0238095241643133,
+                  "maximumMs": 9.199999995529652,
+                  "recentP95": 7.800000004470348,
+                  "recentSamples": 21
+                },
+                "hudLife": {
+                  "meanMs": 3.1523809521680786,
+                  "maximumMs": 10,
+                  "recentP95": 6.5999999940395355,
+                  "recentSamples": 21
+                },
+                "renderSubmit": {
+                  "meanMs": 8.528571427578019,
+                  "maximumMs": 19.399999998509884,
+                  "recentP95": 15.099999994039536,
+                  "recentSamples": 21
+                }
+              }
+            },
+            "worker": {
+              "completed": 29,
+              "pending": 0,
+              "highWater": 4,
+              "maximumRoundTripMs": 3913.60000000149,
+              "maximumWorkMs": 118.70000000298023,
+              "maximumQueuedMs": 3913.2999999970198,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 25.899999998509884,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 25.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 25.899999998509884,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 25.599999994039536
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.5,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 0.20000000298023224
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 0.19999999552965164
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1.3000000044703484,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 0.7000000029802322
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.5,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 0.19999999552965164
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.5999999940395355,
+                  "workMs": 0.5,
+                  "queuedMs": 0.09999999403953552
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1.3000000044703484,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 0.7000000029802322
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.6999999955296516,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 0.29999999701976776
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.8000000044703484,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 0.20000000298023224
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1.3999999985098839,
+                  "workMs": 1.3999999985098839,
+                  "queuedMs": 0
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1500.2000000029802,
+                  "workMs": 1,
+                  "queuedMs": 1499.2000000029802
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 3,
+            "errors": []
+          },
+          {
+            "tier": 1,
+            "name": "Balanced",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1632,
+              918
+            ],
+            "cadence": {
+              "frames": 13,
+              "wallMs": 12899.5,
+              "fps": 1.0077909996511494,
+              "p50Ms": 1083.4000000000015,
+              "p95Ms": 2233.199999999997,
+              "maximumMs": 2233.199999999997,
+              "intervals": [
+                116.59999999999854,
+                1400,
+                1166.5999999999985,
+                899.9000000000015,
+                566.7000000000007,
+                883.2999999999993,
+                33.29999999999927,
+                1083.4000000000015,
+                1149.8999999999978,
+                1949.9000000000015,
+                300,
+                2233.199999999997,
+                1116.7000000000044
+              ]
+            },
+            "draws": 218,
+            "triangles": 139852,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "bloom": 29,
+                "lensFlare": 4
+              },
+              "sampledDepth": false,
+              "sunUV": [
+                -0.141240988656258,
+                -1.4880353980118257
+              ],
+              "sunVisible": 0,
+              "active": [
+                "bloom"
+              ],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 2,
+              "glowResolution": [
+                408,
+                230
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": null,
+              "beautyResolution": [
+                1632,
+                918
+              ],
+              "estimatedTargetBytes": 18728832,
+              "auxiliaryDraws": 2,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 0,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 29,
+              "rebuilds": 2,
+              "disposedTargets": 2,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 415,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19546644,
+              "instancePayloadBytes": 4747200,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 581,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 18728832,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  512,
+                  512
+                ],
+                "estimatedDepthBytes": 1048576,
+                "refresh": "every fourth frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 14,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.05714285692998341,
+                  "maximumMs": 0.20000000298023224,
+                  "recentP95": 0.20000000298023224,
+                  "recentSamples": 14
+                },
+                "fixedUpdate": {
+                  "meanMs": 20.849999998829194,
+                  "maximumMs": 85.60000000149012,
+                  "recentP95": 85.60000000149012,
+                  "recentSamples": 14
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.3785714294229235,
+                  "maximumMs": 2.1999999955296516,
+                  "recentP95": 2.1999999955296516,
+                  "recentSamples": 14
+                },
+                "cityStreaming": {
+                  "meanMs": 1.5071428567171097,
+                  "maximumMs": 8.299999997019768,
+                  "recentP95": 8.299999997019768,
+                  "recentSamples": 14
+                },
+                "populationRender": {
+                  "meanMs": 1.9714285710028239,
+                  "maximumMs": 11.299999997019768,
+                  "recentP95": 11.299999997019768,
+                  "recentSamples": 14
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 0.6285714288907391,
+                  "maximumMs": 1.2999999970197678,
+                  "recentP95": 1.2999999970197678,
+                  "recentSamples": 14
+                },
+                "hudLife": {
+                  "meanMs": 3.935714286352907,
+                  "maximumMs": 13.800000004470348,
+                  "recentP95": 13.800000004470348,
+                  "recentSamples": 14
+                },
+                "renderSubmit": {
+                  "meanMs": 19.707142856504237,
+                  "maximumMs": 92.69999999552965,
+                  "recentP95": 92.69999999552965,
+                  "recentSamples": 14
+                }
+              }
+            },
+            "worker": {
+              "completed": 47,
+              "pending": 0,
+              "highWater": 5,
+              "maximumRoundTripMs": 4656.20000000298,
+              "maximumWorkMs": 99.70000000298023,
+              "maximumQueuedMs": 4655.5,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1746.3000000044703,
+                  "workMs": 0.4000000059604645,
+                  "queuedMs": 1745.8999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1746.2000000029802,
+                  "workMs": 0.5999999940395355,
+                  "queuedMs": 1745.6000000089407
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1746.2000000029802,
+                  "workMs": 0.4000000059604645,
+                  "queuedMs": 1745.7999999970198
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1577.5,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 1576.3999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1576.2999999970198,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 1575.8999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1575.7999999970198,
+                  "workMs": 1,
+                  "queuedMs": 1574.7999999970198
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1574.8999999985099,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 1574.6000000014901
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 23.5,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 22.600000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 22.399999998509884,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 22
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 21.899999998509884,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 21.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 20.899999998509884,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 20.600000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 33.19999999552965,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 32.29999999701977
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 6.0999999940395355,
+            "errors": []
+          },
+          {
+            "tier": 2,
+            "name": "High",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1920,
+              1080
+            ],
+            "cadence": {
+              "frames": 8,
+              "wallMs": 12116.2,
+              "fps": 0.660273022894967,
+              "p50Ms": 1766.5999999999985,
+              "p95Ms": 2333.300000000003,
+              "maximumMs": 2333.300000000003,
+              "intervals": [
+                2050.0000000000036,
+                1066.5,
+                33.39999999999418,
+                1699.9000000000015,
+                1799.9000000000015,
+                2333.300000000003,
+                1366.5999999999985,
+                1766.5999999999985
+              ]
+            },
+            "draws": 277,
+            "triangles": 147275,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "bloom": 27,
+                "sunShafts": 4,
+                "heatHaze": 4,
+                "lensFlare": 4,
+                "wetReflections": 23
+              },
+              "sampledDepth": true,
+              "sunUV": [
+                -0.1411810428715038,
+                -1.4877706178992067
+              ],
+              "sunVisible": 0,
+              "active": [
+                "wetReflections",
+                "bloom"
+              ],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 3,
+              "glowResolution": [
+                480,
+                270
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": [
+                480,
+                270
+              ],
+              "beautyResolution": [
+                1920,
+                1080
+              ],
+              "estimatedTargetBytes": 26956800,
+              "auxiliaryDraws": 3,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 12,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 27,
+              "rebuilds": 2,
+              "disposedTargets": 3,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 408,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19336860,
+              "instancePayloadBytes": 4202432,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 605,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 26956800,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  1024,
+                  1024
+                ],
+                "estimatedDepthBytes": 4194304,
+                "refresh": "every frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 9,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.05555555555555555,
+                  "maximumMs": 0.10000000149011612,
+                  "recentP95": 0.10000000149011612,
+                  "recentSamples": 9
+                },
+                "fixedUpdate": {
+                  "meanMs": 17.77777777860562,
+                  "maximumMs": 32,
+                  "recentP95": 32,
+                  "recentSamples": 9
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 1.0222222217255168,
+                  "maximumMs": 4.799999997019768,
+                  "recentP95": 4.799999997019768,
+                  "recentSamples": 9
+                },
+                "cityStreaming": {
+                  "meanMs": 0.6999999996688631,
+                  "maximumMs": 2.5,
+                  "recentP95": 2.5,
+                  "recentSamples": 9
+                },
+                "populationRender": {
+                  "meanMs": 0.6888888883921835,
+                  "maximumMs": 1.2000000029802322,
+                  "recentP95": 1.2000000029802322,
+                  "recentSamples": 9
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 1.7333333326710596,
+                  "maximumMs": 10.600000001490116,
+                  "recentP95": 10.600000001490116,
+                  "recentSamples": 9
+                },
+                "hudLife": {
+                  "meanMs": 2.644444445768992,
+                  "maximumMs": 11.5,
+                  "recentP95": 11.5,
+                  "recentSamples": 9
+                },
+                "renderSubmit": {
+                  "meanMs": 15.666666665838825,
+                  "maximumMs": 29.899999998509884,
+                  "recentP95": 29.899999998509884,
+                  "recentSamples": 9
+                }
+              }
+            },
+            "worker": {
+              "completed": 47,
+              "pending": 0,
+              "highWater": 5,
+              "maximumRoundTripMs": 4604.39999999851,
+              "maximumWorkMs": 132.20000000298023,
+              "maximumQueuedMs": 4604.0999999940395,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 2247.5,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 2247.10000000149
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 2247.10000000149,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 2246.2999999970198
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 2246.2000000029802,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 2245.89999999851
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 29.799999997019768,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 28.69999999552965
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 28.5,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 28.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 28,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 27.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 27.100000001490116,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 26.700000002980232
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1832.7000000029802,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 1831.8999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1831.7000000029802,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 1831.3999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1831.3000000044703,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 1830.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 1830.3999999985099,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 1830.0999999940395
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 56.600000001490116,
+                  "workMs": 1.3999999985098839,
+                  "queuedMs": 55.20000000298023
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 19.399999998509884,
+            "errors": []
+          },
+          {
+            "tier": 3,
+            "name": "Ultra",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1920,
+              1080
+            ],
+            "cadence": {
+              "frames": 8,
+              "wallMs": 16199.399999999998,
+              "fps": 0.49384545106608896,
+              "p50Ms": 2149.800000000003,
+              "p95Ms": 3066.5999999999985,
+              "maximumMs": 3066.5999999999985,
+              "intervals": [
+                2633.2999999999993,
+                1299.9000000000015,
+                1899.9000000000015,
+                2449.899999999994,
+                1350,
+                1350,
+                2149.800000000003,
+                3066.5999999999985
+              ]
+            },
+            "draws": 316,
+            "triangles": 153311,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "volumetricFog": 25,
+                "motionBlur": 25,
+                "bloom": 25,
+                "sunShafts": 4,
+                "heatHaze": 4,
+                "lensFlare": 4,
+                "wetReflections": 21
+              },
+              "sampledDepth": true,
+              "sunUV": [
+                -0.14144750202367717,
+                -1.488947519746777
+              ],
+              "sunVisible": 0,
+              "active": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "bloom"
+              ],
+              "disabled": [
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 3,
+              "glowResolution": [
+                480,
+                270
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": [
+                480,
+                270
+              ],
+              "beautyResolution": [
+                1920,
+                1080
+              ],
+              "estimatedTargetBytes": 26956800,
+              "auxiliaryDraws": 3,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 12,
+              "fogSamples": 8,
+              "motionSamples": 5,
+              "sunShaftSamples": 0,
+              "frames": 25,
+              "rebuilds": 2,
+              "disposedTargets": 3,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 411,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19386504,
+              "instancePayloadBytes": 4435904,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 687,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 26956800,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  1536,
+                  1536
+                ],
+                "estimatedDepthBytes": 9437184,
+                "refresh": "every frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 9,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.12222222238779068,
+                  "maximumMs": 0.20000000298023224,
+                  "recentP95": 0.20000000298023224,
+                  "recentSamples": 9
+                },
+                "fixedUpdate": {
+                  "meanMs": 15.144444444113308,
+                  "maximumMs": 31.100000001490116,
+                  "recentP95": 31.100000001490116,
+                  "recentSamples": 9
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.6888888883921835,
+                  "maximumMs": 4.600000001490116,
+                  "recentP95": 4.600000001490116,
+                  "recentSamples": 9
+                },
+                "cityStreaming": {
+                  "meanMs": 1.2444444447755814,
+                  "maximumMs": 6,
+                  "recentP95": 6,
+                  "recentSamples": 9
+                },
+                "populationRender": {
+                  "meanMs": 2.6666666666666665,
+                  "maximumMs": 8.200000002980232,
+                  "recentP95": 8.200000002980232,
+                  "recentSamples": 9
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 1.8777777776122093,
+                  "maximumMs": 5.4000000059604645,
+                  "recentP95": 5.4000000059604645,
+                  "recentSamples": 9
+                },
+                "hudLife": {
+                  "meanMs": 5.35555555505885,
+                  "maximumMs": 13.899999998509884,
+                  "recentP95": 13.899999998509884,
+                  "recentSamples": 9
+                },
+                "renderSubmit": {
+                  "meanMs": 22.40000000016557,
+                  "maximumMs": 40.29999999701977,
+                  "recentP95": 40.29999999701977,
+                  "recentSamples": 9
+                }
+              }
+            },
+            "worker": {
+              "completed": 68,
+              "pending": 0,
+              "highWater": 5,
+              "maximumRoundTripMs": 5387.89999999851,
+              "maximumWorkMs": 97,
+              "maximumQueuedMs": 5385.29999999702,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 14.600000001490116,
+                  "workMs": 0.7000000029802322,
+                  "queuedMs": 13.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 13.899999998509884,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 13.600000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 126.5,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 125.60000000149012
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 125.39999999850988,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 124.59999999403954
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 124.39999999850988,
+                  "workMs": 0.20000000298023224,
+                  "queuedMs": 124.19999999552965
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 124.09999999403954,
+                  "workMs": 0.5999999940395355,
+                  "queuedMs": 123.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 62.19999999552965,
+                  "workMs": 0.6999999955296516,
+                  "queuedMs": 61.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 61.399999998509884,
+                  "workMs": 1.5,
+                  "queuedMs": 59.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 59.600000001490116,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 59.20000000298023
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 59.100000001490116,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 58
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 71,
+                  "workMs": 6.5,
+                  "queuedMs": 64.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 71.10000000149012,
+                  "workMs": 1.5999999940395355,
+                  "queuedMs": 69.50000000745058
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 9.099999994039536,
+            "errors": []
+          }
+        ]
+      },
+      "webgpu": {
+        "report": "evidence/crosstown-0.14.0/candidate-busy-webgpu.json.gz",
+        "protocol": "busy-v3: verified Downtown, fixed requested 60 cars/120 people before setup stepping, at least nine nearby chunks/two physical police, rain 18:15, normal rAF/simulation only",
+        "environment": "SwiftShader software renderer / virtual CPUs, NOT native 840M GPU or target-device acceptance",
+        "nativeHardwareAcceptance": false,
+        "rows": [
+          {
+            "tier": 0,
+            "name": "Low",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1344,
+              756
+            ],
+            "cadence": {
+              "frames": 13,
+              "wallMs": 12616.100000000002,
+              "fps": 1.0304293719929294,
+              "p50Ms": 1016.5999999999985,
+              "p95Ms": 1083.2999999999993,
+              "maximumMs": 1083.2999999999993,
+              "intervals": [
+                1083.2999999999993,
+                1016.6000000000022,
+                833.2999999999993,
+                1016.7000000000007,
+                1016.5999999999985,
+                833.2999999999993,
+                999.9000000000015,
+                1033.2999999999993,
+                850,
+                1033.2000000000007,
+                850,
+                1000,
+                1049.9000000000015
+              ]
+            },
+            "draws": 164,
+            "triangles": 123545,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {},
+              "sampledDepth": false,
+              "sunUV": [
+                0.5,
+                0.2
+              ],
+              "sunVisible": 0,
+              "active": [],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "bloom",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 1,
+              "glowResolution": null,
+              "shaftsResolution": null,
+              "reflectionResolution": null,
+              "beautyResolution": [
+                1344,
+                756
+              ],
+              "estimatedTargetBytes": 12192768,
+              "auxiliaryDraws": 1,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 0,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 29,
+              "rebuilds": 1,
+              "disposedTargets": 0,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 391,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19107536,
+              "instancePayloadBytes": 3035072,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 478,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 12192768,
+              "shadow": {
+                "enabled": false,
+                "size": [
+                  512,
+                  512
+                ],
+                "estimatedDepthBytes": 0,
+                "refresh": "every fourth frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 14,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.0928571421120848,
+                  "maximumMs": 0.30000000447034836,
+                  "recentP95": 0.30000000447034836,
+                  "recentSamples": 14
+                },
+                "fixedUpdate": {
+                  "meanMs": 12.571428571428571,
+                  "maximumMs": 27.5,
+                  "recentP95": 27.5,
+                  "recentSamples": 14
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.5000000005321843,
+                  "maximumMs": 5.100000001490116,
+                  "recentP95": 5.100000001490116,
+                  "recentSamples": 14
+                },
+                "cityStreaming": {
+                  "meanMs": 0.15000000010643685,
+                  "maximumMs": 1.5,
+                  "recentP95": 1.5,
+                  "recentSamples": 14
+                },
+                "populationRender": {
+                  "meanMs": 1.8714285705770766,
+                  "maximumMs": 17.399999998509884,
+                  "recentP95": 17.399999998509884,
+                  "recentSamples": 14
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 0.8785714288907391,
+                  "maximumMs": 4.5,
+                  "recentP95": 4.5,
+                  "recentSamples": 14
+                },
+                "hudLife": {
+                  "meanMs": 4.235714287097965,
+                  "maximumMs": 10,
+                  "recentP95": 10,
+                  "recentSamples": 14
+                },
+                "renderSubmit": {
+                  "meanMs": 7.249999997871263,
+                  "maximumMs": 27.100000001490116,
+                  "recentP95": 27.100000001490116,
+                  "recentSamples": 14
+                }
+              }
+            },
+            "worker": {
+              "completed": 29,
+              "pending": 0,
+              "highWater": 4,
+              "maximumRoundTripMs": 3432.2000000029802,
+              "maximumWorkMs": 104.60000000149012,
+              "maximumQueuedMs": 3431.8000000044703,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 0.5,
+                  "workMs": 0.4000000059604645,
+                  "queuedMs": 0.09999999403953552
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 20.400000005960464,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 19.80000000447035
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 12,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 11.200000002980232
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 660.6000000014901,
+                  "workMs": 0.9000000059604645,
+                  "queuedMs": 659.6999999955297
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 658.7999999970198,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 657.8999999985099
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 658.1999999955297,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 657.7999999970198
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 657.1999999955297,
+                  "workMs": 2.5,
+                  "queuedMs": 654.6999999955297
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 63.399999998509884,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 62.599999994039536
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 54.099999994039536,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 53.79999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 53.099999994039536,
+                  "workMs": 0.6999999955296516,
+                  "queuedMs": 52.399999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 52.29999999701977,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 51.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 21.600000001490116,
+                  "workMs": 1,
+                  "queuedMs": 20.600000001490116
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 4.899999998509884,
+            "errors": []
+          },
+          {
+            "tier": 1,
+            "name": "Balanced",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1632,
+              918
+            ],
+            "cadence": {
+              "frames": 8,
+              "wallMs": 13699.400000000001,
+              "fps": 0.5839671810444252,
+              "p50Ms": 1716.5999999999985,
+              "p95Ms": 1766.6000000000022,
+              "maximumMs": 1766.6000000000022,
+              "intervals": [
+                1733.2999999999993,
+                1766.6000000000022,
+                1733.199999999997,
+                1666.5999999999985,
+                1699.9000000000015,
+                1716.5999999999985,
+                1666.6000000000058,
+                1716.5999999999985
+              ]
+            },
+            "draws": 203,
+            "triangles": 131875,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "bloom": 23,
+                "lensFlare": 3
+              },
+              "sampledDepth": false,
+              "sunUV": [
+                0.8538980320373493,
+                0.9562439057760436
+              ],
+              "sunVisible": 0,
+              "active": [
+                "bloom"
+              ],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 2,
+              "glowResolution": [
+                408,
+                230
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": null,
+              "beautyResolution": [
+                1632,
+                918
+              ],
+              "estimatedTargetBytes": 18728832,
+              "auxiliaryDraws": 2,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 0,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 23,
+              "rebuilds": 2,
+              "disposedTargets": 2,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 408,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19560896,
+              "instancePayloadBytes": 4202432,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 567,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 18728832,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  512,
+                  512
+                ],
+                "estimatedDepthBytes": 1048576,
+                "refresh": "every fourth frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 9,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.06666666766007741,
+                  "maximumMs": 0.20000000298023224,
+                  "recentP95": 0.20000000298023224,
+                  "recentSamples": 9
+                },
+                "fixedUpdate": {
+                  "meanMs": 22.53333333383004,
+                  "maximumMs": 96,
+                  "recentP95": 96,
+                  "recentSamples": 9
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.17777777877118853,
+                  "maximumMs": 0.20000000298023224,
+                  "recentP95": 0.20000000298023224,
+                  "recentSamples": 9
+                },
+                "cityStreaming": {
+                  "meanMs": 0.8777777776122093,
+                  "maximumMs": 2.7000000029802322,
+                  "recentP95": 2.7000000029802322,
+                  "recentSamples": 9
+                },
+                "populationRender": {
+                  "meanMs": 0.8111111099521319,
+                  "maximumMs": 1.6999999955296516,
+                  "recentP95": 1.6999999955296516,
+                  "recentSamples": 9
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 1.1666666666666667,
+                  "maximumMs": 4.399999998509884,
+                  "recentP95": 4.399999998509884,
+                  "recentSamples": 9
+                },
+                "hudLife": {
+                  "meanMs": 3.4666666669978037,
+                  "maximumMs": 8.799999997019768,
+                  "recentP95": 8.799999997019768,
+                  "recentSamples": 9
+                },
+                "renderSubmit": {
+                  "meanMs": 11.833333332505491,
+                  "maximumMs": 25,
+                  "recentP95": 25,
+                  "recentSamples": 9
+                }
+              }
+            },
+            "worker": {
+              "completed": 50,
+              "pending": 0,
+              "highWater": 4,
+              "maximumRoundTripMs": 3769.2000000029802,
+              "maximumWorkMs": 104.80000000447035,
+              "maximumQueuedMs": 3768.9000000059605,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 18,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 17.200000002980232
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 16.799999997019768,
+                  "workMs": 0.29999999701976776,
+                  "queuedMs": 16.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 16.600000001490116,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 15.799999997019768
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 15.700000002980232,
+                  "workMs": 0.9000000059604645,
+                  "queuedMs": 14.799999997019768
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 93.69999999552965,
+                  "workMs": 0.5999999940395355,
+                  "queuedMs": 93.10000000149012
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 93.69999999552965,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 92.59999999403954
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 93.69999999552965,
+                  "workMs": 0.5,
+                  "queuedMs": 93.19999999552965
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 93.69999999552965,
+                  "workMs": 0.7000000029802322,
+                  "queuedMs": 92.99999999254942
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 26.30000000447035,
+                  "workMs": 0.5,
+                  "queuedMs": 25.80000000447035
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 25.700000002980232,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 24.80000000447035
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 24.600000001490116,
+                  "workMs": 0.5,
+                  "queuedMs": 24.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 24.19999999552965,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 23.399999998509884
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 7.299999997019768,
+            "errors": []
+          },
+          {
+            "tier": 2,
+            "name": "High",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1920,
+              1080
+            ],
+            "cadence": {
+              "frames": 8,
+              "wallMs": 19899.1,
+              "fps": 0.4020282324326226,
+              "p50Ms": 2483.199999999997,
+              "p95Ms": 2566.5999999999985,
+              "maximumMs": 2566.5999999999985,
+              "intervals": [
+                2516.5,
+                2449.9000000000015,
+                2566.5999999999985,
+                2449.9000000000015,
+                2466.5,
+                2500,
+                2483.199999999997,
+                2466.5
+              ]
+            },
+            "draws": 286,
+            "triangles": 144305,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "bloom": 24,
+                "sunShafts": 3,
+                "heatHaze": 3,
+                "lensFlare": 3,
+                "wetReflections": 21
+              },
+              "sampledDepth": true,
+              "sunUV": [
+                0.8538959488258915,
+                0.9562473492367689
+              ],
+              "sunVisible": 0,
+              "active": [
+                "wetReflections",
+                "bloom"
+              ],
+              "disabled": [
+                "volumetricFog",
+                "motionBlur",
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 3,
+              "glowResolution": [
+                480,
+                270
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": [
+                480,
+                270
+              ],
+              "beautyResolution": [
+                1920,
+                1080
+              ],
+              "estimatedTargetBytes": 26956800,
+              "auxiliaryDraws": 3,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 12,
+              "fogSamples": 0,
+              "motionSamples": 0,
+              "sunShaftSamples": 0,
+              "frames": 24,
+              "rebuilds": 2,
+              "disposedTargets": 3,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 411,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19658636,
+              "instancePayloadBytes": 4435904,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 611,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 26956800,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  1024,
+                  1024
+                ],
+                "estimatedDepthBytes": 4194304,
+                "refresh": "every frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 9,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.06666666683223513,
+                  "maximumMs": 0.20000000298023224,
+                  "recentP95": 0.20000000298023224,
+                  "recentSamples": 9
+                },
+                "fixedUpdate": {
+                  "meanMs": 13.30000000115898,
+                  "maximumMs": 22.100000001490116,
+                  "recentP95": 22.100000001490116,
+                  "recentSamples": 9
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.72222222139438,
+                  "maximumMs": 4.799999997019768,
+                  "recentP95": 4.799999997019768,
+                  "recentSamples": 9
+                },
+                "cityStreaming": {
+                  "meanMs": 1.133333332836628,
+                  "maximumMs": 5,
+                  "recentP95": 5,
+                  "recentSamples": 9
+                },
+                "populationRender": {
+                  "meanMs": 1.9111111122700903,
+                  "maximumMs": 9.800000004470348,
+                  "recentP95": 9.800000004470348,
+                  "recentSamples": 9
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 1.0555555538998709,
+                  "maximumMs": 2.7000000029802322,
+                  "recentP95": 2.7000000029802322,
+                  "recentSamples": 9
+                },
+                "hudLife": {
+                  "meanMs": 1.3444444454378552,
+                  "maximumMs": 2.2000000029802322,
+                  "recentP95": 2.2000000029802322,
+                  "recentSamples": 9
+                },
+                "renderSubmit": {
+                  "meanMs": 12.13333333366447,
+                  "maximumMs": 21.700000002980232,
+                  "recentP95": 21.700000002980232,
+                  "recentSamples": 9
+                }
+              }
+            },
+            "worker": {
+              "completed": 50,
+              "pending": 0,
+              "highWater": 4,
+              "maximumRoundTripMs": 3731.2000000029802,
+              "maximumWorkMs": 120,
+              "maximumQueuedMs": 3731,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 23,
+                  "workMs": 1.5,
+                  "queuedMs": 21.5
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 23,
+                  "workMs": 1.1999999955296516,
+                  "queuedMs": 21.80000000447035
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 23,
+                  "workMs": 1.2999999970197678,
+                  "queuedMs": 21.700000002980232
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 23.100000001490116,
+                  "workMs": 9.800000004470348,
+                  "queuedMs": 13.299999997019768
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 163.69999999552965,
+                  "workMs": 0.3999999985098839,
+                  "queuedMs": 163.29999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 156.39999999850988,
+                  "workMs": 2.2999999970197678,
+                  "queuedMs": 154.10000000149012
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 155.69999999552965,
+                  "workMs": 0.5,
+                  "queuedMs": 155.19999999552965
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 155.69999999552965,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 155.09999999403954
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 57.20000000298023,
+                  "workMs": 0.4000000059604645,
+                  "queuedMs": 56.79999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 55.79999999701977,
+                  "workMs": 1,
+                  "queuedMs": 54.79999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 54.70000000298023,
+                  "workMs": 0.30000000447034836,
+                  "queuedMs": 54.399999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 54.29999999701977,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 53.399999998509884
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 1.9000000059604645,
+            "errors": []
+          },
+          {
+            "tier": 3,
+            "name": "Ultra",
+            "build": {
+              "version": "0.14.0",
+              "build": "14.002"
+            },
+            "viewport": [
+              1920,
+              1080
+            ],
+            "internalPixels": [
+              1920,
+              1080
+            ],
+            "cadence": {
+              "frames": 8,
+              "wallMs": 25949.000000000007,
+              "fps": 0.30829704420208864,
+              "p50Ms": 3216.5999999999913,
+              "p95Ms": 3449.9000000000087,
+              "maximumMs": 3449.9000000000087,
+              "intervals": [
+                3349.9000000000015,
+                3183.199999999997,
+                3149.9000000000087,
+                3133.199999999997,
+                3249.800000000003,
+                3216.5999999999913,
+                3216.5,
+                3449.9000000000087
+              ]
+            },
+            "draws": 323,
+            "triangles": 150637,
+            "actualCars": 60,
+            "actualPedestrians": 58,
+            "physicalPolice": 4,
+            "pursuitStars": 3,
+            "heli": true,
+            "beforeNearby": 9,
+            "afterNearby": 9,
+            "post": {
+              "backendIndependentTSL": true,
+              "grade": "bright coastal / neon night",
+              "effectFrames": {
+                "volumetricFog": 25,
+                "motionBlur": 25,
+                "bloom": 25,
+                "sunShafts": 3,
+                "heatHaze": 3,
+                "lensFlare": 3,
+                "wetReflections": 22
+              },
+              "sampledDepth": true,
+              "sunUV": [
+                0.8539398864461267,
+                0.9561747180362912
+              ],
+              "sunVisible": 0,
+              "active": [
+                "volumetricFog",
+                "motionBlur",
+                "wetReflections",
+                "bloom"
+              ],
+              "disabled": [
+                "sunShafts",
+                "heatHaze",
+                "lensFlare"
+              ],
+              "targets": 3,
+              "glowResolution": [
+                480,
+                270
+              ],
+              "shaftsResolution": null,
+              "reflectionResolution": [
+                480,
+                270
+              ],
+              "beautyResolution": [
+                1920,
+                1080
+              ],
+              "estimatedTargetBytes": 26956800,
+              "auxiliaryDraws": 3,
+              "bloomPyramidLevels": 0,
+              "reflectionSteps": 12,
+              "fogSamples": 8,
+              "motionSamples": 5,
+              "sunShaftSamples": 0,
+              "frames": 25,
+              "rebuilds": 2,
+              "disposedTargets": 3,
+              "bypass": false,
+              "offContract": "Disabled optional effects have no graph branch, auxiliary target, texture lookup or effect-specific update. Shared beauty/grade and its depth buffer remain."
+            },
+            "resources": {
+              "boundary": "Scene-owned CPU geometry/instance payloads and approximate RGBA8 texture payloads only. Excludes driver caches, hidden retired city roots, render targets and shader-node-owned textures; post/shadow/mirrors reported separately. Not actual VRAM or overdraw.",
+              "uniqueGeometries": 414,
+              "uniqueMaterials": 248,
+              "uniqueMaterialTextures": 28,
+              "geometryPayloadBytes": 19754132,
+              "instancePayloadBytes": 4669376,
+              "estimatedMaterialTextureBytes": 26673165,
+              "visibleMeshFlags": 693,
+              "transparentMeshFlags": 24,
+              "largestMaterialTextures": [
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 1024,
+                  "estimatedRGBA8MipBytes": 5592406
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 1024,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "colormap",
+                  "width": 512,
+                  "height": 512,
+                  "estimatedRGBA8MipBytes": 1398102
+                },
+                {
+                  "name": "unnamed material texture",
+                  "width": 512,
+                  "height": 256,
+                  "estimatedRGBA8MipBytes": 699051
+                }
+              ],
+              "post": 26956800,
+              "shadow": {
+                "enabled": true,
+                "size": [
+                  1536,
+                  1536
+                ],
+                "estimatedDepthBytes": 9437184,
+                "refresh": "every frame"
+              },
+              "mirrors": 0
+            },
+            "cpuPhases": {
+              "enabled": true,
+              "frames": 9,
+              "boundary": "Instrumented main-thread CPU/submission only, not GPU timing or target-hardware performance",
+              "phases": {
+                "input": {
+                  "meanMs": 0.07777777645323011,
+                  "maximumMs": 0.19999999552965164,
+                  "recentP95": 0.19999999552965164,
+                  "recentSamples": 9
+                },
+                "fixedUpdate": {
+                  "meanMs": 18.13333333366447,
+                  "maximumMs": 30.899999998509884,
+                  "recentP95": 30.899999998509884,
+                  "recentSamples": 9
+                },
+                "cameraEnvironmentRoofs": {
+                  "meanMs": 0.6444444449411498,
+                  "maximumMs": 4.5,
+                  "recentP95": 4.5,
+                  "recentSamples": 9
+                },
+                "cityStreaming": {
+                  "meanMs": 0.8555555558866925,
+                  "maximumMs": 1.6000000014901161,
+                  "recentP95": 1.6000000014901161,
+                  "recentSamples": 9
+                },
+                "populationRender": {
+                  "meanMs": 1.1999999988410208,
+                  "maximumMs": 2.6999999955296516,
+                  "recentP95": 2.6999999955296516,
+                  "recentSamples": 9
+                },
+                "vehicleEffectsMirrors": {
+                  "meanMs": 1.688888890047868,
+                  "maximumMs": 6.5,
+                  "recentP95": 6.5,
+                  "recentSamples": 9
+                },
+                "hudLife": {
+                  "meanMs": 4.64444444494115,
+                  "maximumMs": 26.899999998509884,
+                  "recentP95": 26.899999998509884,
+                  "recentSamples": 9
+                },
+                "renderSubmit": {
+                  "meanMs": 30.166666665838825,
+                  "maximumMs": 101.29999999701977,
+                  "recentP95": 101.29999999701977,
+                  "recentSamples": 9
+                }
+              }
+            },
+            "worker": {
+              "completed": 70,
+              "pending": 0,
+              "highWater": 4,
+              "maximumRoundTripMs": 3797.89999999851,
+              "maximumWorkMs": 109.19999999552965,
+              "maximumQueuedMs": 3797.5,
+              "recent": [
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 27.899999998509884,
+                  "workMs": 1,
+                  "queuedMs": 26.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 27.899999998509884,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 26.799999997019768
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 27.899999998509884,
+                  "workMs": 6,
+                  "queuedMs": 21.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 28.200000002980232,
+                  "workMs": 1.1000000014901161,
+                  "queuedMs": 27.100000001490116
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 34.100000001490116,
+                  "workMs": 0.8000000044703484,
+                  "queuedMs": 33.29999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 34,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 33.399999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 34,
+                  "workMs": 16,
+                  "queuedMs": 18
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 34.099999994039536,
+                  "workMs": 0.7999999970197678,
+                  "queuedMs": 33.29999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 40.79999999701977,
+                  "workMs": 0.8999999985098839,
+                  "queuedMs": 39.899999998509884
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 39.5,
+                  "workMs": 0.7000000029802322,
+                  "queuedMs": 38.79999999701977
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 38.599999994039536,
+                  "workMs": 0.4000000059604645,
+                  "queuedMs": 38.19999998807907
+                },
+                {
+                  "kind": "chunk",
+                  "roundTripMs": 37.899999998509884,
+                  "workMs": 0.6000000014901161,
+                  "queuedMs": 37.29999999701977
+                }
+              ],
+              "mainThreadSynchronousWaits": 0,
+              "queueLimit": 4
+            },
+            "streamMaximumInstallMs": 2.5999999940395355,
+            "errors": []
+          }
+        ]
+      }
+    },
+    "attributionBoundary": "Real software cadence/CPU profiles are not native integrated-GPU time. Whole-scene shadow/effect/detail changes are bundled; a before/after difference is not isolated attribution. Worker delays include scheduling/delivery; payload arithmetic is not driver VRAM."
+  },
+  "deployment": {
+    "status": "Local 0.14 candidate, NOT published; public 0.13 remains separately verified",
+    "publishedVersion": "0.13.0",
+    "candidateVersion": "0.14.0",
+    "url": "https://crosstown-sarang-dev.vercel.app",
+    "anonymousCandidateFileHashesVerified": 0
+  },
+  "github": {
+    "existingPrivateRepository": "sarang-cmd/crosstown",
+    "pushed": true,
+    "publication": {
+      "method": "Unmerged pull request; application files are not on main",
+      "pullRequestNumber": 1,
+      "pullRequestUrl": "https://github.com/sarang-cmd/crosstown/pull/1",
+      "state": "open",
+      "branch": "review/crosstown-steps-01-14",
+      "base": "main",
+      "emptyBaselineSha": "22b941bb8395ca5fa6868c584bd100ac900d7920",
+      "sourceImportHeadSha": "e4e37ab9208d2034a35c11b6605dd5f73c69896d",
+      "sourceImportCommits": 60,
+      "publicationStatusCommitFollows": true,
+      "merged": false,
+      "forcePushed": false,
+      "projectFiles": 1294
+    },
+    "hostedCI": {
+      "passed": false,
+      "status": "blocked-before-job-start",
+      "observedRunUrl": "https://github.com/sarang-cmd/crosstown/actions/runs/45181702188",
+      "reason": "GitHub reports recent account payment failures or a spending-limit restriction; all four jobs have zero steps."
+    },
+    "hostedCIPassClaimed": false
+  },
+  "revisionBoundaries": [
+    "Original DESIGN is byte-identical; earlier routes/browser save keys/roster/features remain.",
+    "Initial rough effect captures, the favicon-404 WebGPU attempt, the pre-single-pass 14.001 batch and the mislabeled Old Town/Ultra-timeout profile attempt remain separate and are not final passing checks. The final busy-v3 collector verifies the actual Downtown district and bounds/persists setup stages.",
+    "The explicit lab uses synthetic static geometry/car to isolate optional effect pixels/resources; it is not gameplay/FPS acceptance.",
+    "The built-game spark check uses the existing real circuit/wall and physics contact events, not injected damage/rewards.",
+    "Busy measurements have zero manual steps during measurement; initial positioning/density/stars/setup steps are disclosed.",
+    "Current source extraction is compared with local candidate output, not stale public 0.13 bytes.",
+    "Release date is a metadata label, not the final run date. The profiler hardcodes stale date/timezone labels; its ISO capturedAt/stage Z timestamps and the batch startedAt/finishedAt give actual recorded UTC provenance. Raw reports and tested collector hashes are preserved."
+  ],
+  "limitations": [
+    "Native Radeon 840M-class 1080p60 and reported lag remain unaccepted; software observations are not promoted to a target-device pass.",
+    "SSR has off-screen/edge limits; camera blur is not per-object velocity; height fog is a bounded single-scatter approximation; cones are not fully shadow-occluded volumetric spots.",
+    "Overlapping near light/searchlight pools can wash out sidewalk highlights in the busy-scene captures; final highlight/art tuning is not accepted.",
+    "Short toggling checks are not a long driver-memory/whole-map soak. Some streaming install slices exceed 8 ms; strict no-popping/no-stall gates remain open.",
+    "Human art direction/handling/listening, physical controller/wheel/rumble and full touch-only on-foot controls remain unaccepted.",
+    "Strict traffic no-stuck/fairness and external provider/account/visual-sync authorization remain open; inspect actual radio rows."
+  ],
+  "historicalReleases": [
+    "TEST-RESULTS-0.13.0.json",
+    "TEST-RESULTS-0.9.0.json",
+    "TEST-RESULTS-0.7.0.json",
+    "TEST-RESULTS-0.5.0.json",
+    "TEST-RESULTS-0.3.0.json"
+  ],
+  "gallery": "PROGRESS-GALLERY.html",
+  "lightingGuide": "LIGHTING.md",
+  "findings": "FINDINGS.md"
+}

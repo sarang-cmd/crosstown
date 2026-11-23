@@ -1,0 +1,72 @@
+{
+  "title": "Crosstown Wren Single — original motorcycle",
+  "kind": "car",
+  "author": "Crosstown project (original procedural modelling)",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "tools/prepare-roster.mjs",
+  "url": "tools/prepare-roster.mjs",
+  "targetSize": 2.16,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.4300000071525574,
+        0.0048615108244121075,
+        -1.090000033378601
+      ],
+      "max": [
+        0.4300000071525574,
+        1.100000023841858,
+        1.090000033378601
+      ]
+    },
+    "dimensions": [
+      0.8600000143051147,
+      1.0951385130174458,
+      2.180000066757202
+    ],
+    "triangles": 988,
+    "nodes": 21,
+    "textures": 0,
+    "animations": []
+  },
+  "modifications": [
+    "Original detailed two-wheel fictional motorcycle, authored as fallback after source access failed",
+    "Ground-centred +Z-forward glTF with fork, tank, engine, two axles, exhaust, controls, lamp and class-specific fairing or luggage rack",
+    "Meshopt FILTER geometry compression"
+  ],
+  "id": "wren",
+  "sourceSha256": "d3efceaf239f582551d532dbc8e63e2f71cef66490d3b0e2187ddb494c1c7c09",
+  "sourceBytes": 53940,
+  "sourceGlbBytes": 53940,
+  "outputBytes": 48596,
+  "outputSha256": "339ada53b5c20e05fdf6534c542d5bf4ab0ae98c6f3a3eee07a96e6d20910209",
+  "after": {
+    "bounds": {
+      "min": [
+        -0.42605503991159704,
+        0,
+        -1.08
+      ],
+      "max": [
+        0.42605503991159704,
+        1.0850913374678997,
+        1.08
+      ]
+    },
+    "dimensions": [
+      0.8521100798231941,
+      1.0850913374678997,
+      2.16
+    ],
+    "triangles": 988,
+    "nodes": 22,
+    "textures": 0,
+    "animations": []
+  }
+}

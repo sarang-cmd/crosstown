@@ -1,0 +1,14 @@
+Selected nonsecret event text from Vercel get_deployment_events; not the complete build log.
+Deployment: dpl_CGHF6xxuyPmeXv6cZjVVi7Yq2Mmt
+Project: prj_gd5kw1GBgtWqMseb5ETMgzrXpKir
+1795417765671 Downloading 3 deployment files...
+1795417767096 Running "install" command: `npm install --ignore-scripts --no-audit --no-fund`...
+1795417770126 up to date in 3s
+1795417771797 VERIFIED CROSSTOWN 0.9.0 / 09.001 SHA256 a4ac64d518dcc0d5a87c5107a95bd8198e4994d97446ff1ecabb601e96c1a787 12548166 bytes
+1795417772032 Build Completed in /vercel/output [5s]
+1795417773247 Deployment completed
+get_deployment: READY / PROMOTED; aliasAssigned=true; aliasError=null.
+Aliases: crosstown-sarang-dev.vercel.app; coastline-highline.vercel.app.
+update_project confirmed source defaults: Vite; npm ci; npm run build; dist; root=null; existing SSO policy unchanged.
+This imports already tested local public output. It is not a source push, Vercel source compilation or hosted GitHub CI execution.
+Anonymous file integrity and public browser outcomes are recorded separately.

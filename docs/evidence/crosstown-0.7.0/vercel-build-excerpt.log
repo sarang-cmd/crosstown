@@ -1,0 +1,15 @@
+Selected non-secret lines copied from the connected-app deployment events.
+Deployment dpl_4FNdWnzTuzhbpnp3ZVPYS7cCLRjm · observed READY/PROMOTED, aliases assigned.
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Downloading 2 deployment files...
+Running "install" command: `npm install --ignore-scripts --no-audit --no-fund`...
+added 13 packages in 5s
+> crosstown-release-transfer@0.7.0 build
+> node import-release.mjs
+VERIFIED CROSSTOWN 0.7.0 / 07.001 SHA256 89c328bb1046b7948f6e3c46280a35f66365f88cfbf7a8e40e322d332eccaa08 5312752 bytes
+Build Completed in /vercel/output [6s]
+Deployment completed
+Non-fatal upstream warning: npm Unknown env config "cache-dir".
+Both temporary transfer processes stopped; public hashes rechecked independently.
+Normal source project settings subsequently confirmed: Vite / npm ci / npm run build / dist.

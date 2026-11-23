@@ -1,0 +1,12 @@
+
+Running 7 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (26.7s)
+  ✓  2 [webgpu] › tests/browser/parkour.spec.ts:22:1 › parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional (24.5s)
+  ✓  3 [webgl2-forced] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (22.7s)
+  ✓  4 [webgl2-forced] › tests/browser/parkour.spec.ts:22:1 › parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional (34.0s)
+  ✓  5 [webgpu-disabled] › tests/browser/parkour.spec.ts:4:1 › parkour opens mid-run, renders the glTF and district, and stays visible after GC and mobile resize (29.6s)
+  ✓  6 [webgpu-disabled] › tests/browser/parkour.spec.ts:22:1 › parkour controls, camera collision, checkpoint penalty, timeout, new seed and settings remain functional (31.1s)
+  ✓  7 [webgpu-full-run] › tests/browser/parkour-full.spec.ts:3:1 › full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district (45.8s)
+
+  7 passed (3.7m)

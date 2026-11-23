@@ -1,0 +1,16 @@
+
+> crosstown@0.7.0 test:vehicles
+> playwright test --config playwright.vehicles.config.ts
+
+
+Running 4 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/vehicles.spec.ts:27:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work (2.4m)
+  ✓  2 [webgpu] › tests/browser/vehicles.spec.ts:92:1 › virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors (3.4m)
+  ✓  3 [webgl2-forced] › tests/browser/vehicles.spec.ts:27:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work (2.3m)
+  ✓  4 [webgl2-forced] › tests/browser/vehicles.spec.ts:92:1 › virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors (2.9m)
+
+  Slow test file: [webgpu] › tests/browser/vehicles.spec.ts (5.8m)
+  Slow test file: [webgl2-forced] › tests/browser/vehicles.spec.ts (5.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  4 passed (11.1m)

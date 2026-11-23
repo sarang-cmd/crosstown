@@ -1,0 +1,11 @@
+START setup-probe webgl 3
+STAGE setup-probe webgl 3 cold-start-saved-tier
+STAGE setup-probe webgl 3 enter-and-position-in-downtown
+STAGE setup-probe webgl 3 set-fixed-stress-and-weather-before-warmup
+STAGE setup-probe webgl 3 flush-nearby-real-collision-chunks
+STAGE setup-probe webgl 3 one-hundred-setup-physics-steps
+STAGE setup-probe webgl 3 prime-requested-density-and-start-pursuit
+STAGE setup-probe webgl 3 settle-nine-chunks-and-physical-police
+STAGE setup-probe webgl 3 actual-display-intervals-no-manual-steps
+STAGE setup-probe webgl 3 capture-real-scene
+RESULT setup-probe webgl 3 {"cadence":{"frames":8,"wallMs":14749.399999999998,"fps":0.5423949448791138,"p50Ms":2083.2000000000044,"p95Ms":2166.600000000006,"maximumMs":2166.600000000006,"intervals":[899.8999999999978,2083.2000000000044,2150,2099.7999999999956,2166.600000000006,1966.5999999999985,1366.5999999999985,2016.699999999997]},"police":4,"draws":317,"triangles":154019,"district":"downtown","errors":[]}

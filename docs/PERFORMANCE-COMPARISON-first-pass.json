@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-22",
+  "warning": "Scenes differ because the new release adds the full city. Do not extrapolate these software measurements to target hardware. Full course and same Balanced tier are used in both.",
+  "results": [
+    {
+      "release": "0.3.0-before",
+      "url": "http://127.0.0.1:4175/?test&webgl",
+      "environment": "Chromium, forced WebGL 2, software SwiftShader, 1280x800, Balanced; 2-CPU/2-GiB container; 15 s unpaused rAF cadence; not GPU hardware timing.",
+      "cadence": {
+        "wallMs": 15715.799999999628,
+        "frames": 1,
+        "rafFps": 0.06363023199582736,
+        "frameP50": 8366.400000000001,
+        "frameP95": 8366.400000000001,
+        "frameMaximum": 8366.400000000001
+      },
+      "state": {
+        "seed": 84173,
+        "state": "running",
+        "night": false,
+        "checkpoint": 0,
+        "total": 28,
+        "elapsed": 0.41666666666666663,
+        "remaining": 1085.5833333333337,
+        "penalty": 0,
+        "falls": 0,
+        "cash": 0,
+        "collectibles": 0,
+        "powers": {
+          "double": 0,
+          "slow": 0,
+          "speed": 0,
+          "magnet": 0
+        },
+        "position": {
+          "x": 0.001391426078043878,
+          "y": 27.025096893310547,
+          "z": 19.70206642150879
+        },
+        "velocity": {
+          "x": 0,
+          "y": -1.5,
+          "z": 6.5
+        },
+        "grounded": true,
+        "motion": "run",
+        "height": 1.75,
+        "modelLoaded": true,
+        "modelFallback": false,
+        "clips": [
+          "Dance",
+          "Death",
+          "Idle",
+          "Jump",
+          "No",
+          "Punch",
+          "Running",
+          "Sitting",
+          "Standing",
+          "ThumbsUp",
+          "Walking",
+          "WalkJump",
+          "Wave",
+          "Yes",
+          "Run",
+          "Sprint",
+          "ParkourJump",
+          "DoubleJump",
+          "Slide",
+          "Climb",
+          "Fall",
+          "Land",
+          "Roll",
+          "WallRun",
+          "Vault",
+          "Zipline",
+          "Swing"
+        ],
+        "ghostFrames": 0,
+        "ghostVisible": false,
+        "carUnlocked": false,
+        "nightUnlocked": false,
+        "result": null,
+        "finishTime": 0,
+        "camera": [
+          0.5010439870359732,
+          31.48284306028264,
+          14.129629693516057
+        ],
+        "cameraLimited": false,
+        "cameraClearance": 7.997017419735968,
+        "activeColliders": 66,
+        "streamMs": 0,
+        "routeMetres": 4416.0135035634285,
+        "expectedSeconds": 680,
+        "valid": {
+          "possible": true,
+          "errors": [],
+          "maxGap": 3.8000000000000114,
+          "maxHeight": 1.3429349663779782
+        },
+        "events": {
+          "route": 1,
+          "start": 1
+        },
+        "backend": "WebGL 2",
+        "workerReady": true,
+        "fps": 1,
+        "frameMs": 850.2999999988824,
+        "quality": "Balanced",
+        "paused": false,
+        "ticks": 25,
+        "draws": 172,
+        "triangles": 230240,
+        "worldBuilt": true,
+        "activeChunks": 11,
+        "input": "Ready. Press a key or connect a controller.",
+        "device": "none",
+        "moveX": 0,
+        "moveY": 0,
+        "initialStreamMs": 9.700000001117587,
+        "audioState": "awaiting-browser-gesture"
+      },
+      "topCpu": [
+        {
+          "name": "(idle) @ ",
+          "sampledMs": 15597.353
+        },
+        {
+          "name": "(program) @ ",
+          "sampledMs": 245.112
+        },
+        {
+          "name": "(garbage collector) @ ",
+          "sampledMs": 56.702
+        },
+        {
+          "name": "getAttributes @ rendering-DO7eZjrC.js",
+          "sampledMs": 26.669
+        },
+        {
+          "name": "setStencilTest @ rendering-DO7eZjrC.js",
+          "sampledMs": 10.789
+        },
+        {
+          "name": "_renderObjectDirect @ rendering-DO7eZjrC.js",
+          "sampledMs": 10.636
+        },
+        {
+          "name": "get @ rendering-DO7eZjrC.js",
+          "sampledMs": 9.783
+        },
+        {
+          "name": "compose @ rendering-DO7eZjrC.js",
+          "sampledMs": 8.659
+        },
+        {
+          "name": "draw @ rendering-DO7eZjrC.js",
+          "sampledMs": 7.698
+        },
+        {
+          "name": "updateMatrixWorld @ rendering-DO7eZjrC.js",
+          "sampledMs": 7.153
+        },
+        {
+          "name": "wasm-function[520] @ 005eea0e",
+          "sampledMs": 5.992
+        },
+        {
+          "name": "(anonymous) @ rendering-DO7eZjrC.js",
+          "sampledMs": 4.504
+        },
+        {
+          "name": "update @ rendering-DO7eZjrC.js",
+          "sampledMs": 4.499
+        },
+        {
+          "name": "Lv @ rendering-DO7eZjrC.js",
+          "sampledMs": 4.45
+        },
+        {
+          "name": "_projectObject @ rendering-DO7eZjrC.js",
+          "sampledMs": 3.25
+        },
+        {
+          "name": "updateForRender @ rendering-DO7eZjrC.js",
+          "sampledMs": 3.229
+        },
+        {
+          "name": "updateMatrix4 @ rendering-DO7eZjrC.js",
+          "sampledMs": 2.45
+        },
+        {
+          "name": "updateNode @ rendering-DO7eZjrC.js",
+          "sampledMs": 2.447
+        },
+        {
+          "name": "render @ rendering-DO7eZjrC.js",
+          "sampledMs": 2.282
+        },
+        {
+          "name": "bufferData @ ",
+          "sampledMs": 2.245
+        }
+      ],
+      "errors": []
+    },
+    {
+      "release": "0.5.0-crosstown",
+      "url": "http://127.0.0.1:5173/?test&webgl&length=full&date=2026-11-20",
+      "environment": "Chromium, forced WebGL 2, software SwiftShader, 1280x800, Balanced; 2-CPU/2-GiB container; 15 s unpaused rAF cadence; not GPU hardware timing.",
+      "cadence": {
+        "wallMs": 17604.29999999963,
+        "frames": 12,
+        "rafFps": 0.6816516419284069,
+        "frameP50": 1400,
+        "frameP95": 5249.700000000001,
+        "frameMaximum": 5249.700000000001
+      },
+      "state": {
+        "seed": 84173,
+        "length": "full",
+        "state": "running",
+        "night": false,
+        "checkpoint": 0,
+        "total": 28,
+        "elapsed": 2.1833333333333305,
+        "remaining": 902.8166666666687,
+        "penalty": 0,
+        "falls": 0,
+        "cash": 0,
+        "collectibles": 0,
+        "powers": {
+          "double": 0,
+          "slow": 0,
+          "speed": 0,
+          "magnet": 0
+        },
+        "position": {
+          "x": -0.02177172712981701,
+          "y": 27.009340286254883,
+          "z": 26.00617790222168
+        },
+        "velocity": {
+          "x": 0,
+          "y": -1.5,
+          "z": 0.011008623633375696
+        },
+        "grounded": true,
+        "motion": "idle",
+        "height": 1.75,
+        "modelLoaded": true,
+        "modelFallback": false,
+        "clips": [
+          "Dance",
+          "Death",
+          "Idle",
+          "Jump",
+          "No",
+          "Punch",
+          "Running",
+          "Sitting",
+          "Standing",
+          "ThumbsUp",
+          "Walking",
+          "WalkJump",
+          "Wave",
+          "Yes",
+          "Run",
+          "Sprint",
+          "ParkourJump",
+          "DoubleJump",
+          "Slide",
+          "Climb",
+          "Fall",
+          "Land",
+          "Roll",
+          "WallRun",
+          "Vault",
+          "Zipline",
+          "Swing"
+        ],
+        "ghostFrames": 0,
+        "ghostVisible": false,
+        "carUnlocked": false,
+        "nightUnlocked": false,
+        "result": null,
+        "finishTime": 0,
+        "camera": [
+          0.3283721689969087,
+          30.951611855760625,
+          20.153394161028913
+        ],
+        "cameraYaw": 0,
+        "cameraLimited": false,
+        "cameraClearance": 6.451240856540416,
+        "activeColliders": 66,
+        "streamMs": 0,
+        "routeMetres": 4416.0135035634285,
+        "expectedSeconds": 680,
+        "valid": {
+          "possible": true,
+          "errors": [],
+          "maxGap": 3.8000000000000114,
+          "maxHeight": 1.3429349663779782
+        },
+        "events": {
+          "route": 1,
+          "start": 1
+        },
+        "backend": "WebGL 2",
+        "workerReady": true,
+        "fps": 2,
+        "frameMs": 601.6000000005588,
+        "quality": "Balanced",
+        "paused": false,
+        "choosing": false,
+        "ticks": 131,
+        "draws": 82,
+        "triangles": 197652,
+        "worldBuilt": true,
+        "activeChunks": 2,
+        "input": "Ready. Press a key or connect a controller.",
+        "device": "none",
+        "moveX": 0,
+        "moveY": 0,
+        "initialStreamMs": 9.200000001117587,
+        "audioState": "awaiting-browser-gesture",
+        "mode": "parkour",
+        "city": {
+          "ready": true,
+          "sizeMetres": 4000,
+          "chunkMetres": 128,
+          "loaded": 20,
+          "centerLoaded": true,
+          "pending": 0,
+          "queued": 4,
+          "cached": 26,
+          "gpuCached": 1,
+          "farImpostors": 1628,
+          "maximumInstallMs": 10.599999999627471,
+          "maximumChunkCpuMs": 11.199999999254942,
+          "maximumUpdateMs": 21.300000000745058,
+          "coldPrimeWallMs": 38,
+          "installP95": 2.400000000372529,
+          "physicsChunks": 0,
+          "physicsColliders": 65,
+          "physicsStreamMs": 0,
+          "graph": {
+            "nodes": 197,
+            "edges": 353,
+            "lanes": 944
+          },
+          "district": "downtown",
+          "hiddenCachesFound": 0,
+          "continuousFarCoverage": true
+        },
+        "environment": {
+          "date": "2026-11-20",
+          "weather": "clear",
+          "hour": 8.879320344238076,
+          "night": 0,
+          "elapsed": 27.541200000001112,
+          "cycleRealSeconds": 1440,
+          "waves": true,
+          "analyticalSkyReflection": true,
+          "shoreFoam": true
+        }
+      },
+      "topCpu": [
+        {
+          "name": "getProgramParameter @ ",
+          "sampledMs": 11346.927
+        },
+        {
+          "name": "(idle) @ ",
+          "sampledMs": 6758.053
+        },
+        {
+          "name": "(program) @ ",
+          "sampledMs": 323.688
+        },
+        {
+          "name": "(garbage collector) @ ",
+          "sampledMs": 87.202
+        },
+        {
+          "name": "bindBufferBase @ ",
+          "sampledMs": 53.823
+        },
+        {
+          "name": "getUniformBlockIndex @ ",
+          "sampledMs": 51.019
+        },
+        {
+          "name": "get @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 23.308
+        },
+        {
+          "name": "updateMatrixWorld @ chunk-D6MJZFXW.js?v=a8766683",
+          "sampledMs": 18.279
+        },
+        {
+          "name": "build @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 14.868
+        },
+        {
+          "name": "multiplyMatrices @ chunk-D6MJZFXW.js?v=a8766683",
+          "sampledMs": 13.743
+        },
+        {
+          "name": "assemble @ stream.ts?t=1795352996990",
+          "sampledMs": 11.724
+        },
+        {
+          "name": "bufferData @ ",
+          "sampledMs": 11.424
+        },
+        {
+          "name": "bindBuffer @ ",
+          "sampledMs": 11.062
+        },
+        {
+          "name": "_getVaoKey @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 10.15
+        },
+        {
+          "name": "update @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 9.991
+        },
+        {
+          "name": "updateNode @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 9.637
+        },
+        {
+          "name": "update @ stream.ts?t=1795352996990",
+          "sampledMs": 9.033
+        },
+        {
+          "name": "wasm-to-js @ ",
+          "sampledMs": 8.509
+        },
+        {
+          "name": "compose @ chunk-D6MJZFXW.js?v=a8766683",
+          "sampledMs": 8.104
+        },
+        {
+          "name": "update @ ParkourRun.ts?t=1795351731313",
+          "sampledMs": 7.916
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

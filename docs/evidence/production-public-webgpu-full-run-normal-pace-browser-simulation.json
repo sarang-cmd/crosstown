@@ -1,0 +1,20 @@
+{
+  "ticks": 40949,
+  "normalPaceSeconds": 682.4833333333333,
+  "wallSeconds": 7.000400000000372,
+  "state": "finished",
+  "result": {
+    "seed": 84173,
+    "marker": "opening",
+    "night": false,
+    "seconds": 682.6,
+    "falls": 0,
+    "collectibles": 15,
+    "cash": 75,
+    "rank": "A",
+    "date": "2026-11-22T11:20:13.619Z"
+  },
+  "falls": 0,
+  "checkpoint": 27,
+  "note": "Every 60 Hz KCC step at 6.5 m/s. Rendering suspended only during the accelerated acceptance pilot, not a wall-clock or target-GPU measurement."
+}

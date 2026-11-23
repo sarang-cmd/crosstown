@@ -1,0 +1,20 @@
+
+> crosstown@0.9.0 assets:check
+> node tools/check-assets.mjs
+
+PASS aerox: 4.5 m length, ground-centred, +Z forward, 1952 triangles, 0 clips; 70.4 KiB.
+PASS brim: 4.9 m length, ground-centred, +Z forward, 2062 triangles, 0 clips; 67.1 KiB.
+PASS cinder: 4.95 m length, ground-centred, +Z forward, 2282 triangles, 0 clips; 77.6 KiB.
+PASS city-pedestrian: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 6 clips; 328.3 KiB.
+PASS harbor-roster: 4.3 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS kestrel: 2.26 m length, ground-centred, +Z forward, 1232 triangles, 0 clips; 54.9 KiB.
+PASS meridian: 4.65 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 78.9 KiB.
+PASS mesa: 4.9 m length, ground-centred, +Z forward, 2474 triangles, 0 clips; 92.1 KiB.
+PASS milo: 3.85 m length, ground-centred, +Z forward, 2082 triangles, 0 clips; 76.9 KiB.
+PASS parkour-runner: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 27 clips; 393.5 KiB.
+PASS pip: 3.6 m length, ground-centred, +Z forward, 2088 triangles, 0 clips; 84.6 KiB.
+PASS summit: 5.15 m length, ground-centred, +Z forward, 2086 triangles, 0 clips; 76.7 KiB.
+PASS test-car: 4.5 m length, ground-centred, +Z forward, 2032 triangles, 0 clips; 75.0 KiB.
+PASS test-character: 1.75 m height, ground-centred, +Z forward, 3237 triangles, 14 clips; 368.6 KiB.
+PASS wren: 2.16 m length, ground-centred, +Z forward, 988 triangles, 0 clips; 47.5 KiB.
+PASS zenith: 4.6 m length, ground-centred, +Z forward, 2068 triangles, 0 clips; 73.6 KiB.

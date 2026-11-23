@@ -1,0 +1,43 @@
+
+> crosstown@0.7.0 test:vehicles
+> playwright test --config playwright.vehicles.config.ts --project=webgpu
+
+
+Running 2 tests using 1 worker
+
+  ✘  1 [webgpu] › tests/browser/vehicles.spec.ts:56:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work (2.7m)
+  ✓  2 [webgpu] › tests/browser/vehicles.spec.ts:144:1 › virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors (3.4m)
+
+
+  1) [webgpu] › tests/browser/vehicles.spec.ts:56:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mnull[39m
+    Received: [31m"parked"[39m
+
+    Call Log:
+    - Timeout 20000ms exceeded while waiting on the predicate
+
+      43 |   // A deterministic stationary fixture makes the real E-key exit test independent of software rendering cadence.
+      44 |   await page.evaluate(() => { const s=window.__vehicles!.snapshot(), c=s.cars.find((c:any)=>c.id===s.active); window.__vehicles!.teleport(c.position); });
+    > 45 |   await page.keyboard.press('KeyE'); await expect.poll(async () => (await state(page)).active).toBe(null); await expect.poll(() => page.evaluate(() => window.__city!.snapshot().mode)).toBe('street');
+         |                                      ^
+      46 |   expect(await page.evaluate(() => window.__vehicles!.enter('reward'))).toBe(false);
+      47 |   await page.evaluate(() => window.__city!.mode('parkour'));
+      48 |   const result = await page.evaluate(() => window.__parkour!.botRun()); expect(result.state).toBe('finished');
+        at /home/user/tests/browser/vehicles.spec.ts:45:38
+
+    Error Context: .arena/vehicle-browser-results/vehicles-real-street-enter-1ea17-tual-finish-reward-car-work-webgpu/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .arena/vehicle-browser-results/vehicles-real-street-enter-1ea17-tual-finish-reward-car-work-webgpu/trace.zip
+    Usage:
+
+        npx playwright show-trace .arena/vehicle-browser-results/vehicles-real-street-enter-1ea17-tual-finish-reward-car-work-webgpu/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webgpu] › tests/browser/vehicles.spec.ts:56:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work 
+  1 passed (6.2m)

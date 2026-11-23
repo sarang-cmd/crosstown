@@ -1,0 +1,111 @@
+{
+  "id": "city-pedestrian",
+  "title": "Crosstown animated city pedestrian — CC0 RobotExpressive derivative",
+  "kind": "character",
+  "author": "Tomás Laulhé (Quaternius); conversion and facial morph targets by Don McCurdy",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/README.md",
+  "source": "https://github.com/mrdoob/three.js/tree/r180/examples/models/gltf/RobotExpressive",
+  "url": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/RobotExpressive.glb",
+  "sourceSha256": "44efa4061264cb6d2a32eb2062fcb601058705a3b3b658f4a298edb6f31324ec",
+  "downloadSha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+  "sourceBytes": 627496,
+  "sourceGlbBytes": 627496,
+  "sourceResources": [],
+  "targetSize": 1.75,
+  "targetDimension": "height",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 0.3922691641310077,
+  "before": {
+    "bounds": {
+      "min": [
+        -1.2981263282050939,
+        1.1081470824292339e-8,
+        -0.5266578612971529
+      ],
+      "max": [
+        1.2981263282050939,
+        1.7500000012853056,
+        0.526657969675633
+      ]
+    },
+    "dimensions": [
+      2.5962526564101878,
+      1.7499999902038348,
+      1.053315830972786
+    ],
+    "triangles": 3237,
+    "nodes": 75,
+    "textures": 0,
+    "animations": [
+      "Idle",
+      "Run",
+      "Sit",
+      "Walk",
+      "Chat",
+      "Flee"
+    ]
+  },
+  "renamed": [],
+  "missingKeyNodes": [],
+  "scene": "Root Scene",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 1.75 m height",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression",
+    "Six retained/renamed idle/walk/run/sit/chat/flee skeletal clips; flee is an explicitly retimed running derivative, not a newly recorded motion"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "none in source",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.2981263282050939,
+        1.1081470824292339e-8,
+        -0.5266578612971529
+      ],
+      "max": [
+        1.2981263282050939,
+        1.7500000012853056,
+        0.526657969675633
+      ]
+    },
+    "dimensions": [
+      2.5962526564101878,
+      1.7499999902038348,
+      1.053315830972786
+    ],
+    "triangles": 3237,
+    "nodes": 75,
+    "textures": 0,
+    "animations": [
+      "Idle",
+      "Run",
+      "Sit",
+      "Walk",
+      "Chat",
+      "Flee"
+    ]
+  },
+  "outputBytes": 336188,
+  "outputSha256": "b8045c3543e7f6d1db12255d8fc81fcc5065be47826900fb4c574b09826ce6e5",
+  "savedBytesPercent": 19,
+  "requiredAnimations": [
+    "Walk",
+    "Idle",
+    "Run",
+    "Flee",
+    "Sit",
+    "Chat"
+  ]
+}

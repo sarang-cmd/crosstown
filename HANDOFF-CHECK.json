@@ -1,0 +1,14 @@
+{
+  "status": "New user-requested release in progress; prior rolling ZIP slimmed, old standalone source/rebuild handoff metadata superseded.",
+  "rolling09StorageAudit": {
+    "purpose": "Rolling 0.9 source ZIP slimmed before the next requested release: original PNG captures and historical raw reports remain unchanged in the workspace; the offline gallery and all runtime/source/assets/tests/current raw evidence remain included. This is storage compression/exclusion, not a new game test.",
+    "beforeBytes": 44159980,
+    "beforeSha256": "f062b633a4de9e7105d21019ee9b6aea61fca6314338f91ca7402f128f499403",
+    "afterBytes": 24204037,
+    "afterSha256": "2b133fd584f1dc30af49bd26ec67f2f716d51c41471f785d98a6ac3af6d78351",
+    "unchangedOriginalPngFiles": 77,
+    "pixelsOrTelemetryEdited": false,
+    "currentRuntimeSourcePreserved": true,
+    "independentZipCrcAndManifestVerified": true
+  }
+}

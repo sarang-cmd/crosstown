@@ -1,0 +1,7 @@
+no Spotify ID means hidden and no SDK request PASS
+four procedural stations, bounded notes, per-station volume, crossfade and static PASS
+actual Radio Browser country DE, https-only data and real stream playback PASS
+station change makes new static and remains an HTTPS stream PASS
+official visible YouTube playlist plays and receives skip FAILED/UNAVAILABLE TimeoutError: page.waitForFunction: Timeout 12000ms exceeded.
+official visible SoundCloud public link plays and receives skip FAILED/UNAVAILABLE TimeoutError: page.waitForFunction: Timeout 12000ms exceeded.
+favourites and custom links persist; exiting always stops providers PASS

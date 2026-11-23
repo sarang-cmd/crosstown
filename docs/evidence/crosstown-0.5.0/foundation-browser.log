@@ -1,0 +1,21 @@
+
+> crosstown@0.5.0 test:browser
+> playwright test
+
+
+Running 12 tests using 1 worker
+
+  ✓   1 [webgpu] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (19.7s)
+  ✓   2 [webgpu] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (24.6s)
+  ✓   3 [webgpu] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (6.2s)
+  ✓   4 [webgpu] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (7.3s)
+  ✓   5 [webgl2-forced] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (15.9s)
+  ✓   6 [webgl2-forced] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (34.0s)
+  ✓   7 [webgl2-forced] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (8.0s)
+  ✓   8 [webgl2-forced] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (7.2s)
+  ✓   9 [webgpu-disabled] › tests/browser/foundation.spec.ts:27:1 › boots directly, renders real geometry, and the body falls and rests (15.8s)
+  ✓  10 [webgpu-disabled] › tests/browser/foundation.spec.ts:55:1 › keyboard, pause, quality, rebinding, synthetic gamepad and wheel inputs work (33.2s)
+  ✓  11 [webgpu-disabled] › tests/browser/foundation.spec.ts:113:1 › prepared models load in the browser with real dimensions, wheels, skins and animation (8.1s)
+  ✓  12 [webgpu-disabled] › tests/browser/foundation.spec.ts:147:1 › mobile layout remains usable and credits are available (7.4s)
+
+  12 passed (3.2m)

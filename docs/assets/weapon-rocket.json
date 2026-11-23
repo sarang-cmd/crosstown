@@ -1,0 +1,81 @@
+{
+  "id": "weapon-rocket",
+  "title": "Crosstown rocket — Kenney stylized blaster",
+  "kind": "prop",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/blaster-kit",
+  "source": "https://kenney.nl/assets/blaster-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_blaster-kit_2.1.zip",
+  "archiveEntry": "Models/GLB format/blaster-r.glb",
+  "sourceSha256": "ab0b5f51ecff405238727626d558414750a9946d5e255cd1dc8bf81eebe1f1e2",
+  "downloadSha256": "91e3093e95427d59625e7e2ce2d0399b861600160fd0b4ada7714796b67cea8c",
+  "sourceBytes": 48920,
+  "targetSize": 0.36,
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.08999999612569809,
+        -0.16250000715255736,
+        -0.42000001668930054
+      ],
+      "max": [
+        0.09000000357627869,
+        0.23840169608592987,
+        0.2634095847606659
+      ]
+    },
+    "dimensions": [
+      0.17999999970197678,
+      0.40090170323848723,
+      0.6834096014499664
+    ],
+    "triangles": 524,
+    "nodes": 2,
+    "textures": 1,
+    "animations": []
+  },
+  "modifications": [
+    "Reviewed embedded CC0 License.txt",
+    "Y-up, +Z-forward, ground-centred wrapper",
+    "Uniformly scaled to 0.36 m height",
+    "Deduplicated/pruned and Meshopt FILTER geometry",
+    "Textures <=512px, WebP"
+  ],
+  "outputBytes": 17976,
+  "outputSha256": "4e145cb57ca21f5aca8a758ba941527710fba6751657612e6c32478f270e2e3c",
+  "scale": 0.897975730938325,
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 512
+  },
+  "missingKeyNodes": [],
+  "after": {
+    "bounds": {
+      "min": [
+        -0.08081781565064045,
+        0,
+        -0.30684261819615144
+      ],
+      "max": [
+        0.08081781565064045,
+        0.36000000000000004,
+        0.30684261819615144
+      ]
+    },
+    "dimensions": [
+      0.1616356313012809,
+      0.36000000000000004,
+      0.6136852363923029
+    ],
+    "triangles": 524,
+    "nodes": 3,
+    "textures": 1,
+    "animations": []
+  }
+}

@@ -1,0 +1,2511 @@
+{
+  "schema": 5,
+  "date": "2026-11-22",
+  "name": "Crosstown",
+  "release": "0.13.0",
+  "build": "13.001",
+  "scope": [
+    "01-foundation",
+    "02-opening-and-movement",
+    "03-parkour-run",
+    "04-world-terrain-roads",
+    "05-city-buildings-and-day-cycle",
+    "06-first-car",
+    "07-interior-and-sound",
+    "08-roster-damage-garages",
+    "09-traffic-and-pedestrians",
+    "10-weapons-and-police",
+    "11-hud-economy-save",
+    "12-challenges",
+    "13-radio"
+  ],
+  "scopeBoundary": "Steps 01–13 prototype, lightweight landing and immediate /play. Implementation is not complete native/human/provider acceptance.",
+  "environment": {
+    "node": "v20.20.2",
+    "browser": "Playwright 1.56.1 / Chromium",
+    "graphics": "Software SwiftShader / Vulkan; functional WebGPU under Xvfb and forced WebGL 2",
+    "nativeHardwareBenchmark": false,
+    "physicalInputHardwareTested": false,
+    "audibleMixManuallyReviewed": false
+  },
+  "handoffRuntimeFingerprint": {
+    "sha256": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+    "unchangedAcrossFinalBatch": true,
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records"
+  },
+  "finalFunctionalBatch": {
+    "report": "evidence/crosstown-0.13.0/final-functional-batch.json",
+    "release": "0.13.0",
+    "runtimeBefore": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+    "startedAt": "2026-11-23T09:42:28.232Z",
+    "sequentialBrowsers": true,
+    "runs": [
+      {
+        "id": "activities",
+        "tool": "tools/accept-activities.mjs",
+        "command": [
+          "node",
+          "tools/accept-activities.mjs"
+        ],
+        "seconds": 240,
+        "log": "activity-route-acceptance.log",
+        "collectorSha256": "7aaaf530e8aa0feba1293e087060f09e23295552b2da92a717cfc508ccf0b312",
+        "startedAt": "2026-11-23T09:42:28.236Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 37817.568801,
+        "finishedAt": "2026-11-23T09:43:06.057Z"
+      },
+      {
+        "id": "city-life-webgl",
+        "tool": "tools/accept-city-life.mjs",
+        "command": [
+          "node",
+          "tools/accept-city-life.mjs"
+        ],
+        "seconds": 360,
+        "log": "life-integration-webgl.log",
+        "collectorSha256": "a5aaface002289510c667975fedd813005e06724f8ffab1a3d82595b28417d00",
+        "startedAt": "2026-11-23T09:43:06.059Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 89473.304135,
+        "finishedAt": "2026-11-23T09:44:35.533Z"
+      },
+      {
+        "id": "city-life-webgpu",
+        "tool": "tools/accept-city-life.mjs",
+        "command": [
+          "xvfb-run",
+          "-a",
+          "env",
+          "BACKEND=webgpu",
+          "node",
+          "tools/accept-city-life.mjs"
+        ],
+        "seconds": 360,
+        "log": "life-integration-webgpu.log",
+        "collectorSha256": "a5aaface002289510c667975fedd813005e06724f8ffab1a3d82595b28417d00",
+        "startedAt": "2026-11-23T09:44:35.534Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 64450.01155899999,
+        "finishedAt": "2026-11-23T09:45:39.985Z"
+      },
+      {
+        "id": "landing",
+        "tool": "tools/accept-landing.mjs",
+        "command": [
+          "node",
+          "tools/accept-landing.mjs"
+        ],
+        "seconds": 60,
+        "log": "landing-acceptance.log",
+        "collectorSha256": "7ce4186dba7c9314125f55ee3e5f336501b4aee42c806c9f00253f2ff34514ca",
+        "startedAt": "2026-11-23T09:45:39.987Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 4550.924407000013,
+        "finishedAt": "2026-11-23T09:45:44.539Z"
+      },
+      {
+        "id": "real-radio-providers",
+        "tool": "tools/accept-radio-providers.mjs",
+        "command": [
+          "node",
+          "tools/accept-radio-providers.mjs"
+        ],
+        "seconds": 180,
+        "log": "radio-provider-acceptance.log",
+        "unavailableIsNotAcceptance": true,
+        "collectorSha256": "7ea567bb4fc4ca121511effbdc51ccbaffb20c7c36a273eae020d731cfd4b9b0",
+        "startedAt": "2026-11-23T09:45:44.541Z",
+        "status": "failed-or-unavailable",
+        "exitCode": 1,
+        "wallMs": 40280.021507999976,
+        "finishedAt": "2026-11-23T09:46:24.822Z"
+      },
+      {
+        "id": "populated-display-cadence",
+        "tool": "tools/accept-populated-life-performance.mjs",
+        "command": [
+          "node",
+          "tools/accept-populated-life-performance.mjs"
+        ],
+        "seconds": 240,
+        "log": "populated-performance-webgl.log",
+        "softwareIsNotNativeAcceptance": true,
+        "collectorSha256": "67d0c026f9720e6a61ba863aae48770f3234e92440386cf50f7739643467022d",
+        "startedAt": "2026-11-23T09:48:30.448Z",
+        "status": "completed",
+        "exitCode": 0,
+        "wallMs": 57233.40257,
+        "finishedAt": "2026-11-23T09:49:27.683Z"
+      }
+    ],
+    "nativeHardwareAcceptance": false,
+    "retryBoundary": {
+      "previousBatch": "final-functional-batch-before-stress-wait-fix.json",
+      "previousPerformance": "populated-performance-initial-collector-attempt.json",
+      "reason": "Initial collector asserted helicopter immediately after debug stars, before any normal update. Retry awaits actual helicopter/rival state; runtime is unchanged."
+    },
+    "runtimeAfter": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+    "finishedAt": "2026-11-23T09:49:27.847Z",
+    "runtimeUnchanged": true
+  },
+  "unitTests": {
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 74346.707994,
+    "retained09Cases": 99,
+    "log": "evidence/crosstown-0.13.0/unit.log"
+  },
+  "checks": {
+    "portableSourceBuild": {
+      "report": "evidence/crosstown-0.13.0/source-archive-build.json",
+      "date": "2026-11-22",
+      "checkedAt": "2026-11-23T10:07:52.704528+00:00",
+      "release": "0.13.0",
+      "build": "13.001",
+      "passed": true,
+      "archiveAtExtractionSha256": "02a0c51386c851cdac6b597eb026e9eb6eacd4af5ef67b99a6cd16e376c0d57a",
+      "extractedTo": ".arena/source-archive-smoke/crosstown",
+      "cleanInstall": true,
+      "commands": [
+        "npm ci --no-audit --no-fund",
+        "npm run build",
+        "npm run assets:check",
+        "npm run check:versions"
+      ],
+      "exitCode": 0,
+      "buildSeconds": 6.22,
+      "modelPasses": 22,
+      "exactPins": 15,
+      "runtimeFingerprint": "fb09baa8b193d2229a3b8665835b38c3e9c261ba0bf7da3c5a0a2e67e824ba66",
+      "runtimeInputFilesMatch": 300,
+      "productionOutputFiles": 204,
+      "allProductionBytesMatchPublished": true,
+      "log": "source-archive-build.log",
+      "boundary": "This tests a clean extraction of the source ZIP. The final package adds this evidence and updated notes/manifests only; runtime source/public/lockfile/config fingerprints must remain identical. It is not a hosted CI/Vercel source-build claim or native FPS acceptance."
+    },
+    "typecheck": {
+      "passed": true
+    },
+    "productionBuild": {
+      "passed": true,
+      "buildSeconds": 7.83,
+      "publicFiles": 204
+    },
+    "models": {
+      "passed": 22
+    },
+    "exactDirectDependencyPins": {
+      "passed": 15
+    },
+    "referenceUnchanged": true,
+    "referenceSha256": "0f670679a820a3b687f6fb4fae6e0a14afebfc215b791b6918792ee322699dc9",
+    "gallery": {
+      "date": "2026-11-22",
+      "version": "0.13.0",
+      "passed": true,
+      "captures": 26,
+      "networkRequests": [],
+      "errors": [],
+      "desktopOverflow": false,
+      "mobileOverflow": false,
+      "lightboxNext": "Keep the ones you like. · 2 / 26",
+      "offline": true
+    },
+    "localFileLinks": {
+      "passed": true,
+      "checked": 148,
+      "documents": [
+        "README.md",
+        "CREDITS.md",
+        "docs/PROGRESS.md",
+        "docs/TESTING.md",
+        "docs/FINDINGS.md",
+        "docs/DEPLOYMENT.md",
+        "docs/ASSET_PIPELINE.md",
+        "docs/SCREENSHOTS.md",
+        "docs/RENDERER.md",
+        "docs/PARKOUR-API.md",
+        "docs/FLEET.md",
+        "docs/POPULATION.md",
+        "docs/SOURCE-ARCHIVE.md",
+        "docs/RADIO.md",
+        "docs/HANDOFF.md"
+      ],
+      "broken": [],
+      "boundary": "Current local relative file links only; external reachability/anchors not asserted."
+    },
+    "allowlistedSourceScan": {
+      "passed": true,
+      "allowlistedFiles": 995,
+      "textFilesScanned": 647,
+      "reviewedNonsecretFixtures": [
+        {
+          "file": "tests/unit/city-life.test.ts",
+          "fixtureWithoutUserinfo": "https://example.com/live",
+          "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+        },
+        {
+          "file": "tests/unit/city-life.test.ts",
+          "fixtureWithoutUserinfo": "https://youtube.com/watch?v=M7lc1UVf-VE",
+          "reason": "Exact negative URL validation assertion with invented userinfo; dummy userinfo omitted from this report."
+        }
+      ],
+      "findings": [],
+      "boundary": "Explicit path allowlist and known credential patterns; two exact negative-test URL literals are reviewed above. Not an exhaustive security audit."
+    }
+  },
+  "browsers": {
+    "cityLife-webgl": {
+      "passed": 11,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.13.0/life-integration-webgl.json.gz",
+      "boundary": "software renderer, Low for functional checks; NOT performance acceptance",
+      "debugPositioning": true
+    },
+    "cityLife-webgpu": {
+      "passed": 11,
+      "failed": 0,
+      "errors": [],
+      "report": "evidence/crosstown-0.13.0/life-integration-webgpu.json.gz",
+      "boundary": "software renderer, Low for functional checks; NOT performance acceptance",
+      "debugPositioning": true
+    }
+  },
+  "landing": {
+    "passed": true,
+    "widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "engineFetched": false,
+    "report": "evidence/crosstown-0.13.0/landing-acceptance.json"
+  },
+  "activities": {
+    "report": "evidence/crosstown-0.13.0/activity-route-acceptance.json.gz",
+    "realPhysics": true,
+    "debugSetup": true,
+    "ordinaryHumanAcceptance": false,
+    "results": [
+      {
+        "type": "trial",
+        "passed": true,
+        "reward": 350,
+        "final": {
+          "activity": "activity-trial",
+          "type": "trial",
+          "name": "Old Town Clock",
+          "state": "finished",
+          "elapsed": 57.04999999999804,
+          "remaining": 72.95000000000195,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "OLD TOWN CLOCK · COMPLETE +$350"
+        }
+      },
+      {
+        "type": "delivery",
+        "passed": true,
+        "reward": 450,
+        "final": {
+          "activity": "activity-delivery",
+          "type": "delivery",
+          "name": "Special Delivery",
+          "state": "finished",
+          "elapsed": 53.39999999999825,
+          "remaining": 86.60000000000176,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "SPECIAL DELIVERY · COMPLETE +$450"
+        }
+      },
+      {
+        "type": "speed",
+        "passed": true,
+        "reward": 250,
+        "final": {
+          "activity": "activity-speed",
+          "type": "speed",
+          "name": "Coastline Camera",
+          "state": "finished",
+          "elapsed": 14.800000000000315,
+          "remaining": 30.199999999999683,
+          "score": 75.30845884828949,
+          "gate": 1,
+          "total": 2,
+          "jumps": 0,
+          "reason": "COASTLINE CAMERA · COMPLETE +$250"
+        }
+      },
+      {
+        "type": "race",
+        "passed": true,
+        "reward": 500,
+        "final": {
+          "activity": "activity-race",
+          "type": "race",
+          "name": "Harbor Sprint",
+          "state": "finished",
+          "elapsed": 57.09999999999804,
+          "remaining": 92.90000000000197,
+          "score": 0,
+          "gate": 45,
+          "total": 45,
+          "jumps": 0,
+          "reason": "HARBOR SPRINT · COMPLETE +$500"
+        }
+      },
+      {
+        "type": "drift",
+        "passed": true,
+        "reward": 400,
+        "final": {
+          "activity": "activity-drift",
+          "type": "drift",
+          "name": "County Line Slide",
+          "state": "finished",
+          "elapsed": 35.01666666666596,
+          "remaining": 0,
+          "score": 142.12930899356218,
+          "gate": 1,
+          "total": 12,
+          "jumps": 0,
+          "reason": "COUNTY LINE SLIDE · COMPLETE +$400"
+        }
+      },
+      {
+        "type": "stunt",
+        "passed": true,
+        "reward": 550,
+        "final": {
+          "activity": "activity-stunt",
+          "type": "stunt",
+          "name": "Air Mail",
+          "state": "finished",
+          "elapsed": 11.950000000000173,
+          "remaining": 168.04999999999984,
+          "score": 1319,
+          "gate": 1,
+          "total": 12,
+          "jumps": 2,
+          "reason": "AIR MAIL · COMPLETE +$550"
+        }
+      }
+    ],
+    "damageFailure": {
+      "passed": true,
+      "debugPositioning": true,
+      "ordinaryPedalsAndCollision": true,
+      "before": {
+        "car": {
+          "id": "parked",
+          "definition": "harbor",
+          "position": {
+            "x": 544,
+            "y": 0.5599081516265869,
+            "z": 618
+          },
+          "rotation": [
+            0,
+            1,
+            0,
+            6.123234262925839e-17
+          ],
+          "velocity": {
+            "x": 0,
+            "y": -0.06781433522701263,
+            "z": 0
+          },
+          "speed": 0,
+          "kmh": 0,
+          "roadSteer": 0,
+          "steeringWheelRadians": 0,
+          "steeringRatio": 14.818833271649966,
+          "assist": false,
+          "slip": 0,
+          "surface": "grass",
+          "contacts": 4,
+          "odometer": 3712.297682532764,
+          "damage": 0,
+          "damageState": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1
+          },
+          "bike": false,
+          "lean": 0,
+          "targetLean": 0,
+          "physicsWheels": 4,
+          "airborneSeconds": 3.7833333333333248,
+          "maxHeight": 3.6819543838500977,
+          "carjacked": true,
+          "input": {
+            "throttle": 0,
+            "brake": 0,
+            "steering": 0,
+            "handbrake": false,
+            "clutch": false,
+            "directSteer": false
+          },
+          "engine": {
+            "phase": "running",
+            "occupied": true,
+            "manual": false,
+            "gear": 1,
+            "rpm": 821.2764451367817,
+            "temperature": 87.56586191689269,
+            "cold": false,
+            "fastIdleSeconds": 0,
+            "door": 0,
+            "keyAngle": 0.5,
+            "gaugeSweep": 0,
+            "history": [
+              {
+                "phase": "off",
+                "time": 0
+              },
+              {
+                "phase": "door-open",
+                "time": 0
+              },
+              {
+                "phase": "door-close",
+                "time": 0.6000000000000002
+              },
+              {
+                "phase": "key",
+                "time": 1.0666666666666678
+              },
+              {
+                "phase": "ignition",
+                "time": 1.3333333333333335
+              },
+              {
+                "phase": "cranking",
+                "time": 2.1333333333333306
+              },
+              {
+                "phase": "catch",
+                "time": 3.7999999999999914
+              },
+              {
+                "phase": "running",
+                "time": 4.4499999999999895
+              }
+            ],
+            "startingWithDoor": true
+          },
+          "wheels": [
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 11056.1845703125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 10829.5703125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 11058.8486328125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.2800169885158539,
+              "rotation": 10832.185546875,
+              "steer": 0,
+              "contact": true,
+              "slip": 0,
+              "grip": 1.518,
+              "force": 3244.21533203125,
+              "surface": "grass"
+            }
+          ]
+        },
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T09:42:39.602Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T09:42:40.248Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T09:42:40.412Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T09:42:41.943Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T09:42:42.491Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T09:42:42.953Z"
+            }
+          ]
+        }
+      },
+      "after": {
+        "trace": [
+          {
+            "tick": 0,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 0.016666666666666666,
+              "remaining": 139.98333333333332,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5598076581954956,
+                "z": 617.9990844726562
+              },
+              "rotation": [
+                -1.0676671390021249e-20,
+                1,
+                0.0001743632892612368,
+                6.123234262925839e-17
+              ],
+              "velocity": {
+                "x": 6.553649422861682e-18,
+                "y": -0.06731440126895905,
+                "z": -0.05351460725069046
+              },
+              "speed": 0.053491132929850645,
+              "kmh": 0.19256807854746233,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 0,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3712.2985740516465,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 846.1712107541866,
+                "temperature": 87.5669487445093,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 11056.1865234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 10829.572265625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 11058.8505859375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.279908150434494,
+                  "rotation": 10832.1875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0,
+                  "grip": 1.518,
+                  "force": 3246.643310546875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 60,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 1.016666666666668,
+              "remaining": 138.98333333333332,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.559390664100647,
+                "z": 616.0037841796875
+              },
+              "rotation": [
+                3.1024815080842643e-19,
+                0.99998539686203,
+                0.005411119200289249,
+                6.123520798290028e-17
+              ],
+              "velocity": {
+                "x": 5.078846080032635e-16,
+                "y": -0.06132766976952553,
+                "z": -4.160063743591309
+              },
+              "speed": 4.159157052455687,
+              "kmh": 14.972965388840475,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 3.6625923774081393e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3714.293710693183,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 2304.986995967171,
+                "temperature": 87.63176218266888,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2938092052936554,
+                  "rotation": 11062.056640625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 2689.896728515625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2938092052936554,
+                  "rotation": 10835.4423828125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 2689.896728515625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26503822207450867,
+                  "rotation": 11064.720703125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 3784.66015625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26503822207450867,
+                  "rotation": 10838.0576171875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 3.6625923774081393e-19,
+                  "grip": 1.518,
+                  "force": 3784.66015625,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 120,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 2.0166666666666644,
+              "remaining": 137.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5593311786651611,
+                "z": 609.2020874023438
+              },
+              "rotation": [
+                3.751039446692884e-19,
+                0.9999791383743286,
+                0.006468939129263163,
+                6.123633294853335e-17
+              ],
+              "velocity": {
+                "x": 1.1569193157325757e-15,
+                "y": -0.06141369044780731,
+                "z": -9.462967872619629
+              },
+              "speed": 9.461383683007792,
+              "kmh": 34.06098125882805,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 1.9925008264888967e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3721.091182096521,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 1,
+                "rpm": 4194.002948748663,
+                "temperature": 87.69580243066919,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.29662421345710754,
+                  "rotation": 11082.0673828125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 2594.867431640625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.29662421345710754,
+                  "rotation": 10855.453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 2594.867431640625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2621341049671173,
+                  "rotation": 11084.7314453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 3883.91552734375,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2621341049671173,
+                  "rotation": 10858.068359375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 1.9925008264888967e-19,
+                  "grip": 1.518,
+                  "force": 3883.91552734375,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 180,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 3.016666666666661,
+              "remaining": 136.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5591139793395996,
+                "z": 597.1491088867188
+              },
+              "rotation": [
+                9.329113554374385e-20,
+                0.9999982714653015,
+                0.001860650023445487,
+                6.12370741023622e-17
+              ],
+              "velocity": {
+                "x": 1.6815402889219593e-15,
+                "y": -0.0630660355091095,
+                "z": -13.750702857971191
+              },
+              "speed": 13.750373096550055,
+              "kmh": 49.5013431475802,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 2.0460334347657569e-19,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3733.1352550806037,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4822.709853324655,
+                "temperature": 87.75907871226126,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.28516504168510437,
+                  "rotation": 11117.5224609375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3329.268798828125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.28516504168510437,
+                  "rotation": 10890.908203125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3329.268798828125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2731291353702545,
+                  "rotation": 11120.1865234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3173.55029296875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2731291353702545,
+                  "rotation": 10893.5234375,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 2.0460334347657569e-19,
+                  "grip": 1.518,
+                  "force": 3173.55029296875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 240,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 4.016666666666658,
+              "remaining": 135.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.5592254400253296,
+                "z": 582.3466186523438
+              },
+              "rotation": [
+                2.2109788141112304e-19,
+                0.9999921917915344,
+                0.003967856056988239,
+                6.123817259821567e-17
+              ],
+              "velocity": {
+                "x": 1.9882914708250913e-15,
+                "y": -0.06150594726204872,
+                "z": -16.244443893432617
+              },
+              "speed": 16.243448445716464,
+              "kmh": 58.47641440457927,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 7.204711071678498e-20,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3747.930232010938,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4040.1221178634337,
+                "temperature": 87.8216001411616,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.28983286023139954,
+                  "rotation": 11161.064453125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 2851.805908203125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.28983286023139954,
+                  "rotation": 10934.4501953125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 2851.805908203125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26865556836128235,
+                  "rotation": 11163.728515625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 3637.447265625,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.26865556836128235,
+                  "rotation": 10937.0654296875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 7.204711071678498e-20,
+                  "grip": 1.518,
+                  "force": 3637.447265625,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 300,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "running",
+              "elapsed": 5.016666666666654,
+              "remaining": 134.98333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": ""
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544,
+                "y": 0.559148907661438,
+                "z": 564.5731811523438
+              },
+              "rotation": [
+                2.1667625207020618e-19,
+                0.9999924302101135,
+                0.0038955274503678083,
+                6.123822553777487e-17
+              ],
+              "velocity": {
+                "x": 2.3498313907345915e-15,
+                "y": -0.061574533581733704,
+                "z": -19.19645118713379
+              },
+              "speed": 19.195390209985394,
+              "kmh": 69.10340475594742,
+              "roadSteer": 0,
+              "steeringWheelRadians": 0,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 6.145461152333805e-20,
+              "surface": "grass",
+              "contacts": 4,
+              "odometer": 3765.6937473264343,
+              "damage": 0,
+              "damageState": {
+                "amount": 0,
+                "health": 100,
+                "stage": "intact",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [],
+                "powerMultiplier": 1,
+                "gripMultiplier": 1
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4702.273612167503,
+                "temperature": 87.88337572236517,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2895801365375519,
+                  "rotation": 11213.3447265625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 2865.814453125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2895801365375519,
+                  "rotation": 10986.73046875,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 2865.814453125,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2687542736530304,
+                  "rotation": 11216.0087890625,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 3629.731201171875,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.2687542736530304,
+                  "rotation": 10989.345703125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 6.145461152333805e-20,
+                  "grip": 1.518,
+                  "force": 3629.731201171875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          },
+          {
+            "tick": 330,
+            "run": {
+              "activity": "activity-delivery",
+              "type": "delivery",
+              "name": "Special Delivery",
+              "state": "failed",
+              "elapsed": 5.516666666666652,
+              "remaining": 134.48333333333335,
+              "score": 0,
+              "gate": 1,
+              "total": 45,
+              "jumps": 0,
+              "reason": "DELIVERY FAILED · cargo damage limit exceeded"
+            },
+            "car": {
+              "id": "parked",
+              "definition": "harbor",
+              "position": {
+                "x": 544.0210571289062,
+                "y": 0.4838337302207947,
+                "z": 555.33837890625
+              },
+              "rotation": [
+                0.00047314210678450763,
+                0.9997400045394897,
+                0.022374363616108894,
+                -0.004377717152237892
+              ],
+              "velocity": {
+                "x": 0.1985197216272354,
+                "y": -2.0814692974090576,
+                "z": 0.8916346430778503
+              },
+              "speed": -0.9855688579780344,
+              "kmh": 3.548047888720924,
+              "roadSteer": 0.000424881024461407,
+              "steeringWheelRadians": 0.006296241061781421,
+              "steeringRatio": 14.818833271649966,
+              "assist": false,
+              "slip": 0.4456631321830947,
+              "surface": "asphalt",
+              "contacts": 4,
+              "odometer": 3774.9952978070414,
+              "damage": 0.32153397631013325,
+              "damageState": {
+                "amount": 0.32153397631013325,
+                "health": 68,
+                "stage": "dented",
+                "frontLightsBroken": false,
+                "rearLightsBroken": false,
+                "windowsBroken": false,
+                "fireSeconds": 0,
+                "wreck": false,
+                "dents": [
+                  {
+                    "point": {
+                      "x": 0.03378398505173647,
+                      "y": 0.12,
+                      "z": 2.077818960529588
+                    },
+                    "depth": 0.21435106531228262,
+                    "radius": 1.2215723436870216
+                  }
+                ],
+                "powerMultiplier": 0.95176990355348,
+                "gripMultiplier": 0.9742772818951894
+              },
+              "bike": false,
+              "lean": 0,
+              "targetLean": 0,
+              "physicsWheels": 4,
+              "airborneSeconds": 3.7833333333333248,
+              "maxHeight": 3.6819543838500977,
+              "carjacked": true,
+              "input": {
+                "throttle": 1,
+                "brake": 0,
+                "steering": 0,
+                "handbrake": false,
+                "clutch": false,
+                "directSteer": false
+              },
+              "engine": {
+                "phase": "running",
+                "occupied": true,
+                "manual": false,
+                "gear": 2,
+                "rpm": 4417.745792288613,
+                "temperature": 87.91398660473237,
+                "cold": false,
+                "fastIdleSeconds": 0,
+                "door": 0,
+                "keyAngle": 0.5,
+                "gaugeSweep": 0,
+                "history": [
+                  {
+                    "phase": "off",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-open",
+                    "time": 0
+                  },
+                  {
+                    "phase": "door-close",
+                    "time": 0.6000000000000002
+                  },
+                  {
+                    "phase": "key",
+                    "time": 1.0666666666666678
+                  },
+                  {
+                    "phase": "ignition",
+                    "time": 1.3333333333333335
+                  },
+                  {
+                    "phase": "cranking",
+                    "time": 2.1333333333333306
+                  },
+                  {
+                    "phase": "catch",
+                    "time": 3.7999999999999914
+                  },
+                  {
+                    "phase": "running",
+                    "time": 4.4499999999999895
+                  }
+                ],
+                "startingWithDoor": true
+              },
+              "wheels": [
+                {
+                  "suspension": 0.2342345416545868,
+                  "rotation": 11241.5712890625,
+                  "steer": 0.00042488102917559445,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 2.3693706296049895,
+                  "force": 8554.3876953125,
+                  "surface": "asphalt"
+                },
+                {
+                  "suspension": 0.23441031575202942,
+                  "rotation": 11014.9599609375,
+                  "steer": 0.00042488102917559445,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 2.3693706296049895,
+                  "force": 8479.3642578125,
+                  "surface": "asphalt"
+                },
+                {
+                  "suspension": 0.2011605203151703,
+                  "rotation": 11244.2392578125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 1.0899104896182952,
+                  "force": 22641.396484375,
+                  "surface": "grass"
+                },
+                {
+                  "suspension": 0.20133623480796814,
+                  "rotation": 11017.578125,
+                  "steer": 0,
+                  "contact": true,
+                  "slip": 0.4456631321830947,
+                  "grip": 1.0899104896182952,
+                  "force": 22566.669921875,
+                  "surface": "grass"
+                }
+              ]
+            }
+          }
+        ],
+        "run": {
+          "activity": "activity-delivery",
+          "type": "delivery",
+          "name": "Special Delivery",
+          "state": "failed",
+          "elapsed": 5.516666666666652,
+          "remaining": 134.48333333333335,
+          "score": 0,
+          "gate": 1,
+          "total": 45,
+          "jumps": 0,
+          "reason": "DELIVERY FAILED · cargo damage limit exceeded"
+        },
+        "car": {
+          "id": "parked",
+          "definition": "harbor",
+          "position": {
+            "x": 544.0210571289062,
+            "y": 0.4838337302207947,
+            "z": 555.33837890625
+          },
+          "rotation": [
+            0.00047314210678450763,
+            0.9997400045394897,
+            0.022374363616108894,
+            -0.004377717152237892
+          ],
+          "velocity": {
+            "x": 0.1985197216272354,
+            "y": -2.0814692974090576,
+            "z": 0.8916346430778503
+          },
+          "speed": -0.9855688579780344,
+          "kmh": 3.548047888720924,
+          "roadSteer": 0.000424881024461407,
+          "steeringWheelRadians": 0.006296241061781421,
+          "steeringRatio": 14.818833271649966,
+          "assist": false,
+          "slip": 0.4456631321830947,
+          "surface": "asphalt",
+          "contacts": 4,
+          "odometer": 3774.9952978070414,
+          "damage": 0.32153397631013325,
+          "damageState": {
+            "amount": 0.32153397631013325,
+            "health": 68,
+            "stage": "dented",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [
+              {
+                "point": {
+                  "x": 0.03378398505173647,
+                  "y": 0.12,
+                  "z": 2.077818960529588
+                },
+                "depth": 0.21435106531228262,
+                "radius": 1.2215723436870216
+              }
+            ],
+            "powerMultiplier": 0.95176990355348,
+            "gripMultiplier": 0.9742772818951894
+          },
+          "bike": false,
+          "lean": 0,
+          "targetLean": 0,
+          "physicsWheels": 4,
+          "airborneSeconds": 3.7833333333333248,
+          "maxHeight": 3.6819543838500977,
+          "carjacked": true,
+          "input": {
+            "throttle": 1,
+            "brake": 0,
+            "steering": 0,
+            "handbrake": false,
+            "clutch": false,
+            "directSteer": false
+          },
+          "engine": {
+            "phase": "running",
+            "occupied": true,
+            "manual": false,
+            "gear": 2,
+            "rpm": 4417.745792288613,
+            "temperature": 87.91398660473237,
+            "cold": false,
+            "fastIdleSeconds": 0,
+            "door": 0,
+            "keyAngle": 0.5,
+            "gaugeSweep": 0,
+            "history": [
+              {
+                "phase": "off",
+                "time": 0
+              },
+              {
+                "phase": "door-open",
+                "time": 0
+              },
+              {
+                "phase": "door-close",
+                "time": 0.6000000000000002
+              },
+              {
+                "phase": "key",
+                "time": 1.0666666666666678
+              },
+              {
+                "phase": "ignition",
+                "time": 1.3333333333333335
+              },
+              {
+                "phase": "cranking",
+                "time": 2.1333333333333306
+              },
+              {
+                "phase": "catch",
+                "time": 3.7999999999999914
+              },
+              {
+                "phase": "running",
+                "time": 4.4499999999999895
+              }
+            ],
+            "startingWithDoor": true
+          },
+          "wheels": [
+            {
+              "suspension": 0.2342345416545868,
+              "rotation": 11241.5712890625,
+              "steer": 0.00042488102917559445,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 2.3693706296049895,
+              "force": 8554.3876953125,
+              "surface": "asphalt"
+            },
+            {
+              "suspension": 0.23441031575202942,
+              "rotation": 11014.9599609375,
+              "steer": 0.00042488102917559445,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 2.3693706296049895,
+              "force": 8479.3642578125,
+              "surface": "asphalt"
+            },
+            {
+              "suspension": 0.2011605203151703,
+              "rotation": 11244.2392578125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 1.0899104896182952,
+              "force": 22641.396484375,
+              "surface": "grass"
+            },
+            {
+              "suspension": 0.20133623480796814,
+              "rotation": 11017.578125,
+              "steer": 0,
+              "contact": true,
+              "slip": 0.4456631321830947,
+              "grip": 1.0899104896182952,
+              "force": 22566.669921875,
+              "surface": "grass"
+            }
+          ]
+        },
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T09:42:39.602Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T09:42:40.248Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T09:42:40.412Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T09:42:41.943Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T09:42:42.491Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T09:42:42.953Z"
+            }
+          ]
+        }
+      },
+      "hudDetail": "DELIVERY FAILED · cargo damage limit exceeded · TOP 3 53.4s"
+    },
+    "reload": {
+      "passed": true,
+      "loaded": {
+        "cash": 2500,
+        "bests": {
+          "activity-trial": [
+            {
+              "id": "activity-trial",
+              "type": "trial",
+              "value": 57.04999999999804,
+              "seconds": 57.04999999999804,
+              "score": 0,
+              "reward": 350,
+              "date": "2026-11-23T09:42:39.602Z"
+            }
+          ],
+          "activity-delivery": [
+            {
+              "id": "activity-delivery",
+              "type": "delivery",
+              "value": 53.39999999999825,
+              "seconds": 53.39999999999825,
+              "score": 0,
+              "reward": 450,
+              "date": "2026-11-23T09:42:40.248Z"
+            }
+          ],
+          "activity-speed": [
+            {
+              "id": "activity-speed",
+              "type": "speed",
+              "value": 75.30845884828949,
+              "seconds": 14.800000000000315,
+              "score": 75.30845884828949,
+              "reward": 250,
+              "date": "2026-11-23T09:42:40.412Z"
+            }
+          ],
+          "activity-race": [
+            {
+              "id": "activity-race",
+              "type": "race",
+              "value": 57.09999999999804,
+              "seconds": 57.09999999999804,
+              "score": 0,
+              "reward": 500,
+              "date": "2026-11-23T09:42:41.943Z"
+            }
+          ],
+          "activity-drift": [
+            {
+              "id": "activity-drift",
+              "type": "drift",
+              "value": 142.12930899356218,
+              "seconds": 35.01666666666596,
+              "score": 142.12930899356218,
+              "reward": 400,
+              "date": "2026-11-23T09:42:42.491Z"
+            }
+          ],
+          "activity-stunt": [
+            {
+              "id": "activity-stunt",
+              "type": "stunt",
+              "value": 1319,
+              "seconds": 11.950000000000173,
+              "score": 1319,
+              "reward": 550,
+              "date": "2026-11-23T09:42:42.953Z"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "radio": {
+    "report": "evidence/crosstown-0.13.0/radio-provider-acceptance.json",
+    "mockedProviders": false,
+    "humanListening": false,
+    "spotifyAuthentication": "UNTESTED — no client ID / account supplied",
+    "passed": 5,
+    "failedOrUnavailable": 2,
+    "rows": [
+      {
+        "name": "no Spotify ID means hidden and no SDK request",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "four procedural stations, bounded notes, per-station volume, crossfade and static",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "actual Radio Browser country DE, https-only data and real stream playback",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "station change makes new static and remains an HTTPS stream",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      },
+      {
+        "name": "official visible YouTube playlist plays and receives skip",
+        "status": "failed-or-unavailable",
+        "error": "page.waitForFunction: Timeout 12000ms exceeded.\n    at /home/user/tools/accept-radio-providers.mjs:13:283\n    at async run (/home/user/tools/accept-radio-providers.mjs:7:44)\n    at async file:///home/user/tools/accept-radio-providers.mjs:13:1",
+        "lastFailure": "YouTube official error 2"
+      },
+      {
+        "name": "official visible SoundCloud public link plays and receives skip",
+        "status": "failed-or-unavailable",
+        "error": "page.waitForFunction: Timeout 12000ms exceeded.\n    at /home/user/tools/accept-radio-providers.mjs:14:630\n    at async run (/home/user/tools/accept-radio-providers.mjs:7:44)\n    at async file:///home/user/tools/accept-radio-providers.mjs:14:1",
+        "lastFailure": null
+      },
+      {
+        "name": "favourites and custom links persist; exiting always stops providers",
+        "status": "pass",
+        "error": null,
+        "lastFailure": null
+      }
+    ],
+    "authenticatedSpotifyAccepted": false
+  },
+  "softwarePerformance": {
+    "nativeNear60FpsAccepted": false,
+    "reportedLagSolved": false,
+    "populated": {
+      "webgl": {
+        "date": "2026-11-22",
+        "backend": "webgl",
+        "environment": "SwiftShader software rendering; NOT native GPU or target-device acceptance",
+        "viewport": [
+          1280,
+          800
+        ],
+        "nativeHardwareAvailable": false,
+        "near60Acceptance": "OPEN; software result is not a native pass",
+        "rows": [
+          {
+            "scene": "three-star-pursuit",
+            "quality": "fixed Balanced",
+            "requestedPopulation": {
+              "cars": 60,
+              "pedestrians": 120,
+              "lockedForStressFixture": true
+            },
+            "debugSetupOnly": true,
+            "manualStepsDuringMeasurement": 0,
+            "cadence": {
+              "frames": 26,
+              "wallMs": 12666.1,
+              "fps": 2.052723411310506,
+              "p50Ms": 500,
+              "p95Ms": 1133.199999999999,
+              "maximumMs": 1150,
+              "intervals": [
+                1150,
+                1133.199999999999,
+                16.700000000000728,
+                316.60000000000036,
+                133.39999999999964,
+                33.29999999999927,
+                83.40000000000146,
+                66.69999999999891,
+                149.89999999999964,
+                566.6000000000004,
+                333.39999999999964,
+                433.3000000000011,
+                1116.699999999999,
+                583.3000000000011,
+                16.600000000000364,
+                1016.5999999999985,
+                533.4000000000015,
+                616.5999999999985,
+                233.29999999999927,
+                450,
+                533.3000000000029,
+                500,
+                550,
+                450,
+                566.5999999999985,
+                1083.2000000000007
+              ]
+            },
+            "errors": [],
+            "warnings": [
+              "using deprecated parameters for the initialization function; pass a single object instead"
+            ],
+            "observedSoftwareNear60": false,
+            "nativeHardwareAccepted": false,
+            "before": {
+              "backend": "WebGL 2",
+              "quality": "Balanced",
+              "simulationTicks": 19,
+              "elapsed": 0.11666666666666665,
+              "police": {
+                "stars": 3,
+                "state": "unseen",
+                "helicopter": true,
+                "units": 4,
+                "physicsEnabledUnits": 0
+              },
+              "activePhysicalRivals": 0,
+              "population": {
+                "enabled": true,
+                "budget": {
+                  "factor": 1,
+                  "cars": 60,
+                  "pedestrians": 120,
+                  "frameMs": 199.49449999999996,
+                  "changes": 0,
+                  "locked": true,
+                  "tier": "Balanced"
+                },
+                "fullPhysicsCars": 0,
+                "pedestrianCapsules": 0,
+                "trafficTarget": 60,
+                "cars": 60,
+                "pedestrianTarget": 120,
+                "effectivePedestrianTarget": 120,
+                "pedestrians": 120
+              }
+            },
+            "after": {
+              "backend": "WebGL 2",
+              "quality": "Balanced",
+              "simulationTicks": 164,
+              "elapsed": 0.11666666666666665,
+              "police": {
+                "stars": 3,
+                "state": "seen",
+                "helicopter": true,
+                "units": 4,
+                "physicsEnabledUnits": 0
+              },
+              "activePhysicalRivals": 0,
+              "population": {
+                "enabled": true,
+                "budget": {
+                  "factor": 1,
+                  "cars": 60,
+                  "pedestrians": 120,
+                  "frameMs": 199.49449999999996,
+                  "changes": 0,
+                  "locked": true,
+                  "tier": "Balanced"
+                },
+                "fullPhysicsCars": 0,
+                "pedestrianCapsules": 0,
+                "trafficTarget": 60,
+                "cars": 60,
+                "pedestrianTarget": 120,
+                "effectivePedestrianTarget": 120,
+                "pedestrians": 120
+              }
+            }
+          },
+          {
+            "scene": "five-rival-race",
+            "quality": "fixed Balanced",
+            "requestedPopulation": {
+              "cars": 60,
+              "pedestrians": 120,
+              "lockedForStressFixture": true
+            },
+            "debugSetupOnly": true,
+            "manualStepsDuringMeasurement": 0,
+            "cadence": {
+              "frames": 18,
+              "wallMs": 12516.099999999999,
+              "fps": 1.4381476658064414,
+              "p50Ms": 833.3000000000029,
+              "p95Ms": 1599.8999999999996,
+              "maximumMs": 1599.8999999999996,
+              "intervals": [
+                183.29999999999927,
+                1599.8999999999996,
+                200,
+                766.7000000000007,
+                633.2999999999993,
+                200,
+                116.70000000000073,
+                1349.8999999999996,
+                66.70000000000073,
+                33.29999999999927,
+                850,
+                483.2999999999993,
+                1450,
+                1099.7999999999993,
+                833.3000000000029,
+                850,
+                900,
+                899.8999999999978
+              ]
+            },
+            "errors": [],
+            "warnings": [
+              "using deprecated parameters for the initialization function; pass a single object instead"
+            ],
+            "observedSoftwareNear60": false,
+            "nativeHardwareAccepted": false,
+            "before": {
+              "backend": "WebGL 2",
+              "quality": "Balanced",
+              "simulationTicks": 7,
+              "elapsed": 0.11666666666666665,
+              "police": {
+                "stars": 0,
+                "state": "lost",
+                "helicopter": false,
+                "units": 1,
+                "physicsEnabledUnits": 0
+              },
+              "activePhysicalRivals": 5,
+              "population": {
+                "enabled": true,
+                "budget": {
+                  "factor": 1,
+                  "cars": 60,
+                  "pedestrians": 120,
+                  "frameMs": 202.40449999977648,
+                  "changes": 0,
+                  "locked": true,
+                  "tier": "Balanced"
+                },
+                "fullPhysicsCars": 2,
+                "pedestrianCapsules": 3,
+                "trafficTarget": 60,
+                "cars": 60,
+                "pedestrianTarget": 120,
+                "effectivePedestrianTarget": 120,
+                "pedestrians": 120
+              }
+            },
+            "after": {
+              "backend": "WebGL 2",
+              "quality": "Balanced",
+              "simulationTicks": 115,
+              "elapsed": 0.11666666666666665,
+              "police": {
+                "stars": 0,
+                "state": "lost",
+                "helicopter": false,
+                "units": 1,
+                "physicsEnabledUnits": 0
+              },
+              "activePhysicalRivals": 5,
+              "population": {
+                "enabled": true,
+                "budget": {
+                  "factor": 1,
+                  "cars": 60,
+                  "pedestrians": 120,
+                  "frameMs": 202.40449999977648,
+                  "changes": 0,
+                  "locked": true,
+                  "tier": "Balanced"
+                },
+                "fullPhysicsCars": 4,
+                "pedestrianCapsules": 9,
+                "trafficTarget": 60,
+                "cars": 60,
+                "pedestrianTarget": 120,
+                "effectivePedestrianTarget": 120,
+                "pedestrians": 120
+              }
+            }
+          }
+        ],
+        "rawReport": "evidence/crosstown-0.13.0/populated-performance-webgl.json.gz",
+        "fullRawTelemetryInReport": true,
+        "fixtureBoundary": "The three-star scene records helicopter/stars but zero physics-enabled ground police at both endpoints; it does not qualify active ground-pursuit load. The race has five active physical rivals. Both are software, not native acceptance."
+      },
+      "webgpu": null
+    },
+    "waterAB": {
+      "webgl": "evidence/crosstown-0.13.0/water-comparison-webgl.json",
+      "webgpu": "evidence/crosstown-0.13.0/water-comparison-webgpu.json",
+      "boundary": "Earlier matched software stationary scenes, population OFF; modest gains, not final populated/native performance. Whole-scene draw differences limit attribution."
+    },
+    "waterTrianglesBefore": 18432,
+    "waterTrianglesAfter": 3360,
+    "stableInstanceMatrixCapacity": 1024
+  },
+  "deployment": {
+    "date": "2026-11-22",
+    "version": "0.13.0",
+    "build": "13.001",
+    "provider": "Vercel connected app",
+    "project": "crosstown",
+    "projectId": "prj_gd5kw1GBgtWqMseb5ETMgzrXpKir",
+    "teamId": "team_59dr7VIo7kdxnmJ9zpqSL0wv",
+    "deploymentId": "dpl_4jMtSU8oRbRUoB3MpUiMxTQVnnkR",
+    "state": "READY",
+    "substate": "PROMOTED",
+    "aliasAssigned": true,
+    "aliasError": null,
+    "aliases": [
+      "crosstown-sarang-dev.vercel.app",
+      "coastline-highline.vercel.app"
+    ],
+    "publicUrl": "https://crosstown-sarang-dev.vercel.app",
+    "dashboard": "https://vercel.com/sarang-dev/crosstown/4jMtSU8oRbRUoB3MpUiMxTQVnnkR",
+    "observedBy": "create_deployment / get_deployment / get_deployment_events / update_project connector results",
+    "createdAtEpochMs": 1795427426705,
+    "readyAtEpochMs": 1795427434498,
+    "preparedPublicFiles": 204,
+    "compiledArchiveBytes": 12850153,
+    "compiledArchiveSha256": "b0b3249355ea2d747729928aa0227aef8d6ea1c38e142c3eacb361b227905947",
+    "independentLocalAndHTTPSRoundtrip": true,
+    "builderChecksumVerified": true,
+    "transferStopped": true,
+    "publicChecksPending": false,
+    "deploymentKind": "One-time checksum-pinned import of locally built/tested public compiled output; not a Vercel source build, source push or hosted CI pass.",
+    "normalSettingsConfirmed": {
+      "framework": "vite",
+      "installCommand": "npm ci",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rootDirectory": null
+    },
+    "accessControls": "Existing all_except_custom_domains SSO policy unchanged, confirmed by update_project result. No project/domain/repository recreated; legacy alias retained. Anonymous file/browser verification is separate.",
+    "gitSourcePushed": false,
+    "retiredImportMustNotBeRedeployed": true,
+    "nativeNear60FPSAccepted": false,
+    "externalYouTubeSoundCloudPlaybackAccepted": false,
+    "spotifyAuthenticationAccepted": false,
+    "postTransferAnonymousHashesMatch": true,
+    "publicFiles": 204,
+    "anonymousFileHashesMatch": true,
+    "postTransferCheckedAt": "2026-11-23T09:53:48.232Z",
+    "publicNormalPlaySmokePassed": true,
+    "publicBrowserWorkflowsPassed": 1,
+    "status": "Published; anonymous file integrity verified",
+    "anonymousFileHashMatches": 204
+  },
+  "github": {
+    "existingPrivateRepository": "sarang-cmd/crosstown",
+    "pushed": false,
+    "hostedCIPassClaimed": false
+  },
+  "revisionBoundaries": [
+    "Raw earlier failed/collector/interrupted attempts remain separately named and are not counted as passing tests.",
+    "Manual fixture positions and simulation steps are explicit; these do not prove human controls, 30 real seconds of escape, native frame rate or hearing audio.",
+    "The 0.9 browser/traffic/handling observations are retained as historical evidence, not counted as newly rerun whole-city acceptance.",
+    "The original DESIGN is byte-identical. Root game query links and the existing browser save keys remain."
+  ],
+  "limitations": [
+    "Reported lag/native 60 FPS remains unresolved, including the three-star and five-rival hardware targets.",
+    "Strict no-stuck/fairness, continuous-map no-stall/no-popping and long GPU-memory soak remain open.",
+    "Human handling/listening, physical controller/wheel/rumble and complete touch-only on-foot controls are unaccepted.",
+    "Check actual external-provider rows: selected/API-ready is not proof of playback/skip; authenticated Spotify and permission for game use are not established.",
+    "V10/twin timbres use designed derivatives of six recordings, not independent calibrated dyno captures.",
+    "Low-poly art and seating/social transitions remain prototype-quality."
+  ],
+  "historicalReleases": [
+    "TEST-RESULTS-0.9.0.json",
+    "TEST-RESULTS-0.7.0.json",
+    "TEST-RESULTS-0.5.0.json",
+    "TEST-RESULTS-0.3.0.json"
+  ],
+  "gallery": "PROGRESS-GALLERY.html",
+  "findings": "FINDINGS.md"
+}

@@ -1,0 +1,53 @@
+City ready {"anchor":{"x":518.143798828125,"y":0.5964301824569702,"z":849.3800048828125},"parkedCar":true,"densityLocked":true}
+{
+  "errors": [],
+  "audit": {
+    "ticks": 1253,
+    "overlapSamples": 0,
+    "overlapExamples": [],
+    "redEntries": 0,
+    "illegalCrossingSamples": 0,
+    "maximumWaitSeconds": 20.88333333333343,
+    "waiter": {
+      "id": "traffic-99",
+      "state": "yielding",
+      "position": {
+        "x": 774.75,
+        "y": 0.7690495899104334,
+        "z": 274.34930967222897
+      },
+      "progress": 220.650690327771,
+      "stopAt": 221,
+      "time": 26.849999999999756,
+      "desired": 0
+    },
+    "maximumGreenStationarySeconds": 6.583333333333315,
+    "entries": 24,
+    "maxFullPhysicsCars": 3,
+    "nonfiniteStates": 0,
+    "time": 26.849999999999756,
+    "minimumObservedAgentAgeSeconds": 30,
+    "eligibleAgents": 0,
+    "starved": [],
+    "neverEnteredInitialCohort": []
+  },
+  "cadence": {
+    "frames": 216,
+    "wallMs": 116162,
+    "fps": 1.8594721165269192,
+    "p50": 500,
+    "p95": 1083.2999999999993,
+    "max": 2299.7999999999993
+  },
+  "wallMs": 120228.344617,
+  "quality": "Balanced",
+  "budget": {
+    "factor": 1,
+    "cars": 60,
+    "pedestrians": 120,
+    "frameMs": 16.67,
+    "changes": 0,
+    "locked": true,
+    "tier": "Balanced"
+  }
+}

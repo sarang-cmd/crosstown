@@ -1,0 +1,713 @@
+{
+  "schema": 2,
+  "date": "2026-11-22",
+  "release": "0.5.0",
+  "pathsRelativeTo": "project root",
+  "runtimeSource": {
+    "sha256": "8d4e98e700aea6039fb8071324bf18b3f7f6bdc56c01cad868d64025c796a4d7",
+    "algorithm": "SHA-256 of sorted path, NUL, file SHA-256, LF records",
+    "files": [
+      {
+        "file": "index.html",
+        "bytes": 767,
+        "sha256": "943811c13d30eb678bbe19cc5d35bdea4e5062d3bd8236e590804e7bdec42037"
+      },
+      {
+        "file": "package-lock.json",
+        "bytes": 89131,
+        "sha256": "17e629315b06a96d0e626ad7b5193d3882b6b7c13765555e9617510324ec235d"
+      },
+      {
+        "file": "package.json",
+        "bytes": 2068,
+        "sha256": "043c31c86483a58965dd760d46613f00ab8799ebbb90311b8c63f095223e1696"
+      },
+      {
+        "file": "public/CREDITS.md",
+        "bytes": 5638,
+        "sha256": "184492da359c6d1cbe9efc4dd41850221f6fece0725a62ec3f721bf886055844"
+      },
+      {
+        "file": "public/favicon.svg",
+        "bytes": 332,
+        "sha256": "1e95cf6b9084af3303a11b6419cb8a3174f91813d8eb906e2123434b1369a8ea"
+      },
+      {
+        "file": "public/fonts/IBMPlexMono-OFL.txt",
+        "bytes": 4456,
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+      },
+      {
+        "file": "public/fonts/IBMPlexMono-Regular.ttf",
+        "bytes": 135580,
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+      },
+      {
+        "file": "public/fonts/Manrope-OFL.txt",
+        "bytes": 4387,
+        "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+      },
+      {
+        "file": "public/fonts/Manrope-Variable.ttf",
+        "bytes": 164700,
+        "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+      },
+      {
+        "file": "public/models/parkour-runner.glb",
+        "bytes": 402984,
+        "sha256": "1f18828866e446240fd2d69116bbf233d11832f78534690efcf0459fd041950e"
+      },
+      {
+        "file": "public/models/test-car.glb",
+        "bytes": 76808,
+        "sha256": "ef8b93336643aa588aa7b1f93abd31c5c7b78bdf34771a3f38ab50f1a9954aa7"
+      },
+      {
+        "file": "public/models/test-character.glb",
+        "bytes": 377408,
+        "sha256": "1b1e70e48fec655117066aef58800e47b06540dcc2f113fcf7a4c08486dbaf10"
+      },
+      {
+        "file": "public/release.json",
+        "bytes": 627,
+        "sha256": "ea1c89984559bc249e0893719d7b229fbd9f2f375fa94236100da3634a7c92fc"
+      },
+      {
+        "file": "src/audio/index.ts",
+        "bytes": 116,
+        "sha256": "83199de25dc86910af17580f059c52a0ad3115231349551921294b3af1213341"
+      },
+      {
+        "file": "src/audio/parkour-audio.ts",
+        "bytes": 4361,
+        "sha256": "10373a3330d5b4f7628945d99219a979ca2fa66375f7f0b632c20418afc6b0e8"
+      },
+      {
+        "file": "src/config/actions.ts",
+        "bytes": 2582,
+        "sha256": "6c25fdb88d34a63da98bf1daeb80792d867c7c22760d227376a1a4ad80af1964"
+      },
+      {
+        "file": "src/config/app.ts",
+        "bytes": 471,
+        "sha256": "f0c021705266c778d08da80cc2ad9e06018c328937d210a08ed78f86d4cdea69"
+      },
+      {
+        "file": "src/config/index.ts",
+        "bytes": 82,
+        "sha256": "105c44dd218682a3dafd2c9e2ed24b450c2df452e0856a61597e51047d6e38a5"
+      },
+      {
+        "file": "src/config/movement.ts",
+        "bytes": 1409,
+        "sha256": "8f18128638c0a08d83457d840602b503991e16c6ea26087aa405316179ff9513"
+      },
+      {
+        "file": "src/config/quality.ts",
+        "bytes": 1766,
+        "sha256": "06b16e195ff5eb3289ae682dac5a8c713772551969d974954e8b278a2f71298a"
+      },
+      {
+        "file": "src/config/session.ts",
+        "bytes": 1541,
+        "sha256": "edd4e0320eec4d4d548db7f845daf88993aef5eed0703b4a916152fbe370e134"
+      },
+      {
+        "file": "src/core/input.ts",
+        "bytes": 9051,
+        "sha256": "3ef86afbe8910c93ef40322146f82a921fb02a3665cc5cb9bc5fa6aa90360763"
+      },
+      {
+        "file": "src/core/loop.ts",
+        "bytes": 1508,
+        "sha256": "0ae286cefe23c687e5ade2aed15b552a3d342e26e65c34a25a23f885cb2ea34d"
+      },
+      {
+        "file": "src/core/physics.ts",
+        "bytes": 3330,
+        "sha256": "db847950610a87b76062161779f8d1cb1b4016c9a9b607965ffad7d8f24cdc69"
+      },
+      {
+        "file": "src/core/quality.ts",
+        "bytes": 2054,
+        "sha256": "8ae3cf225d060b2681f6ffe79da39eb30dc6f79b7cb19ac99442e22f80f64860"
+      },
+      {
+        "file": "src/foundation.ts",
+        "bytes": 7648,
+        "sha256": "7e690365e2965ce900ffd8e45b0f3a1a66f1bd6cb7db70b6b9abec3d8267736c"
+      },
+      {
+        "file": "src/game.ts",
+        "bytes": 28871,
+        "sha256": "92464ed364f0ee9b96cb57d2954941d928613a9ecaebb9664b7f8c8684bcb311"
+      },
+      {
+        "file": "src/main.ts",
+        "bytes": 262,
+        "sha256": "fafbdf1602d555056c1a808b87e457a4e4f1723e1dd825986e723ed2cec60405"
+      },
+      {
+        "file": "src/npc/index.ts",
+        "bytes": 86,
+        "sha256": "27b1eb3f596631d8c8a76d23ddd8b1aa4fa82fd12fbdefbd7fb4cc59bb3fa477"
+      },
+      {
+        "file": "src/parkour/ParkourRun.ts",
+        "bytes": 12980,
+        "sha256": "1bda1474b5b35e58414fb58a8cc9591ff2ff59763924c1666bac3b2d5b43d4d6"
+      },
+      {
+        "file": "src/parkour/bot.ts",
+        "bytes": 1281,
+        "sha256": "01e29cbd5bc60e3b074b829185308c1a42066936a3edc29a7c72f484ba97d7ae"
+      },
+      {
+        "file": "src/parkour/generator.ts",
+        "bytes": 17133,
+        "sha256": "86e6aaeb0bdfcf3a46f299a79330150c48e0ff43bf129df4b9d49fd1c1a1b493"
+      },
+      {
+        "file": "src/parkour/hazards.ts",
+        "bytes": 591,
+        "sha256": "23f637f31e6792504585e3b39f5c5b6a221291a0fe3de0b7654a672ea1b25f30"
+      },
+      {
+        "file": "src/parkour/index.ts",
+        "bytes": 238,
+        "sha256": "de12f66e4aa30480dfbeae4a8b05004bdbb7a9fa6e8e5724da6ee41df2fc158c"
+      },
+      {
+        "file": "src/parkour/physics.ts",
+        "bytes": 5818,
+        "sha256": "50a141c0ae167d954c93b1b0262fe8ab94a1ae8e2a6c04a064ca2c107961a038"
+      },
+      {
+        "file": "src/parkour/types.ts",
+        "bytes": 3230,
+        "sha256": "56ef7a3e8402e42810e479dab367780f8aa442999ba3f69ef69def0ef7205181"
+      },
+      {
+        "file": "src/player/camera.ts",
+        "bytes": 2068,
+        "sha256": "5a9a35b8e0b3b4727b27db2f77f046b35c665b8eceab9d075f4561baa8ca90fb"
+      },
+      {
+        "file": "src/player/chase-camera.ts",
+        "bytes": 5609,
+        "sha256": "7ab6802a1ec9f2010e6f5f65721934e4124380240cc4b63fa3de6dcb0a85fcc2"
+      },
+      {
+        "file": "src/player/controller.ts",
+        "bytes": 13106,
+        "sha256": "1d03121f2a393c5271950af6539cfcef84b2b5ba9ff0cf263d765925384c49ca"
+      },
+      {
+        "file": "src/player/fly-camera.ts",
+        "bytes": 1941,
+        "sha256": "ff307cf7699f4d0bbde26edd9a97bbbb5d80774a4ceb99f837a0aa57f12cf366"
+      },
+      {
+        "file": "src/player/index.ts",
+        "bytes": 111,
+        "sha256": "13d5a59a9276fdfd55358b065e5d992f35fc545547262a41f5d2ae6a44eaf6e3"
+      },
+      {
+        "file": "src/player/runner.ts",
+        "bytes": 5898,
+        "sha256": "c5424592abd56d43cbf683a0838e8a1cec4f28a4f0c7619f00ee87f6f1f2785f"
+      },
+      {
+        "file": "src/police/index.ts",
+        "bytes": 79,
+        "sha256": "86345d91f0c6dcd06d74ff6165a35508a30e3dad39cc897a515b8fb089fc27ef"
+      },
+      {
+        "file": "src/radio/index.ts",
+        "bytes": 86,
+        "sha256": "5721d9d7fa37c554be3a9eef5b6f0313812fd4e4509cef2f54bf9a694d582903"
+      },
+      {
+        "file": "src/rendering/renderer.ts",
+        "bytes": 3455,
+        "sha256": "e3c4dc2770ed9c7bd21a165da964fb1bc2ca91b6ea0b1ae1e3b80ba8faef0b38"
+      },
+      {
+        "file": "src/save/index.ts",
+        "bytes": 3463,
+        "sha256": "f69183261bf41b2f6d8ecc94e1cab92b273dd493a29f38246d245e00cd77d513"
+      },
+      {
+        "file": "src/save/parkour.ts",
+        "bytes": 3513,
+        "sha256": "2340a12b14ff369505446478f08685039244a622a1bf258874a81d0c186b970d"
+      },
+      {
+        "file": "src/style.css",
+        "bytes": 26552,
+        "sha256": "1358f5a3914a66eba3724b76e09162694d1dfe6f55e640912510ed047f97e133"
+      },
+      {
+        "file": "src/ui/city-hud.ts",
+        "bytes": 8605,
+        "sha256": "116aa104cb98f545fe1d45e3c44708e19672cdeb3422d19e5fb34b7195036c20"
+      },
+      {
+        "file": "src/ui/crosstown.css",
+        "bytes": 11571,
+        "sha256": "461976f39e111c7dfc228311c9d4ec9743e2aded2297a0babcc81243c782c2af"
+      },
+      {
+        "file": "src/ui/index.ts",
+        "bytes": 22275,
+        "sha256": "66a00a03b7d4331b483082c727ad1520d90cfe6c8cbe7e3d49492467e090d914"
+      },
+      {
+        "file": "src/ui/parkour-hud.ts",
+        "bytes": 12660,
+        "sha256": "d98698d8aff571c9202ab8514d55301b778086c3e049d807d5240e1c281be7b2"
+      },
+      {
+        "file": "src/ui/parkour.css",
+        "bytes": 15630,
+        "sha256": "b6f41d351a009dffbd9fb2c8d219bab28cdd1a663df990a8b2ca36ec1366490a"
+      },
+      {
+        "file": "src/ui/session-setup.ts",
+        "bytes": 6775,
+        "sha256": "00261357f43bbfdd1c069bfe6cbedb54ebd6157166ff3ce56ff9b55044decbb5"
+      },
+      {
+        "file": "src/vehicles/index.ts",
+        "bytes": 108,
+        "sha256": "582cbe1dec116068665866a64324afe5b81a1cb0c0f692fca27fc69a797ea1a2"
+      },
+      {
+        "file": "src/vite-env.d.ts",
+        "bytes": 38,
+        "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+      },
+      {
+        "file": "src/weapons/index.ts",
+        "bytes": 72,
+        "sha256": "e9e48bec36df9a6172590dc1a46f46b9b9c16c2c4b88cfa7fde22d9f8aa44613"
+      },
+      {
+        "file": "src/world/bake.ts",
+        "bytes": 2282,
+        "sha256": "26e89888b0f86652c0fecafabb1a1e8d72e8f1940c7ec95327b4da72a3a06a46"
+      },
+      {
+        "file": "src/world/city/city.worker.ts",
+        "bytes": 757,
+        "sha256": "cbe32718c0d08aa4350ef979f93e596ed3fbc06195ec209e2683104e2d740ce9"
+      },
+      {
+        "file": "src/world/city/environment.ts",
+        "bytes": 7290,
+        "sha256": "e35285b3cfa09019a4f546ee495712e2b7a9c59d621194cb2c9dfcd3eba84a0d"
+      },
+      {
+        "file": "src/world/city/generator.ts",
+        "bytes": 23571,
+        "sha256": "9592ca4dc85bb058dd48eeecf492a6b3bef8559d1565239ddcc3451625b72417"
+      },
+      {
+        "file": "src/world/city/layout.ts",
+        "bytes": 12824,
+        "sha256": "a752a8f0353970dd91f10ceb3e437c2d917cc2574eeebd5916d33d897cdb5efc"
+      },
+      {
+        "file": "src/world/city/mesh-bake.ts",
+        "bytes": 4724,
+        "sha256": "66146b815f9754a3150adfaf34e16a5e07ae33b5350ed31e6fc98c1970848197"
+      },
+      {
+        "file": "src/world/city/physics.ts",
+        "bytes": 6190,
+        "sha256": "90795ecec8e2013c3b6267c68bb59d65e0c1e7ed14b3ce11d8d25237430e2a47"
+      },
+      {
+        "file": "src/world/city/stream.ts",
+        "bytes": 29927,
+        "sha256": "29d653a842b1894c3fb73276d99868d1ec3bd29a9766503d42c6a4722db075c3"
+      },
+      {
+        "file": "src/world/city/types.ts",
+        "bytes": 2253,
+        "sha256": "403fa186131071296a43c0db0d7540ea6620a427eba5f3f38b1318434db7e81c"
+      },
+      {
+        "file": "src/world/city/worker.ts",
+        "bytes": 1497,
+        "sha256": "617cf2202009e6940067dfc58b35aab46036f5a3f4facf52f3286e89a5a3313f"
+      },
+      {
+        "file": "src/world/generator.worker.ts",
+        "bytes": 613,
+        "sha256": "7e698e794067176ddcfb19298d399d6af9d38e45767019ed19c7cceeb536b795"
+      },
+      {
+        "file": "src/world/index.ts",
+        "bytes": 1059,
+        "sha256": "b483d055930e47796ea22d0d035a7df1e53bb993ad2ac954d9fa24a2c022fb57"
+      },
+      {
+        "file": "src/world/rooftops.ts",
+        "bytes": 35258,
+        "sha256": "6ff489f71c2c91712b69b2a65e056449d512045728eb2e1279ac6bad4e4d0ccb"
+      },
+      {
+        "file": "src/world/route-worker.ts",
+        "bytes": 1439,
+        "sha256": "5ec9331ad5a10795fc4819f482865988022f0b92214d70cc6ad4f8967b60c40f"
+      },
+      {
+        "file": "src/world/route.worker.ts",
+        "bytes": 701,
+        "sha256": "40e15b0abc88b199c0be1b1c5534a8d63935622ec0cc83ec89830dcfc1e7f8ce"
+      },
+      {
+        "file": "src/world/test-scene.ts",
+        "bytes": 6365,
+        "sha256": "463f5e5eca62834342c999a07a067ecf9736f798aa5d9583566766acda797baa"
+      },
+      {
+        "file": "tsconfig.json",
+        "bytes": 551,
+        "sha256": "a49a89e8c3fe62aa80b0afffcfcc9961c9f86eaf3d5feee8a201f6f4d72cf2a8"
+      },
+      {
+        "file": "vercel.json",
+        "bytes": 643,
+        "sha256": "41f83fe9ca586432dd00883d1667b4f89b9541951cd662cdbc5b58319a01743e"
+      },
+      {
+        "file": "vite.config.ts",
+        "bytes": 735,
+        "sha256": "37e9fbedebe810352f13b90e9868d165e77e7a6641d687b7b7c1bf4d81470874"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "file": "README.md",
+      "bytes": 10165,
+      "sha256": "823c20795029b0c1cfc175cc419cf93cd6cbefec9eb15f99110a8b31bbc3fced"
+    },
+    {
+      "file": "docs/CITY-BROWSER-STATES.json",
+      "bytes": 13982,
+      "sha256": "98811a0afd33fcf46b97cc4f1a0ec5172f8c0aec33e1a76e8d4372df6a028f6b"
+    },
+    {
+      "file": "docs/DEPLOYED-FILES.json",
+      "bytes": 5264,
+      "sha256": "5cfc0e07b20ecc1a0ceffeea4bfca69cac6fa3881e68ed41253fc9284f3421bf"
+    },
+    {
+      "file": "docs/DEPLOYMENT.md",
+      "bytes": 5525,
+      "sha256": "0094ca74336d560187ae749e0b58116c35d586aa139675f881973bc5b4584ec0"
+    },
+    {
+      "file": "docs/FINDINGS.md",
+      "bytes": 13655,
+      "sha256": "127a671af73733cd26d15419b98f00ca83644c8f182c355d2c8248e5d92648ba"
+    },
+    {
+      "file": "docs/PERFORMANCE-COMPARISON.json",
+      "bytes": 19394,
+      "sha256": "8ee3ef98180d8975e07a053815261783f421c68e1a3f4ea51cce6d92ee271331"
+    },
+    {
+      "file": "docs/PROGRESS-GALLERY.html",
+      "bytes": 1937875,
+      "sha256": "847987ecf757bdd62255713ba27cd4b583899bba29c2b22aa64a273dda887f0c"
+    },
+    {
+      "file": "docs/PROGRESS.md",
+      "bytes": 25975,
+      "sha256": "f4e0cd9d3f0ed7f27279608b203707996d1ded97ffca35f5814b72f5016afe0f"
+    },
+    {
+      "file": "docs/SCREENSHOTS.md",
+      "bytes": 3726,
+      "sha256": "5fb817d60eb9e52bae34b6fb92afaca79d353b6e81d61c353f72e520946bc189"
+    },
+    {
+      "file": "docs/TEST-RESULTS.json",
+      "bytes": 27493,
+      "sha256": "2ef5beff66e5f66279737e258dd2fa8817484057ac16b551563874b524e542c0"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "bytes": 9393,
+      "sha256": "041ff6e7fb4820441dac74d43a8648815b60427589fe4d0b5a4becce4b24c6bb"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/0.3.0-before.cpuprofile.gz",
+      "bytes": 24672,
+      "sha256": "5880c648e82853f39afb9253d6154b7ed9314adfa05d31c1d751a6cb36b54410"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/0.5.0-crosstown.cpuprofile.gz",
+      "bytes": 28323,
+      "sha256": "d4fc4706a0f38f50361bbb930fb78ae6b1f3f92f8b77e9ca42098c307175e1da"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/assets.log",
+      "bytes": 357,
+      "sha256": "4808ac7fff4824ac3fb677153797b2be409589c348032fa869d86104e8585464"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/build.log",
+      "bytes": 1028,
+      "sha256": "bbe688f256261778157c77805e2365707464ae53320ae333448156e0c6ea5303"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/city-markers-report.json",
+      "bytes": 4365,
+      "sha256": "a6ee8f02a56478752c9aec93a37fbcd58e825484589b33920ce26beab616853e"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/city-markers.log",
+      "bytes": 415,
+      "sha256": "1ffe3054bd28b96f0d111693fe4e8b135f8c05c4b1de8c6f135d5beab89ce600"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/city-six-cases.log",
+      "bytes": 1206,
+      "sha256": "cf19c81dd42fed9da92ca0623e3905ce01961f54f021debf0947f70131c4012c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/city-strict-tour-report.json",
+      "bytes": 22123,
+      "sha256": "144bbf328c6e54ff538422d3e62324a109be46e977077877c8eabdcf6a68040c"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/city-strict-tour.log",
+      "bytes": 222,
+      "sha256": "a91bed75a9e0eabae1eeb2a19680777d421ade95146600fb2777678c56d09d65"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/deployed-browser-report.json",
+      "bytes": 2769333,
+      "sha256": "9ba3b5a98d12e14576954944766269844fc17c886677058ebd85b485503f54c7"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/deployed-browser.log",
+      "bytes": 1050,
+      "sha256": "fd2e47276c4d6dfe01e0b4795e823fb67e65a9a8b89a25167361031d3156c0c9"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/deployed-integrity.log",
+      "bytes": 1169,
+      "sha256": "93ddfb12e5197e35bc14ea3f6ff48d79642718ae05dfc456e3bb1e3b84633bde"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/foundation-browser-report.json",
+      "bytes": 27202,
+      "sha256": "272eadd38221942764d9ec9844751b296c8bc41485e6a6948f1e2b317ec0de95"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/foundation-browser.log",
+      "bytes": 1903,
+      "sha256": "bc6e9eab1d2a1879678b5d2467396108f61b7e11cb6f869ffef7e16a33df2e8e"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/gallery-check.json",
+      "bytes": 214,
+      "sha256": "735a1677bc112b6d93fbd6b0fbc747f9d2f382db0b8621d0ae7071456842e240"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/link-check.json",
+      "bytes": 79,
+      "sha256": "9653cbf1ec950b94496537a464e02cdc0126b0d95fd3006750b0115ef5260efc"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/parkour-browser-report.json",
+      "bytes": 2432543,
+      "sha256": "6178b07b085f0a9264dc14a8f6cf622733592bfe6e877e386f7f3556b152b64b"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/parkour-browser.log",
+      "bytes": 1389,
+      "sha256": "ff136428b23e2a8ba27f17c03c7a0dc7815186729781f9d508201878f242dc18"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/post-transfer-integrity.log",
+      "bytes": 1169,
+      "sha256": "93ddfb12e5197e35bc14ea3f6ff48d79642718ae05dfc456e3bb1e3b84633bde"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/production-browser-report.json",
+      "bytes": 1458882,
+      "sha256": "14790cbdfe30bd10ba2ca94dd2d2d19bc364e037342eea53b01f14c4c85bc346"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/production-browser.log",
+      "bytes": 1100,
+      "sha256": "078d30d0c10fec58f9d61eb2f74a526ff7e92b36d220cde37625cef1699544a3"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/software-profile.log",
+      "bytes": 2178,
+      "sha256": "ebd002252abff4b51d31ee4ccd04305c960474054ffb6c3f630567e23d4ae8b9"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/source-safety-check.json",
+      "bytes": 239,
+      "sha256": "3d34ca5e66700272d012a4960a04360e062de9848b55582fe8f744a81a6c5c4e"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/typecheck.log",
+      "bytes": 45,
+      "sha256": "627819745a2c35cb3f21abec03d776749a7bba1c22b403daeaa1c56d964d2c90"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/unit.log",
+      "bytes": 13974,
+      "sha256": "038fdd00f43bfea2851a50f8fdc0e9811b868bab7bac8c4283fa6d29de200beb"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/vercel-build.log",
+      "bytes": 801,
+      "sha256": "560f437c915a700de8a240fc0a89917d666241540f09e10ad00fe01b8b1a7d2d"
+    },
+    {
+      "file": "docs/evidence/crosstown-0.5.0/versions.log",
+      "bytes": 885,
+      "sha256": "2ac77745c7d09b6b6648443977809dfd4e9e933846272c5c4d382a575a51f656"
+    },
+    {
+      "file": "docs/media/badges/performance.svg",
+      "bytes": 563,
+      "sha256": "8ce3e4008b9df56fe940d17ee30b06f248389d107bdadbe23be06c9d9b289a21"
+    },
+    {
+      "file": "docs/media/badges/renderer.svg",
+      "bytes": 555,
+      "sha256": "c1dd554898c464177c8535e59e1473673d02b7fb2ced14d6d16a7c3f69b755d6"
+    },
+    {
+      "file": "docs/media/badges/scope.svg",
+      "bytes": 541,
+      "sha256": "0f851d6fc434ea3790ce7b40207114df6be0c60bd197302253ef47caaa325567"
+    },
+    {
+      "file": "docs/media/badges/tests.svg",
+      "bytes": 553,
+      "sha256": "5534ff2fedc03ebe957b4f7863ce4b9c97ab0484417e9d7312c7b79b58a805e7"
+    },
+    {
+      "file": "docs/media/badges/version.svg",
+      "bytes": 529,
+      "sha256": "e79f3fa8f44d3c383360a1dcff5e94e0fe8cf740ec57bbd4a8b0e901a0f68a70"
+    },
+    {
+      "file": "docs/media/crosstown-banner.svg",
+      "bytes": 2096,
+      "sha256": "88eff7aa1e54a18561078b413a09ea82c3690d69ec3b1641831a7618d344e22b"
+    },
+    {
+      "file": "docs/screenshots/00-before-optimization.png",
+      "bytes": 124873,
+      "sha256": "8d3e20f453eeb6bc425ab42b7bc8840444089e04e9e526327c5f0497a5046cc3"
+    },
+    {
+      "file": "docs/screenshots/00a-previous-gameplay.png",
+      "bytes": 259825,
+      "sha256": "b7861f3197cec3462e79fdd0d1b876709770b59ae7f42e7e40ec6a61473b23c1"
+    },
+    {
+      "file": "docs/screenshots/01-city-integration.png",
+      "bytes": 230742,
+      "sha256": "1b9a5c7918d530ba93cd6c79d9a3ef5ca60b8680d9511a259248fcd3e79e2110"
+    },
+    {
+      "file": "docs/screenshots/02-canal-progress.png",
+      "bytes": 335654,
+      "sha256": "ec646894e2c63af2a9dfb0fd581d71c7e8db04c75f66bcfd8cac813204f2ab12"
+    },
+    {
+      "file": "docs/screenshots/03-run-choices.png",
+      "bytes": 140352,
+      "sha256": "6595b97c2363e397d6606a0aaa57cc0e02e2b0cd5a7af4c3d2ee7427510a0b63"
+    },
+    {
+      "file": "docs/screenshots/04-daylight.png",
+      "bytes": 495716,
+      "sha256": "e94f0f1ff47bc70262b688216f96e18cd06f51fbfb8f2b5730f660d0d89c96a6"
+    },
+    {
+      "file": "docs/screenshots/05-neon-night.png",
+      "bytes": 576715,
+      "sha256": "55e89acf4738ef6c6297f7df765972ef1a54690638506bc480f9eccca747ff69"
+    },
+    {
+      "file": "docs/screenshots/06-city-map.png",
+      "bytes": 204428,
+      "sha256": "7847d61973c6f3e0573c031b1ee61108a1a964f120a7161ec56acadfcc583e10"
+    },
+    {
+      "file": "docs/screenshots/07-street-bridge.png",
+      "bytes": 265317,
+      "sha256": "5e7e7c9622a8800c743651cb5a40443fcacb0cb67d2307349a44c238dea92bf9"
+    },
+    {
+      "file": "docs/screenshots/08-crosstown-rooftops.png",
+      "bytes": 349340,
+      "sha256": "48c69f8fc88e940743bfd0a0c576643c0e1e1046aa8caa00c97e38f5e965bae9"
+    },
+    {
+      "file": "docs/screenshots/09-fast-flight-partial.png",
+      "bytes": 457374,
+      "sha256": "990f8575fdab36be22b5fa4f3298fb7e85fb4ff64fc9dd1db1f056bc38c20331"
+    },
+    {
+      "file": "docs/screenshots/10-rain.png",
+      "bytes": 517040,
+      "sha256": "94b5c0ec38b62efbd526fb4c6d819c4e5a9215a19999e81e68228ba7087b08b5"
+    },
+    {
+      "file": "docs/screenshots/district-1-beach.png",
+      "bytes": 589609,
+      "sha256": "329200b88ce4990127921525d7df882696e28d7645f9a707c6382ef29e69c9f1"
+    },
+    {
+      "file": "docs/screenshots/district-2-downtown.png",
+      "bytes": 515877,
+      "sha256": "60db26ea3dbc24302141a7e246443565cc651f3d8633d5bcf39d8cafee1290f6"
+    },
+    {
+      "file": "docs/screenshots/district-3-port.png",
+      "bytes": 642027,
+      "sha256": "5c2ec64a88fd2000ed241a4075ddd7943487af8f48b9e3c3cc561a32e6006b25"
+    },
+    {
+      "file": "docs/screenshots/district-4-canals.png",
+      "bytes": 698136,
+      "sha256": "5cd52866ba26d068d9333c03872bced7c59cd2b6074eefad2782cbf0f57c7496"
+    },
+    {
+      "file": "docs/screenshots/district-5-hills.png",
+      "bytes": 715079,
+      "sha256": "b41ed1b60184aae9abf0f33628282d78d7266b3bab7dd7f51652a703503101d2"
+    },
+    {
+      "file": "docs/screenshots/district-6-oldtown.png",
+      "bytes": 609910,
+      "sha256": "f54c0a61ac679d033ac116e26da749cc82cae71818dc412b0fc7696f112b99a3"
+    },
+    {
+      "file": "docs/screenshots/district-7-outskirts.png",
+      "bytes": 463540,
+      "sha256": "2aa5f029bb268a4dcfb6bc7f21dd9ab63ae79833c6bc6fff20418c2e821a58a4"
+    }
+  ],
+  "exclusions": [
+    "This manifest and the source ZIP are excluded to avoid recursive hashes.",
+    "Historical reports are separately retained; they are not current acceptance evidence."
+  ]
+}

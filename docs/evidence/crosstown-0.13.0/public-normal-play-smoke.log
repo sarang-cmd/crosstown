@@ -1,0 +1,1 @@
+PASS anonymous public landing -> immediate normal /play; new HUD, no debug hooks, no runtime/request failures

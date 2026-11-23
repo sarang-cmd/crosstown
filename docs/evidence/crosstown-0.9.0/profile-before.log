@@ -1,0 +1,189 @@
+0.7-before quick-rooftop {
+  "readyWallMs": 3522.029826,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 19449.3,
+    "fps": 1.028314643714684,
+    "p50": 966.6000000000004,
+    "p95": 2916.5999999999985,
+    "maximum": 2916.5999999999985
+  },
+  "cadence": {
+    "frames": 12,
+    "wallMs": 17965.899999999998,
+    "fps": 0.6679320267840744,
+    "p50": 1483.2999999999956,
+    "p95": 2416.7000000000044,
+    "maximum": 2416.7000000000044
+  },
+  "metrics": {
+    "TaskDuration": 0.47248100000000004,
+    "ScriptDuration": 0.167831,
+    "LayoutDuration": 0.001383,
+    "RecalcStyleDuration": 0.000681,
+    "JSHeapUsedSize": 14783340
+  },
+  "draws": 107,
+  "triangles": 143262,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 18994.765
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 201.244
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 111.549
+    },
+    {
+      "name": "_projectObject @ rendering-_2gUriQ7.js",
+      "ms": 9.746
+    },
+    {
+      "name": "texSubImage2D @ ",
+      "ms": 9.368
+    },
+    {
+      "name": "updateNode @ rendering-_2gUriQ7.js",
+      "ms": 7.513
+    },
+    {
+      "name": "get @ rendering-_2gUriQ7.js",
+      "ms": 7.483
+    },
+    {
+      "name": "_update @ rendering-_2gUriQ7.js",
+      "ms": 7.263
+    }
+  ],
+  "errors": []
+}
+0.7-before downtown-street {
+  "readyWallMs": 3359.363157,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 12466.2,
+    "fps": 1.604338130304343,
+    "p50": 283.40000000000146,
+    "p95": 2799.7999999999993,
+    "maximum": 2799.7999999999993
+  },
+  "cadence": {
+    "frames": 13,
+    "wallMs": 12666.200000000004,
+    "fps": 1.0263536025011444,
+    "p50": 949.9000000000015,
+    "p95": 2749.7999999999993,
+    "maximum": 2749.7999999999993
+  },
+  "metrics": {
+    "TaskDuration": 3.533346,
+    "ScriptDuration": 3.295231,
+    "LayoutDuration": 0.001597,
+    "RecalcStyleDuration": 0.000813,
+    "JSHeapUsedSize": 15290188
+  },
+  "draws": 60,
+  "triangles": 108953,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 10936.426
+    },
+    {
+      "name": "getUniformBlockIndex @ ",
+      "ms": 1525.495
+    },
+    {
+      "name": "getProgramParameter @ ",
+      "ms": 1494.64
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 144.765
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 131.746
+    },
+    {
+      "name": "get @ rendering-_2gUriQ7.js",
+      "ms": 16.213
+    },
+    {
+      "name": "build @ rendering-_2gUriQ7.js",
+      "ms": 14.025
+    },
+    {
+      "name": "va @ rendering-_2gUriQ7.js",
+      "ms": 12.748
+    }
+  ],
+  "errors": []
+}
+0.7-before cockpit-lab {
+  "readyWallMs": 2798.988347000006,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 8866.3,
+    "fps": 2.2557323799104476,
+    "p50": 616.6000000000004,
+    "p95": 716.6000000000004,
+    "maximum": 716.6000000000004
+  },
+  "cadence": {
+    "frames": 18,
+    "wallMs": 12116.099999999999,
+    "fps": 1.4856265630029466,
+    "p50": 650,
+    "p95": 1266.6000000000004,
+    "maximum": 1266.6000000000004
+  },
+  "metrics": {
+    "TaskDuration": 0.44599500000000003,
+    "ScriptDuration": 0.178525,
+    "LayoutDuration": 0.003481,
+    "RecalcStyleDuration": 0.000769,
+    "JSHeapUsedSize": 15385424
+  },
+  "draws": 64,
+  "triangles": 7207,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 12376.931
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 235.49
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 36.464
+    },
+    {
+      "name": "bindVertexArray @ ",
+      "ms": 21.146
+    },
+    {
+      "name": "get @ rendering-_2gUriQ7.js",
+      "ms": 14.674
+    },
+    {
+      "name": "bindBufferBase @ ",
+      "ms": 11.457
+    },
+    {
+      "name": "update @ game-B9SiGh8i.js",
+      "ms": 9.044
+    },
+    {
+      "name": "getAttributes @ rendering-_2gUriQ7.js",
+      "ms": 9.043
+    }
+  ],
+  "errors": []
+}

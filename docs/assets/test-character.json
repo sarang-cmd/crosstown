@@ -1,0 +1,118 @@
+{
+  "id": "test-character",
+  "title": "RobotExpressive — pipeline fixture",
+  "kind": "character",
+  "author": "Tomás Laulhé (Quaternius); conversion and facial morph targets by Don McCurdy",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/README.md",
+  "source": "https://github.com/mrdoob/three.js/tree/r180/examples/models/gltf/RobotExpressive",
+  "url": "https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/models/gltf/RobotExpressive/RobotExpressive.glb",
+  "sourceSha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+  "downloadSha256": "047f5e5fb3bb6d378bd1df16ca6137f2a596c99b3a1b5690b4020c05aaf6f319",
+  "sourceBytes": 463988,
+  "sourceGlbBytes": 463988,
+  "sourceResources": [],
+  "targetSize": 1.75,
+  "targetDimension": "height",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 0.3922691641310077,
+  "before": {
+    "bounds": {
+      "min": [
+        -3.3119901018217206,
+        -0.020304421325820776,
+        -1.2691482746638532
+      ],
+      "max": [
+        3.306558827869594,
+        4.440918024942083,
+        1.4160372858146
+      ]
+    },
+    "dimensions": [
+      6.618548929691315,
+      4.461222446267904,
+      2.685185560478453
+    ],
+    "triangles": 3237,
+    "nodes": 74,
+    "textures": 0,
+    "animations": [
+      "Dance",
+      "Death",
+      "Idle",
+      "Jump",
+      "No",
+      "Punch",
+      "Running",
+      "Sitting",
+      "Standing",
+      "ThumbsUp",
+      "Walking",
+      "WalkJump",
+      "Wave",
+      "Yes"
+    ]
+  },
+  "renamed": [],
+  "missingKeyNodes": [],
+  "scene": "Root Scene",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 1.75 m height",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "none in source",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.2981263282050939,
+        1.1081470824292339e-8,
+        -0.5266578612971529
+      ],
+      "max": [
+        1.2981263282050939,
+        1.7500000012853056,
+        0.526657969675633
+      ]
+    },
+    "dimensions": [
+      2.5962526564101878,
+      1.7499999902038348,
+      1.053315830972786
+    ],
+    "triangles": 3237,
+    "nodes": 75,
+    "textures": 0,
+    "animations": [
+      "Dance",
+      "Death",
+      "Idle",
+      "Jump",
+      "No",
+      "Punch",
+      "Running",
+      "Sitting",
+      "Standing",
+      "ThumbsUp",
+      "Walking",
+      "WalkJump",
+      "Wave",
+      "Yes"
+    ]
+  },
+  "outputBytes": 377408,
+  "outputSha256": "1b1e70e48fec655117066aef58800e47b06540dcc2f113fcf7a4c08486dbaf10",
+  "savedBytesPercent": 19
+}

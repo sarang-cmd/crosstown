@@ -1,0 +1,303 @@
+[
+  {
+    "district": "beach",
+    "mode": "fly",
+    "position": {
+      "x": -1600,
+      "y": 100,
+      "z": -770
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 0,
+      "pending": 0,
+      "queued": 2,
+      "cached": 8,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 140.7000000011176,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "beach",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "downtown",
+    "mode": "fly",
+    "position": {
+      "x": 0,
+      "y": 100,
+      "z": 30
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 8,
+      "pending": 0,
+      "queued": 0,
+      "cached": 16,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 140.7000000011176,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "downtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "port",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": 1080
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 0,
+      "pending": 0,
+      "queued": 2,
+      "cached": 22,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 140.7000000011176,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "port",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "canals",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": -100
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 4,
+      "pending": 0,
+      "queued": 0,
+      "cached": 30,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 10.299999998882413,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "canals",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "hills",
+    "mode": "fly",
+    "position": {
+      "x": 980,
+      "y": 180,
+      "z": -1070
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 2,
+      "pending": 0,
+      "queued": 2,
+      "cached": 38,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 10.299999998882413,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "hills",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "oldtown",
+    "mode": "fly",
+    "position": {
+      "x": 850,
+      "y": 100,
+      "z": 560
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 4,
+      "pending": 0,
+      "queued": 0,
+      "cached": 44,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 9.199999999254942,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "oldtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "outskirts",
+    "mode": "fly",
+    "position": {
+      "x": 1000,
+      "y": 100,
+      "z": 1430
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 2,
+      "pending": 0,
+      "queued": 2,
+      "cached": 50,
+      "farImpostors": 1915,
+      "maximumInstallMs": 140.7000000011176,
+      "installP95": 9.199999999254942,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "outskirts",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 0.21666666666666667,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  }
+]

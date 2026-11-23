@@ -1,0 +1,9 @@
+{
+  "version": "0.7.0",
+  "files": 77,
+  "anonymousHTTP": 200,
+  "bytes": 5312752,
+  "sha256": "89c328bb1046b7948f6e3c46280a35f66365f88cfbf7a8e40e322d332eccaa08",
+  "independentRoundtripMatched": true,
+  "contains": "Public compiled output only; no source/uploads/credentials"
+}

@@ -1,0 +1,9 @@
+Reviewed 2026-11-22
+SkyernAklea
+https://freesound.org/people/SkyernAklea/sounds/623436/
+CC-BY-4.0
+https://creativecommons.org/licenses/by/4.0/
+Source SHA-256: e7f8c7493c444e8fb54675eca140b893d68fdb062832792dc518816263d31f95
+Publisher public HQ MP3 preview (lossy), not the login-only original WAV.
+Modifications: Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers.
+No endorsement by the original vehicle manufacturer. Source brand names occur only in provenance.

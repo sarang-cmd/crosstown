@@ -1,0 +1,53 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import RAPIER from '@dimforge/rapier3d-compat';
+import { BufferGeometry, Int16BufferAttribute, Matrix4 } from 'three/webgpu';
+import { ROSTER, CARS } from '../../src/vehicles/cars';
+import { VehicleDamage } from '../../src/vehicles/damage';
+import { Garage } from '../../src/vehicles/garage';
+import { Vehicles } from '../../src/vehicles';
+import { RaycastCar } from '../../src/vehicles/physics';
+import { decodedGeometry } from '../../src/vehicles/geometry';
+import { neutralDrive } from '../../src/vehicles/engine';
+await RAPIER.init();
+class MemoryStorage {values=new Map<string,string>();getItem(k:string){return this.values.get(k)??null;}setItem(k:string,v:string){this.values.set(k,v);}removeItem(k:string){this.values.delete(k);}}
+function memory(){const s=new MemoryStorage();Object.defineProperty(globalThis,'localStorage',{value:s,configurable:true});return s;}
+function ground(){const w=new RAPIER.World({x:0,y:-24,z:0});w.timestep=1/60;const g=w.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(0,-.2,0));g.userData={surface:'asphalt'};w.createCollider(RAPIER.ColliderDesc.cuboid(1000,.2,1000).setFriction(1),g);return w;}
+function tick(c:RaycastCar,n:number){for(let i=0;i<n;i++){c.preStep(1/60);c.world.step();c.postStep(1/60);}}
+test('twelve fictional models, two per class, unique tuning/paint/profile with no mutable nested sharing',()=>{assert.equal(ROSTER.length,12);assert.equal(new Set(ROSTER.map(c=>c.model)).size,12);assert.equal(new Set(ROSTER.map(c=>c.soundProfile)).size,12);assert.equal(new Set(ROSTER.map(c=>JSON.stringify([c.mass,c.torque,c.ratios,c.steering,c.suspension]))).size,12);for(const k of['compact','sedan','muscle','supercar','suv','motorbike'])assert.equal(ROSTER.filter(c=>c.class===k).length,2);for(const c of ROSTER){assert.ok(c.paints.length>=3);assert.ok(c.torque.length>=5);assert.ok(c.ratios.length>=5);assert.equal(CARS[c.id],c);}assert.notEqual(CARS.pip!.suspension,CARS.harbor!.suspension);});
+test('six-car persistent garage survives reconstruction, rejects a seventh and updates without duplicating VINs',()=>{memory();const garage=new Garage();for(const c of ROSTER.slice(0,6))assert.equal(garage.store(garage.make(c.id)),true);assert.equal(garage.store(garage.make('aerox')),false);const first=garage.data.slots[0]!;garage.store({...first,paint:'#112233',damage:.7});const reload=new Garage();assert.equal(reload.data.slots.length,6);assert.equal(new Set(reload.data.slots.map(c=>c.vin)).size,6);assert.equal(reload.data.slots[0]!.paint,'#112233');assert.equal(reload.data.slots[0]!.damage,.7);assert.equal(reload.recover()!.damage,0);assert.equal(reload.recover()!.vin,first.vin);});
+test('finish reward queues safely when full, fills a released space and is granted only once',()=>{memory();const g=new Garage();for(const c of ROSTER.slice(0,6))g.store(g.make(c.id));const reward=g.grantReward();assert.equal(g.data.rewardPending,true);assert.equal(g.data.slots.length,6);assert.equal(g.data.lastOwned!.vin,reward.vin);g.remove(g.data.slots[0]!.vin);assert.equal(g.data.rewardPending,false);assert.equal(g.data.slots.filter(c=>c.reward).length,1);g.grantReward();assert.equal(g.data.slots.length,6);g.remove(reward.vin);g.grantReward();assert.equal(g.data.slots.some(c=>c.reward),false);assert.equal(new Garage().data.rewardGranted,true);});
+test('corrupted garage saves cannot inject names/HTML, nonfinite damage, duplicates or invalid model IDs',()=>{const s=memory();s.setItem('crosstown:garage:v1',JSON.stringify({version:1,data:{slots:[{vin:'<img>',definition:'pip',paint:'#ffffff',damage:.4},{vin:'ok',definition:'pip',damage:null},{vin:'ok',definition:'pip',damage:.1},{vin:'proto',definition:'__proto__'}],nextVin:-3,lastOwned:{vin:'ok',definition:'pip',paint:'bad',damage:99}}}));const g=new Garage();assert.equal(g.data.slots.length,1);assert.equal(g.data.slots[0]!.damage,0);assert.match(g.data.slots[0]!.paint,/^#[0-9a-f]{6}$/);assert.equal(g.data.lastOwned!.damage,1);assert.equal(g.make('harbor').vin,'owned-1');});
+test('blocked browser storage degrades to a usable in-memory garage',()=>{Object.defineProperty(globalThis,'localStorage',{configurable:true,get(){throw Error('SecurityError');}});const g=new Garage();assert.equal(g.storage.available,false);assert.equal(g.store(g.make('pip')),true);assert.equal(g.data.slots.length,1);assert.equal(g.storage.available,false);memory();});
+test('normalized Meshopt attributes are decoded before transform, without mutating cached source geometry',()=>{const g=new BufferGeometry().setAttribute('position',new Int16BufferAttribute([-32767,0,32767,0,32767,0,32767,0,-32767],3,true));const out=decodedGeometry(g,new Matrix4().makeScale(4,2,3).setPosition(10,5,20));out.computeBoundingBox();assert.ok(Math.abs(out.boundingBox!.min.x-6)<.001);assert.ok(Math.abs(out.boundingBox!.max.z-23)<.001);assert.equal(g.getAttribute('position').array.constructor,Int16Array);assert.equal(out.getAttribute('position').array.constructor,Float32Array);assert.equal(g.getAttribute('position').normalized,true);out.dispose();g.dispose();});
+test('merely showing an NPC enter prompt never removes/materializes a traffic car',()=>{let retired=0;const vehicles=Object.assign(Object.create(Vehicles.prototype),{cars:new Map(),externalNearest:()=>({id:'traffic-test',definition:'pip',position:{x:1,y:.6,z:1},yaw:0,npc:true,damage:0,retire(){retired++;}})});for(let i=0;i<100;i++){const near=vehicles.nearest({x:1,y:0,z:1});assert.equal(near.car.id,'traffic-test');}assert.equal(retired,0);assert.equal(vehicles.cars.size,0);});
+test('all damage stages, light/window flags, 7-second fire-to-wreck, small degradation and repair are deterministic',()=>{const d=new VehicleDamage();assert.equal(d.stage,'intact');d.hit(10);assert.equal(d.stage,'dented');d.hit(20);assert.equal(d.stage,'broken-glass');assert.equal(d.glassBroken,true);d.hit(18);assert.equal(d.stage,'smoking');assert.equal(d.frontBroken,true);assert.ok(d.snapshot().powerMultiplier>=.85);d.hit(30);assert.equal(d.stage,'burning');assert.equal(d.drivable,false);d.update(6.99);assert.equal(d.wreck,false);d.update(.02);assert.equal(d.stage,'wreck');d.restore(0);assert.equal(d.stage,'intact');assert.equal(d.drivable,true);assert.equal(d.dents.length,0);});
+test('AWD service brakes cannot be bypassed by nonzero engine drag; NPC braking cannot select reverse',()=>{for(const id of['meridian','zenith','summit']){const w=ground(),c=new RaycastCar(w,{x:0,y:.9,z:0},id,CARS[id]);c.engine.occupied=true;c.engine.phase='running';c.engine.allowReverse=false;tick(c,120);c.body.setLinvel({x:0,y:0,z:13},true);const start=c.position.z;c.setInput({...neutralDrive(),brake:1});tick(c,90);assert.ok(Math.abs(c.speed)<.3,`${id} must stop, not coast`);assert.ok(c.position.z-start<10,`${id} must stop safely from 13 m/s`);assert.ok(c.engine.gear>=1);assert.equal(c.vehicle.wheelEngineForce(0),0);c.dispose();w.free();}});
+test('both actual two-wheel bikes settle, lean through a turn, jump/land and recover without hidden support wheels',()=>{for(const id of['wren','kestrel']){const w=ground(),c=new RaycastCar(w,{x:0,y:.9,z:0},id,CARS[id]);c.engine.enter();tick(c,340);assert.equal(c.vehicle.numWheels(),2);assert.equal(c.contacts,2);c.setInput({...neutralDrive(),throttle:.4});tick(c,140);c.setInput({...neutralDrive(),throttle:.3,steering:.15});tick(c,50);assert.ok(Math.abs(c.lean)>.01);assert.ok(Math.abs(c.lean)<.8);c.teleport({x:0,y:4,z:0});tick(c,180);assert.equal(c.contacts,2);c.body.setRotation({x:0,y:0,z:1,w:0},true);tick(c,60);c.recover();tick(c,180);assert.equal(c.contacts,2);assert.ok(c.rotation.w>.8);c.dispose();w.free();}});
+
+test('contact-ready takeovers have finite mass/inertia before the first wheel update without an extra world step',()=>{for(const def of ROSTER){const w=ground();let steps=0;const step=w.step.bind(w);w.step=(...args)=>{steps++;return step(...args);};const c=new RaycastCar(w,{x:0,y:.53,z:0},`new-${def.id}`,def,Math.PI/2);assert.equal(steps,0);assert.ok(Math.abs(c.body.mass()-def.mass)<.01);assert.ok(c.body.principalInertia().x>0);c.engine.enter();tick(c,60);assert.ok(Object.values(c.position).every(Number.isFinite));assert.ok(Number.isFinite(c.speed));c.dispose();w.free();}});
+
+test('all twelve external parked/NPC definitions can be taken through the common ownership path, stored and disposed without duplicate controllers',()=>{
+ memory();const w=ground();const audio={context:undefined} as any,vehicles=new Vehicles(w,audio,()=>{});
+ // No DOM/cabin rendering in this physics/ownership unit; actual cabins/models
+ // are separately loaded and asserted in the two-backend browser suite.
+ vehicles.setCabin=()=>true;
+ let retired=0;
+ for(const[model,def]of ROSTER.entries()){
+  const id=`external-${def.id}`;vehicles.externalNearest=()=>({id,definition:def.id,position:{x:model*6,y:.65,z:0},yaw:0,npc:model%2===0,damage:.16,paint:def.paints[1],retire(){retired++;}});
+  const near=vehicles.nearest({x:model*6,y:.1,z:0})!;assert.equal(near.car.id,id);assert.equal(retired,model);assert.equal(vehicles.enter(id),true);assert.equal(vehicles.active!.car.definition,def);assert.equal(vehicles.enter(id),false);assert.equal(retired,model+1);assert.equal(vehicles.garage.data.lastOwned!.definition,def.id);assert.equal(vehicles.active!.car.damage,.16);
+  tick(vehicles.active!.car,30);vehicles.inLab=true;assert.equal(vehicles.storeActive(),false);vehicles.inLab=false;
+  if(model<6){assert.equal(vehicles.storeActive(),true);assert.equal(vehicles.active,undefined);assert.equal(vehicles.cars.size,0);}else{vehicles.exit(true);vehicles.remove(id);}
+  assert.equal(w.vehicleControllers.size,0);
+ }
+ assert.equal(vehicles.garage.data.slots.length,6);assert.equal(new Garage().data.slots.length,6);vehicles.dispose();w.free();
+});
+
+test('a parked chassis struck from rest takes real contact damage as well as the striking car',()=>{
+ const w=ground(),striker=new RaycastCar(w,{x:0,y:.9,z:-14},'striker'),parked=new RaycastCar(w,{x:0,y:.9,z:0},'struck-parked');
+ const step=()=>{striker.preStep(1/60);parked.preStep(1/60);w.step();striker.postStep(1/60);parked.postStep(1/60);};
+ for(let i=0;i<120;i++)step();assert.equal(parked.damage,0);striker.body.setLinvel({x:0,y:0,z:22},true);
+ let maxStruckImpulse=0,actualContacts=0;for(let i=0;i<90;i++){step();maxStruckImpulse=Math.max(maxStruckImpulse,parked.lastImpact);w.contactPairsWith(parked.collider,()=>actualContacts++);}
+ assert.ok(actualContacts>0);assert.ok(maxStruckImpulse>5);assert.ok(striker.damage>0);assert.ok(parked.damage>0);assert.ok(parked.position.z>1);
+ striker.dispose();parked.dispose();w.free();
+});

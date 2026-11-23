@@ -1,0 +1,95 @@
+quick-rooftop navigation START
+quick-rooftop navigation DONE 239
+quick-rooftop game hooks START
+quick-rooftop game hooks DONE 6589
+quick-rooftop hour START
+quick-rooftop hour DONE 51
+quick-rooftop 20 actual warmup frames START
+quick-rooftop 20 actual warmup frames DONE 11888
+quick-rooftop CPU profiler start START
+quick-rooftop CPU profiler start DONE 275
+quick-rooftop measured cadence START
+quick-rooftop measured cadence DONE 14342
+quick-rooftop CPU profiler stop START
+quick-rooftop CPU profiler stop DONE 29
+0.9-final quick-rooftop {
+  "readyWallMs": 8163.6222499999985,
+  "warmup": {
+    "frames": 20,
+    "wallMs": 11566.199999999999,
+    "fps": 1.729176393283879,
+    "p50": 150,
+    "p95": 2483.2000000000007,
+    "maximum": 2483.2000000000007
+  },
+  "cadence": {
+    "frames": 12,
+    "wallMs": 13032.8,
+    "fps": 0.9207537904364373,
+    "p50": 1049.9000000000015,
+    "p95": 2583.2999999999956,
+    "maximum": 2583.2999999999956
+  },
+  "metrics": {
+    "TaskDuration": 3.7428619999999997,
+    "ScriptDuration": 3.192634,
+    "LayoutDuration": 0.005691,
+    "RecalcStyleDuration": 0.002048,
+    "JSHeapUsedSize": 21961916
+  },
+  "draws": 111,
+  "triangles": 143218,
+  "top": [
+    {
+      "name": "(idle) @ ",
+      "ms": 10895.733
+    },
+    {
+      "name": "getProgramParameter @ ",
+      "ms": 2222.103
+    },
+    {
+      "name": "getUniformBlockIndex @ ",
+      "ms": 802.218
+    },
+    {
+      "name": "(program) @ ",
+      "ms": 327.389
+    },
+    {
+      "name": "(garbage collector) @ ",
+      "ms": 213.883
+    },
+    {
+      "name": "updateMatrixWorld @ chunk-D6MJZFXW.js?v=794bc295",
+      "ms": 16.062
+    },
+    {
+      "name": "bufferData @ ",
+      "ms": 9.488
+    },
+    {
+      "name": "beginRender @ chunk-JMFTEJCY.js?v=794bc295",
+      "ms": 6.231
+    }
+  ],
+  "errors": []
+}
+downtown-street navigation START
+downtown-street navigation DONE 126
+downtown-street game hooks START
+downtown-street game hooks FAILED Error: downtown-street: game hooks exceeded 180000 ms
+PROFILE FAILED Error: downtown-street: game hooks exceeded 180000 ms
+    at Timeout.<anonymous> (file:///home/user/tools/profile-frame-cost.mjs:13:101)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+Error: downtown-street: game hooks exceeded 180000 ms
+    at Timeout.<anonymous> (file:///home/user/tools/profile-frame-cost.mjs:13:101)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+
+Node.js v20.20.2

@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-22",
+  "id": 1467794178,
+  "fullName": "sarang-cmd/crosstown",
+  "htmlUrl": "https://github.com/sarang-cmd/crosstown",
+  "cloneUrl": "https://github.com/sarang-cmd/crosstown.git",
+  "private": true,
+  "created": true,
+  "pushed": true,
+  "topicsApplied": [
+    "threejs",
+    "webgpu",
+    "webgl2",
+    "typescript",
+    "rapier",
+    "parkour",
+    "open-world",
+    "procedural-generation",
+    "vite",
+    "browser-game"
+  ],
+  "authentication": "User-authorized transient credential used only for GitHub transport; never committed or placed in remote URLs. Remove the temporary credential after final confirmation.",
+  "publicationCapturedAt": "2026-11-23T13:16:16.135080Z",
+  "publication": {
+    "method": "Unmerged pull request; application files are not on main",
+    "pullRequestNumber": 1,
+    "pullRequestUrl": "https://github.com/sarang-cmd/crosstown/pull/1",
+    "state": "open",
+    "branch": "review/crosstown-steps-01-14",
+    "base": "main",
+    "emptyBaselineSha": "22b941bb8395ca5fa6868c584bd100ac900d7920",
+    "sourceImportHeadSha": "e4e37ab9208d2034a35c11b6605dd5f73c69896d",
+    "sourceImportCommits": 60,
+    "publicationStatusCommitFollows": true,
+    "merged": false,
+    "forcePushed": false,
+    "projectFiles": 1294
+  },
+  "hostedCI": {
+    "passed": false,
+    "status": "blocked-before-job-start",
+    "observedRunUrl": "https://github.com/sarang-cmd/crosstown/actions/runs/45181702188",
+    "reason": "GitHub reports recent account payment failures or a spending-limit restriction; all four jobs have zero steps."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-22",
+  "backend": "webgl",
+  "environment": "SwiftShader software rendering; NOT native GPU or target-device acceptance",
+  "viewport": [
+    1280,
+    800
+  ],
+  "nativeHardwareAvailable": false,
+  "near60Acceptance": "OPEN; software result is not a native pass",
+  "rows": [
+    {
+      "failed": true,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file:///home/user/tools/accept-populated-life-performance.mjs:31:85"
+    }
+  ]
+}

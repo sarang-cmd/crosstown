@@ -1,0 +1,707 @@
+{
+  "date": "2026-11-22",
+  "warning": "The city scene differs from the old release. Same viewport, full course and fixed Balanced tier; no hardware-performance or controlled CPU-attribution claim. First-pass inadequately warmed measurements are preserved separately and are not the steady-state comparison.",
+  "results": [
+    {
+      "release": "0.3.0-before",
+      "environment": "Chromium forced WebGL 2 / software SwiftShader, 1280x800, Balanced, 2-CPU/2-GiB container. Unpaused rAF cadence, not GPU timestamp timing or target-hardware validation.",
+      "readyWallMs": 3336.835293,
+      "warmup": {
+        "frames": 20,
+        "wallMs": 31101.400000000373
+      },
+      "cadence": {
+        "wallMs": 16232.700000000004,
+        "frames": 14,
+        "rafFps": 0.862456646152519,
+        "frameP50": 1100,
+        "frameP95": 2016.6000000000058,
+        "frameMaximum": 2016.6000000000058
+      },
+      "state": {
+        "seed": 84173,
+        "state": "running",
+        "night": false,
+        "checkpoint": 0,
+        "total": 28,
+        "elapsed": 3.433333333333326,
+        "remaining": 1082.5666666666698,
+        "penalty": 0,
+        "falls": 0,
+        "cash": 0,
+        "collectibles": 0,
+        "powers": {
+          "double": 0,
+          "slow": 0,
+          "speed": 0,
+          "magnet": 0
+        },
+        "position": {
+          "x": -0.019399723038077354,
+          "y": 27.0096378326416,
+          "z": 26.012081146240234
+        },
+        "velocity": {
+          "x": 0,
+          "y": -1.5,
+          "z": 0.000002139591151581352
+        },
+        "grounded": true,
+        "motion": "idle",
+        "height": 1.75,
+        "modelLoaded": true,
+        "modelFallback": false,
+        "clips": [
+          "Dance",
+          "Death",
+          "Idle",
+          "Jump",
+          "No",
+          "Punch",
+          "Running",
+          "Sitting",
+          "Standing",
+          "ThumbsUp",
+          "Walking",
+          "WalkJump",
+          "Wave",
+          "Yes",
+          "Run",
+          "Sprint",
+          "ParkourJump",
+          "DoubleJump",
+          "Slide",
+          "Climb",
+          "Fall",
+          "Land",
+          "Roll",
+          "WallRun",
+          "Vault",
+          "Zipline",
+          "Swing"
+        ],
+        "ghostFrames": 0,
+        "ghostVisible": false,
+        "carUnlocked": false,
+        "nightUnlocked": false,
+        "result": null,
+        "finishTime": 0,
+        "camera": [
+          0.4805696582909891,
+          31.46558553540921,
+          20.812012193825087
+        ],
+        "cameraLimited": false,
+        "cameraClearance": 7.654394233568303,
+        "activeColliders": 66,
+        "streamMs": 0,
+        "routeMetres": 4416.0135035634285,
+        "expectedSeconds": 680,
+        "valid": {
+          "possible": true,
+          "errors": [],
+          "maxGap": 3.8000000000000114,
+          "maxHeight": 1.3429349663779782
+        },
+        "events": {
+          "route": 1,
+          "start": 1
+        },
+        "backend": "WebGL 2",
+        "workerReady": true,
+        "fps": 2,
+        "frameMs": 636.1999999992549,
+        "quality": "Balanced",
+        "paused": false,
+        "ticks": 206,
+        "draws": 163,
+        "triangles": 229460,
+        "worldBuilt": true,
+        "activeChunks": 11,
+        "input": "Ready. Press a key or connect a controller.",
+        "device": "none",
+        "moveX": 0,
+        "moveY": 0,
+        "initialStreamMs": 15.5,
+        "audioState": "awaiting-browser-gesture"
+      },
+      "topSamples": [
+        {
+          "name": "(idle) @ ",
+          "sampledMs": 17304.433
+        },
+        {
+          "name": "(program) @ ",
+          "sampledMs": 215.83
+        },
+        {
+          "name": "(garbage collector) @ ",
+          "sampledMs": 59.322
+        },
+        {
+          "name": "updateMatrixWorld @ rendering-DO7eZjrC.js",
+          "sampledMs": 44.638
+        },
+        {
+          "name": "update @ rendering-DO7eZjrC.js",
+          "sampledMs": 32.855
+        },
+        {
+          "name": "bufferData @ ",
+          "sampledMs": 31.348
+        },
+        {
+          "name": "bindBuffer @ ",
+          "sampledMs": 28.785
+        },
+        {
+          "name": "get @ rendering-DO7eZjrC.js",
+          "sampledMs": 21.18
+        },
+        {
+          "name": "bindBufferBase @ ",
+          "sampledMs": 17.147
+        },
+        {
+          "name": "_projectObject @ rendering-DO7eZjrC.js",
+          "sampledMs": 15.056
+        },
+        {
+          "name": "update @ game-K2QGJB45.js",
+          "sampledMs": 10.946
+        },
+        {
+          "name": "multiplyMatrices @ rendering-DO7eZjrC.js",
+          "sampledMs": 10.676
+        },
+        {
+          "name": "updateNode @ rendering-DO7eZjrC.js",
+          "sampledMs": 10.605
+        },
+        {
+          "name": "_renderObjectDirect @ rendering-DO7eZjrC.js",
+          "sampledMs": 10.557
+        },
+        {
+          "name": "_update @ rendering-DO7eZjrC.js",
+          "sampledMs": 9.123
+        },
+        {
+          "name": "getAttributes @ rendering-DO7eZjrC.js",
+          "sampledMs": 8.193
+        },
+        {
+          "name": "getCacheKey @ rendering-DO7eZjrC.js",
+          "sampledMs": 6.039
+        },
+        {
+          "name": "useProgram @ ",
+          "sampledMs": 5.413
+        },
+        {
+          "name": "draw @ rendering-DO7eZjrC.js",
+          "sampledMs": 5.336
+        },
+        {
+          "name": "_bindUniforms @ rendering-DO7eZjrC.js",
+          "sampledMs": 5.197
+        }
+      ],
+      "errors": []
+    },
+    {
+      "release": "0.5.0-crosstown",
+      "environment": "Chromium forced WebGL 2 / software SwiftShader, 1280x800, Balanced, 2-CPU/2-GiB container. Unpaused rAF cadence, not GPU timestamp timing or target-hardware validation.",
+      "readyWallMs": 4437.766434999998,
+      "warmup": {
+        "frames": 20,
+        "wallMs": 18291.800000000745
+      },
+      "cadence": {
+        "wallMs": 15699.400000000001,
+        "frames": 12,
+        "rafFps": 0.7643604214173789,
+        "frameP50": 1333.300000000003,
+        "frameP95": 2216.5999999999985,
+        "frameMaximum": 2216.5999999999985
+      },
+      "state": {
+        "seed": 84173,
+        "marker": "opening",
+        "length": "full",
+        "state": "running",
+        "night": false,
+        "checkpoint": 0,
+        "total": 28,
+        "elapsed": 3.21666666666666,
+        "remaining": 901.7833333333363,
+        "penalty": 0,
+        "falls": 0,
+        "cash": 0,
+        "collectibles": 0,
+        "powers": {
+          "double": 0,
+          "slow": 0,
+          "speed": 0,
+          "magnet": 0
+        },
+        "position": {
+          "x": -0.019548319280147552,
+          "y": 27.009538650512695,
+          "z": 26.011762619018555
+        },
+        "velocity": {
+          "x": 0,
+          "y": -1.5,
+          "z": 0.000009411102710158343
+        },
+        "grounded": true,
+        "motion": "idle",
+        "height": 1.75,
+        "modelLoaded": true,
+        "modelFallback": false,
+        "clips": [
+          "Dance",
+          "Death",
+          "Idle",
+          "Jump",
+          "No",
+          "Punch",
+          "Running",
+          "Sitting",
+          "Standing",
+          "ThumbsUp",
+          "Walking",
+          "WalkJump",
+          "Wave",
+          "Yes",
+          "Run",
+          "Sprint",
+          "ParkourJump",
+          "DoubleJump",
+          "Slide",
+          "Climb",
+          "Fall",
+          "Land",
+          "Roll",
+          "WallRun",
+          "Vault",
+          "Zipline",
+          "Swing"
+        ],
+        "ghostFrames": 0,
+        "ghostVisible": false,
+        "carUnlocked": false,
+        "nightUnlocked": false,
+        "result": null,
+        "finishTime": 0,
+        "camera": [
+          0.33016784943702154,
+          30.951493614148234,
+          20.210400241393362
+        ],
+        "cameraYaw": 0,
+        "cameraLimited": false,
+        "cameraClearance": 6.405055073719508,
+        "activeColliders": 66,
+        "streamMs": 0,
+        "routeMetres": 4416.0135035634285,
+        "expectedSeconds": 680,
+        "valid": {
+          "possible": true,
+          "errors": [],
+          "maxGap": 3.8000000000000114,
+          "maxHeight": 1.3429349663779782
+        },
+        "events": {
+          "route": 1,
+          "start": 1
+        },
+        "backend": "WebGL 2",
+        "startupReadyMs": 3764,
+        "firstRenderMs": 4047.7999999988824,
+        "workerReady": true,
+        "fps": 1,
+        "frameMs": 1238.9000000003725,
+        "quality": "Balanced",
+        "paused": false,
+        "choosing": false,
+        "ticks": 193,
+        "draws": 82,
+        "triangles": 198256,
+        "worldBuilt": true,
+        "activeChunks": 2,
+        "input": "Ready. Press a key or connect a controller.",
+        "device": "none",
+        "moveX": 0,
+        "moveY": 0,
+        "initialStreamMs": 4.199999999254942,
+        "audioState": "awaiting-browser-gesture",
+        "mode": "parkour",
+        "city": {
+          "ready": true,
+          "sizeMetres": 4000,
+          "chunkMetres": 128,
+          "loaded": 25,
+          "anchor": {
+            "x": -0.019548319280147552,
+            "y": 27.009538650512695,
+            "z": 26.011762619018555
+          },
+          "centerLoaded": true,
+          "nearbyLoaded": 9,
+          "installing": false,
+          "pending": 0,
+          "queued": 0,
+          "cached": 26,
+          "gpuCached": 1,
+          "farImpostors": 1628,
+          "maximumInstallMs": 61.30000000074506,
+          "maximumChunkCpuMs": 61.400000002235174,
+          "maximumUpdateMs": 70.40000000037253,
+          "installPhases": {
+            "terrain": {
+              "maximumMs": 61.30000000074506,
+              "slices": 22
+            },
+            "roads": {
+              "maximumMs": 0.09999999962747097,
+              "slices": 22
+            },
+            "building-instances": {
+              "maximumMs": 0.2000000011175871,
+              "slices": 22
+            },
+            "worker-baked-decor": {
+              "maximumMs": 0,
+              "slices": 22
+            },
+            "light-instances": {
+              "maximumMs": 0,
+              "slices": 22
+            },
+            "commit-or-gpu-reuse": {
+              "maximumMs": 8.100000001490116,
+              "slices": 22
+            }
+          },
+          "streamingOutliers": [
+            {
+              "chunk": "16,16",
+              "phase": "terrain",
+              "ms": 61.30000000074506
+            },
+            {
+              "chunk": "14,16",
+              "phase": "commit-or-gpu-reuse",
+              "ms": 8.100000001490116
+            }
+          ],
+          "coldPrimeWallMs": 35.69999999925494,
+          "installP95": 1.300000000745058,
+          "physicsChunks": 0,
+          "physicsColliders": 65,
+          "physicsStreamMs": 0,
+          "graph": {
+            "nodes": 197,
+            "edges": 353,
+            "lanes": 944
+          },
+          "district": "downtown",
+          "hiddenCachesFound": 0,
+          "continuousFarCoverage": true
+        },
+        "environment": {
+          "date": "2026-11-20",
+          "weather": "clear",
+          "hour": 9.047917010904724,
+          "night": 0,
+          "elapsed": 37.657000000000004,
+          "cycleRealSeconds": 1440,
+          "waves": true,
+          "analyticalSkyReflection": true,
+          "shoreFoam": true
+        }
+      },
+      "topSamples": [
+        {
+          "name": "(idle) @ ",
+          "sampledMs": 11072.341
+        },
+        {
+          "name": "getProgramParameter @ ",
+          "sampledMs": 4902.787
+        },
+        {
+          "name": "(program) @ ",
+          "sampledMs": 309.518
+        },
+        {
+          "name": "(garbage collector) @ ",
+          "sampledMs": 259.981
+        },
+        {
+          "name": "updateMatrixWorld @ chunk-D6MJZFXW.js?v=a8766683",
+          "sampledMs": 41.561
+        },
+        {
+          "name": "bufferData @ ",
+          "sampledMs": 32.944
+        },
+        {
+          "name": "get @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 23.755
+        },
+        {
+          "name": "multiplyMatrices @ chunk-D6MJZFXW.js?v=a8766683",
+          "sampledMs": 15.85
+        },
+        {
+          "name": "update @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 15.455
+        },
+        {
+          "name": "getUniformBlockIndex @ ",
+          "sampledMs": 10.158
+        },
+        {
+          "name": "_projectObject @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 8.905
+        },
+        {
+          "name": "setMaterial @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 7.075
+        },
+        {
+          "name": "render @ game.ts?t=1795354472648",
+          "sampledMs": 6.837
+        },
+        {
+          "name": "draw @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 6.781
+        },
+        {
+          "name": "update @ ParkourRun.ts?t=1795354471800",
+          "sampledMs": 6.56
+        },
+        {
+          "name": "_renderScene @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 5.734
+        },
+        {
+          "name": "wasm-to-js @ ",
+          "sampledMs": 5.499
+        },
+        {
+          "name": "updateForRender @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 5.46
+        },
+        {
+          "name": "updateNode @ chunk-JMFTEJCY.js?v=a8766683",
+          "sampledMs": 5.456
+        },
+        {
+          "name": "isHeld @ input.ts?t=1795351185667",
+          "sampledMs": 5.401
+        }
+      ],
+      "flight": {
+        "note": "One initial positioning operation before measurement. Actual W+Shift held; no teleports, manual simulation steps, or render suspension during the measured segment. This is only a partial flight, not a complete-map acceptance pass.",
+        "timing": {
+          "wallMs": 20082.5,
+          "frames": 19,
+          "rafFps": 0.9460973484376946,
+          "frameP50": 1116.699999999997,
+          "frameP95": 2533.199999999997,
+          "frameMaximum": 2533.199999999997
+        },
+        "before": {
+          "mode": "fly",
+          "position": {
+            "x": -1400,
+            "y": 130,
+            "z": -1500
+          },
+          "stream": {
+            "ready": true,
+            "sizeMetres": 4000,
+            "chunkMetres": 128,
+            "loaded": 24,
+            "anchor": {
+              "x": -1400,
+              "y": 130,
+              "z": -1500
+            },
+            "centerLoaded": false,
+            "nearbyLoaded": 0,
+            "installing": false,
+            "pending": 0,
+            "queued": 4,
+            "cached": 30,
+            "gpuCached": 2,
+            "farImpostors": 1628,
+            "maximumInstallMs": 61.30000000074506,
+            "maximumChunkCpuMs": 61.400000002235174,
+            "maximumUpdateMs": 70.40000000037253,
+            "installPhases": {
+              "terrain": {
+                "maximumMs": 61.30000000074506,
+                "slices": 22
+              },
+              "roads": {
+                "maximumMs": 0.09999999962747097,
+                "slices": 22
+              },
+              "building-instances": {
+                "maximumMs": 0.2000000011175871,
+                "slices": 22
+              },
+              "worker-baked-decor": {
+                "maximumMs": 0,
+                "slices": 22
+              },
+              "light-instances": {
+                "maximumMs": 0,
+                "slices": 22
+              },
+              "commit-or-gpu-reuse": {
+                "maximumMs": 8.100000001490116,
+                "slices": 22
+              }
+            },
+            "streamingOutliers": [
+              {
+                "chunk": "16,16",
+                "phase": "terrain",
+                "ms": 61.30000000074506
+              },
+              {
+                "chunk": "14,16",
+                "phase": "commit-or-gpu-reuse",
+                "ms": 8.100000001490116
+              }
+            ],
+            "coldPrimeWallMs": 35.69999999925494,
+            "installP95": 1.300000000745058,
+            "physicsChunks": 0,
+            "physicsColliders": 65,
+            "physicsStreamMs": 0,
+            "graph": {
+              "nodes": 197,
+              "edges": 353,
+              "lanes": 944
+            },
+            "district": "beach",
+            "hiddenCachesFound": 0,
+            "continuousFarCoverage": true
+          },
+          "environment": {
+            "date": "2026-11-20",
+            "weather": "clear",
+            "hour": 9.064547010904706,
+            "night": 0,
+            "elapsed": 38.654799999998886,
+            "cycleRealSeconds": 1440,
+            "waves": true,
+            "analyticalSkyReflection": true,
+            "shoreFoam": true
+          }
+        },
+        "after": {
+          "mode": "fly",
+          "position": {
+            "x": -1400,
+            "y": 130,
+            "z": -1300.6360000000009
+          },
+          "stream": {
+            "ready": true,
+            "sizeMetres": 4000,
+            "chunkMetres": 128,
+            "loaded": 25,
+            "anchor": {
+              "x": -1400,
+              "y": 130,
+              "z": -1300.6360000000009
+            },
+            "centerLoaded": true,
+            "nearbyLoaded": 9,
+            "installing": false,
+            "pending": 0,
+            "queued": 14,
+            "cached": 56,
+            "gpuCached": 18,
+            "farImpostors": 1628,
+            "maximumInstallMs": 61.30000000074506,
+            "maximumChunkCpuMs": 61.400000002235174,
+            "maximumUpdateMs": 70.40000000037253,
+            "installPhases": {
+              "terrain": {
+                "maximumMs": 61.30000000074506,
+                "slices": 39
+              },
+              "roads": {
+                "maximumMs": 1,
+                "slices": 39
+              },
+              "building-instances": {
+                "maximumMs": 0.2000000011175871,
+                "slices": 39
+              },
+              "worker-baked-decor": {
+                "maximumMs": 6.299999998882413,
+                "slices": 39
+              },
+              "light-instances": {
+                "maximumMs": 0.40000000037252903,
+                "slices": 39
+              },
+              "commit-or-gpu-reuse": {
+                "maximumMs": 8.100000001490116,
+                "slices": 39
+              }
+            },
+            "streamingOutliers": [
+              {
+                "chunk": "16,16",
+                "phase": "terrain",
+                "ms": 61.30000000074506
+              },
+              {
+                "chunk": "14,16",
+                "phase": "commit-or-gpu-reuse",
+                "ms": 8.100000001490116
+              }
+            ],
+            "coldPrimeWallMs": 35.69999999925494,
+            "installP95": 1,
+            "physicsChunks": 0,
+            "physicsColliders": 65,
+            "physicsStreamMs": 0,
+            "graph": {
+              "nodes": 197,
+              "edges": 353,
+              "lanes": 944
+            },
+            "district": "beach",
+            "hiddenCachesFound": 0,
+            "continuousFarCoverage": true
+          },
+          "environment": {
+            "date": "2026-11-20",
+            "weather": "clear",
+            "hour": 9.483960344238051,
+            "night": 0,
+            "elapsed": 63.81959999999964,
+            "cycleRealSeconds": 1440,
+            "waves": true,
+            "analyticalSkyReflection": true,
+            "shoreFoam": true
+          }
+        },
+        "distanceXZ": 199.36399999999912
+      },
+      "errors": []
+    }
+  ]
+}

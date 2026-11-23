@@ -1,0 +1,9 @@
+Excerpt of observed get_deployment_events for dpl_4jMtSU8oRbRUoB3MpUiMxTQVnnkR (not a full source-build log).
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Downloading 3 deployment files...
+Vercel CLI 66.2.0
+Running "install" command: `npm install --ignore-scripts --no-audit --no-fund`...
+VERIFIED CROSSTOWN 0.13.0 / 13.001 SHA256 b0b3249355ea2d747729928aa0227aef8d6ea1c38e142c3eacb361b227905947 12850153 bytes
+Build Completed in /vercel/output [4s]
+Deployment completed

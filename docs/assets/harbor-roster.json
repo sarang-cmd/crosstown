@@ -1,0 +1,120 @@
+{
+  "id": "harbor-roster",
+  "title": "Crosstown harbor-roster — Kenney sedan derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/sedan.glb",
+  "sourceSha256": "b532ea7d2c59f7f6b22b138cf1955218a2c1898f1cea932af4d3fd563c3959b7",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 184587,
+  "sourceGlbBytes": 172216,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 4.3,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.6862745413364062,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.75,
+        -1.1920928966180355e-8,
+        -1.299999976158142
+      ],
+      "max": [
+        0.75,
+        1.299999976158142,
+        1.2499999761581422
+      ]
+    },
+    "dimensions": [
+      1.5,
+      1.299999988079071,
+      2.549999952316284
+    ],
+    "triangles": 2032,
+    "nodes": 5,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "sedan",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 4.3 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -1.2647059060023047,
+        0,
+        -2.15
+      ],
+      "max": [
+        1.2647059060023047,
+        2.192156883635369,
+        2.15
+      ]
+    },
+    "dimensions": [
+      2.5294118120046094,
+      2.192156883635369,
+      4.3
+    ],
+    "triangles": 2032,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 76812,
+  "outputSha256": "cfcca5e821160f814d5775f2b7162b9ceb21aaa80601c38ac0e7d624071c95c6",
+  "savedBytesPercent": 58
+}

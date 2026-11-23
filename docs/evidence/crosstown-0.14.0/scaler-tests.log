@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: Ultra sheds volume, blur, wet reflections and bloom before its first tier reduction
+ok 1 - Ultra sheds volume, blur, wet reflections and bloom before its first tier reduction
+  ---
+  duration_ms: 2.941167
+  ...
+# Subtest: manual tiers keep their requested effects; frame time remains actual under stalls
+ok 2 - manual tiers keep their requested effects; frame time remains actual under stalls
+  ---
+  duration_ms: 0.201188
+  ...
+# Subtest: effects policy physically excludes inapplicable weather and reduced-motion branches
+ok 3 - effects policy physically excludes inapplicable weather and reduced-motion branches
+  ---
+  duration_ms: 0.215408
+  ...
+# Subtest: individual off preferences cannot enable a feature beyond the selected budget or mutate tier definitions
+ok 4 - individual off preferences cannot enable a feature beyond the selected budget or mutate tier definitions
+  ---
+  duration_ms: 0.256844
+  ...
+# Subtest: effect particles are bounded, reject invalid spawns, expire and pause without physics bodies
+ok 5 - effect particles are bounded, reject invalid spawns, expire and pause without physics bodies
+  ---
+  duration_ms: 0.300494
+  ...
+# Subtest: long particle steps are bounded and input positions never mutated
+ok 6 - long particle steps are bounded and input positions never mutated
+  ---
+  duration_ms: 0.154226
+  ...
+# Subtest: old settings migrate and only known disabled-effect names are restored
+ok 7 - old settings migrate and only known disabled-effect names are restored
+  ---
+  duration_ms: 0.479761
+  ...
+# Subtest: four tiers have ordered budgets and disable expensive effects first
+ok 8 - four tiers have ordered budgets and disable expensive effects first
+  ---
+  duration_ms: 1.336847
+  ...
+# Subtest: fps and frame-time are measured, not hardcoded to 60
+ok 9 - fps and frame-time are measured, not hardcoded to 60
+  ---
+  duration_ms: 0.492715
+  ...
+# Subtest: warm-up prevents startup drop; sustained slow frames cut real effects before lowering tiers
+ok 10 - warm-up prevents startup drop; sustained slow frames cut real effects before lowering tiers
+  ---
+  duration_ms: 0.659289
+  ...
+# Subtest: sustained fast frames raise quality and manual selection never auto-downgrades
+ok 11 - sustained fast frames raise quality and manual selection never auto-downgrades
+  ---
+  duration_ms: 5.005612
+  ...
+# Subtest: invalid samples are ignored; real long frames are not falsely reported as 60fps
+ok 12 - invalid samples are ignored; real long frames are not falsely reported as 60fps
+  ---
+  duration_ms: 0.225163
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 472.857695

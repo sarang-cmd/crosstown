@@ -1,0 +1,14 @@
+{
+  "engine": "diesel",
+  "author": "Iridiuss",
+  "source": "https://freesound.org/people/Iridiuss/sounds/399773/",
+  "preview": "https://cdn.freesound.org/previews/399/399773_1871523-hq.mp3",
+  "licenses": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "bytes": 270096,
+  "sha256": "403913de78b9d27a0b67bf5f0b9f5887286505936128e6487b3fbc1807e1a6c1",
+  "license": "CC0-1.0",
+  "sourceFormat": "Publisher public HQ MP3 preview (lossy), not the login-only original WAV.",
+  "modifications": "Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers."
+}

@@ -1,0 +1,81 @@
+{
+  "id": "weapon-shotgun",
+  "title": "Crosstown shotgun — Kenney stylized blaster",
+  "kind": "prop",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/blaster-kit",
+  "source": "https://kenney.nl/assets/blaster-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_blaster-kit_2.1.zip",
+  "archiveEntry": "Models/GLB format/blaster-c.glb",
+  "sourceSha256": "1c4c53f201597b2845c3d71717e0c465af1c21d8f8c30c0e1b4358dc33133d35",
+  "downloadSha256": "91e3093e95427d59625e7e2ce2d0399b861600160fd0b4ada7714796b67cea8c",
+  "sourceBytes": 36232,
+  "targetSize": 0.27,
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "before": {
+    "bounds": {
+      "min": [
+        -0.08249999582767487,
+        -0.16689836978912354,
+        -0.23767511546611786
+      ],
+      "max": [
+        0.08249999582767487,
+        0.17099666595458984,
+        0.23767511546611786
+      ]
+    },
+    "dimensions": [
+      0.16499999165534973,
+      0.3378950357437134,
+      0.4753502309322357
+    ],
+    "triangles": 388,
+    "nodes": 1,
+    "textures": 1,
+    "animations": []
+  },
+  "modifications": [
+    "Reviewed embedded CC0 License.txt",
+    "Y-up, +Z-forward, ground-centred wrapper",
+    "Uniformly scaled to 0.27 m height",
+    "Deduplicated/pruned and Meshopt FILTER geometry",
+    "Textures <=512px, WebP"
+  ],
+  "outputBytes": 13932,
+  "outputSha256": "f7f4b68730a9f83301215b1cfabdbb31f4046ff19a7fcc9291112573478d261b",
+  "scale": 0.7990647137082819,
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 512
+  },
+  "missingKeyNodes": [],
+  "after": {
+    "bounds": {
+      "min": [
+        -0.06592283554697546,
+        0,
+        -0.18991779809551632
+      ],
+      "max": [
+        0.06592283554697546,
+        0.27,
+        0.18991779809551632
+      ]
+    },
+    "dimensions": [
+      0.13184567109395093,
+      0.27,
+      0.37983559619103263
+    ],
+    "triangles": 388,
+    "nodes": 2,
+    "textures": 1,
+    "animations": []
+  }
+}

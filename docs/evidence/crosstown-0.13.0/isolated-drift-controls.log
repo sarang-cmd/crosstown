@@ -1,0 +1,25 @@
+using deprecated parameters for the initialization function; pass a single object instead
+{"steer":0.35,"release":0.18,"counter":0,"score":70.07014756450907,"finished":false}
+{"steer":0.35,"release":0.18,"counter":-0.35,"score":90.97501392310656,"finished":false}
+{"steer":0.35,"release":0.3,"counter":0,"score":48.72160058371322,"finished":false}
+{"steer":0.35,"release":0.3,"counter":-0.35,"score":51.569740259457745,"finished":false}
+{"steer":0.35,"release":0.5,"counter":0,"score":41.571417569040726,"finished":false}
+{"steer":0.35,"release":0.5,"counter":-0.35,"score":42.248014811460166,"finished":false}
+{"steer":0.5,"release":0.18,"counter":0,"score":63.14651979578851,"finished":false}
+{"steer":0.5,"release":0.18,"counter":-0.35,"score":78.97524293762557,"finished":false}
+{"steer":0.5,"release":0.3,"counter":0,"score":55.54607030123964,"finished":false}
+{"steer":0.5,"release":0.3,"counter":-0.35,"score":52.56556203594491,"finished":false}
+{"steer":0.5,"release":0.5,"counter":0,"score":42.29713828220741,"finished":false}
+{"steer":0.5,"release":0.5,"counter":-0.35,"score":46.82907419204635,"finished":false}
+{"steer":0.7,"release":0.18,"counter":0,"score":77.1503991775355,"finished":false}
+{"steer":0.7,"release":0.18,"counter":-0.35,"score":83.09230983666785,"finished":false}
+{"steer":0.7,"release":0.3,"counter":0,"score":60.81470802772096,"finished":false}
+{"steer":0.7,"release":0.3,"counter":-0.35,"score":65.81009779741979,"finished":false}
+{"steer":0.7,"release":0.5,"counter":0,"score":54.699672050624656,"finished":false}
+{"steer":0.7,"release":0.5,"counter":-0.35,"score":55.346362512306996,"finished":false}
+{"steer":0.9,"release":0.18,"counter":0,"score":111.46263631198048,"finished":false}
+{"steer":0.9,"release":0.18,"counter":-0.35,"score":118.46211147386171,"finished":false}
+{"steer":0.9,"release":0.3,"counter":0,"score":97.12443281559445,"finished":false}
+{"steer":0.9,"release":0.3,"counter":-0.35,"score":101.79152490905904,"finished":false}
+{"steer":0.9,"release":0.5,"counter":0,"score":96.47816036237015,"finished":false}
+{"steer":0.9,"release":0.5,"counter":-0.35,"score":97.84722267467934,"finished":false}

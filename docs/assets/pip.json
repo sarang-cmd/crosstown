@@ -1,0 +1,120 @@
+{
+  "id": "pip",
+  "title": "Crosstown pip — Kenney hatchback-sports derivative",
+  "kind": "car",
+  "author": "Kenney",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://opengameart.org/content/car-kit",
+  "source": "https://opengameart.org/content/car-kit",
+  "url": "https://opengameart.org/sites/default/files/kenney_car-kit_3.1.zip",
+  "archiveEntry": "Models/GLB format/hatchback-sports.glb",
+  "sourceSha256": "bd5c9d4c3b4bdd254a66b8426563a68b1487ae7a5076df3a2488e6ffed7be64f",
+  "downloadSha256": "fac7dacac5c7874348cf19729af3ef205f3d366493edaf0a827d93f4fdf3d0c4",
+  "sourceBytes": 210175,
+  "sourceGlbBytes": 197804,
+  "sourceResources": [
+    {
+      "uri": "Textures/colormap.png",
+      "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5",
+      "bytes": 12371
+    }
+  ],
+  "targetSize": 3.6,
+  "targetDimension": "length",
+  "units": "metres",
+  "forward": "+Z",
+  "up": "+Y",
+  "pivot": "ground-centre",
+  "sourceForward": "+Z",
+  "scale": 1.2631578313346747,
+  "before": {
+    "bounds": {
+      "min": [
+        -0.6499999761581421,
+        -1.1920928966180355e-8,
+        -1.4500000715255736
+      ],
+      "max": [
+        0.6499999761581421,
+        1.099999988079071,
+        1.4000000715255738
+      ]
+    },
+    "dimensions": [
+      1.2999999523162842,
+      1.0999999999999999,
+      2.8500001430511475
+    ],
+    "triangles": 2088,
+    "nodes": 5,
+    "textures": 1,
+    "animations": []
+  },
+  "renamed": [
+    {
+      "original": "wheel-front-right",
+      "canonical": "wheel_fr"
+    },
+    {
+      "original": "wheel-front-left",
+      "canonical": "wheel_fl"
+    },
+    {
+      "original": "wheel-back-right",
+      "canonical": "wheel_rr"
+    },
+    {
+      "original": "wheel-back-left",
+      "canonical": "wheel_rl"
+    }
+  ],
+  "missingKeyNodes": [
+    "steering_wheel",
+    "door_left",
+    "door_right",
+    "light_front",
+    "light_rear",
+    "mirror_left",
+    "mirror_right"
+  ],
+  "scene": "hatchback-sports",
+  "modifications": [
+    "Y-up / +Z-forward normalization",
+    "uniform scale to 3.6 m length",
+    "ground-centred root wrapper preserving skins and animations",
+    "key-node names normalized where source geometry permits",
+    "textures resized to at most 1024 px and WebP-compressed where present",
+    "Meshopt FILTER geometry / animation compression"
+  ],
+  "compression": {
+    "geometry": "EXT_meshopt_compression (FILTER)",
+    "textures": "EXT_texture_webp",
+    "maxTextureSize": 1024
+  },
+  "after": {
+    "bounds": {
+      "min": [
+        -0.8210525602515091,
+        0,
+        -1.8
+      ],
+      "max": [
+        0.8210525602515091,
+        1.3894736144681423,
+        1.8
+      ]
+    },
+    "dimensions": [
+      1.6421051205030182,
+      1.3894736144681423,
+      3.6
+    ],
+    "triangles": 2088,
+    "nodes": 6,
+    "textures": 1,
+    "animations": []
+  },
+  "outputBytes": 86676,
+  "outputSha256": "0d49db7c59d2d5012f2a56b2882b27a6d49fb3e019a2e5ab20c0919e46bc9d56",
+  "savedBytesPercent": 59
+}

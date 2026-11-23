@@ -1,0 +1,125 @@
+TAP version 13
+# Subtest: Ultra sheds volume, blur, wet reflections and bloom before its first tier reduction
+ok 1 - Ultra sheds volume, blur, wet reflections and bloom before its first tier reduction
+  ---
+  duration_ms: 3.315013
+  ...
+# Subtest: manual tiers keep their requested effects; frame time remains actual under stalls
+ok 2 - manual tiers keep their requested effects; frame time remains actual under stalls
+  ---
+  duration_ms: 0.191352
+  ...
+# Subtest: effects policy physically excludes inapplicable weather and reduced-motion branches
+ok 3 - effects policy physically excludes inapplicable weather and reduced-motion branches
+  ---
+  duration_ms: 0.303981
+  ...
+# Subtest: individual off preferences cannot enable a feature beyond the selected budget or mutate tier definitions
+ok 4 - individual off preferences cannot enable a feature beyond the selected budget or mutate tier definitions
+  ---
+  duration_ms: 0.263003
+  ...
+# Subtest: effect particles are bounded, reject invalid spawns, expire and pause without physics bodies
+ok 5 - effect particles are bounded, reject invalid spawns, expire and pause without physics bodies
+  ---
+  duration_ms: 0.310739
+  ...
+# Subtest: long particle steps are bounded and input positions never mutated
+ok 6 - long particle steps are bounded and input positions never mutated
+  ---
+  duration_ms: 0.194459
+  ...
+# Subtest: old settings migrate and only known disabled-effect names are restored
+ok 7 - old settings migrate and only known disabled-effect names are restored
+  ---
+  duration_ms: 0.571011
+  ...
+# Subtest: medium budgets target 60 cars / 120 people, adapt downward under load, then cautiously recover
+ok 8 - medium budgets target 60 cars / 120 people, adapt downward under load, then cautiously recover
+  ---
+  duration_ms: 5.099645
+  ...
+# Subtest: multi-second GPU stalls lower Auto quality/density and report actual cadence instead of being discarded
+ok 9 - multi-second GPU stalls lower Auto quality/density and report actual cadence instead of being discarded
+  ---
+  duration_ms: 0.687088
+  ...
+# Subtest: signal phases exclude vehicles during crossings, and a pedestrian cannot start without clearance time
+ok 10 - signal phases exclude vehicles during crossings, and a pedestrian cannot start without clearance time
+  ---
+  duration_ms: 8.26914
+  ...
+# Subtest: 120 seconds / 7200 ticks independently audit 60 cars and 120 people: no SAT overlap, red entry or illegal crossing
+ok 11 - 120 seconds / 7200 ticks independently audit 60 cars and 120 people: no SAT overlap, red entry or illegal crossing
+  ---
+  duration_ms: 9210.371041
+  ...
+# Subtest: crash braking/swerving, lane-change overtaking, impatience honk, siren pull-over and future gunfire hook work
+ok 12 - crash braking/swerving, lane-change overtaking, impatience honk, siren pull-over and future gunfire hook work
+  ---
+  duration_ms: 30.722434
+  ...
+# Subtest: night reduces pedestrian population and turns on headlights; fear uses animated flee state without weapons
+ok 13 - night reduces pedestrian population and turns on headlights; fear uses animated flee state without weapons
+  ---
+  duration_ms: 143.190297
+  ...
+# Subtest: pedestrian graph uses real connected footways, four painted crossings, actual bench corners and spaced chat groups
+ok 14 - pedestrian graph uses real connected footways, four painted crossings, actual bench corners and spaced chat groups
+  ---
+  duration_ms: 7.07309
+  ...
+# Subtest: four tiers have ordered budgets and disable expensive effects first
+ok 15 - four tiers have ordered budgets and disable expensive effects first
+  ---
+  duration_ms: 1.35415
+  ...
+# Subtest: fps and frame-time are measured, not hardcoded to 60
+ok 16 - fps and frame-time are measured, not hardcoded to 60
+  ---
+  duration_ms: 0.396078
+  ...
+# Subtest: warm-up prevents a startup quality drop; sustained slow frames lower quality
+not ok 17 - warm-up prevents a startup quality drop; sustained slow frames lower quality
+  ---
+  duration_ms: 2.593357
+  location: '/home/user/tests/unit/quality.test.ts:1:1174'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    2 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 2
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (/home/user/tests/unit/quality.test.ts:24:35)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:796:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:526:18)
+    Test.postRun (node:internal/test_runner/test:889:19)
+    Test.run (node:internal/test_runner/test:835:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:526:7)
+  ...
+# Subtest: sustained fast frames raise quality and manual selection never auto-downgrades
+ok 18 - sustained fast frames raise quality and manual selection never auto-downgrades
+  ---
+  duration_ms: 1.958455
+  ...
+# Subtest: invalid samples are ignored; real long frames are not falsely reported as 60fps
+ok 19 - invalid samples are ignored; real long frames are not falsely reported as 60fps
+  ---
+  duration_ms: 0.169928
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 18
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10192.515965

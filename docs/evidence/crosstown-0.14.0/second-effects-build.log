@@ -1,0 +1,27 @@
+
+> crosstown@0.14.0 build
+> tsc --noEmit && vite build
+
+vite v7.1.7 building for production...
+transforming...
+✓ 114 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/generator.worker-DBEWraih.js      0.27 kB
+dist/assets/circuit.worker-_Tn4pD1c.js        5.31 kB
+dist/index.html                               6.86 kB │ gzip:   2.91 kB
+dist/assets/route.worker-BI2KZK_q.js         11.91 kB
+dist/assets/city.worker-7TLrj91-.js          19.61 kB
+dist/assets/landing-BSSGW4C6.css             12.31 kB │ gzip:   3.37 kB
+dist/assets/style-D8X4Kdrp.css               26.29 kB │ gzip:   6.61 kB
+dist/assets/game-BAtHsKez.css                49.73 kB │ gzip:  11.10 kB
+dist/assets/callback-l7lXUDbY.js              0.82 kB │ gzip:   0.50 kB
+dist/assets/index-CLe85BV9.js                 3.07 kB │ gzip:   1.54 kB
+dist/assets/spotify-CvEWtuvf.js               6.08 kB │ gzip:   2.50 kB
+dist/assets/embeds-D2pPXsIQ.js                6.14 kB │ gzip:   2.76 kB
+dist/assets/foundation-BFamRs-_.js           12.99 kB │ gzip:   5.22 kB
+dist/assets/index-i1frdVqm.js                35.80 kB │ gzip:  12.32 kB
+dist/assets/game-D2Uduwxm.js                478.64 kB │ gzip: 159.74 kB
+dist/assets/rendering-DvEnEFup.js           831.16 kB │ gzip: 228.59 kB
+dist/assets/physics-BwwXYMtK.js           2,218.03 kB │ gzip: 826.18 kB
+✓ built in 4.94s
