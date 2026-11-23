@@ -1,0 +1,653 @@
+[
+  {
+    "district": "beach",
+    "mode": "fly",
+    "position": {
+      "x": -1600,
+      "y": 100,
+      "z": -770
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 14,
+      "centerLoaded": true,
+      "nearbyLoaded": 9,
+      "installing": false,
+      "pending": 0,
+      "queued": 21,
+      "cached": 41,
+      "gpuCached": 6,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 16
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 16
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 16
+        },
+        "worker-baked-decor": {
+          "maximumMs": 4.299999998882413,
+          "slices": 16
+        },
+        "light-instances": {
+          "maximumMs": 0.19999999925494194,
+          "slices": 16
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 16
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 2.799999998882413,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "beach",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "downtown",
+    "mode": "fly",
+    "position": {
+      "x": 0,
+      "y": 100,
+      "z": 30
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 21,
+      "centerLoaded": false,
+      "nearbyLoaded": 0,
+      "installing": false,
+      "pending": 0,
+      "queued": 22,
+      "cached": 45,
+      "gpuCached": 7,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 24
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 24
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 24
+        },
+        "worker-baked-decor": {
+          "maximumMs": 14.400000000372529,
+          "slices": 24
+        },
+        "light-instances": {
+          "maximumMs": 0.2999999988824129,
+          "slices": 24
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 24
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 2.200000001117587,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "downtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "port",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": 1080
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 22,
+      "centerLoaded": true,
+      "nearbyLoaded": 9,
+      "installing": false,
+      "pending": 0,
+      "queued": 32,
+      "cached": 56,
+      "gpuCached": 22,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 40
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 40
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 40
+        },
+        "worker-baked-decor": {
+          "maximumMs": 14.400000000372529,
+          "slices": 40
+        },
+        "light-instances": {
+          "maximumMs": 0.2999999988824129,
+          "slices": 40
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 44
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 1.199999999254942,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "port",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "canals",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": -100
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 20,
+      "centerLoaded": true,
+      "nearbyLoaded": 1,
+      "installing": true,
+      "pending": 4,
+      "queued": 34,
+      "cached": 56,
+      "gpuCached": 29,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 46
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 45
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 45
+        },
+        "worker-baked-decor": {
+          "maximumMs": 14.400000000372529,
+          "slices": 45
+        },
+        "light-instances": {
+          "maximumMs": 0.2999999988824129,
+          "slices": 45
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 49
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 1.299999998882413,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "canals",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "hills",
+    "mode": "fly",
+    "position": {
+      "x": 980,
+      "y": 180,
+      "z": -1070
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 22,
+      "centerLoaded": true,
+      "nearbyLoaded": 9,
+      "installing": false,
+      "pending": 0,
+      "queued": 59,
+      "cached": 56,
+      "gpuCached": 43,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 61
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 61
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 61
+        },
+        "worker-baked-decor": {
+          "maximumMs": 14.400000000372529,
+          "slices": 61
+        },
+        "light-instances": {
+          "maximumMs": 0.2999999988824129,
+          "slices": 61
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 65
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 0.7000000011175871,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "hills",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "oldtown",
+    "mode": "fly",
+    "position": {
+      "x": 850,
+      "y": 100,
+      "z": 560
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 19,
+      "centerLoaded": true,
+      "nearbyLoaded": 9,
+      "installing": true,
+      "pending": 0,
+      "queued": 60,
+      "cached": 56,
+      "gpuCached": 48,
+      "farImpostors": 1628,
+      "maximumInstallMs": 15.199999999254942,
+      "maximumChunkCpuMs": 15.400000000372529,
+      "maximumUpdateMs": 20.40000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 84
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 84
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 84
+        },
+        "worker-baked-decor": {
+          "maximumMs": 14.400000000372529,
+          "slices": 84
+        },
+        "light-instances": {
+          "maximumMs": 0.2999999988824129,
+          "slices": 83
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 87
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 1.099999999627471,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "oldtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "outskirts",
+    "mode": "fly",
+    "position": {
+      "x": 1000,
+      "y": 100,
+      "z": 1430
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 20,
+      "centerLoaded": false,
+      "nearbyLoaded": 0,
+      "installing": false,
+      "pending": 0,
+      "queued": 59,
+      "cached": 56,
+      "gpuCached": 48,
+      "farImpostors": 1628,
+      "maximumInstallMs": 21.299999998882413,
+      "maximumChunkCpuMs": 22.09999999962747,
+      "maximumUpdateMs": 21.90000000037253,
+      "installPhases": {
+        "terrain": {
+          "maximumMs": 15.199999999254942,
+          "slices": 89
+        },
+        "roads": {
+          "maximumMs": 13.5,
+          "slices": 89
+        },
+        "building-instances": {
+          "maximumMs": 0.5,
+          "slices": 89
+        },
+        "worker-baked-decor": {
+          "maximumMs": 21.299999998882413,
+          "slices": 89
+        },
+        "light-instances": {
+          "maximumMs": 0.30000000074505806,
+          "slices": 89
+        },
+        "commit-or-gpu-reuse": {
+          "maximumMs": 0.5,
+          "slices": 93
+        }
+      },
+      "streamingOutliers": [
+        {
+          "chunk": "3,10",
+          "phase": "roads",
+          "ms": 13.5
+        },
+        {
+          "chunk": "2,10",
+          "phase": "terrain",
+          "ms": 15.199999999254942
+        },
+        {
+          "chunk": "4,11",
+          "phase": "worker-baked-decor",
+          "ms": 14.400000000372529
+        },
+        {
+          "chunk": "24,21",
+          "phase": "worker-baked-decor",
+          "ms": 21.299999998882413
+        }
+      ],
+      "coldPrimeWallMs": 65.5,
+      "installP95": 1.099999999627471,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "outskirts",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 4.9099000000003725,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  }
+]

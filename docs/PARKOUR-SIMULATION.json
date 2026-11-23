@@ -1,0 +1,528 @@
+{
+  "additionalRuns": [
+    {
+      "seed": 2654435761,
+      "state": "finished",
+      "normalPaceSeconds": 665.75,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.7967779999999038
+    },
+    {
+      "seed": 1013904226,
+      "state": "finished",
+      "normalPaceSeconds": 670.25,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.499033000000054
+    },
+    {
+      "seed": 3668339987,
+      "state": "finished",
+      "normalPaceSeconds": 666.6666666666666,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.1629209999991872
+    },
+    {
+      "seed": 2027808452,
+      "state": "finished",
+      "normalPaceSeconds": 669.9833333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.2054150000003574
+    },
+    {
+      "seed": 387276917,
+      "state": "finished",
+      "normalPaceSeconds": 675.4,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.0294379999977536
+    },
+    {
+      "seed": 3041712678,
+      "state": "finished",
+      "normalPaceSeconds": 672.9,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.5332710000002407
+    },
+    {
+      "seed": 1401181143,
+      "state": "finished",
+      "normalPaceSeconds": 674.35,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.7533760000005714
+    },
+    {
+      "seed": 4055616904,
+      "state": "finished",
+      "normalPaceSeconds": 669.7166666666667,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.6574859999964247
+    },
+    {
+      "seed": 2415085369,
+      "state": "finished",
+      "normalPaceSeconds": 672.2166666666667,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.0990919999967446
+    },
+    {
+      "seed": 774553834,
+      "state": "finished",
+      "normalPaceSeconds": 677.4166666666666,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.5636939999967581
+    },
+    {
+      "seed": 3428989595,
+      "state": "finished",
+      "normalPaceSeconds": 674.5333333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.7366299999994226
+    },
+    {
+      "seed": 1788458060,
+      "state": "finished",
+      "normalPaceSeconds": 675.3833333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.4734080000052927
+    },
+    {
+      "seed": 147926525,
+      "state": "finished",
+      "normalPaceSeconds": 669.7,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.8377219999965746
+    },
+    {
+      "seed": 2802362286,
+      "state": "finished",
+      "normalPaceSeconds": 672.6666666666666,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.117235999998229
+    },
+    {
+      "seed": 1161830751,
+      "state": "finished",
+      "normalPaceSeconds": 672.75,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.6785789999994449
+    },
+    {
+      "seed": 3816266512,
+      "state": "finished",
+      "normalPaceSeconds": 676.4,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.7845309999975143
+    },
+    {
+      "seed": 2175734977,
+      "state": "finished",
+      "normalPaceSeconds": 669.7166666666667,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.6598379999923054
+    },
+    {
+      "seed": 535203442,
+      "state": "finished",
+      "normalPaceSeconds": 666.6333333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.6942529999942053
+    },
+    {
+      "seed": 3189639203,
+      "state": "finished",
+      "normalPaceSeconds": 674.4333333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.5942700000014156
+    },
+    {
+      "seed": 1549107668,
+      "state": "finished",
+      "normalPaceSeconds": 675.7,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.9066259999963222
+    },
+    {
+      "seed": 4203543429,
+      "state": "finished",
+      "normalPaceSeconds": 675.2833333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.9836379999906057
+    },
+    {
+      "seed": 2563011894,
+      "state": "finished",
+      "normalPaceSeconds": 669.5333333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 0.5336539999989327
+    },
+    {
+      "seed": 922480359,
+      "state": "finished",
+      "normalPaceSeconds": 669.4333333333333,
+      "falls": 0,
+      "checkpoint": 27,
+      "nav": 253,
+      "maximumStreamMs": 1.0037849999935133
+    }
+  ],
+  "date": "2026-11-22",
+  "method": "60 Hz real Rapier/KCC simulation; 6.5 m/s normal movement; every fixed tick, no teleportation, no skipped checkpoints; unrendered, not wall-clock duration or GPU benchmark.",
+  "seeds": [
+    {
+      "seed": 84173,
+      "possible": true,
+      "proofs": 42,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4416,
+      "expectedSeconds": 680,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 2654435761,
+      "possible": true,
+      "proofs": 37,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4404,
+      "expectedSeconds": 678,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 1013904226,
+      "possible": true,
+      "proofs": 43,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4411,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 3668339987,
+      "possible": true,
+      "proofs": 41,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4408,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3269588522019014
+    },
+    {
+      "seed": 2027808452,
+      "possible": true,
+      "proofs": 40,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4411,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 387276917,
+      "possible": true,
+      "proofs": 41,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4409,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 3041712678,
+      "possible": true,
+      "proofs": 42,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4410,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 1401181143,
+      "possible": true,
+      "proofs": 38,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4405,
+      "expectedSeconds": 678,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3269588522019014
+    },
+    {
+      "seed": 4055616904,
+      "possible": true,
+      "proofs": 42,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4411,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 2415085369,
+      "possible": true,
+      "proofs": 42,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4410,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 774553834,
+      "possible": true,
+      "proofs": 41,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4409,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 3428989595,
+      "possible": true,
+      "proofs": 39,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4409,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 1788458060,
+      "possible": true,
+      "proofs": 41,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4410,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 147926525,
+      "possible": true,
+      "proofs": 40,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4413,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 2802362286,
+      "possible": true,
+      "proofs": 44,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4414,
+      "expectedSeconds": 680,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 1161830751,
+      "possible": true,
+      "proofs": 40,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4410,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 3816266512,
+      "possible": true,
+      "proofs": 42,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4416,
+      "expectedSeconds": 680,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 2175734977,
+      "possible": true,
+      "proofs": 39,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4410,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 535203442,
+      "possible": true,
+      "proofs": 38,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4411,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 3189639203,
+      "possible": true,
+      "proofs": 39,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4406,
+      "expectedSeconds": 678,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 1549107668,
+      "possible": true,
+      "proofs": 44,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4417,
+      "expectedSeconds": 680,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 4203543429,
+      "possible": true,
+      "proofs": 41,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4405,
+      "expectedSeconds": 678,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 2563011894,
+      "possible": true,
+      "proofs": 40,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4409,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    },
+    {
+      "seed": 922480359,
+      "possible": true,
+      "proofs": 40,
+      "checkpoints": 28,
+      "types": 17,
+      "metres": 4411,
+      "expectedSeconds": 679,
+      "errors": [],
+      "maxGap": 3.8000000000000114,
+      "maxHeight": 1.3429349663779782
+    }
+  ],
+  "fullRun": {
+    "state": "finished",
+    "simulationSeconds": 682.4333333333333,
+    "elapsed": 682.4333333330413,
+    "remaining": 503.56666666728734,
+    "falls": 0,
+    "checkpoint": 27,
+    "botNav": 253,
+    "navCount": 254,
+    "result": {
+      "seed": 84173,
+      "marker": "opening",
+      "night": false,
+      "seconds": 682.43,
+      "falls": 0,
+      "collectibles": 14,
+      "cash": 70,
+      "rank": "A",
+      "date": "2026-11-22T11:07:58.191Z"
+    },
+    "recordFrames": 6824,
+    "maximumStreamMs": 4.102362000000085,
+    "initialStreamMs": 14.171704999999974,
+    "cpuWallSeconds": 4.849922097
+  }
+}

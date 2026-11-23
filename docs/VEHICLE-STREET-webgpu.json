@@ -1,0 +1,1717 @@
+{
+  "backend": "webgpu",
+  "ordinaryKeyboard": true,
+  "finishSimulation": {
+    "ticks": 9362,
+    "normalPaceSeconds": 156.03333333333333,
+    "wallSeconds": 1.5388999999985098,
+    "state": "finished",
+    "result": {
+      "seed": 84173,
+      "marker": "opening:quick",
+      "night": false,
+      "seconds": 156.35,
+      "falls": 0,
+      "collectibles": 0,
+      "cash": 0,
+      "rank": "A",
+      "date": "2026-11-23T06:49:14.885Z"
+    },
+    "falls": 0,
+    "checkpoint": 7
+  },
+  "snapshot": {
+    "active": "reward",
+    "inLab": false,
+    "roster": [
+      {
+        "id": "pip",
+        "name": "Pip 140",
+        "class": "compact",
+        "model": "/models/pip.glb",
+        "engine": "i4",
+        "mass": 920,
+        "paints": [
+          "#e2ac58",
+          "#9fbe9b",
+          "#d9e3cf",
+          "#c76f5d"
+        ],
+        "soundProfile": "pip"
+      },
+      {
+        "id": "milo",
+        "name": "Milo Club",
+        "class": "compact",
+        "model": "/models/milo.glb",
+        "engine": "i4",
+        "mass": 1080,
+        "paints": [
+          "#8eacc1",
+          "#e3d8bb",
+          "#dc9a78",
+          "#94b397"
+        ],
+        "soundProfile": "milo"
+      },
+      {
+        "id": "harbor",
+        "name": "Harbor Six",
+        "class": "sedan",
+        "model": "/models/harbor-roster.glb",
+        "engine": "v6",
+        "mass": 1320,
+        "paints": [
+          "#628a7b",
+          "#d9d4be",
+          "#386d83",
+          "#9d554d"
+        ],
+        "soundProfile": "harbor"
+      },
+      {
+        "id": "meridian",
+        "name": "Meridian GT",
+        "class": "sedan",
+        "model": "/models/meridian.glb",
+        "engine": "v6",
+        "mass": 1530,
+        "paints": [
+          "#416f87",
+          "#c8cebf",
+          "#563e49",
+          "#b1b69b"
+        ],
+        "soundProfile": "meridian"
+      },
+      {
+        "id": "brim",
+        "name": "Brim Eight",
+        "class": "muscle",
+        "model": "/models/brim.glb",
+        "engine": "v8",
+        "mass": 1680,
+        "paints": [
+          "#b8744e",
+          "#423e45",
+          "#e6c987",
+          "#506d56"
+        ],
+        "soundProfile": "brim"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder R/T",
+        "class": "muscle",
+        "model": "/models/cinder.glb",
+        "engine": "v8",
+        "mass": 1490,
+        "paints": [
+          "#a44739",
+          "#d3b95d",
+          "#3b514c",
+          "#ded5bd"
+        ],
+        "soundProfile": "cinder"
+      },
+      {
+        "id": "aerox",
+        "name": "Aerox S6",
+        "class": "supercar",
+        "model": "/models/aerox.glb",
+        "engine": "flat6",
+        "mass": 1210,
+        "paints": [
+          "#bed27d",
+          "#f2d2a5",
+          "#4c91a3",
+          "#cc7353"
+        ],
+        "soundProfile": "aerox"
+      },
+      {
+        "id": "zenith",
+        "name": "Zenith V10",
+        "class": "supercar",
+        "model": "/models/zenith.glb",
+        "engine": "v10",
+        "mass": 1420,
+        "paints": [
+          "#d9ce93",
+          "#703d64",
+          "#49918e",
+          "#ddddd1"
+        ],
+        "soundProfile": "zenith"
+      },
+      {
+        "id": "mesa",
+        "name": "Mesa D4",
+        "class": "suv",
+        "model": "/models/mesa.glb",
+        "engine": "diesel",
+        "mass": 2240,
+        "paints": [
+          "#94946d",
+          "#ad815b",
+          "#607f79",
+          "#d8cbb0"
+        ],
+        "soundProfile": "mesa"
+      },
+      {
+        "id": "summit",
+        "name": "Summit L8",
+        "class": "suv",
+        "model": "/models/summit.glb",
+        "engine": "diesel",
+        "mass": 2580,
+        "paints": [
+          "#314c50",
+          "#bbbaaa",
+          "#694c46",
+          "#dfd3ac"
+        ],
+        "soundProfile": "summit"
+      },
+      {
+        "id": "wren",
+        "name": "Wren Single",
+        "class": "motorbike",
+        "model": "/models/wren.glb",
+        "engine": "single",
+        "mass": 215,
+        "paints": [
+          "#648c78",
+          "#d6b76e",
+          "#cc805f",
+          "#e2e0ca"
+        ],
+        "soundProfile": "wren"
+      },
+      {
+        "id": "kestrel",
+        "name": "Kestrel Twin",
+        "class": "motorbike",
+        "model": "/models/kestrel.glb",
+        "engine": "twin",
+        "mass": 242,
+        "paints": [
+          "#b96048",
+          "#374e59",
+          "#c2d584",
+          "#c4beb0"
+        ],
+        "soundProfile": "kestrel"
+      }
+    ],
+    "garage": {
+      "slots": [
+        {
+          "vin": "parkour-reward",
+          "definition": "harbor",
+          "paint": "#628a7b",
+          "damage": 0,
+          "reward": true
+        }
+      ],
+      "lastOwned": {
+        "vin": "parkour-reward",
+        "definition": "harbor",
+        "paint": "#628a7b",
+        "damage": 0,
+        "reward": true
+      },
+      "rewardPending": false,
+      "rewardGranted": true,
+      "nextVin": 2,
+      "capacity": 6,
+      "available": true
+    },
+    "cabinStudy": false,
+    "resources": {
+      "models": 12,
+      "modelFallbacks": [],
+      "cars": 2,
+      "forecourts": 2,
+      "cachedCabins": 1
+    },
+    "preferences": {
+      "assist": true,
+      "mouseSteering": false,
+      "manual": false,
+      "cabin": "sedan"
+    },
+    "camera": {
+      "index": 0,
+      "name": "Cockpit",
+      "position": [
+        0.4,
+        1.3144284224510192,
+        223.27
+      ],
+      "direction": [
+        0,
+        -0.034992854604336376,
+        0.9993875625234887
+      ],
+      "near": 0.035
+    },
+    "cabin": {
+      "class": "sedan",
+      "label": "Sedan · Harbor Six",
+      "geometryParts": 36,
+      "digital": false,
+      "eye": [
+        0.4,
+        0.6599999999999999,
+        -0.48
+      ],
+      "readings": {
+        "speed": 0,
+        "rpm": 1200.000007195413,
+        "temperature": 20.481110189877164,
+        "gear": "1",
+        "wheelRadians": 0,
+        "shifter": 1,
+        "lamps": {
+          "oil": false,
+          "engine": false,
+          "handbrake": false,
+          "damage": false,
+          "left": false,
+          "right": false,
+          "lights": false
+        },
+        "ignition": 1,
+        "sweep": 0,
+        "night": 0
+      },
+      "gauges": [
+        {
+          "label": "KM/H",
+          "maximum": 240,
+          "value": 0,
+          "needle": 2.2689280275926285
+        },
+        {
+          "label": "RPM ×1000",
+          "maximum": 8,
+          "value": 1.2000000071954129,
+          "needle": 1.5882496152333712
+        },
+        {
+          "label": "°C",
+          "maximum": 130,
+          "value": 20.481110189877164,
+          "needle": 1.5540024130383934
+        }
+      ],
+      "rackRadians": 0,
+      "hands": 2,
+      "manualShifterVisible": false,
+      "mirrorsEnabled": false,
+      "mirrorRenderFrames": 0,
+      "mirrors": [
+        {
+          "size": [
+            256,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": [
+            128,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": [
+            128,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "radio": "Radio off · later step",
+      "screenGear": "1",
+      "visible": true
+    },
+    "audio": {
+      "context": "running",
+      "activeEmitters": 1,
+      "emitterLimit": 16,
+      "priority": "controlled car, then nearest first",
+      "activeOneShots": 0,
+      "rms": 0.024873604740136775,
+      "voices": [
+        {
+          "id": "reward",
+          "engine": "v6",
+          "profile": "harbor",
+          "state": "samples",
+          "reason": "",
+          "loops": 8,
+          "weights": [
+            0.7569231056139535,
+            0,
+            0.6535039496343751,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "playbackRates": [
+            1.4634146429212354,
+            1.4634146429212354,
+            0.6000000035977064,
+            0.6000000035977064,
+            0.45,
+            0.45,
+            0.45,
+            0.45
+          ],
+          "firingHz": 60.000000359770645,
+          "spatial": true,
+          "position": [
+            0.4000000059604645,
+            0.814428448677063,
+            223.27000427246094
+          ]
+        }
+      ],
+      "volumes": {
+        "master": 0.5,
+        "engine": 0.65,
+        "effects": 0.55,
+        "radio": 0.45,
+        "music": 0.45
+      },
+      "gains": {
+        "master": 0.02500000037252903,
+        "engine": 0.6499999761581421,
+        "effects": 0.550000011920929,
+        "radio": 0.4495740830898285,
+        "music": 0.44999998807907104,
+        "paused": true,
+        "radioDuck": 1
+      }
+    },
+    "ticks": 1207,
+    "renderFrames": 78,
+    "elapsed": 20.116666666666806,
+    "circuit": null,
+    "cars": [
+      {
+        "id": "parked",
+        "definition": "harbor",
+        "position": {
+          "x": 44.0995979309082,
+          "y": 0.5544350147247314,
+          "z": -74.79228210449219
+        },
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "velocity": {
+          "x": 0,
+          "y": -0.23098061978816986,
+          "z": 0
+        },
+        "speed": 0,
+        "kmh": 0,
+        "roadSteer": 0,
+        "steeringWheelRadians": 0,
+        "steeringRatio": 14.818833271649966,
+        "assist": true,
+        "slip": 0,
+        "surface": "grass",
+        "contacts": 4,
+        "odometer": 36.63669715312993,
+        "damage": 0,
+        "damageState": {
+          "amount": 0,
+          "health": 100,
+          "stage": "intact",
+          "frontLightsBroken": false,
+          "rearLightsBroken": false,
+          "windowsBroken": false,
+          "fireSeconds": 0,
+          "wreck": false,
+          "dents": [],
+          "powerMultiplier": 1,
+          "gripMultiplier": 1
+        },
+        "bike": false,
+        "lean": 0,
+        "targetLean": 0,
+        "physicsWheels": 4,
+        "airborneSeconds": 0.13333333333333333,
+        "maxHeight": 0.813296914100647,
+        "carjacked": true,
+        "input": {
+          "throttle": 0,
+          "brake": 0,
+          "steering": 0,
+          "handbrake": false,
+          "clutch": false,
+          "directSteer": false
+        },
+        "engine": {
+          "phase": "running",
+          "occupied": false,
+          "manual": false,
+          "gear": 1,
+          "rpm": 2166.7806101673164,
+          "temperature": 26.538313944399214,
+          "cold": true,
+          "fastIdleSeconds": 10.533333333333289,
+          "door": 0.8583333333333334,
+          "keyAngle": 0.5,
+          "gaugeSweep": 0,
+          "history": [
+            {
+              "phase": "off",
+              "time": 0
+            },
+            {
+              "phase": "door-open",
+              "time": 0.7000000000000005
+            },
+            {
+              "phase": "door-close",
+              "time": 1.3000000000000003
+            },
+            {
+              "phase": "key",
+              "time": 1.7666666666666653
+            },
+            {
+              "phase": "ignition",
+              "time": 2.033333333333331
+            },
+            {
+              "phase": "cranking",
+              "time": 2.833333333333328
+            },
+            {
+              "phase": "catch",
+              "time": 4.499999999999989
+            },
+            {
+              "phase": "running",
+              "time": 5.149999999999987
+            }
+          ],
+          "startingWithDoor": true
+        },
+        "wheels": [
+          {
+            "suspension": 0.27453991770744324,
+            "rotation": 107.79630279541016,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 1.518,
+            "force": 3500.268798828125,
+            "surface": "grass"
+          },
+          {
+            "suspension": 0.27453991770744324,
+            "rotation": 107.59093475341797,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 1.518,
+            "force": 3500.268798828125,
+            "surface": "grass"
+          },
+          {
+            "suspension": 0.27453991770744324,
+            "rotation": 107.91740417480469,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 0.45539999999999997,
+            "force": 3500.268798828125,
+            "surface": "grass"
+          },
+          {
+            "suspension": 0.27453991770744324,
+            "rotation": 107.65550231933594,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 0.45539999999999997,
+            "force": 3500.268798828125,
+            "surface": "grass"
+          }
+        ],
+        "locked": false,
+        "visual": {
+          "gltf": true,
+          "model": "/models/harbor-roster.glb",
+          "paint": "#628a7b",
+          "damage": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1,
+            "deformedVertices": 0,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          },
+          "movingGltfDoorTriangles": 24,
+          "doorRadians": -0.9613333333333335,
+          "wheelNodes": 4,
+          "wheels": [
+            {
+              "steer": 0,
+              "spin": 107.79630279541016,
+              "suspensionY": -0.21453991770744324
+            },
+            {
+              "steer": 0,
+              "spin": 107.59093475341797,
+              "suspensionY": -0.21453991770744324
+            },
+            {
+              "steer": 0,
+              "spin": 107.91740417480469,
+              "suspensionY": -0.21453991770744324
+            },
+            {
+              "steer": 0,
+              "spin": 107.65550231933594,
+              "suspensionY": -0.21453991770744324
+            }
+          ],
+          "lights": false,
+          "headlightIntensity": 0,
+          "npc": "none",
+          "exteriorVisible": true
+        }
+      },
+      {
+        "id": "reward",
+        "definition": "harbor",
+        "position": {
+          "x": 0,
+          "y": 0.6544284224510193,
+          "z": 223.75
+        },
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "velocity": {
+          "x": 0,
+          "y": 0.49043577909469604,
+          "z": 0
+        },
+        "speed": 0,
+        "kmh": 0,
+        "roadSteer": 0,
+        "steeringWheelRadians": 0,
+        "steeringRatio": 14.818833271649966,
+        "assist": true,
+        "slip": 0,
+        "surface": "asphalt",
+        "contacts": 4,
+        "odometer": 0,
+        "damage": 0,
+        "damageState": {
+          "amount": 0,
+          "health": 100,
+          "stage": "intact",
+          "frontLightsBroken": false,
+          "rearLightsBroken": false,
+          "windowsBroken": false,
+          "fireSeconds": 0,
+          "wreck": false,
+          "dents": [],
+          "powerMultiplier": 1,
+          "gripMultiplier": 1
+        },
+        "bike": false,
+        "lean": 0,
+        "targetLean": 0,
+        "physicsWheels": 4,
+        "airborneSeconds": 0.13333333333333333,
+        "maxHeight": 0.813296914100647,
+        "carjacked": false,
+        "input": {
+          "throttle": 0,
+          "brake": 0,
+          "steering": 0,
+          "handbrake": false,
+          "clutch": false,
+          "directSteer": false
+        },
+        "engine": {
+          "phase": "running",
+          "occupied": true,
+          "manual": false,
+          "gear": 1,
+          "rpm": 1200.000007195413,
+          "temperature": 20.481110189877164,
+          "cold": true,
+          "fastIdleSeconds": 18.033333333333445,
+          "door": 0,
+          "keyAngle": 0.5,
+          "gaugeSweep": 0,
+          "history": [
+            {
+              "phase": "off",
+              "time": 0
+            },
+            {
+              "phase": "door-open",
+              "time": 0.09999999999999999
+            },
+            {
+              "phase": "door-close",
+              "time": 0.7000000000000005
+            },
+            {
+              "phase": "key",
+              "time": 1.1666666666666674
+            },
+            {
+              "phase": "ignition",
+              "time": 1.4333333333333331
+            },
+            {
+              "phase": "cranking",
+              "time": 2.2333333333333303
+            },
+            {
+              "phase": "catch",
+              "time": 3.899999999999991
+            },
+            {
+              "phase": "running",
+              "time": 4.549999999999989
+            }
+          ],
+          "startingWithDoor": true
+        },
+        "wheels": [
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          }
+        ],
+        "locked": false,
+        "visual": {
+          "gltf": true,
+          "model": "/models/harbor-roster.glb",
+          "paint": "#628a7b",
+          "damage": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1,
+            "deformedVertices": 0,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          },
+          "movingGltfDoorTriangles": 24,
+          "doorRadians": 0,
+          "wheelNodes": 4,
+          "wheels": [
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            }
+          ],
+          "lights": false,
+          "headlightIntensity": 0,
+          "npc": "none",
+          "exteriorVisible": false
+        }
+      }
+    ],
+    "mode": "drive",
+    "cityWorldSteps": 1207,
+    "rewardGuidance": {
+      "route": {
+        "x": 0,
+        "y": 0.815,
+        "z": 223.75
+      },
+      "arrow": [
+        0,
+        4.8544284224510195,
+        223.75
+      ]
+    },
+    "backend": "WebGPU",
+    "draws": 101,
+    "triangles": 121175,
+    "fps": 1
+  },
+  "afterRestart": {
+    "active": "parked",
+    "inLab": false,
+    "roster": [
+      {
+        "id": "pip",
+        "name": "Pip 140",
+        "class": "compact",
+        "model": "/models/pip.glb",
+        "engine": "i4",
+        "mass": 920,
+        "paints": [
+          "#e2ac58",
+          "#9fbe9b",
+          "#d9e3cf",
+          "#c76f5d"
+        ],
+        "soundProfile": "pip"
+      },
+      {
+        "id": "milo",
+        "name": "Milo Club",
+        "class": "compact",
+        "model": "/models/milo.glb",
+        "engine": "i4",
+        "mass": 1080,
+        "paints": [
+          "#8eacc1",
+          "#e3d8bb",
+          "#dc9a78",
+          "#94b397"
+        ],
+        "soundProfile": "milo"
+      },
+      {
+        "id": "harbor",
+        "name": "Harbor Six",
+        "class": "sedan",
+        "model": "/models/harbor-roster.glb",
+        "engine": "v6",
+        "mass": 1320,
+        "paints": [
+          "#628a7b",
+          "#d9d4be",
+          "#386d83",
+          "#9d554d"
+        ],
+        "soundProfile": "harbor"
+      },
+      {
+        "id": "meridian",
+        "name": "Meridian GT",
+        "class": "sedan",
+        "model": "/models/meridian.glb",
+        "engine": "v6",
+        "mass": 1530,
+        "paints": [
+          "#416f87",
+          "#c8cebf",
+          "#563e49",
+          "#b1b69b"
+        ],
+        "soundProfile": "meridian"
+      },
+      {
+        "id": "brim",
+        "name": "Brim Eight",
+        "class": "muscle",
+        "model": "/models/brim.glb",
+        "engine": "v8",
+        "mass": 1680,
+        "paints": [
+          "#b8744e",
+          "#423e45",
+          "#e6c987",
+          "#506d56"
+        ],
+        "soundProfile": "brim"
+      },
+      {
+        "id": "cinder",
+        "name": "Cinder R/T",
+        "class": "muscle",
+        "model": "/models/cinder.glb",
+        "engine": "v8",
+        "mass": 1490,
+        "paints": [
+          "#a44739",
+          "#d3b95d",
+          "#3b514c",
+          "#ded5bd"
+        ],
+        "soundProfile": "cinder"
+      },
+      {
+        "id": "aerox",
+        "name": "Aerox S6",
+        "class": "supercar",
+        "model": "/models/aerox.glb",
+        "engine": "flat6",
+        "mass": 1210,
+        "paints": [
+          "#bed27d",
+          "#f2d2a5",
+          "#4c91a3",
+          "#cc7353"
+        ],
+        "soundProfile": "aerox"
+      },
+      {
+        "id": "zenith",
+        "name": "Zenith V10",
+        "class": "supercar",
+        "model": "/models/zenith.glb",
+        "engine": "v10",
+        "mass": 1420,
+        "paints": [
+          "#d9ce93",
+          "#703d64",
+          "#49918e",
+          "#ddddd1"
+        ],
+        "soundProfile": "zenith"
+      },
+      {
+        "id": "mesa",
+        "name": "Mesa D4",
+        "class": "suv",
+        "model": "/models/mesa.glb",
+        "engine": "diesel",
+        "mass": 2240,
+        "paints": [
+          "#94946d",
+          "#ad815b",
+          "#607f79",
+          "#d8cbb0"
+        ],
+        "soundProfile": "mesa"
+      },
+      {
+        "id": "summit",
+        "name": "Summit L8",
+        "class": "suv",
+        "model": "/models/summit.glb",
+        "engine": "diesel",
+        "mass": 2580,
+        "paints": [
+          "#314c50",
+          "#bbbaaa",
+          "#694c46",
+          "#dfd3ac"
+        ],
+        "soundProfile": "summit"
+      },
+      {
+        "id": "wren",
+        "name": "Wren Single",
+        "class": "motorbike",
+        "model": "/models/wren.glb",
+        "engine": "single",
+        "mass": 215,
+        "paints": [
+          "#648c78",
+          "#d6b76e",
+          "#cc805f",
+          "#e2e0ca"
+        ],
+        "soundProfile": "wren"
+      },
+      {
+        "id": "kestrel",
+        "name": "Kestrel Twin",
+        "class": "motorbike",
+        "model": "/models/kestrel.glb",
+        "engine": "twin",
+        "mass": 242,
+        "paints": [
+          "#b96048",
+          "#374e59",
+          "#c2d584",
+          "#c4beb0"
+        ],
+        "soundProfile": "kestrel"
+      }
+    ],
+    "garage": {
+      "slots": [
+        {
+          "vin": "parkour-reward",
+          "definition": "harbor",
+          "paint": "#628a7b",
+          "damage": 0,
+          "reward": true
+        }
+      ],
+      "lastOwned": {
+        "vin": "owned-2",
+        "definition": "harbor",
+        "paint": "#628a7b",
+        "damage": 0,
+        "reward": false
+      },
+      "rewardPending": false,
+      "rewardGranted": true,
+      "nextVin": 3,
+      "capacity": 6,
+      "available": true
+    },
+    "cabinStudy": false,
+    "resources": {
+      "models": 12,
+      "modelFallbacks": [],
+      "cars": 2,
+      "forecourts": 2,
+      "cachedCabins": 1
+    },
+    "preferences": {
+      "assist": true,
+      "mouseSteering": false,
+      "manual": true,
+      "cabin": "sedan"
+    },
+    "camera": {
+      "index": 3,
+      "name": "Far chase",
+      "position": [
+        30.11452954979281,
+        4.29887818387432,
+        10.00000118712365
+      ],
+      "direction": [
+        0.946105314408761,
+        -0.3238591268553096,
+        -1.2711761077088823e-7
+      ],
+      "near": 0.15
+    },
+    "cabin": {
+      "class": "sedan",
+      "label": "Sedan · Harbor Six",
+      "geometryParts": 36,
+      "digital": false,
+      "eye": [
+        0.4,
+        0.6599999999999999,
+        -0.48
+      ],
+      "readings": {
+        "speed": 0,
+        "rpm": 0,
+        "temperature": 20.38281075920036,
+        "gear": "N",
+        "wheelRadians": 0,
+        "shifter": 0,
+        "lamps": {
+          "oil": true,
+          "engine": true,
+          "handbrake": false,
+          "damage": false,
+          "left": false,
+          "right": false,
+          "lights": false
+        },
+        "ignition": 1,
+        "sweep": 0,
+        "night": 0
+      },
+      "gauges": [
+        {
+          "label": "KM/H",
+          "maximum": 240,
+          "value": 0,
+          "needle": 2.2689280275926285
+        },
+        {
+          "label": "RPM ×1000",
+          "maximum": 8,
+          "value": 0,
+          "needle": 2.2689280275926285
+        },
+        {
+          "label": "°C",
+          "maximum": 130,
+          "value": 20.38281075920036,
+          "needle": 1.5574337104746856
+        }
+      ],
+      "rackRadians": 0,
+      "hands": 2,
+      "manualShifterVisible": true,
+      "mirrorsEnabled": false,
+      "mirrorRenderFrames": 0,
+      "mirrors": [
+        {
+          "size": [
+            256,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": [
+            128,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": [
+            128,
+            96
+          ],
+          "updates": 0,
+          "view": [
+            0,
+            0,
+            -1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "radio": "Radio off · later step",
+      "screenGear": "N",
+      "visible": false
+    },
+    "audio": {
+      "context": "running",
+      "activeEmitters": 1,
+      "emitterLimit": 16,
+      "priority": "controlled car, then nearest first",
+      "activeOneShots": 1,
+      "rms": 0,
+      "voices": [
+        {
+          "id": "parked",
+          "engine": "v6",
+          "profile": "harbor",
+          "state": "samples",
+          "reason": "",
+          "loops": 8,
+          "weights": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "playbackRates": [
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45
+          ],
+          "firingHz": 60.000488356060636,
+          "spatial": true,
+          "position": [
+            30.11452865600586,
+            3.7988781929016113,
+            10.000000953674316
+          ]
+        }
+      ],
+      "volumes": {
+        "master": 0.5,
+        "engine": 0.65,
+        "effects": 0.55,
+        "radio": 0.45,
+        "music": 0.45
+      },
+      "gains": {
+        "master": 0.05102212727069855,
+        "engine": 0.6499999761581421,
+        "effects": 0.550000011920929,
+        "radio": 0.0989999994635582,
+        "music": 0.44999998807907104,
+        "paused": true,
+        "radioDuck": 0.22
+      }
+    },
+    "ticks": 2264,
+    "renderFrames": 101,
+    "elapsed": 37.733333333332475,
+    "circuit": null,
+    "cars": [
+      {
+        "id": "parked",
+        "definition": "harbor",
+        "position": {
+          "x": 38.95000076293945,
+          "y": 0.6544284224510193,
+          "z": 10
+        },
+        "rotation": [
+          0,
+          0.7071068286895752,
+          0,
+          0.7071068286895752
+        ],
+        "velocity": {
+          "x": 0,
+          "y": 0.49043577909469604,
+          "z": 0
+        },
+        "speed": 0,
+        "kmh": 0,
+        "roadSteer": 0,
+        "steeringWheelRadians": 0,
+        "steeringRatio": 14.818833271649966,
+        "assist": true,
+        "slip": 0,
+        "surface": "asphalt",
+        "contacts": 4,
+        "odometer": 0,
+        "damage": 0,
+        "damageState": {
+          "amount": 0,
+          "health": 100,
+          "stage": "intact",
+          "frontLightsBroken": false,
+          "rearLightsBroken": false,
+          "windowsBroken": false,
+          "fireSeconds": 0,
+          "wreck": false,
+          "dents": [],
+          "powerMultiplier": 1,
+          "gripMultiplier": 1
+        },
+        "bike": false,
+        "lean": 0,
+        "targetLean": 0,
+        "physicsWheels": 4,
+        "airborneSeconds": 0.09999999999999999,
+        "maxHeight": 0.8017202615737915,
+        "carjacked": true,
+        "input": {
+          "throttle": 0,
+          "brake": 0,
+          "steering": 0,
+          "handbrake": false,
+          "clutch": false,
+          "directSteer": false
+        },
+        "engine": {
+          "phase": "running",
+          "occupied": true,
+          "manual": true,
+          "gear": 0,
+          "rpm": 1200.0097671212127,
+          "temperature": 22.215940372705628,
+          "cold": true,
+          "fastIdleSeconds": 17.616666666666802,
+          "door": 0,
+          "keyAngle": 0.5,
+          "gaugeSweep": 0,
+          "history": [
+            {
+              "phase": "off",
+              "time": 0
+            },
+            {
+              "phase": "door-open",
+              "time": 0.19999999999999998
+            },
+            {
+              "phase": "door-close",
+              "time": 0.8000000000000008
+            },
+            {
+              "phase": "key",
+              "time": 1.266666666666667
+            },
+            {
+              "phase": "ignition",
+              "time": 1.5333333333333328
+            },
+            {
+              "phase": "cranking",
+              "time": 2.33333333333333
+            },
+            {
+              "phase": "catch",
+              "time": 3.9999999999999907
+            },
+            {
+              "phase": "running",
+              "time": 4.649999999999989
+            },
+            {
+              "phase": "shutdown",
+              "time": 6.1499999999999835
+            },
+            {
+              "phase": "off",
+              "time": 6.949999999999981
+            },
+            {
+              "phase": "key",
+              "time": 7.416666666666646
+            },
+            {
+              "phase": "ignition",
+              "time": 7.683333333333311
+            },
+            {
+              "phase": "cranking",
+              "time": 8.483333333333334
+            },
+            {
+              "phase": "stalled",
+              "time": 10.150000000000084
+            },
+            {
+              "phase": "key",
+              "time": 12.516666666666868
+            },
+            {
+              "phase": "ignition",
+              "time": 12.783333333333548
+            },
+            {
+              "phase": "cranking",
+              "time": 13.583333333333588
+            },
+            {
+              "phase": "catch",
+              "time": 15.250000000000338
+            },
+            {
+              "phase": "running",
+              "time": 15.90000000000037
+            }
+          ],
+          "startingWithDoor": false
+        },
+        "wheels": [
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.2794283926486969,
+            "rotation": 0,
+            "steer": 0,
+            "contact": true,
+            "slip": 0,
+            "grip": 3.3,
+            "force": 0.0009441375732421875,
+            "surface": "asphalt"
+          }
+        ],
+        "locked": false,
+        "visual": {
+          "gltf": true,
+          "model": "/models/harbor-roster.glb",
+          "paint": "#628a7b",
+          "damage": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1,
+            "deformedVertices": 0,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          },
+          "movingGltfDoorTriangles": 24,
+          "doorRadians": 0,
+          "wheelNodes": 4,
+          "wheels": [
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.2194283926486969
+            }
+          ],
+          "lights": false,
+          "headlightIntensity": 0,
+          "npc": "leaving",
+          "exteriorVisible": true
+        }
+      },
+      {
+        "id": "reward",
+        "definition": "harbor",
+        "position": {
+          "x": -223.75,
+          "y": 0.8149999976158142,
+          "z": 0
+        },
+        "rotation": [
+          0,
+          -0.7071067690849304,
+          0,
+          0.7071067690849304
+        ],
+        "velocity": {
+          "x": 0,
+          "y": -0.3267957270145416,
+          "z": 0
+        },
+        "speed": 0,
+        "kmh": 0,
+        "roadSteer": 0,
+        "steeringWheelRadians": 0,
+        "steeringRatio": 14.818833271649966,
+        "assist": true,
+        "slip": 0,
+        "surface": "asphalt",
+        "contacts": 0,
+        "odometer": 0,
+        "damage": 0,
+        "damageState": {
+          "amount": 0,
+          "health": 100,
+          "stage": "intact",
+          "frontLightsBroken": false,
+          "rearLightsBroken": false,
+          "windowsBroken": false,
+          "fireSeconds": 0,
+          "wreck": false,
+          "dents": [],
+          "powerMultiplier": 1,
+          "gripMultiplier": 1
+        },
+        "bike": false,
+        "lean": 0,
+        "targetLean": 0,
+        "physicsWheels": 4,
+        "airborneSeconds": 0,
+        "maxHeight": 0,
+        "carjacked": false,
+        "input": {
+          "throttle": 0,
+          "brake": 0,
+          "steering": 0,
+          "handbrake": false,
+          "clutch": false
+        },
+        "engine": {
+          "phase": "off",
+          "occupied": false,
+          "manual": false,
+          "gear": 1,
+          "rpm": 0,
+          "temperature": 19,
+          "cold": true,
+          "fastIdleSeconds": 0,
+          "door": 0,
+          "keyAngle": 0,
+          "gaugeSweep": 0,
+          "history": [
+            {
+              "phase": "off",
+              "time": 0
+            }
+          ],
+          "startingWithDoor": false
+        },
+        "wheels": [
+          {
+            "suspension": 0.36,
+            "rotation": 0,
+            "steer": 0,
+            "contact": false,
+            "slip": 0,
+            "grip": 0,
+            "force": 0,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.36,
+            "rotation": 0,
+            "steer": 0,
+            "contact": false,
+            "slip": 0,
+            "grip": 0,
+            "force": 0,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.36,
+            "rotation": 0,
+            "steer": 0,
+            "contact": false,
+            "slip": 0,
+            "grip": 0,
+            "force": 0,
+            "surface": "asphalt"
+          },
+          {
+            "suspension": 0.36,
+            "rotation": 0,
+            "steer": 0,
+            "contact": false,
+            "slip": 0,
+            "grip": 0,
+            "force": 0,
+            "surface": "asphalt"
+          }
+        ],
+        "locked": false,
+        "visual": {
+          "gltf": true,
+          "model": "/models/harbor-roster.glb",
+          "paint": "#628a7b",
+          "damage": {
+            "amount": 0,
+            "health": 100,
+            "stage": "intact",
+            "frontLightsBroken": false,
+            "rearLightsBroken": false,
+            "windowsBroken": false,
+            "fireSeconds": 0,
+            "wreck": false,
+            "dents": [],
+            "powerMultiplier": 1,
+            "gripMultiplier": 1,
+            "deformedVertices": 0,
+            "glassMeshes": 1,
+            "glassVisible": true,
+            "smoke": false,
+            "fire": false
+          },
+          "movingGltfDoorTriangles": 24,
+          "doorRadians": 0,
+          "wheelNodes": 4,
+          "wheels": [
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.3
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.3
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.3
+            },
+            {
+              "steer": 0,
+              "spin": 0,
+              "suspensionY": -0.3
+            }
+          ],
+          "lights": false,
+          "headlightIntensity": 0,
+          "npc": "none",
+          "exteriorVisible": true
+        }
+      }
+    ],
+    "mode": "drive",
+    "cityWorldSteps": 2264,
+    "rewardGuidance": {
+      "route": {
+        "x": -223.75,
+        "y": 0.815,
+        "z": 0
+      },
+      "arrow": [
+        -223.75,
+        5.014999997615814,
+        0
+      ]
+    },
+    "backend": "WebGPU",
+    "draws": 61,
+    "triangles": 109085,
+    "fps": 1
+  },
+  "errors": []
+}

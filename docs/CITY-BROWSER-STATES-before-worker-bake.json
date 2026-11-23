@@ -1,0 +1,331 @@
+[
+  {
+    "district": "beach",
+    "mode": "fly",
+    "position": {
+      "x": -1600,
+      "y": 100,
+      "z": -770
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 3,
+      "centerLoaded": true,
+      "pending": 0,
+      "queued": 7,
+      "cached": 12,
+      "farImpostors": 1628,
+      "maximumInstallMs": 2.199999999254942,
+      "maximumChunkCpuMs": 0,
+      "maximumUpdateMs": 11.400000000372529,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 2.199999999254942,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "downtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 8.439200344238058,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "downtown",
+    "mode": "fly",
+    "position": {
+      "x": 0,
+      "y": 100,
+      "z": 30
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 2,
+      "centerLoaded": false,
+      "pending": 0,
+      "queued": 28,
+      "cached": 32,
+      "farImpostors": 1628,
+      "maximumInstallMs": 2.199999999254942,
+      "maximumChunkCpuMs": 2.599999999627471,
+      "maximumUpdateMs": 80.09999999962747,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 1,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "downtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "port",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": 1080
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 3,
+      "centerLoaded": false,
+      "pending": 0,
+      "queued": 37,
+      "cached": 46,
+      "farImpostors": 1628,
+      "maximumInstallMs": 2.199999999254942,
+      "maximumChunkCpuMs": 2.599999999627471,
+      "maximumUpdateMs": 80.09999999962747,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 1,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "port",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "canals",
+    "mode": "fly",
+    "position": {
+      "x": -950,
+      "y": 100,
+      "z": -100
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 1,
+      "centerLoaded": false,
+      "pending": 0,
+      "queued": 52,
+      "cached": 56,
+      "farImpostors": 1628,
+      "maximumInstallMs": 5.199999999254942,
+      "maximumChunkCpuMs": 2.599999999627471,
+      "maximumUpdateMs": 80.09999999962747,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 0.7000000011175871,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "canals",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "hills",
+    "mode": "fly",
+    "position": {
+      "x": 980,
+      "y": 180,
+      "z": -1070
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 2,
+      "centerLoaded": true,
+      "pending": 0,
+      "queued": 66,
+      "cached": 56,
+      "farImpostors": 1628,
+      "maximumInstallMs": 65.59999999962747,
+      "maximumChunkCpuMs": 66.30000000074506,
+      "maximumUpdateMs": 81.5,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 1,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "canals",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "oldtown",
+    "mode": "fly",
+    "position": {
+      "x": 850,
+      "y": 100,
+      "z": 560
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 1,
+      "centerLoaded": false,
+      "pending": 0,
+      "queued": 78,
+      "cached": 56,
+      "farImpostors": 1628,
+      "maximumInstallMs": 65.59999999962747,
+      "maximumChunkCpuMs": 66.30000000074506,
+      "maximumUpdateMs": 81.5,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 1,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "oldtown",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  },
+  {
+    "district": "outskirts",
+    "mode": "fly",
+    "position": {
+      "x": 1000,
+      "y": 100,
+      "z": 1430
+    },
+    "stream": {
+      "ready": true,
+      "sizeMetres": 4000,
+      "chunkMetres": 128,
+      "loaded": 2,
+      "centerLoaded": false,
+      "pending": 0,
+      "queued": 91,
+      "cached": 56,
+      "farImpostors": 1628,
+      "maximumInstallMs": 65.59999999962747,
+      "maximumChunkCpuMs": 66.30000000074506,
+      "maximumUpdateMs": 81.5,
+      "coldPrimeWallMs": 21.5,
+      "installP95": 1,
+      "physicsChunks": 0,
+      "physicsColliders": 17,
+      "physicsStreamMs": 0,
+      "graph": {
+        "nodes": 197,
+        "edges": 353,
+        "lanes": 944
+      },
+      "district": "outskirts",
+      "hiddenCachesFound": 0,
+      "continuousFarCoverage": true
+    },
+    "environment": {
+      "date": "2026-11-20",
+      "weather": "clear",
+      "hour": 16,
+      "night": 0,
+      "elapsed": 1.134,
+      "cycleRealSeconds": 1440,
+      "waves": true,
+      "analyticalSkyReflection": true,
+      "shoreFoam": true
+    }
+  }
+]
