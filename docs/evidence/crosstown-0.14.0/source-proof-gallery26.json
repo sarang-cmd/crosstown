@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-22",
+  "capturedAt": "2026-11-23T11:57:48.389Z",
+  "version": "0.14.0",
+  "passed": true,
+  "exitCode": 0,
+  "runtimeFingerprint": "44522b11cde89b169e5e2f8bb4028f9763fa14e395764d64bdeafcd312aa3542",
+  "sourceArchiveSha256": "67562de0a21d3ec85c3413614464a151c9a0a65b4b439f2b2eeed76a41d9ba16",
+  "sourceArchiveEntries": 839,
+  "sourceArchiveBoundary": "Clean provisional allowlisted ZIP, all runtime/public/config files hash-identical to the final tested runtime. Final source ZIP adds proof/docs/manifests; packager rechecks every runtime byte.",
+  "node": "v20.20.2",
+  "runs": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exitCode": 0,
+      "wallMs": 3611.793028
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "wallMs": 12461.957419000002
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "assets:check"
+      ],
+      "exitCode": 0,
+      "wallMs": 453.00487200000134
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "check:versions"
+      ],
+      "exitCode": 0,
+      "wallMs": 3305.134481000001
+    }
+  ],
+  "productionOutputFiles": 204,
+  "expectedLocalCandidateFiles": 204,
+  "allProductionBytesMatchCandidate": true,
+  "publicDeploymentCompared": false,
+  "publishedVersion": "0.13.0",
+  "mismatches": [],
+  "log": "source-archive-build.log"
+}

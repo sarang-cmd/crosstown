@@ -1,0 +1,21 @@
+START static-and-units 2026-11-23T11:08:32.524Z
+RESULT static-and-units 0 40786ms
+START retained-production-pixels 2026-11-23T11:09:13.315Z
+RESULT retained-production-pixels 0 92528ms
+START lighting-webgl 2026-11-23T11:10:45.844Z
+RESULT lighting-webgl 0 94578ms
+START lighting-webgpu 2026-11-23T11:12:20.424Z
+RESULT lighting-webgpu 0 89503ms
+START city-life-webgl 2026-11-23T11:13:49.929Z
+RESULT city-life-webgl 0 50182ms
+START city-life-webgpu 2026-11-23T11:14:40.112Z
+RESULT city-life-webgpu 0 52680ms
+START activities 2026-11-23T11:15:32.795Z
+RESULT activities 0 20524ms
+START landing 2026-11-23T11:15:53.321Z
+RESULT landing 0 2637ms
+START real-radio-providers 2026-11-23T11:15:55.959Z
+RESULT real-radio-providers 1 38999ms
+START busiest-four-tiers-webgl 2026-11-23T11:16:34.960Z
+RESULT busiest-four-tiers-webgl 124 900052ms
+START busiest-four-tiers-webgpu 2026-11-23T11:31:35.013Z
