@@ -1,0 +1,21 @@
+import { test, expect } from '@playwright/test';
+import { openRun, runSnapshot } from './parkour-helpers';
+test('full 60 Hz normal-pace browser pilot finishes, celebrates, saves, replays ghost and unlocks the night district', async ({ page }, testInfo) => {
+  const errors: string[] = []; page.on('pageerror', e => errors.push(e.message)); page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+  await openRun(page, testInfo.project.name);
+  await page.keyboard.press('KeyW');
+  await expect.poll(async () => (await runSnapshot(page)).audioState).toBe('running');
+  const result = await page.evaluate(() => window.__parkour!.botRun());
+  expect(result.state).toBe('finished'); expect(result.falls).toBe(0); expect(result.normalPaceSeconds).toBeGreaterThanOrEqual(480); expect(result.normalPaceSeconds).toBeLessThanOrEqual(720); expect(result.checkpoint).toBe(27);
+  await page.evaluate(() => { window.__parkour!.step(300); window.__parkour!.pause(false); });
+  await expect(page.locator('#run-result')).toBeVisible(); await expect(page.locator('#result-rank')).toHaveText('A');
+  const finished = await runSnapshot(page); expect(finished.carUnlocked && finished.nightUnlocked).toBe(true); expect(finished.finishTime).toBeGreaterThan(4.9);
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('crosstown:parkour:v1')!)); expect(saved.data.best['opening:day:84173'].result.seconds).toBe(result.result!.seconds); expect(saved.data.best['opening:day:84173'].ghost.length).toBeGreaterThan(4800);
+  await testInfo.attach('finished-result-and-city-flight', { body: await page.screenshot(), contentType: 'image/png' });
+  await page.keyboard.press('KeyR'); await expect.poll(async () => (await runSnapshot(page)).ghostVisible).toBe(true); await expect(page.locator('#run-result')).toBeHidden();
+  await page.keyboard.press('KeyL'); await expect.poll(async () => (await runSnapshot(page)).night).toBe(true); await expect(page.locator('#run-day')).toHaveText('NIGHT RUN');
+  await testInfo.attach('unlocked-night-route', { body: await page.screenshot(), contentType: 'image/png' });
+  await page.reload(); await page.waitForFunction(() => !!window.__parkour); const after = await runSnapshot(page); expect(after.nightUnlocked).toBe(true); expect(after.ghostFrames).toBeGreaterThan(4800);
+  await testInfo.attach('normal-pace-browser-simulation', { body: JSON.stringify({ ...result, note: 'Every 60 Hz KCC step at 6.5 m/s. Rendering suspended only during the accelerated acceptance pilot, not a wall-clock or target-GPU measurement.' }, null, 2), contentType: 'application/json' });
+  expect(errors).toEqual([]);
+});
