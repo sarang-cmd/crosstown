@@ -1,0 +1,14 @@
+{
+  "engine": "v8",
+  "author": "overmedium",
+  "source": "https://freesound.org/people/overmedium/sounds/651534/",
+  "preview": "https://cdn.freesound.org/previews/651/651534_2396512-hq.mp3",
+  "licenses": [
+    "http://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "bytes": 201292,
+  "sha256": "65d7f1d60ecc276a48ea974a265bbee0715d6b2e0bd0081a45c57362a61a470c",
+  "license": "CC0-1.0",
+  "sourceFormat": "Publisher public HQ MP3 preview (lossy), not the login-only original WAV.",
+  "modifications": "Mono downmix, 32 kHz resample, DC/high/low filtering, RMS normalization, periodic crossfade, designed load/RPM layers."
+}
