@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "physicalContact": {
+    "ticks": 150,
+    "chassisContacts": 80,
+    "maximumPlayerImpulse": 14.912703517290232,
+    "maximumNpcImpulse": 8.835318204565429,
+    "npcCrashStates": 149,
+    "maximumPlayerDamage": 0.21633392769822957,
+    "maximumNpcDamage": 0.11831158394460368
+  },
+  "brakes": 165,
+  "swerves": 1,
+  "pullOvers": 12,
+  "peopleDay": 85,
+  "peopleNight": 58,
+  "fearHookOnly": true,
+  "errors": []
+}

@@ -1,0 +1,9 @@
+City ready {"anchor":{"x":518.143798828125,"y":0.5964301824569702,"z":849.3800048828125},"parkedCar":true,"densityLocked":true}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at /home/user/tools/accept-population.mjs:32:13
+
+Node.js v20.20.2

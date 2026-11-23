@@ -1,0 +1,69 @@
+City ready {"anchor":{"x":520,"y":0.1,"z":785},"parkedCar":false,"densityLocked":true}
+t 5.02 full 4 entered 4 overlap 0
+t 10.02 full 7 entered 6 overlap 0
+t 15.02 full 10 entered 13 overlap 0
+t 20.02 full 9 entered 18 overlap 0
+t 25.02 full 9 entered 27 overlap 0
+t 30.02 full 8 entered 33 overlap 0
+t 35.02 full 8 entered 36 overlap 0
+t 40.02 full 7 entered 36 overlap 0
+t 45.02 full 6 entered 36 overlap 0
+t 50.02 full 7 entered 36 overlap 0
+t 55.02 full 7 entered 36 overlap 0
+t 60.02 full 7 entered 36 overlap 0
+t 65.02 full 7 entered 36 overlap 0
+t 70.02 full 7 entered 41 overlap 0
+t 75.02 full 7 entered 49 overlap 0
+t 80.02 full 7 entered 57 overlap 0
+t 85.02 full 7 entered 66 overlap 0
+t 90.02 full 9 entered 71 overlap 0
+t 95.02 full 7 entered 76 overlap 0
+t 100.02 full 10 entered 81 overlap 0
+t 105.02 full 9 entered 90 overlap 0
+t 110.02 full 11 entered 97 overlap 0
+t 115.02 full 11 entered 100 overlap 0
+t 120.02 full 11 entered 102 overlap 0
+{
+  "errors": [],
+  "audit": {
+    "ticks": 7200,
+    "overlapSamples": 0,
+    "overlapExamples": [],
+    "redEntries": 0,
+    "illegalCrossingSamples": 0,
+    "maximumWaitSeconds": 78.18333333333018,
+    "waiter": {
+      "id": "traffic-71",
+      "state": "yielding",
+      "position": {
+        "x": 530.9963989257812,
+        "y": 0.46537917852401733,
+        "z": 761.25
+      },
+      "progress": 220.00360107421875,
+      "stopAt": 221,
+      "time": 95.5833333333292,
+      "desired": 2.8895648393724445
+    },
+    "maximumGreenStationarySeconds": 18.00000000000026,
+    "entries": 102,
+    "maxFullPhysicsCars": 12,
+    "nonfiniteStates": 0,
+    "time": 120.01666666666114,
+    "minimumObservedAgentAgeSeconds": 30,
+    "eligibleAgents": 67,
+    "starved": [],
+    "neverEnteredInitialCohort": [
+      "traffic-0",
+      "traffic-4",
+      "traffic-5",
+      "traffic-8",
+      "traffic-22",
+      "traffic-23",
+      "traffic-24",
+      "traffic-26",
+      "traffic-39"
+    ]
+  },
+  "wallMs": 20280.508749
+}

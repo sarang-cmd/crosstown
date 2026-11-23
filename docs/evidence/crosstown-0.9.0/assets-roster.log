@@ -1,0 +1,35 @@
+prune: Removed types... Primitive (2), Accessor (3)
+pip: 1.642 × 1.389 × 3.600 m | 2088 tris | 0 → 0 clips | 197804 → 86676 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+milo: 2.100 × 1.890 × 3.850 m | 2082 tris | 0 → 0 clips | 175664 → 78768 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+harbor-roster: 2.529 × 2.192 × 4.300 m | 2032 tris | 0 → 0 clips | 172216 → 76812 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (4)
+meridian: 2.371 × 2.006 × 4.650 m | 2088 tris | 0 → 0 clips | 177676 → 80808 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+brim: 2.673 × 2.673 × 4.900 m | 2072 tris | 0 → 0 clips | 175608 → 77584 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (4)
+cinder: 2.395 × 2.076 × 4.950 m | 2304 tris | 0 → 0 clips | 195336 → 89292 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+aerox: 2.285 × 1.288 × 4.500 m | 1952 tris | 0 → 0 clips | 167272 → 72044 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+zenith: 2.075 × 1.440 × 4.600 m | 2068 tris | 0 → 0 clips | 173164 → 75316 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (4)
+mesa: 2.722 × 2.359 × 4.900 m | 2474 tris | 0 → 0 clips | 207572 → 94300 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... Primitive (2), Accessor (3)
+summit: 2.711 × 2.349 × 5.150 m | 2086 tris | 0 → 0 clips | 175908 → 78568 bytes
+  No distinct source nodes (not fabricated): steering_wheel, door_left, door_right, light_front, light_rear, mirror_left, mirror_right
+prune: Removed types... TextureInfo (5), Material (1)
+wren 48596 988 []
+kestrel 56228 1232 []
+prune: Removed types... Accessor (74)
+city-pedestrian 336188 3237 [ 'Idle', 'Run', 'Sit', 'Walk', 'Chat', 'Flee' ]

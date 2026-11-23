@@ -1,0 +1,1 @@
+Initial final-profile attempt was manually stopped after about six minutes with no completed scene output. The renderer process used ~92% CPU / GPU ~1%; the root cause is not established. No cadence result or performance acceptance is inferred. Added stage deadlines/logging to the harness before a distinct retry. Application runtime files were not changed.

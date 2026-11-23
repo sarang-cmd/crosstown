@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-22",
+  "seconds": 240,
+  "ticks": 14400,
+  "wallMs": 25882.662814,
+  "mode": "Pure planning; no actual Rapier or GPU",
+  "audit": {
+    "sampledRectangleOverlaps": 0,
+    "redEntries": 0,
+    "illegalCrossings": 0,
+    "maximumStationarySeconds": 118.64999999999455,
+    "maximumGreenStationarySeconds": 18.00000000000026,
+    "slowest": {
+      "id": "traffic-35",
+      "time": 156.95000000001704,
+      "state": "cruise",
+      "position": {
+        "x": 749.7535010907284,
+        "y": 0.735,
+        "z": 770.25
+      },
+      "lane": "210:1",
+      "progress": 220.7535010907284
+    },
+    "starved": [],
+    "neverEntered": [
+      "traffic-67",
+      "traffic-69",
+      "traffic-77",
+      "traffic-79",
+      "traffic-81",
+      "traffic-82",
+      "traffic-83",
+      "traffic-84",
+      "traffic-86",
+      "traffic-87",
+      "traffic-88",
+      "traffic-89",
+      "traffic-90"
+    ]
+  },
+  "traffic": {
+    "spawned": 91,
+    "retired": 31,
+    "enteredIntersections": 184,
+    "redViolations": 0,
+    "overlapFrames": 0,
+    "maxOverlaps": 0,
+    "brakesForPlayer": 0,
+    "swerves": 0,
+    "pullOvers": 0,
+    "honks": 1,
+    "overtakes": 0,
+    "gunfireReactions": 0,
+    "maxUnexplainedStop": 0.2333333333333333
+  },
+  "pedestrians": {
+    "spawned": 126,
+    "crossingsStarted": 83,
+    "illegalCrossings": 0,
+    "walkDestinations": 34,
+    "chats": 3,
+    "sits": 1,
+    "enteredCars": 24,
+    "leftCars": 24,
+    "fled": 0
+  }
+}

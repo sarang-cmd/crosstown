@@ -1,0 +1,44 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 [webgl2-forced] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work (35.3s)
+
+
+  1) [webgl2-forced] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work 
+
+    Error: page.evaluate: Error: recursive use of an object detected which would lead to unsafe aliasing in rust
+        at I.wbg.__wbindgen_throw (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:74704)
+        at wasm://wasm/005eea0e:wasm-function[1933]:0x168bdc
+        at wasm://wasm/005eea0e:wasm-function[1935]:0x168bf8
+        at wasm://wasm/005eea0e:wasm-function[779]:0x1319f9
+        at lA.rbLinvel (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:56336)
+        at GI.linvel (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:79057)
+        at RaycastCar.snapshot (http://127.0.0.1:5173/src/vehicles/physics.ts?t=1795383851480:222:151)
+        at http://127.0.0.1:5173/src/vehicles/index.ts?t=1795384934160:423:928
+        at Array.map (<anonymous>)
+        at Vehicles.snapshot (http://127.0.0.1:5173/src/vehicles/index.ts?t=1795384934160:423:905)
+        at I.wbg.__wbindgen_throw (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:74704)
+        at lA.rbLinvel (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:56336)
+        at GI.linvel (http://127.0.0.1:5173/node_modules/@dimforge/rapier3d-compat/rapier.mjs?v=794bc295:1:79057)
+        at RaycastCar.snapshot (http://127.0.0.1:5173/src/vehicles/physics.ts?t=1795383851480:222:151)
+        at http://127.0.0.1:5173/src/vehicles/index.ts?t=1795384934160:423:928
+        at Vehicles.snapshot (http://127.0.0.1:5173/src/vehicles/index.ts?t=1795384934160:423:905)
+        at state (/home/user/tests/browser/fleet.spec.ts:4:31)
+        at Object.expect.poll.timeout (/home/user/tests/browser/fleet.spec.ts:16:721)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .arena/fleet-results/fleet-take-six-street-cars-ce468--wreck-and-recovery-UI-work-webgl2-forced/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .arena/fleet-results/fleet-take-six-street-cars-ce468--wreck-and-recovery-UI-work-webgl2-forced/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    .arena/fleet-results/fleet-take-six-street-cars-ce468--wreck-and-recovery-UI-work-webgl2-forced/trace.zip
+    Usage:
+
+        npx playwright show-trace .arena/fleet-results/fleet-take-six-street-cars-ce468--wreck-and-recovery-UI-work-webgl2-forced/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webgl2-forced] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work 

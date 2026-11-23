@@ -1,0 +1,13 @@
+
+> crosstown@0.9.0 test:vehicles
+> playwright test --config playwright.vehicles.config.ts
+
+
+Running 4 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/vehicles.spec.ts:27:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work (1.8m)
+  ✓  2 [webgpu] › tests/browser/vehicles.spec.ts:92:1 › virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors (2.7m)
+  ✓  3 [webgl2-forced] › tests/browser/vehicles.spec.ts:27:1 › real street enter/carjack, ordered cold start, keyboard steering, four cameras, handbrake, exit and actual finish-reward car work (1.2m)
+  ✓  4 [webgl2-forced] › tests/browser/vehicles.spec.ts:92:1 › virtual analog gamepad/wheel, all six actual cabins, recorded engine sweeps, one missing sample fallback and real every-other-frame rear mirrors (1.8m)
+
+  4 passed (7.5m)

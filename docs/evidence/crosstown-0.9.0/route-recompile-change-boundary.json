@@ -1,0 +1,20 @@
+{
+  "beforeRuntimeSha256": "c2397cc537a4473bda7a7649d45e3725b8e52ec799c5ee24d5cf8eed54a55304",
+  "finalRuntimeSha256": "6269b28082f916fe1a076b75e54115ccdf1b4d90da26658eb6f5b70bc9851910",
+  "changedFiles": [
+    {
+      "file": "src/game.ts",
+      "beforeSha256": "06cacbc14a1650cbf60a074831be7ae1236c044fe065de83c7f385fbe2923058",
+      "afterSha256": "f4eca99d5138a2789778fc8fc5a4c88712d35f93595d931a209e386cce26dfc2"
+    },
+    {
+      "file": "src/world/rooftops.ts",
+      "beforeSha256": "e469658ee43b10c8640a876e8c9c6ae069d1ea26c78a8c99440778da42302416",
+      "afterSha256": "5e8e826034b747aa0fcb9153baa28ec16906c4ea02342f4bce5246f484308a85"
+    }
+  ],
+  "removedFiles": [],
+  "npcVehiclePhysicsModulesByteIdentical": true,
+  "populationEvidenceBoundary": "Timed loaded/wall/Auto and physical-reaction reports were captured before these two rendering/lab-pause edits. Those observations are not fresh final-revision performance/fairness acceptance.",
+  "notAGitCommitOrTestExecutionProof": true
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-22",
+  "failures": [
+    {
+      "source": "https://poly.pizza/m/dse64pqMKAR",
+      "status": 403,
+      "result": "Model download inaccessible; original authored fallback used"
+    },
+    {
+      "source": "https://poly.pizza/m/cFvmALDjMKw",
+      "status": 403,
+      "result": "Model download inaccessible; original authored fallback used"
+    }
+  ],
+  "decision": "Original project-authored CC0 GLBs, not repackaged third-party motorcycle geometry."
+}

@@ -1,0 +1,76 @@
+TAP version 13
+# using deprecated parameters for the initialization function; pass a single object instead
+# Subtest: twelve fictional models, two per class, unique tuning/paint/profile with no mutable nested sharing
+ok 1 - twelve fictional models, two per class, unique tuning/paint/profile with no mutable nested sharing
+  ---
+  duration_ms: 2.046804
+  ...
+# Subtest: six-car persistent garage survives reconstruction, rejects a seventh and updates without duplicating VINs
+ok 2 - six-car persistent garage survives reconstruction, rejects a seventh and updates without duplicating VINs
+  ---
+  duration_ms: 1.834995
+  ...
+# Subtest: finish reward queues safely when full, fills a released space and is granted only once
+ok 3 - finish reward queues safely when full, fills a released space and is granted only once
+  ---
+  duration_ms: 1.105734
+  ...
+# Subtest: corrupted garage saves cannot inject names/HTML, nonfinite damage, duplicates or invalid model IDs
+ok 4 - corrupted garage saves cannot inject names/HTML, nonfinite damage, duplicates or invalid model IDs
+  ---
+  duration_ms: 0.71668
+  ...
+# Subtest: blocked browser storage degrades to a usable in-memory garage
+ok 5 - blocked browser storage degrades to a usable in-memory garage
+  ---
+  duration_ms: 0.458075
+  ...
+# Subtest: normalized Meshopt attributes are decoded before transform, without mutating cached source geometry
+ok 6 - normalized Meshopt attributes are decoded before transform, without mutating cached source geometry
+  ---
+  duration_ms: 2.079482
+  ...
+# Subtest: merely showing an NPC enter prompt never removes/materializes a traffic car
+ok 7 - merely showing an NPC enter prompt never removes/materializes a traffic car
+  ---
+  duration_ms: 1.163495
+  ...
+# Subtest: all damage stages, light/window flags, 7-second fire-to-wreck, small degradation and repair are deterministic
+ok 8 - all damage stages, light/window flags, 7-second fire-to-wreck, small degradation and repair are deterministic
+  ---
+  duration_ms: 0.909307
+  ...
+# Subtest: AWD service brakes cannot be bypassed by nonzero engine drag; NPC braking cannot select reverse
+ok 9 - AWD service brakes cannot be bypassed by nonzero engine drag; NPC braking cannot select reverse
+  ---
+  duration_ms: 220.16338
+  ...
+# Subtest: both actual two-wheel bikes settle, lean through a turn, jump/land and recover without hidden support wheels
+ok 10 - both actual two-wheel bikes settle, lean through a turn, jump/land and recover without hidden support wheels
+  ---
+  duration_ms: 194.42755
+  ...
+# Subtest: contact-ready takeovers have finite mass/inertia before the first wheel update without an extra world step
+ok 11 - contact-ready takeovers have finite mass/inertia before the first wheel update without an extra world step
+  ---
+  duration_ms: 32.968333
+  ...
+# Subtest: all twelve external parked/NPC definitions can be taken through the common ownership path, stored and disposed without duplicate controllers
+ok 12 - all twelve external parked/NPC definitions can be taken through the common ownership path, stored and disposed without duplicate controllers
+  ---
+  duration_ms: 162.38296
+  ...
+# Subtest: a parked chassis struck from rest takes real contact damage as well as the striking car
+ok 13 - a parked chassis struck from rest takes real contact damage as well as the striking car
+  ---
+  duration_ms: 20.027012
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1395.882177

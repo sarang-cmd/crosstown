@@ -1,0 +1,15 @@
+
+> crosstown@0.9.0 test:fleet
+> playwright test --config playwright.fleet.config.ts
+
+
+Running 6 tests using 1 worker
+
+  ✓  1 [webgpu] › tests/browser/fleet.spec.ts:11:1 › twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load (58.7s)
+  ✓  2 [webgpu] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work (1.8m)
+  ✓  3 [webgpu] › tests/browser/fleet.spec.ts:25:1 › physical parkour finish grants one garage reward and its street car; storing/retrieving/reloading keeps a single live VIN (33.2s)
+  ✓  4 [webgl2-forced] › tests/browser/fleet.spec.ts:11:1 › twelve real rendered models, twelve sample profiles, six matching cabins and distinct two-wheel bike exteriors load (29.9s)
+  ✓  5 [webgl2-forced] › tests/browser/fleet.spec.ts:15:1 › take six street cars, garage stores them inside across reload; paint, deliberate physical wreck and recovery UI work (1.7m)
+  ✓  6 [webgl2-forced] › tests/browser/fleet.spec.ts:25:1 › physical parkour finish grants one garage reward and its street car; storing/retrieving/reloading keeps a single live VIN (33.7s)
+
+  6 passed (6.2m)
